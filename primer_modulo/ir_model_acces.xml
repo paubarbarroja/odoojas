@@ -2,7 +2,7 @@
    <data>
        <record id="jas" model="ir.model.access">
            <field name="name">jas.modulo</field>
-           <field name="model_id" ref="model_jas_modulo"/>
+           <field name="model_id" ref="model_jas_atleta"/>
            <field name="group_id" ref="jas"/>
            <field name="perm_read" eval="1"/>
            <field name="perm_create" eval="1"/>
