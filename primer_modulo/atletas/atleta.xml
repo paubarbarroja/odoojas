@@ -2,7 +2,7 @@
 <odoo>
     <record model="ir.ui.view" id="jas_21052019_2053_tree">
         <field name="name">jas.atleta</field>
-        <field name="model">jas.jas.atleta</field>
+        <field name="model">jas.atleta</field>
         <field name="arch" type="xml">
             <tree string="Modulo">
                 <field name="descripcion"/>
