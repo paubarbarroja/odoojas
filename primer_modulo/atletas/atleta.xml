@@ -4,8 +4,15 @@
         <field name="name">jas.atleta</field>
         <field name="model">jas.atleta</field>
         <field name="arch" type="xml">
-            <tree string="Modulo">
-                <field name="descripcion"/>
+            <tree string="Atleta">
+                <field name="nombre"/>
+                <field name="apellidos"/>
+                <field name="ficha"/>
+                <field name="dni"/>
+                <field name="edad"/>
+                <field name="genero"/>
+                <field name="telefono"/>
+                <field name="mail"/>
             </tree>
         </field>
     </record>
@@ -14,9 +21,16 @@
         <field name="name">jas.atleta</field>
         <field name="model">jas.atleta</field>
         <field name="arch" type="xml">
-            <form string="MOdulo" version="7.0">
+            <form string="Atleta" version="7.0">
                 <group col="2">
-                    <field name="descripcion"/>
+                    <field name="nombre"/>
+                    <field name="apellidos"/>
+                    <field name="ficha"/>
+                    <field name="dni"/>
+                    <field name="edad"/>
+                    <field name="genero"/>
+                    <field name="telefono"/>
+                    <field name="mail"/>
                 </group>
             </form>
         </field>

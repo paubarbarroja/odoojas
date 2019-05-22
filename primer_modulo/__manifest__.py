@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 {
     'name': "Mi Primer Módulo",
     'version': '1.0',
