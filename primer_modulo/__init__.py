@@ -1,1 +1,1 @@
-from . import modulo
+from . import atletas

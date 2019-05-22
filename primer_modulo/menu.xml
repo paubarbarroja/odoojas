@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
         <menuitem id="main_menu"
-                   name="Modulo de Prueba"/><!--Menó Principal que se mostrará en la barra superior-->
+                   name="Atletas"/>
 
             <menuitem id="modulos_menu"
                       name="Modulos"
-                      parent="main_menu"/><!--Menú que encontraremos en la parte izquierda de la pantalla utlizado para agrupar los siguientes menus-->
+                      parent="main_menu"/>
 
                 <menuitem id="modulo_menu"
                           name="Modulo"
                           parent="modulos_menu"
-                          action="helipistas_modulo_action"/><!--Menu que referencia el action creado anteriormente-->
+                          action="jas_21052019_2053_action"/>
 </odoo>

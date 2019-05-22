@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="jas_21052019_2053_tree">
+        <field name="name">jas.atleta</field>
+        <field name="model">jas.jas.atleta</field>
+        <field name="arch" type="xml">
+            <tree string="Modulo">
+                <field name="descripcion"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="jas_21052019_2053_form">
+        <field name="name">jas.atleta</field>
+        <field name="model">jas.atleta</field>
+        <field name="arch" type="xml">
+            <form string="MOdulo" version="7.0">
+                <group col="2">
+                    <field name="descripcion"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="jas_21052019_2053_action" model="ir.actions.act_window">
+        <field name="name">Atletas</field>
+        <field name="res_model">jas.atleta</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
