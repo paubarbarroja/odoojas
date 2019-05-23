@@ -11,7 +11,6 @@
     'data': [
         'atletas/atleta.xml',
         'menu.xml',
-        'ir_model_acces.xml',
     ],
     'demo': [],
 }
