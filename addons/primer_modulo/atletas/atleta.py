@@ -8,9 +8,9 @@ class jas_atleta(models.Model):
 
     nombre              = fields.Char(string='Nombre',required=True)
     apellidos           = fields.Char(string='Apellido',required=True)
-    ficha               = fields.Char(string='ficha',required=True)
+    ficha               = fields.Date(string='ficha',required=True)
     dni                 = fields.Char(string='dni',required=True)
-    edad                = fields.Char(string='edad',required=True)
-    genero              = fields.Char(string='genero',required=True)
+    edad                = fields.Date(string='edad',required=True)
+    genero              = fields.Selection([('1', 'Masculino'),('2', 'Femenino')],string='genero',required=True)
     telefono            = fields.Char(string='telefono',required=True)
     mail                = fields.Char(string='mail',required=True)
