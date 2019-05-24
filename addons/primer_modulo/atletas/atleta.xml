@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record model="ir.ui.view" id="jas_21052019_2053_tree">
-        <field name="name">jas.atleta</field>
-        <field name="model">jas.atleta</field>
+        <field name="name">Atleta_tree</field>
+        <field name="model">hr.employee</field>
         <field name="arch" type="xml">
-            <tree string="Atleta">
-                <field name="ficha"/>
-                <field name="dni"/>
-                <field name="nombre"/>
-                <field name="apellidos"/>
-                <field name="genero"/>
-                <field name="edad"/>
+            <tree string="Atletas">
+                <field name="passport_id" string="Ficha"/>
+                <field name="identification_id" string="DNI"/>
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="bithday"/>
             </tree>
         </field>
     </record>
 
     <record model="ir.ui.view" id="jas_21052019_2053_form">
-        <field name="name">jas.atleta</field>
-        <field name="model">jas.atleta</field>
+        <field name="name">Atleta_form</field>
+        <field name="model">hr.employee</field>
         <field name="arch" type="xml">
             <form string="Atleta" version="7.0">
                 <group col="4">
-                    <field name="nombre"/>
-                    <field name="apellidos"/>
-                    <field name="ficha"/>
-                    <field name="dni"/>
-                    <field name="edad"/>
-                    <field name="genero"/>
-                    <field name="telefono"/>
-                    <field name="mail"/>
+                    <field name="name"/>
+                    <field name="passport_id" string="Ficha"/>
+                    <field name="identification_id" string="DNI"/>
+                    <field name="bithday"/>
+                    <field name="gender"/>
+                    <field name="work_phone" string="Teléfono"/>
+                    <field name="work_email" string="Correo-e del trabajo"/>
                 </group>
             </form>
         </field>
@@ -36,7 +34,7 @@
 
     <record id="jas_21052019_2053_action" model="ir.actions.act_window">
         <field name="name">Atletas</field>
-        <field name="res_model">jas.atleta</field>
+        <field name="res_model">hr.employee</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
