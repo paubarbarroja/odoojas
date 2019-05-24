@@ -2,21 +2,17 @@
 <odoo>
     <record model="ir.ui.view" id="jas_21052019_2053_tree">
         <field name="name">Atleta_tree</field>
-        <field name="model">jas.atleta</field>
+        <field name="model">hr.employee</field>
         <field name="arch" type="xml">
             <tree string="Atletas">
-                <field name="passport_id" string="Ficha"/>
-                <field name="identification_id" string="DNI"/>
-                <field name="name"/>
-                <field name="gender"/>
-                <field name="bithday"/>
+                <field name="nombre"/>
             </tree>
         </field>
     </record>
 
     <record model="ir.ui.view" id="jas_21052019_2053_form">
         <field name="name">Atleta_form</field>
-        <field name="model">hr</field>
+        <field name="model">hr.employee</field>
         <field name="arch" type="xml">
             <form string="Atleta" version="7.0">
                 <group col="4">
