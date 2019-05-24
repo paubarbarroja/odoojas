@@ -2,7 +2,7 @@
 {
     'name': "Mi Primer Módulo",
     'version': '1.0',
-    'depends': ['base'],
+    'depends': ['base','hr'],
     'author': "Pau Barbarroja",
     'category': 'Jas',
     'description': """
