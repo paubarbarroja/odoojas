@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Mi Primer Módulo",
+    'name': "barba-erp",
     'version': '1.0',
-    'depends': ['base','hr'],
+    'depends': ['hr','base'],
     'author': "Pau Barbarroja",
     'category': 'Jas',
-    'description': """
-    Mi Primer Módulo
-    """,
+    'description': """barba-erp""",
     'data': [
         'atletas/atleta.xml',
         'menu.xml',
