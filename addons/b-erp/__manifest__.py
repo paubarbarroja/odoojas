@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "barba-erp",
+    'name': "b-erp",
     'version': '1.0',
     'depends': ['hr','base'],
     'author': "Pau Barbarroja",
     'category': 'Jas',
-    'description': """barba-erp""",
+    'description': """b-erp""",
     'data': [
         'atletas/atleta.xml',
         'menu.xml',
