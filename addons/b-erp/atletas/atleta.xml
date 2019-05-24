@@ -35,13 +35,13 @@
         <field name="view_mode">tree,form</field>
     </record>
     <record id="jas_21052019_2053_action_tree" model="ir.actions.act_window.view">
-        <field eval="20" name="sequence"/>
+        <field eval="21" name="sequence"/>
         <field name="view_mode">tree</field>
         <field name="view_id" ref="jas_21052019_2053_tree"/>
         <field name="act_window_id" ref="jas_21052019_2053_action"/>
     </record>
     <record id="jas_21052019_2053_action_form" model="ir.actions.act_window.view">
-        <field eval="20" name="sequence"/>
+        <field eval="21" name="sequence"/>
         <field name="view_mode">form</field>
         <field name="view_id" ref="jas_21052019_2053_form"/>
         <field name="act_window_id" ref="jas_21052019_2053_action"/>
