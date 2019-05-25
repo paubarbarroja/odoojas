@@ -2,7 +2,7 @@
 <odoo>
     <record model="ir.ui.view" id="jas_21052019_2053_tree">
         <field name="name">Atleta_tree</field>
-        <field name="model">hr.employee</field>
+        <field name="model">berp.atleta</field>
         <field name="arch" type="xml">
             <tree string="Atletas">
                 <field name="nombre"/>
@@ -12,7 +12,7 @@
 
     <record model="ir.ui.view" id="jas_21052019_2053_form">
         <field name="name">Atleta_form</field>
-        <field name="model">hr.employee</field>
+        <field name="model">berp.atleta</field>
         <field name="arch" type="xml">
             <form string="Atleta" version="7.0">
                 <group col="4">
@@ -30,7 +30,7 @@
 
     <record id="jas_21052019_2053_action" model="ir.actions.act_window">
         <field name="name">Atletas</field>
-        <field name="res_model">hr.employee</field>
+        <field name="res_model">berp.atleta</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="sequence" eval="21"/>
