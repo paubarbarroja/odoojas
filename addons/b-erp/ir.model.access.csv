@@ -1,3 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_berp_atleta_atleta,access_berp_atleta_atleta,model_berp_atleta,base.group_user,1,1,1,1
-access_berp_atleta_interno,access_berp_atleta_interno,model_berp_atleta,base.group_atleta,1,1,1,1
+access_berp_atleta_interno,access_berp_atleta_interno,model_berp_atleta,base.group_user,1,1,1,1
