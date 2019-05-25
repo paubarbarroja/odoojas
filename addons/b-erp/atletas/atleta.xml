@@ -5,7 +5,7 @@
         <field name="model">berp.atleta</field>
         <field name="arch" type="xml">
             <tree string="Atletas">
-                <field name="nombre"/>
+                <field name="name"/>
             </tree>
         </field>
     </record>
