@@ -20,7 +20,7 @@
                     <field name="passport_id" string="Ficha"/>
                     <field name="identification_id" string="DNI"/>
                     <field name="birthday"/>
-                    <field name="gender"/>
+                    <field name="genero"/>
                     <field name="work_phone" string="Teléfono"/>
                     <field name="work_email" string="Correo-e del trabajo"/>
                 </group>
