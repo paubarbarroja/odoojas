@@ -9,8 +9,8 @@
     'data': [
         'atletas/atleta.xml',
         'menu.xml',
+        'ir.model.access.csv',
     ],
     'demo': [],
+    'application': True,
 }
-
-
