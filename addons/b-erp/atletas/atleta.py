@@ -3,7 +3,6 @@ from odoo import models, fields, api
 
 
 class berp_atleta(models.Model):
-    _name = "berp.atleta"
     _inherit = "hr.employee"
 
     genero = fields.Selection([('1', 'Masculino'),('2', 'Femenino')],string='Genero')

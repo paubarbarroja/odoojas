@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-        <menuitem id="main_menu"
-                   name="Atletas"/>
+    <menuitem id="gestion_menuitem"
+               name="Gestión del Club"/>
 
-            <menuitem id="modulos_menu"
-                      name="Modulos"
-                      parent="main_menu"/>
+        <menuitem id="atletas_menuitem"
+                  name="Atletas"
+                  parent="gestion_menuitem"/>
 
-                <menuitem id="modulo_menu"
-                          name="Modulo"
-                          parent="modulos_menu"
-                          action="jas_21052019_2053_action"/>
+            <menuitem id="atletas_todos_menuitem"
+                      name="Todos"
+                      parent="atletas_menuitem"
+                      action="jas_21052019_2053_action_tree"/>
+            <menuitem id="atletas_conficha_menuitem"
+                      name="Con Ficha"
+                      parent="atletas_menuitem"
+                      action="jas_21052019_2053_action_tree"/>
+            <menuitem id="atletas_sinficha_menuitem"
+                      name="Sin Ficha"
+                      parent="atletas_menuitem"
+                      action="jas_21052019_2053_action_form"/>
 </odoo>
