@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record model="ir.ui.view" id="jas_21052019_2053_tree">
+    <record model="ir.ui.view" id="jas_21052019_2053_tree1">
         <field name="name">Atleta_tree</field>
         <field name="model">hr.employee</field>
         <field name="arch" type="xml">
@@ -10,7 +10,7 @@
         </field>
     </record>
 
-    <record model="ir.ui.view" id="jas_21052019_2053_form">
+    <record model="ir.ui.view" id="jas_21052019_2053_form1">
         <field name="name">Atleta_form</field>
         <field name="model">hr.employee</field>
         <field name="arch" type="xml">
