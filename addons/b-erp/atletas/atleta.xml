@@ -13,6 +13,7 @@
     <record model="ir.ui.view" id="jas_21052019_2053_form">
         <field name="name">Atleta_form</field>
         <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
         <field name="arch" type="xml">
             <form string="Atleta" version="7.0">
                 <sheet>
