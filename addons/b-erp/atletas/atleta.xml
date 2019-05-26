@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record model="ir.ui.view" id="jas_21052019_2053_tree1">
+    <record model="ir.ui.view" id="jas_21052019_2053_tree">
         <field name="name">Atleta_tree</field>
-        <field name="model">hr.employee</field>
+        <field name="model">berp.atleta</field>
         <field name="arch" type="xml">
             <tree string="Atletas">
                 <field name="name"/>
@@ -10,9 +10,9 @@
         </field>
     </record>
 
-    <record model="ir.ui.view" id="jas_21052019_2053_form1">
+    <record model="ir.ui.view" id="jas_21052019_2053_form">
         <field name="name">Atleta_form</field>
-        <field name="model">hr.employee</field>
+        <field name="model">berp.atleta</field>
         <field name="arch" type="xml">
             <form string="Atleta" version="7.0">
                 <sheet>
@@ -21,7 +21,7 @@
                         <div class="oe_title">
                             <label for="name" class="oe_edit_only"/>
                             <h1>
-                                <field name="name" required="True"/>
+                                <field name="name" string="Nombre" required="True"/>
                             </h1>
                         </div>
                         <field name="category_ids" widget="many2many_tags" options="{'no_create_edit': True}" placeholder="Atleta,Entrenador..."/>
@@ -46,7 +46,7 @@
                                         <field name="address_home_id" context="'show_address': 1, 'default_type': 'private', 'form_view_ref': 'base.res_partner_view_form_private'}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}"/>
                                         <field name="emergency_contact" string="Contacto de Emergencia"/>
                                         <field name="emergency_phone" string="Teléfono de Emergencia"/>
-                                        <field name="gender" string="Genero"/>
+                                        <field name="genero" string="Genero"/>
                                         <field name="birthday" string="Fecha de Nacimiento"/>
                                     </group>
                                 </group>
@@ -68,7 +68,7 @@
 
     <record id="jas_21052019_2053_action" model="ir.actions.act_window">
         <field name="name">Atletas</field>
-        <field name="res_model">hr.employee</field>
+        <field name="res_model">berp.atleta</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="sequence" eval="21"/>
