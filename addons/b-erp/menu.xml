@@ -11,12 +11,4 @@
                       name="Todos"
                       parent="atletas_menuitem"
                       action="jas_21052019_2053_action_tree"/>
-            <menuitem id="atletas_conficha_menuitem"
-                      name="Con Ficha"
-                      parent="atletas_menuitem"
-                      action="jas_21052019_2053_action_tree"/>
-            <menuitem id="atletas_sinficha_menuitem"
-                      name="Sin Ficha"
-                      parent="atletas_menuitem"
-                      action="jas_21052019_2053_action_form"/>
 </odoo>
