@@ -7,7 +7,6 @@
     'category': 'Jas',
     'description': """b-erp""",
     'data': [
-        'atletas/atleta.xml',
     ],
     'demo': [],
     'application': True,

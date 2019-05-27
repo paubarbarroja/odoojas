@@ -6,6 +6,7 @@ class berp_atleta(models.Model):
     _name = "berp.atleta"
     _inherit = "hr.employee"
 
+    nombre = fields.Char(string="nombre")
     genero = fields.Selection([('1', 'Masculino'),('2', 'Femenino')],string='Genero')
 
     '''
