@@ -2,7 +2,7 @@
 {
     'name': "b-erp",
     'version': '1.0',
-    'depends': ['hr','base'],
+    'depends': ['base'],
     'author': "Pau Barbarroja",
     'category': 'Jas',
     'description': """b-erp""",
