@@ -2,11 +2,14 @@
 {
     'name': "b-erp",
     'version': '1.0',
-    'depends': ['base'],
+    'depends': ['hr','base'],
     'author': "Pau Barbarroja",
     'category': 'Jas',
     'description': """b-erp""",
     'data': [
+        'atletas/atleta.xml',
+        'menu.xml',
+        'ir.model.access.csv',
     ],
     'demo': [],
     'application': True,

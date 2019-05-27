@@ -10,5 +10,5 @@
             <menuitem id="atletas_todos_menuitem"
                       name="Todos"
                       parent="atletas_menuitem"
-                      action="jas_21052019_2053_action_tree"/>
+                      action="jas_21052019_2053_action"/>
 </odoo>
