@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api
+import logging
 
+_logger = logging.getLogger(__name__)
 
 class berp_atleta(models.Model):
     _inherit = "hr.employee"
@@ -8,6 +10,6 @@ class berp_atleta(models.Model):
     @api.model
     def create(self, values):
         record = super(berp_atleta, self).create(values)
-        print 'Hello'
+        _logger.debug(" ---------------- >>   Hello ")
 
         return record
