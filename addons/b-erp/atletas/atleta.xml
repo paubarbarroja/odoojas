@@ -15,7 +15,7 @@
         <field name="model">berp.atleta</field>
         <field name="inherit_id" ref="hr.view_employee_form" />
         <field name="arch" type="xml">
-            <xpath expr="//div[@name='o_employee_container']" position="replace">
+            <xpath expr="//div[@id='o_employee_container']" position="replace">
                 <div id="o_employee_container"><div id="o_employee_main">
                     <field name="image" widget="image" class="oe_avatar" options="{&quot;preview_image&quot;:&quot;image_medium&quot;}"/>
                     <div class="oe_title">
