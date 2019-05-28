@@ -13,56 +13,55 @@
     <record model="ir.ui.view" id="jas_21052019_2053_form">
         <field name="name">Atleta_form</field>
         <field name="model">berp.atleta</field>
+        <field name="inherit_id" ref="hr.view_employee_form" />
         <field name="arch" type="xml">
-            <form string="Atleta" version="7.0">
-
-                    <div id="o_employee_container"><div id="o_employee_main">
-                        <field name="image" widget="image" class="oe_avatar" options="{&quot;preview_image&quot;:&quot;image_medium&quot;}"/>
-                        <div class="oe_title">
-                            <label for="name" class="oe_edit_only"/>
-                            <h1>
-                                <field name="name" required="True"/>
-                            </h1>
-                        </div>
-                        <field name="category_ids" widget="many2many_tags" options="{'no_create_edit': True}" placeholder="Atleta,Entrenador..."/>
-                        <notebook>
-                            <page name="public" string="Información del Atleta">
-                                <group>
-                                    <field name="address_id" context="{'show_address': 1}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}" string="Compañia"/>
-                                    <field name="work_email" widget="email" string="Correo-e"/>
-                                    <field name="work_phone" widget="phone" string="Teléfono"/>
-                                    <field name="department_id"/>
+            <xpath expr="//div[@name='o_employee_container']" position="replace">
+                <div id="o_employee_container"><div id="o_employee_main">
+                    <field name="image" widget="image" class="oe_avatar" options="{&quot;preview_image&quot;:&quot;image_medium&quot;}"/>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1>
+                            <field name="name" required="True"/>
+                        </h1>
+                    </div>
+                    <field name="category_ids" widget="many2many_tags" options="{'no_create_edit': True}" placeholder="Atleta,Entrenador..."/>
+                    <notebook>
+                        <page name="public" string="Información del Atleta">
+                            <group>
+                                <field name="address_id" context="{'show_address': 1}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}" string="Compañia"/>
+                                <field name="work_email" widget="email" string="Correo-e"/>
+                                <field name="work_phone" widget="phone" string="Teléfono"/>
+                                <field name="department_id"/>
+                            </group>
+                        </page>
+                        <page name="personal_information" string="Información Privada">
+                            <group>
+                                <group string="Ciudadanía e información adicional">
+                                    <field name="country_id" options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}" string="Nacionalidad (País)"/>
+                                    <field name="identification_id" string="DNI"/>
+                                    <field name="passport_id" string="Ficha"/>
+                                    <field name="bank_account_id" context="{'default_partner_id': address_home_id}" string="Cuenta Bancaria"/>
                                 </group>
-                            </page>
-                            <page name="personal_information" string="Información Privada">
-                                <group>
-                                    <group string="Ciudadanía e información adicional">
-                                        <field name="country_id" options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}" string="Nacionalidad (País)"/>
-                                        <field name="identification_id" string="DNI"/>
-                                        <field name="passport_id" string="Ficha"/>
-                                        <field name="bank_account_id" context="{'default_partner_id': address_home_id}" string="Cuenta Bancaria"/>
-                                    </group>
-                                    <group string="Información de contacto">
-                                        <field name="address_home_id" context="'show_address': 1, 'default_type': 'private', 'form_view_ref': 'base.res_partner_view_form_private'}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}"/>
-                                        <field name="emergency_contact" string="Contacto de Emergencia"/>
-                                        <field name="emergency_phone" string="Teléfono de Emergencia"/>
-                                        <field name="gender" string="Genero"/>
-                                        <field name="birthday" string="Fecha de Nacimiento"/>
-                                    </group>
+                                <group string="Información de contacto">
+                                    <field name="address_home_id" context="'show_address': 1, 'default_type': 'private', 'form_view_ref': 'base.res_partner_view_form_private'}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}"/>
+                                    <field name="emergency_contact" string="Contacto de Emergencia"/>
+                                    <field name="emergency_phone" string="Teléfono de Emergencia"/>
+                                    <field name="gender" string="Genero"/>
+                                    <field name="birthday" string="Fecha de Nacimiento"/>
                                 </group>
-                            </page>
-                            <page name="hr_settings" string="Configuración RRHH" groups="hr.group_hr_user" invisible="1">
-                                <group>
-                                    <group string="Estado" name="active_group">
-                                        <field name="company_id" groups="base.group_multi_company"/>
-                                        <field name="user_id" string="Related User"/>
-                                    </group>
+                            </group>
+                        </page>
+                        <page name="hr_settings" string="Configuración RRHH" groups="hr.group_hr_user" invisible="1">
+                            <group>
+                                <group string="Estado" name="active_group">
+                                    <field name="company_id" groups="base.group_multi_company"/>
+                                    <field name="user_id" string="Related User"/>
                                 </group>
-                            </page>
-                        </notebook>
-                    </div></div>
-
-            </form>
+                            </group>
+                        </page>
+                    </notebook>
+                </div></div>
+            </xpath>
         </field>
     </record>
 
