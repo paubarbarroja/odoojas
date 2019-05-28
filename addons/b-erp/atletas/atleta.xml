@@ -15,53 +15,6 @@
         <field name="model">hr.employee</field>
         <field name="inherit_id" ref="hr.view_employee_form" />
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='notes']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//button[@name='toggle_active']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='message_follower_ids']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='activity_ids']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='message_ids']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='category_ids']" position="replace">
-                <field name="category_ids" widget="many2many_tags" options="{'no_create_edit': True}" placeholder="Atleta,Entrenador..."/>
-            </xpath>
-            <xpath expr="//page[@name='public']" position="replace">
-                <page name="public" string="Información del Atleta">
-                    <group>
-                        <field name="address_id" context="{'show_address': 1}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}" string="Compañia"/>
-                        <field name="work_email" widget="email" string="Correo-e"/>
-                        <field name="work_phone" widget="phone" string="Teléfono"/>
-                        <field name="department_id"/>
-                    </group>
-                </page>
-            </xpath>
-            <xpath expr="//page[@name='personal_information']" position="replace">
-                <page name="personal_information" string="Información Privada">
-                    <group>
-                        <group string="Ciudadanía e información adicional">
-                            <field name="country_id" options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}" string="Nacionalidad (País)"/>
-                            <field name="identification_id" string="DNI"/>
-                            <field name="passport_id" string="Ficha"/>
-                            <field name="bank_account_id" context="{'default_partner_id': address_home_id}" string="Cuenta Bancaria"/>
-                        </group>
-                        <group string="Información de contacto">
-                            <field name="address_home_id" context="'show_address': 1, 'default_type': 'private', 'form_view_ref': 'base.res_partner_view_form_private'}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}"/>
-                            <field name="emergency_contact" string="Contacto de Emergencia"/>
-                            <field name="emergency_phone" string="Teléfono de Emergencia"/>
-                            <field name="gender" string="Genero"/>
-                            <field name="birthday" string="Fecha de Nacimiento"/>
-                        </group>
-                    </group>
-                </page>
-            </xpath>
             <xpath expr="//page[@name='hr_settings']" position="replace">
                 <page name="hr_settings" string="Configuración RRHH" groups="hr.group_hr_user" invisible="1">
                     <group>

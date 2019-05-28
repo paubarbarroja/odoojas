@@ -6,6 +6,9 @@ class berp_atleta(models.Model):
     _inherit = "hr.employee"
 
 
+
+
+
     '''
     apellidos           = fields.Char(string='Apellido',required=True)
     ficha               = fields.Date(string='ficha',required=True)
