@@ -10,6 +10,6 @@ class berp_atleta(models.Model):
     @api.model
     def create(self, values):
         record = super(berp_atleta, self).create(values)
-        _logger.debug(" ---------------- >>   Hello ")
+        _logger.debug(" ---------------- >>   Hello %s",record)
 
         return record
