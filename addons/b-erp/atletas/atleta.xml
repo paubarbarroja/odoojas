@@ -63,7 +63,7 @@
                 </page>
             </xpath>
             <xpath expr="//page[@name='hr_settings']" position="replace">
-                <page name="hr_settings" string="Configuración RRHH" groups="hr.group_hr_user" invisible="1">
+                <page name="hr_settings" string="Configuración RRHH" groups="hr.group_hr_user">
                     <group>
                         <group string="Estado" name="active_group">
                             <field name="company_id" groups="base.group_multi_company"/>
