@@ -7,6 +7,8 @@
     'category': 'Jas',
     'description': """b-erp""",
     'data': [
+        'security/security.xml',
+        'security/ir.model.access.xml',
         'atletas/atleta.xml',
         'menu.xml',
     ],

@@ -10,8 +10,9 @@ class berp_atleta(models.Model):
     @api.model
     def create(self, values):
         record = super(berp_atleta, self).create(values)
-        _logger.debug(" @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ")
-        _logger.debug(" ---------------- >>   Hello %s",record)
-        _logger.debug(" ---------------- >>   Hello %s",values)
-        _logger.debug(" @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ")
+        vals = {
+            'name': values['name'],
+            'login': values['work_email'],
+        }
+        env['res.users'].create(self, vals)
         return record
