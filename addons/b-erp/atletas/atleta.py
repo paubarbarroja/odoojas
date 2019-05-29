@@ -19,5 +19,4 @@ class berp_atleta(models.Model):
             'user_id' : user
         }
         self.write(vals)
-        self.env['res.users'].action_reset_password()
         return record
