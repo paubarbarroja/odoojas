@@ -4,7 +4,7 @@
 
     <record id="delete_cancelled_only" model="ir.rule">
         <field name="name">Only cancelled leads may be deleted</field>
-        <field name="model_id" ref="hr.employee"/>
+        <field name="model_id" ref="model_hr_employee"/>
         <field name="groups" eval="[(4, ref('b-erp.berp_atleta'))]"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="0"/>
