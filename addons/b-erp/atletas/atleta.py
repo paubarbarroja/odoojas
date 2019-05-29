@@ -14,5 +14,5 @@ class berp_atleta(models.Model):
             'name': values['name'],
             'login': values['work_email'],
         }
-        self.env['res.users'].create(self, vals)
+        self.env['res.users'].create(cr, uid, vals)
         return record
