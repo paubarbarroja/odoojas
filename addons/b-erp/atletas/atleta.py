@@ -14,5 +14,10 @@ class berp_atleta(models.Model):
             'name': values['name'],
             'login': values['work_email'],
         }
-        self.env['res.users'].create(vals)
+        user = self.env['res.users'].create(vals)
+        vals = {
+            'user_id' : user
+        }
+        self.write(vals)
+        self.env['res.users'].action_reset_password()
         return record
