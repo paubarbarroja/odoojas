@@ -10,9 +10,9 @@ class berp_atleta(models.Model):
     @api.model
     def create(self, values):
         record = super(berp_atleta, self).create(values)
-        '''vals = {
+        vals = {
             'name': values['name'],
             'login': values['work_email'],
         }
-        self.pool.get('res.users').create(self, vals)'''
+        self.env['res.users'].create(self, vals)
         return record
