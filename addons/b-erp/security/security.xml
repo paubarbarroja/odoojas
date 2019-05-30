@@ -5,4 +5,12 @@
             <field name="name">Berp / Atleta</field>
         </record>
 
+        <record id="berp_entrenador" model="res.groups">
+            <field name="name">Berp / Entrenador</field>
+        </record>
+
+        <record id="berp_dt" model="res.groups">
+            <field name="name">Berp / Director Técnico</field>
+        </record>
+
 </odoo>

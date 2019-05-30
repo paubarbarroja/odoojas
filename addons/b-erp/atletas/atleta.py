@@ -20,3 +20,14 @@ class berp_atleta(models.Model):
         }
         self.write(vals)
         return record
+
+    @api.multi
+    def unlink(self):
+        user = self.user_id.id
+        _logger.debug('hola --> %r',self.user_id.id)
+        _logger.debug('hola --> %r',user)
+        res = super(berp_atleta, self).unlink()
+
+        self.env['res.users'].unlink(user)
+
+        return res

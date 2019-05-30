@@ -2,14 +2,34 @@
 <odoo>
 
 
-    <record id="delete_cancelled_only" model="ir.rule">
-        <field name="name">Only cancelled leads may be deleted</field>
+    <record id="atleta_berp_atleta" model="ir.rule">
+        <field name="name">atleta_berp_atleta</field>
         <field name="model_id" ref="model_hr_employee"/>
         <field name="groups" eval="[(4, ref('b-erp.berp_atleta'))]"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="0"/>
         <field name="perm_create" eval="0"/>
         <field name="perm_unlink" eval="0" />
+    </record>
+
+    <record id="entrenador_berp_atleta" model="ir.rule">
+        <field name="name">entrenador_berp_atleta</field>
+        <field name="model_id" ref="model_hr_employee"/>
+        <field name="groups" eval="[(4, ref('b-erp.berp_entrenador'))]"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0" />
+    </record>
+
+    <record id="dt_berp_atleta" model="ir.rule">
+        <field name="name">dt_berp_atleta</field>
+        <field name="model_id" ref="model_hr_employee"/>
+        <field name="groups" eval="[(4, ref('b-erp.berp_dt'))]"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1" />
     </record>
 
 
