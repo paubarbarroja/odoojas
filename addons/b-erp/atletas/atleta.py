@@ -29,6 +29,6 @@ class berp_atleta(models.Model):
         _logger.debug('#########################################################################     hola --> %r',user)
         res = super(berp_atleta, self).unlink()
 
-        self.env['res.users'].unlink(user.id)
+        self.env['res.users'].unlink(user)
 
         return res
