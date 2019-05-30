@@ -15,9 +15,9 @@ class berp_atleta(models.Model):
             'login': values['work_email'],
         }
         user = self.env['res.users'].create(vals)
-        _logger.debug('hola --> %r', user)
+        _logger.debug('hola --> %r', user.id)
         vals = {
-            'user_id' : user
+            'user_id' : user.id
         }
         self.write(vals)
         return record
