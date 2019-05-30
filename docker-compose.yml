@@ -1,30 +1,23 @@
-version: '3'
+version: '2'
 services:
-  db:
-    container_name: erp_psql_10
-    image: postgres:10
-    volumes:
-      - db-data:/var/lib/postgresql/data/pgdata
-    ports:
-      - 5432:5432/tcp
+  postgresql:
+    image: 'bitnami/postgresql:11'
     environment:
-    - POSTGRES_PASSWORD=odoo
-    - POSTGRES_USER=odoo
-    - POSTGRES_DB=postgres
-    - PGDATA=/var/lib/postgresql/data/pgdata
-  web:
-    container_name: erp_odoo_12
-    image: odoo:12.0
-    depends_on:
-      - db
-    ports:
-      - "8069:8069/tcp"
+      - ALLOW_EMPTY_PASSWORD=yes
     volumes:
-      - web-data:/var/lib/odoo
-      - ./config:/etc/odoo
-      - ./addons:/mnt/extra-addons
+      - 'postgresql_data:/bitnami/postgresql'
+  odoo:
+    image: 'bitnami/odoo:12'
+    ports:
+      - '80:8069'
+      - '443:8071'
+    volumes:
+      - 'odoo_data:/bitnami'
+      - './addons:/home/odoojas'
+    depends_on:
+      - postgresql
 volumes:
-  db-data:
+  postgresql_data:
     driver: local
-  web-data:
+  odoo_data:
     driver: local
