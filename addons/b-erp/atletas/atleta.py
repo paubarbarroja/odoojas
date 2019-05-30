@@ -24,7 +24,7 @@ class berp_atleta(models.Model):
 
     @api.multi
     def unlink(self):
-        user = self.user_id.id
+        user = self.user_id
         _logger.debug('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     hola --> %r',self.user_id.id)
         _logger.debug('#########################################################################     hola --> %r',user)
         res = super(berp_atleta, self).unlink()
