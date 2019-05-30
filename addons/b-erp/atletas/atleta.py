@@ -15,6 +15,7 @@ class berp_atleta(models.Model):
             'login': values['work_email'],
         }
         user = self.env['res.users'].create(vals)
+        _logger.debug('hola --> %r', user)
         vals = {
             'user_id' : user
         }
