@@ -15,6 +15,6 @@ class berp_atleta(models.Model):
         }
         user = self.env['res.users'].create(vals)
         values.update({'user_id': user.id})
-
+        _logger.error('-------------values --> %r',values)
         record = super(berp_atleta, self).create(values)
         return record
