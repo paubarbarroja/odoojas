@@ -39,7 +39,7 @@
                         <field name="address_id" context="{'show_address': 1}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}" string="Compañia"/>
                         <field name="work_email" widget="email" string="Correo-e" required="True"/>
                         <field name="work_phone" widget="phone" string="Teléfono"/>
-                        <field name="department_id"/>
+                        <field name="department_id" string="Modalidad"/>
                     </group>
                 </page>
             </xpath>
@@ -50,14 +50,14 @@
                             <field name="country_id" options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}" string="Nacionalidad (País)"/>
                             <field name="identification_id" string="DNI"/>
                             <field name="passport_id" string="Ficha"/>
-                            <field name="bank_account_id" context="{'default_partner_id': address_home_id}" string="Cuenta Bancaria"/>
+                            <field name="gender" string="Genero"/>
+                            <field name="birthday" string="Fecha de Nacimiento"/>
                         </group>
                         <group string="Información de contacto">
                             <field name="address_home_id" context="{'show_address': 1, 'default_type': 'private', 'form_view_ref': 'base.res_partner_view_form_private'}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}"/>
+                            <field name="bank_account_id" context="{'default_partner_id': address_home_id}" string="Cuenta Bancaria"/>
                             <field name="emergency_contact" string="Contacto de Emergencia"/>
                             <field name="emergency_phone" string="Teléfono de Emergencia"/>
-                            <field name="gender" string="Genero"/>
-                            <field name="birthday" string="Fecha de Nacimiento"/>
                         </group>
                     </group>
                 </page>
