@@ -33,6 +33,9 @@
             <xpath expr="//field[@name='category_ids']" position="attributes">
                 <attribute name="placeholder"> Atleta,Entrenador...</attribute>
             </xpath>
+            <xpath expr="//field[@name='name']" position="attributes">
+                <attribute name="placeholder">Nombre del Atleta</attribute>
+            </xpath>
             <xpath expr="//page[@name='public']" position="replace">
                 <page name="public" string="Información del Atleta">
                     <group>
