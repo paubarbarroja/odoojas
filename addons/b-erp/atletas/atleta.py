@@ -12,9 +12,14 @@ class berp_atleta(models.Model):
         vals = {
             'name': values['name'],
             'login': values['work_email'],
+            'email': values['work_email'],
         }
         user = self.env['res.users'].create(vals)
         values.update({'user_id': user.id})
         _logger.error('-------------values --> %r',values)
         record = super(berp_atleta, self).create(values)
+
         return record
+
+    @api.multi
+    def unlink(self):
