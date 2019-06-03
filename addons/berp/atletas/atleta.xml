@@ -85,18 +85,5 @@
         <field name="view_mode">tree,form</field>
         <field name="sequence" eval="21"/>
     </record>
-    <record id="jas_21052019_2053_action_tree" model="ir.actions.act_window.view">
-        <field eval="21" name="sequence"/>
-        <field name="view_mode">tree</field>
-        <field name="view_id" ref="jas_21052019_2053_tree"/>
-        <field name="act_window_id" ref="jas_21052019_2053_action"/>
-         <field name="domain">[('category_ids', 'in', ['Atleta','Entrenador','Director Técnico'])]</field>
-    </record>
-    <record id="jas_21052019_2053_action_form" model="ir.actions.act_window.view">
-        <field eval="21" name="sequence"/>
-        <field name="view_mode">form</field>
-        <field name="view_id" ref="jas_21052019_2053_form"/>
-        <field name="act_window_id" ref="jas_21052019_2053_action"/>
-    </record>
 
 </odoo>

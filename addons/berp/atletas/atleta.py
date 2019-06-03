@@ -9,17 +9,17 @@ class berp_atleta(models.Model):
 
     @api.model
     def create(self, values):
-        vals = {
+        '''vals = {
             'name': values['name'],
             'login': values['work_email'],
             'email': values['work_email'],
         }
         user = self.env['res.users'].create(vals)
-        values.update({'user_id': user.id})
-        _logger.error('-------------values --> %r',values)
+        values.update({'user_id': user.id})'''
         record = super(berp_atleta, self).create(values)
-
         return record
 
     @api.multi
     def unlink(self):
+        res = super(berp_atleta, self).unlink()
+        return res

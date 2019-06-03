@@ -4,11 +4,20 @@
                name="Gestión del Club"/>
 
         <menuitem id="atletas_menuitem"
-                  name="Atletas"
+                  name="Socios"
                   parent="gestion_menuitem"/>
 
             <menuitem id="atletas_todos_menuitem"
                       name="Todos"
                       parent="atletas_menuitem"
                       action="jas_21052019_2053_action"/>
+
+    <menuitem id="marcas_menuitem"
+              name="Marcas"/>
+
+        <menuitem id="marca_menuitem"
+                  name="Marcas"
+                  parent="marcas_menuitem"
+                  action="berp_03062019_1510_action"/>
+
 </odoo>

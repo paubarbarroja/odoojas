@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+        <record model="ir.module.category" id="berp_rol_category">
+            <field name="name">Berp</field>
+        </record>
+
         <record id="berp_atleta" model="res.groups">
             <field name="name">Berp / Atleta</field>
+            <field name="category_id" ref="berp_rol_category"/>
         </record>
 
         <record id="berp_entrenador" model="res.groups">
             <field name="name">Berp / Entrenador</field>
+            <field name="category_id" ref="berp_rol_category"/>
         </record>
 
         <record id="berp_dt" model="res.groups">
             <field name="name">Berp / Director Técnico</field>
+            <field name="category_id" ref="berp_rol_category"/>
         </record>
 
 </odoo>

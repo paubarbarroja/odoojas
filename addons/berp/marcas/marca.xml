@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="berp_03062019_1510_tree">
+        <field name="name">marca_tree</field>
+        <field name="model">berp.marca</field>
+        <field name="arch" type="xml">
+            <tree string="Marcas">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="berp_03062019_1510_form">
+        <field name="name">marca_form</field>
+        <field name="model">berp.marca</field>
+        <field name="arch" type="xml">
+            <form string="Marca">
+                <sheet>
+                    <group col="2">
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="berp_03062019_1510_action" model="ir.actions.act_window">
+        <field name="name">Marcas</field>
+        <field name="res_model">berp.marca</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="sequence" eval="21"/>
+    </record>
+
+</odoo>

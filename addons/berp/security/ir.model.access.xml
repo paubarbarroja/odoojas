@@ -2,34 +2,44 @@
 <odoo>
 
 
-    <record id="atleta_berp_atleta" model="ir.rule">
+    <record id="atleta_berp_atleta" model="ir.model.access">
         <field name="name">atleta_berp_atleta</field>
         <field name="model_id" ref="model_hr_employee"/>
-        <field name="groups" eval="[(4, ref('b-erp.berp_atleta'))]"/>
+        <field name="group_id" ref="berp.berp_atleta"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="0"/>
         <field name="perm_create" eval="0"/>
         <field name="perm_unlink" eval="0" />
     </record>
 
-    <record id="entrenador_berp_atleta" model="ir.rule">
+    <record id="entrenador_berp_atleta" model="ir.model.access">
         <field name="name">entrenador_berp_atleta</field>
         <field name="model_id" ref="model_hr_employee"/>
-        <field name="groups" eval="[(4, ref('b-erp.berp_entrenador'))]"/>
+        <field name="group_id" ref="berp.berp_entrenador"/>
         <field name="perm_read" eval="1"/>
-        <field name="perm_write" eval="1"/>
+        <field name="perm_write" eval="0"/>
         <field name="perm_create" eval="0"/>
         <field name="perm_unlink" eval="0" />
     </record>
 
-    <record id="dt_berp_atleta" model="ir.rule">
+    <record id="dt_berp_atleta" model="ir.model.access">
         <field name="name">dt_berp_atleta</field>
         <field name="model_id" ref="model_hr_employee"/>
-        <field name="groups" eval="[(4, ref('b-erp.berp_dt'))]"/>
+        <field name="group_id" ref="berp.berp_dt"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="1"/>
         <field name="perm_create" eval="1"/>
         <field name="perm_unlink" eval="1" />
+    </record>
+
+    <record id="dt_berp_users" model="ir.model.access">
+        <field name="name">dt_berp_users</field>
+        <field name="model_id" ref="base.model_res_users"/>
+        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0" />
     </record>
 
 
