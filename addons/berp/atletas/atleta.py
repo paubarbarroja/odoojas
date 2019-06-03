@@ -7,7 +7,7 @@ _logger = logging.getLogger(__name__)
 class berp_atleta(models.Model):
     _inherit = "hr.employee"
 
-    genero              = fields.Selection([('1', 'Masculino'),('2', 'Femenino')],string='genero',required=True)
+
 
     @api.model
     def create(self, values):

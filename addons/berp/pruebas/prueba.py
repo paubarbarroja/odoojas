@@ -9,4 +9,5 @@ class berp_prueba(models.Model):
 
 
     nombre = fields.Char(string="Nombre")
-    genero = fields.Selection()
+    genero = fields.Selection([('1', 'Masculino'),('2', 'Femenino')],string='Genero')
+    especialidad = fields.Selection([('1', 'Velocidad'),('2', 'Fondo'),('3', 'Medio Fondo'),('4', 'Lanzamientos'),('5', 'Saltos'),('6', 'Marcha Atlética')],string='Especialidad')
