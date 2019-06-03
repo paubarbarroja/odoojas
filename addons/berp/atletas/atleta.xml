@@ -1,89 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record model="ir.ui.view" id="jas_21052019_2053_tree">
-        <field name="name">Atleta_tree</field>
-        <field name="model">hr.employee</field>
+    <record model="ir.ui.view" id="berp_21052019_2054_tree">
+        <field name="name">socio_tree</field>
+        <field name="model">berp.socio</field>
         <field name="arch" type="xml">
-            <tree string="Atletas">
-                <field name="name"/>
+            <tree string="Socios">
+                <field name="ficha"/>
+                <field name="nombre"/>
+                <field name="genero"/>
             </tree>
         </field>
     </record>
 
-    <record model="ir.ui.view" id="jas_21052019_2053_form">
-        <field name="name">Atleta_form</field>
-        <field name="model">hr.employee</field>
-        <field name="inherit_id" ref="hr.view_employee_form" />
+    <record model="ir.ui.view" id="berp_21052019_2054_form">
+        <field name="name">socio_form</field>
+        <field name="model">berp.socio</field>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='notes']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//button[@name='toggle_active']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='message_follower_ids']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='activity_ids']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='message_ids']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='category_ids']" position="attributes">
-                <attribute name="placeholder"> Atleta,Entrenador...</attribute>
-            </xpath>
-            <xpath expr="//field[@name='name']" position="attributes">
-                <attribute name="placeholder">Nombre del Atleta</attribute>
-            </xpath>
-            <xpath expr="//page[@name='public']" position="replace">
-                <page name="public" string="Información del Atleta">
-                    <group>
-                        <field name="address_id" context="{'show_address': 1}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}" string="Compañia"/>
-                        <field name="work_email" widget="email" string="Correo-e" required="True"/>
-                        <field name="work_phone" widget="phone" string="Teléfono"/>
-                        <field name="department_id" string="Modalidad"/>
-                    </group>
-                </page>
-            </xpath>
-            <xpath expr="//page[@name='personal_information']" position="replace">
-                <page name="personal_information" string="Información Privada">
-                    <group>
-                        <group string="Ciudadanía e información adicional">
-                            <field name="country_id" options="{&quot;no_open&quot;: True, &quot;no_create&quot;: True}" string="Nacionalidad (País)"/>
-                            <field name="identification_id" string="DNI"/>
-                            <field name="passport_id" string="Ficha"/>
-                            <field name="gender" string="Genero"/>
-                            <field name="birthday" string="Fecha de Nacimiento"/>
-                        </group>
-                        <group string="Información de contacto">
-                            <field name="address_home_id" context="{'show_address': 1, 'default_type': 'private', 'form_view_ref': 'base.res_partner_view_form_private'}" options="{&quot;always_reload&quot;: True, &quot;highlight_first_line&quot;: True}"/>
-                            <field name="bank_account_id" context="{'default_partner_id': address_home_id}" string="Cuenta Bancaria"/>
-                            <field name="emergency_contact" string="Contacto de Emergencia"/>
-                            <field name="emergency_phone" string="Teléfono de Emergencia"/>
-                        </group>
-                    </group>
-                </page>
-            </xpath>
-            <xpath expr="//page[@name='hr_settings']" position="replace">
-                <page name="hr_settings" string="Configuración RRHH" groups="hr.group_hr_user">
-                    <group>
-                        <group string="Estado" name="active_group">
-                            <field name="company_id" groups="base.group_multi_company"/>
-                            <field name="user_id" string="Related User"/>
-                        </group>
-                    </group>
-                </page>
-            </xpath>
+             <form string="Socio">
+                 <sheet>
+                     <group col="2">
+                         <field name="imagen" widget="image" class="oe_avatar"/>
+                         <div class="oe_title">
+                            <label for="Nombre" class="oe_edit_only"/>
+                            <h1>
+                                <field name="nombre" placeholder="Nombre del Socio"/>
+                            </h1>
+                        </div>
+                     </group>
+                     <field name="tipo" widget="many2many_tags" placeholder="Atleta, Entrenador, ..."/>
+                     <notebook>
+                        <page name="inf_socio" string="Información del Socio">
+                            <group col="2">
+                                <group col="2">
+                                    <field name="ficha"/>
+                                    <field name="dni"/>
+                                    <field name="correo"/>
+                                    <field name="telefono"/>
+                                </group>
+                                <group col="2">
+                                    <field name="fecha_nac"/>
+                                    <field name="genero"/>
+                                    <field name="nacionalidad"/>
+                                    <field name="direccion"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page name="inf_otra" string="Otra información">
+                            <group col="2">
+                                <group col="2">
+                                    <field name="nombre_cont"/>
+                                    <field name="telef_cont"/>
+                                </group>
+                                <group col="2">
+                                    <field name="cuenta_banc"/>
+                                    <field name="especialidad"/>
+                                </group>
+                            </group>
+                        </page>
+                     </notebook>
+                 </sheet>
+             </form>
         </field>
     </record>
 
-    <record id="jas_21052019_2053_action" model="ir.actions.act_window">
-        <field name="name">Atletas</field>
-        <field name="res_model">hr.employee</field>
+
+    <record id="berp_21052019_2054_action" model="ir.actions.act_window">
+        <field name="name">Socios</field>
+        <field name="res_model">berp.socio</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="sequence" eval="21"/>
     </record>
 
 </odoo>
