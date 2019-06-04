@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="berp_05062019_0920_tree">
+        <field name="name">puntos_hungaros_tree</field>
+        <field name="model">berp.puntos_hungaros</field>
+        <field name="arch" type="xml">
+            <tree string="Puntos Hungaros">
+                 <field name="puntos"/>
+                 <field name="pruebas"/>
+                 <field name="marca"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="berp_05062019_0920_form">
+        <field name="name">puntos_hungaros_form</field>
+        <field name="model">berp.puntos_hungaros</field>
+        <field name="arch" type="xml">
+             <form string="Puntos Hungaros">
+                 <sheet>
+                     <group col="2">
+                         <field name="puntos"/>
+                         <field name="pruebas"/>
+                         <field name="marca"/>
+                     </group>
+                 </sheet>
+             </form>
+        </field>
+    </record>
+
+
+    <record id="berp_05062019_0920_action" model="ir.actions.act_window">
+        <field name="name">Puntos Hungaros</field>
+        <field name="res_model">berp.puntos_hungaros</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
