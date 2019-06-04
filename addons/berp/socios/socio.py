@@ -4,11 +4,11 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-class berp_atleta(models.Model):
-    _name = "berp.atleta"
+class berp_socio(models.Model):
+    _name = "berp.socio"
 
     nombre = fields.Char(string="Nombre")
-    tipo = fields.Many2many('berp.categoria',string="Tipo",placeholder="Atleta,Entrenador...")
+    tipo = fields.Many2many('berp.categoria',string="Tipo")
     correo = fields.Char(string="Correo-e")
     telefono = fields.Char(string="Teléfono")
     especialidad = fields.Selection([('1', 'Velocidad'),('2', 'Fondo'),('3', 'Medio Fondo'),('4', 'Lanzamientos'),('5', 'Saltos'),('6', 'Marcha Atlética')],string='Especialidad')

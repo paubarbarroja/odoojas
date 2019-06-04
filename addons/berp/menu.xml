@@ -2,22 +2,57 @@
 <odoo>
     <menuitem id="gestion_menuitem"
                name="Gestión del Club"/>
-
         <menuitem id="atletas_menuitem"
                   name="Socios"
                   parent="gestion_menuitem"/>
-
             <menuitem id="atletas_todos_menuitem"
                       name="Todos"
                       parent="atletas_menuitem"
-                      action="jas_21052019_2053_action"/>
+                      action="berp_21052019_2054_action"/>
+
+
 
     <menuitem id="marcas_menuitem"
               name="Marcas"/>
-
         <menuitem id="marca_menuitem"
                   name="Marcas"
                   parent="marcas_menuitem"
-                  action="berp_03062019_1510_action"/>
+                  action="berp_03062019_1810_action"/>
+
+
+
+    <menuitem id="eventos_menuitem"
+              name="Eventos"/>
+        <menuitem id="evento_menuitem"
+                  name="Eventos"
+                  parent="eventos_menuitem"
+                  action="berp_04062019_1940_action"/>
+
+
+
+    <menuitem id="categorias_menuitem"
+              name="Categorias"/>
+        <menuitem id="categoria_menuitem"
+                  name="Categorias"
+                  parent="categorias_menuitem"
+                  action="berp_04062019_1241_action"/>
+
+
+
+    <menuitem id="pistas_menuitem"
+              name="Pistas"/>
+        <menuitem id="pista_menuitem"
+                  name="Pistas"
+                  parent="pistas_menuitem"
+                  action="berp_04062019_1938_action"/>
+
+
+
+    <menuitem id="pruebas_menuitem"
+              name="Pruebas"/>
+        <menuitem id="prueba_menuitem"
+                  name="Pruebas"
+                  parent="pruebas_menuitem"
+                  action="berp_04062019_1942_action"/>
 
 </odoo>

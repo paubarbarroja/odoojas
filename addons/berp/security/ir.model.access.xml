@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <!-- /////******  PERMISOS PARA EL GRUPO ATLETA  ******\\\\\
 
     <record id="atleta_berp_atleta" model="ir.model.access">
         <field name="name">atleta_berp_atleta</field>
@@ -10,7 +11,9 @@
         <field name="perm_write" eval="0"/>
         <field name="perm_create" eval="0"/>
         <field name="perm_unlink" eval="0" />
-    </record>
+    </record>-->
+
+    <!-- /////******  PERMISOS PARA EL GRUPO ENTRENADOR  ******\\\\\
 
     <record id="entrenador_berp_atleta" model="ir.model.access">
         <field name="name">entrenador_berp_atleta</field>
@@ -20,11 +23,14 @@
         <field name="perm_write" eval="0"/>
         <field name="perm_create" eval="0"/>
         <field name="perm_unlink" eval="0" />
-    </record>
+    </record>-->
 
-    <record id="dt_berp_atleta" model="ir.model.access">
+    <!-- /////******  PERMISOS PARA EL GRUPO DIRECTOR TÉCNICO  ******\\\\\ -->
+
+    <!-- ## SOCIO ## -->
+    <record id="dt_berp_socio" model="ir.model.access">
         <field name="name">dt_berp_atleta</field>
-        <field name="model_id" ref="model_hr_employee"/>
+        <field name="model_id" ref="model_berp_socio"/>
         <field name="group_id" ref="berp.berp_dt"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="1"/>
@@ -32,6 +38,62 @@
         <field name="perm_unlink" eval="1" />
     </record>
 
+    <!-- ## CATEGORIA ## -->
+    <record id="dt_berp_categoria" model="ir.model.access">
+        <field name="name">dt_berp_atleta</field>
+        <field name="model_id" ref="model_berp_categoria"/>
+        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1" />
+    </record>
+
+    <!-- ## EVENTO ## -->
+    <record id="dt_berp_evento" model="ir.model.access">
+        <field name="name">dt_berp_atleta</field>
+        <field name="model_id" ref="model_berp_evento"/>
+        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1" />
+    </record>
+
+    <!-- ## MARCA ## -->
+    <record id="dt_berp_marca" model="ir.model.access">
+        <field name="name">dt_berp_atleta</field>
+        <field name="model_id" ref="model_berp_marca"/>
+        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1" />
+    </record>
+
+    <!-- ## PISTA ## -->
+    <record id="dt_berp_pista" model="ir.model.access">
+        <field name="name">dt_berp_atleta</field>
+        <field name="model_id" ref="model_berp_pista"/>
+        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1" />
+    </record>
+
+    <!-- ## PRUEBA ## -->
+    <record id="dt_berp_prueba" model="ir.model.access">
+        <field name="name">dt_berp_atleta</field>
+        <field name="model_id" ref="model_berp_prueba"/>
+        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1" />
+    </record>
+
+    <!-- ## RES USERS ##
     <record id="dt_berp_users" model="ir.model.access">
         <field name="name">dt_berp_users</field>
         <field name="model_id" ref="base.model_res_users"/>
@@ -40,7 +102,7 @@
         <field name="perm_write" eval="0"/>
         <field name="perm_create" eval="0"/>
         <field name="perm_unlink" eval="0" />
-    </record>
+    </record>-->
 
 
 </odoo>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="berp_04062019_1942_tree">
+        <field name="name">prueba_tree</field>
+        <field name="model">berp.prueba</field>
+        <field name="arch" type="xml">
+            <tree string="Pruebas">
+                <field name="nombre"/>
+                <field name="genero"/>
+                <field name="especialidad"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="berp_04062019_1942_form">
+        <field name="name">prueba_form</field>
+        <field name="model">berp.prueba</field>
+        <field name="arch" type="xml">
+             <form string="Prueba">
+                 <sheet>
+                     <group col="2">
+                        <field name="nombre"/>
+                        <field name="genero"/>
+                        <field name="especialidad"/>
+                     </group>
+                 </sheet>
+             </form>
+        </field>
+    </record>
+
+
+    <record id="berp_04062019_1942_action" model="ir.actions.act_window">
+        <field name="name">Pruebas</field>
+        <field name="res_model">berp.prueba</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

@@ -18,15 +18,13 @@
         <field name="arch" type="xml">
              <form string="Socio">
                  <sheet>
-                     <group col="2">
-                         <field name="imagen" widget="image" class="oe_avatar"/>
-                         <div class="oe_title">
-                            <label for="Nombre" class="oe_edit_only"/>
-                            <h1>
-                                <field name="nombre" placeholder="Nombre del Socio"/>
-                            </h1>
-                        </div>
-                     </group>
+                     <field name="imagen" widget="image" class="oe_avatar" nolabel="1"/>
+                     <div class="oe_title">
+                        <label for="Nombre" class="oe_edit_only" string="Nombre"/>
+                        <h1>
+                            <field name="nombre" placeholder="Nombre del Socio" nolabel="1"/>
+                        </h1>
+                     </div>
                      <field name="tipo" widget="many2many_tags" placeholder="Atleta, Entrenador, ..."/>
                      <notebook>
                         <page name="inf_socio" string="Información del Socio">

@@ -5,7 +5,10 @@
         <field name="model">berp.marca</field>
         <field name="arch" type="xml">
             <tree string="Marcas">
-                <field name="name"/>
+                <field name="atleta"/>
+                <field name="prueba"/>
+                <field name="evento"/>
+                <field name="marca"/>
             </tree>
         </field>
     </record>
@@ -17,19 +20,21 @@
             <form string="Marca">
                 <sheet>
                     <group col="2">
-                        <field name="name"/>
+                        <field name="atleta"/>
+                        <field name="prueba"/>
+                        <field name="evento"/>
+                        <field name="marca"/>
                     </group>
                 </sheet>
             </form>
         </field>
     </record>
 
-    <record id="berp_03062019_1510_action" model="ir.actions.act_window">
+    <record id="berp_03062019_1810_action" model="ir.actions.act_window">
         <field name="name">Marcas</field>
         <field name="res_model">berp.marca</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="sequence" eval="21"/>
     </record>
 
 </odoo>

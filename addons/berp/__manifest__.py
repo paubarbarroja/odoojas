@@ -1,14 +1,17 @@
-# -*- coding: utf-8 -*-
 {
     'name': "berp",
     'version': '1.0',
-    'depends': ['hr','base'],
+    'depends': ['base'],
     'author': "Pau Barbarroja",
-    'category': 'Jas',
+    'category': 'berp',
     'description': """berp""",
     'data': [
-        'atletas/atleta.xml',
+        'categorias/categoria.xml',
+        'eventos/evento.xml',
         'marcas/marca.xml',
+        'pistas/pista.xml',
+        'pruebas/prueba.xml',
+        'socios/socio.xml',
         'menu.xml',
         'security/security.xml',
         'security/ir.model.access.xml',
@@ -16,3 +19,4 @@
     'demo': [],
     'application': True,
 }
+# -*- coding: utf-8 -*-

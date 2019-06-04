@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="berp_04062019_1938_tree">
+        <field name="name">pista_tree</field>
+        <field name="model">berp.pista</field>
+        <field name="arch" type="xml">
+            <tree string="Pistas">
+                <field name="nombre"/>
+                <field name="ciudad"/>
+                <field name="direccion"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="berp_04062019_1938_form">
+        <field name="name">pista_form</field>
+        <field name="model">berp.pista</field>
+        <field name="arch" type="xml">
+             <form string="Pista">
+                 <sheet>
+                     <group col="2">
+                        <field name="nombre"/>
+                        <field name="ciudad"/>
+                        <field name="direccion"/>
+                     </group>
+                 </sheet>
+             </form>
+        </field>
+    </record>
+
+
+    <record id="berp_04062019_1938_action" model="ir.actions.act_window">
+        <field name="name">Pistas</field>
+        <field name="res_model">berp.pista</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

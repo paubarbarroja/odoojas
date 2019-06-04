@@ -7,12 +7,10 @@ _logger = logging.getLogger(__name__)
 class berp_marca(models.Model):
     _name = "berp.marca"
 
-    atleta = fields.Many2one('berp.atleta',string="Atleta")
+    atleta = fields.Many2one('berp.socio',string="Socio")
     prueba = fields.Many2one('berp.prueba',string="Prueba")
     evento = fields.Many2one('berp.evento',string="Evento")
     marca = fields.Float(string="Marca")
-
-    name = fields.Char(string="Nombre")
 
 
     '''

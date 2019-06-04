@@ -5,7 +5,7 @@ import logging
 _logger = logging.getLogger(__name__)
 
 class berp_evento(models.Model):
-    _name = "berp.eventop"
+    _name = "berp.evento"
 
 
     nombre = fields.Char(string="Nombre")

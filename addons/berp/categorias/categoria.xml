@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="berp_04062019_1241_tree">
+        <field name="name">categoria_tree</field>
+        <field name="model">berp.categoria</field>
+        <field name="arch" type="xml">
+            <tree string="Categorias">
+                 <field name="nombre"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="berp_04062019_1241_form">
+        <field name="name">categoria_form</field>
+        <field name="model">berp.categoria</field>
+        <field name="arch" type="xml">
+             <form string="Categoria">
+                 <sheet>
+                     <group col="2">
+                         <field name="nombre"/>
+                     </group>
+                 </sheet>
+             </form>
+        </field>
+    </record>
+
+
+    <record id="berp_04062019_1241_action" model="ir.actions.act_window">
+        <field name="name">Categorias</field>
+        <field name="res_model">berp.categoria</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

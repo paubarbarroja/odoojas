@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="berp_04062019_1940_tree">
+        <field name="name">evento_tree</field>
+        <field name="model">berp.evento</field>
+        <field name="arch" type="xml">
+            <tree string="Eventos">
+                <field name="nombre"/>
+                <field name="pista"/>
+                <field name="fecha"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="berp_04062019_1940_form">
+        <field name="name">evento_form</field>
+        <field name="model">berp.evento</field>
+        <field name="arch" type="xml">
+             <form string="Evento">
+                 <sheet>
+                     <group col="2">
+                        <field name="nombre"/>
+                        <field name="pista"/>
+                        <field name="fecha"/>
+                     </group>
+                 </sheet>
+             </form>
+        </field>
+    </record>
+
+
+    <record id="berp_04062019_1940_action" model="ir.actions.act_window">
+        <field name="name">Eventos</field>
+        <field name="res_model">berp.evento</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
