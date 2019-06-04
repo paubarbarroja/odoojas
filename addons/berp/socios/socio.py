@@ -16,7 +16,7 @@ class berp_socio(models.Model):
     nacionalidad = fields.Many2one('res.country',string="Nacionalidad")
     dni = fields.Char(string="DNI")
     ficha = fields.Char(string="Ficha")
-    genero = fields.Selection([('1', 'Masculino'),('2', 'Femenino')],string='Genero')
+    genero = fields.Selection([('1', 'Masculino'),('2', 'Femenino')],string='Sexo')
     fecha_nac = fields.Date(string="Fecha de Nacimiento")
     direccion = fields.Char(string="Dirección")
     cuenta_banc = fields.Char(string="Cuenta Bancaria")
