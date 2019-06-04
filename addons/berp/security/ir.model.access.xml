@@ -60,6 +60,39 @@
         <field name="perm_unlink" eval="1" />
     </record>
 
+    <!-- ## PISTA ## -->
+    <record id="dt_berp_pista" model="ir.model.access">
+        <field name="name">dt_berp_atleta</field>
+        <field name="model_id" ref="model_berp_pista"/>
+        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0" />
+    </record>
+
+    <!-- ## PRUEBA ## -->
+    <record id="dt_berp_prueba" model="ir.model.access">
+        <field name="name">dt_berp_atleta</field>
+        <field name="model_id" ref="model_berp_prueba"/>
+        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0" />
+    </record>
+
+    <!-- ## CATEGORIA ## -->
+    <record id="dt_berp_categoria" model="ir.model.access">
+        <field name="name">dt_berp_atleta</field>
+        <field name="model_id" ref="model_berp_categoria"/>
+        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0" />
+    </record>
+
 
     <!-- ## RES USERS ##
     <record id="dt_berp_users" model="ir.model.access">
