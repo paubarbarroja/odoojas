@@ -6,5 +6,6 @@ _logger = logging.getLogger(__name__)
 
 class berp_categoria(models.Model):
     _name = "berp.categoria"
+    _rec_name = "nombre"
 
     nombre = fields.Char(string="Nombre")

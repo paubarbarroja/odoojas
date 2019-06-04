@@ -6,6 +6,7 @@ _logger = logging.getLogger(__name__)
 
 class berp_socio(models.Model):
     _name = "berp.socio"
+    _rec_name = "nombre"
 
     nombre = fields.Char(string="Nombre")
     tipo = fields.Many2many('berp.categoria',string="Tipo")

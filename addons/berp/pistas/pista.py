@@ -6,6 +6,7 @@ _logger = logging.getLogger(__name__)
 
 class berp_pista(models.Model):
     _name = "berp.pista"
+    _rec_name = "nombre"
 
 
     nombre = fields.Char(string="Nombre")

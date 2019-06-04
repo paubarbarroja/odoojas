@@ -25,7 +25,7 @@
                             <field name="nombre" placeholder="Nombre del Socio" nolabel="1"/>
                         </h1>
                      </div>
-                     <field name="tipo" widget="many2many_tags" placeholder="Atleta, Entrenador, ..."/>
+                     <field name="tipo" widget="many2many_tags" placeholder="Atleta, Entrenador, ..." options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                      <notebook>
                         <page name="inf_socio" string="Información del Socio">
                             <group col="2">
@@ -38,7 +38,7 @@
                                 <group col="2">
                                     <field name="fecha_nac"/>
                                     <field name="genero"/>
-                                    <field name="nacionalidad"/>
+                                    <field name="nacionalidad" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                                     <field name="direccion"/>
                                 </group>
                             </group>
