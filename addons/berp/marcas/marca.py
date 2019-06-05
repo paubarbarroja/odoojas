@@ -23,23 +23,36 @@ class berp_marca(models.Model):
 
     @api.onchange('marca_s')
     def onchange_marca_s(self):
-        float = 0.00
-        _logger.debug('ERROR ------------------------------------------ campo prueba --> %s', self.prueba)
-        prueba = self.env['berp.prueba'].browse(self.prueba)
-        _logger.debug('ERROR ------------------------------------------ browse prueba --> %s', prueba)
-        if self.marca_s:
-            pass
+        if self.prueba:
+            if self.prueba.especialidad:
+                especialidad = self.prueba.especialidad
+                if especialidad == '4' or especialidad == '5':
+                    self.marca = float(self.marca_s)
+                else:
+                    if self.marca_s.find(":"):
+                        tiempo = self.marca_s.split(":")
+                        minutos = tiempo[0]
+                        if tiempo[1].find("."):
+                            seg_cent = tiempo[1].split(".")
+                            segundos = seg_cent[0]
+                            centesimas = seg_cent[1]
+                    else:
+                        if self.marca_s.find("."):
+                            seg_cent = self.marca_s.split(".")
+                            segundos = seg_cent[0]
+                            centesimas = seg_cent[1]
+                        else:
+                            raise exceptions.ValidationError('Error!! \nNo has introducido bien la marca')
+                    self.marca = float(segundos)+(float(minutos)*60)+(float(centesimas)/100)
 
-            #self.marca = float
-            #raise exceptions.ValidationError('Not valid message')
-            #raise exceptions.UserError('Business logic error')
         return True
+
 
     atleta = fields.Many2one('berp.socio',string="Socio")
     prueba = fields.Many2one('berp.prueba',string="Prueba")
     evento = fields.Many2one('berp.evento',string="Evento")
     marca = fields.Float(string="Marca")
-    marca_s = fields.Char(string="Marca")
+    marca_s = fields.Char(string="Marca", help="Unidad : metros --> '50,50'   ;   tiempo --> '1:30.55'")
 
 
 
