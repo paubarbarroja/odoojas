@@ -24,10 +24,11 @@ class berp_marca(models.Model):
     @api.onchange('marca_s')
     def onchange_marca_s(self):
         float = 0.00
+        _logger.debug('ERROR ------------------------------------------ campo prueba --> %s', self.prueba)
+        prueba = self.env['berp.prueba'].browse(self.prueba)
+        _logger.debug('ERROR ------------------------------------------ browse prueba --> %s', prueba)
         if self.marca_s:
-            _logger.error('ERROR ------------------------------------------ campo prueba --> %r', self.prueba)
-            prueba = self.env['berp.prueba'].browse(self.prueba)
-            _logger.error('ERROR ------------------------------------------ browse prueba --> %r', prueba)
+            pass
 
             #self.marca = float
             #raise exceptions.ValidationError('Not valid message')
