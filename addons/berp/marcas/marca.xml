@@ -23,7 +23,7 @@
                         <field name="atleta" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                         <field name="prueba" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                         <field name="evento" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
-                        <field name="marca"/>
+                        <field name="marca_s" on_change="0"/>
                     </group>
                 </sheet>
             </form>
