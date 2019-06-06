@@ -23,3 +23,5 @@ class berp_socio(models.Model):
     nombre_cont = fields.Char(string="Contacto de Emergencia")
     telef_cont = fields.Char(string="Teléfono de Emergencia")
     imagen = fields.Binary('Imagen')
+
+#todo poner pais por defecto españa y luego mas a delante crear nueva clase para clubes que puede ser res.company hay que mirarselo

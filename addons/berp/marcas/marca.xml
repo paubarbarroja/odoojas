@@ -9,6 +9,8 @@
                 <field name="prueba"/>
                 <field name="evento"/>
                 <field name="marca_s"/>
+                <field name="fecha"/>
+                <field name="puntos_hungaros"/>
             </tree>
         </field>
     </record>
@@ -21,10 +23,15 @@
                 <sheet>
                     <group col="2">
                         <field name="atleta" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
-                        <field name="prueba" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
+                        <field name="genero_atleta" invisible="1"/>
+                        <field name="prueba" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"  domain="[('genero','=',genero_atleta)]"/>
                         <field name="evento" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
-                        <field name="marca_s"/>
-                        <field name="marca"/>
+                        <field name="hide" invisible="1"/>
+                        <field name="marca_s" attrs="{'invisible':[('hide', '=', True)]}"/>
+                        <field name="marca" attrs="{'invisible':[('hide', '=', False)]}"/>
+                        <field name="fecha"/>
+                        <field name="puntos_hungaros"/>
+                        <field name="categoria"/>
                     </group>
                 </sheet>
             </form>
