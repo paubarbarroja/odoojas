@@ -8,7 +8,7 @@
                 <field name="atleta"/>
                 <field name="prueba"/>
                 <field name="evento"/>
-                <field name="marca"/>
+                <field name="marca_s"/>
             </tree>
         </field>
     </record>

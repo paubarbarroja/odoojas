@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api, exceptions
+from odoo.osv import osv
 import logging
 
 _logger = logging.getLogger(__name__)
@@ -21,31 +22,42 @@ class berp_marca(models.Model):
         return float(hours) + (float(minutes) / 60.0) + (float(seconds) / pow(60.0, 2))
 '''
 
+    @api.onchange('atleta')
+    def onchange_atleta(self):
+        if self.atleta:
+            if self.atleta.genero:
+                if self.atleta.genero == '1':
+                    return {'domain': {'prueba': [('genero', '=', '1')]}}
+                else:
+                    return {'domain': {'prueba': [('genero', '=', '2')]}}
+
     @api.onchange('marca_s')
     def onchange_marca_s(self):
         if self.prueba:
             if self.prueba.especialidad:
                 especialidad = self.prueba.especialidad
-                if especialidad == '4' or especialidad == '5':
-                    self.marca = float(self.marca_s)
-                else:
-                    if self.marca_s.find(":"):
-                        tiempo = self.marca_s.split(":")
-                        minutos = tiempo[0]
-                        if tiempo[1].find("."):
-                            seg_cent = tiempo[1].split(".")
-                            segundos = seg_cent[0]
-                            centesimas = seg_cent[1]
+                if self.marca_s:
+                    if especialidad == '4' or especialidad == '5':
+                        self.marca = float(self.marca_s)
                     else:
-                        if self.marca_s.find("."):
-                            seg_cent = self.marca_s.split(".")
-                            segundos = seg_cent[0]
-                            centesimas = seg_cent[1]
+                        if self.marca_s.find(":"):
+                            tiempo = self.marca_s.split(":")
+                            minutos = tiempo[0] if len(tiempo) > 0 else '0'
+                            if tiempo[1].find("."):
+                                seg_cent = tiempo[1].split(".")
+                                segundos = seg_cent[0] if len(seg_cent) > 0 else '0'
+                                centesimas = seg_cent[1] if len(seg_cent) > 1 else '0'
+                            else:
+                                raise exceptions.except_orm(_('Error!!'), _('No has introducido bien la marca'))
                         else:
-                            raise exceptions.ValidationError('Error!! \nNo has introducido bien la marca')
-                    self.marca = float(segundos)+(float(minutos)*60)+(float(centesimas)/100)
+                            if self.marca_s.find("."):
+                                seg_cent = self.marca_s.split(".")
+                                segundos = seg_cent[0] if len(seg_cent) > 0 else '0'
+                                centesimas = seg_cent[1] if len(seg_cent) > 1 else '0'
+                            else:
+                                raise exceptions.ValidationError('Error!! \nNo has introducido bien la marca')
+                        self.marca = float(segundos)+(float(minutos)*60)+(float(centesimas)/100)
 
-        return True
 
 
     atleta = fields.Many2one('berp.socio',string="Socio")
