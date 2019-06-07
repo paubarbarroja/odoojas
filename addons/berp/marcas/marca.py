@@ -19,7 +19,8 @@ class berp_marca(models.Model):
         if self.atleta:
             if self.atleta.fecha_nac:
                 nacimiento = self.atleta.fecha_nac
-                '''hoy = date.today()
+                '''
+                hoy = date.today()
                 diferencia = hoy - nacimiento
                 self.categoria = str(int(diferencia.days/365))
                 '''
