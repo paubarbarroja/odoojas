@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <tree string="Puntos Hungaros">
                  <field name="puntos"/>
-                 <field name="pruebas"/>
+                 <field name="prueba"/>
                  <field name="marca"/>
             </tree>
         </field>
@@ -20,7 +20,7 @@
                  <sheet>
                      <group col="2">
                          <field name="puntos"/>
-                         <field name="pruebas"/>
+                         <field name="prueba"/>
                          <field name="marca"/>
                      </group>
                  </sheet>

@@ -30,9 +30,9 @@
                         <field name="hide" invisible="1"/>
                         <field name="marca_s" attrs="{'invisible':[('hide', '=', True)]}"/>
                         <field name="marca" attrs="{'invisible':[('hide', '=', False)]}"/>
-                        <field name="fecha"/>
-                        <field name="puntos_hungaros"/>
-                        <field name="categoria"/>
+                        <field name="fecha" readonly="1"/>
+                        <field name="puntos_hungaros" readonly="1"/>
+                        <field name="categoria" readonly="1"/>
                     </group>
                 </sheet>
             </form>

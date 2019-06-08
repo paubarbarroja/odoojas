@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from datetime import date, datetime
-from odoo import models, fields, api, exceptions
+from odoo import models, fields, api, exceptions, _
 from odoo.osv import osv
 import logging
 
@@ -8,11 +8,6 @@ _logger = logging.getLogger(__name__)
 
 class berp_marca(models.Model):
     _name = "berp.marca"
-
-    '''
-    !!--- Domain dinamico a partir de un onchange ---!!
-    return {'domain': {'prueba': [('genero', '=', '1')]}}
-    '''
 
     @api.onchange('atleta')
     def onchange_atleta(self):
@@ -76,7 +71,15 @@ class berp_marca(models.Model):
 
     @api.onchange('marca')
     def onchange_marca(self):
-        hola = 1
+        if self.marca:
+            if self.prueba:
+                puntos_por_prueba_ids = self.env['berp.puntos_hungaros'].search([('prueba','=',self.prueba.id),('marca','=',self.marca)])
+                for id in puntos_por_prueba_ids:
+                    object = self.env['berp.puntos_hungaros'].browse(id)
+                    if self.marca == object.id.marca:
+                        self.puntos_hungaros = object.id.puntos
+
+
     #todo Comprobar la tabla de los puntos hungaros y poner los puntos que equivalen a la marca introducida.
 
     atleta = fields.Many2one('berp.socio',string="Socio")
@@ -89,16 +92,3 @@ class berp_marca(models.Model):
     hide = fields.Boolean(string='Hide',default=False)
     puntos_hungaros = fields.Many2one('berp.puntos_hungaros',string="Puntos Hungaros")
     categoria = fields.Char(string="Categoria")
-
-
-
-
-    '''
-    apellidos           = fields.Char(string='Apellido',required=True)
-    ficha               = fields.Date(string='ficha',required=True)
-    dni                 = fields.Char(string='dni',required=True)
-    edad                = fields.Date(string='edad',required=True)
-    genero              = fields.Selection([('1', 'Masculino'),('2', 'Femenino')],string='genero',required=True)
-    telefono            = fields.Char(string='telefono',required=True)
-    mail                = fields.Char(string='mail',required=True)
-    '''

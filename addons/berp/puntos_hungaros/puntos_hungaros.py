@@ -10,5 +10,5 @@ class berp_puntos_hungaros(models.Model):
 
 
     puntos = fields.Integer(string="Puntos")
-    pruebas = fields.Many2one('berp.prueba',string="Pruebas")
+    prueba = fields.Many2one('berp.prueba',string="Pruebas")
     marca = fields.Float(string="Marca")
