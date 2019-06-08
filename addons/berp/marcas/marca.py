@@ -44,8 +44,8 @@ class berp_marca(models.Model):
                                 else:
                                     if edad > 13:
                                         self.categoria = "Sub 16"
-
-                    self.categoria = ""
+        else:
+            self.categoria = ""
 
 
     @api.onchange('prueba')
