@@ -6,10 +6,11 @@
         <field name="arch" type="xml">
             <tree string="Marcas">
                 <field name="atleta"/>
-                <field name="prueba"/>
+                <field name="categoria"/>
                 <field name="evento"/>
-                <field name="marca_s"/>
                 <field name="fecha"/>
+                <field name="prueba"/>
+                <field name="marca_s"/>
                 <field name="puntos_hungaros"/>
             </tree>
         </field>

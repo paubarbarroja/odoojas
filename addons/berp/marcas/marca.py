@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from datetime import date
+from datetime import date, datetime
 from odoo import models, fields, api, exceptions
 from odoo.osv import osv
 import logging
@@ -19,17 +19,33 @@ class berp_marca(models.Model):
         if self.atleta:
             if self.atleta.fecha_nac:
                 nacimiento = self.atleta.fecha_nac
-                '''
                 hoy = date.today()
-                diferencia = hoy - nacimiento
-                self.categoria = str(int(diferencia.days/365))
-                '''
-                fecha = nacimiento.strftime('%Y-%m-%d').split('-')
-                año = fecha[0]
-                self.categoria = año
-                if año == "1996" or año == "":
-                    año = "a"
-    #todo tengo el año en string -- comprobar de que año es i poner categoria en el campo
+                fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
+                fecha = "31-12-" + fecha_hoy[0]
+                date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
+                diferencia = date_object - nacimiento
+                edad_final_temporada = str(int(diferencia.days/365))
+                edad = int(edad_final_temporada)
+
+                if edad > 34:
+                    self.categoria = "Master"
+                else:
+                    if edad > 22:
+                        self.categoria = "Senior"
+                    else:
+                        if edad > 19:
+                            self.categoria = "Sub 23"
+                        else:
+                            if edad > 17:
+                                self.categoria = "Sub 20"
+                            else:
+                                if edad > 15:
+                                    self.categoria = "Sub 18"
+                                else:
+                                    if edad > 13:
+                                        self.categoria = "Sub 16"
+
+                    self.categoria = ""
 
 
     @api.onchange('prueba')
