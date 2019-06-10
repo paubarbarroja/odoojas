@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <menuitem id="gestion_menuitem"
-               name="Gestión del Club"/>
+               name="Gestión del Club"
+               groups="berp.berp_admin,berp.berp_dt"/>
         <menuitem id="atletas_submenuitem"
                   name="Socios"
                   parent="gestion_menuitem"/>
@@ -9,59 +10,34 @@
                       name="Todos"
                       parent="atletas_submenuitem"
                       action="berp_21052019_2054_action"/>
-
-
-
-    <menuitem id="marcas_menuitem"
-              name="Marcas"/>
         <menuitem id="marca_submenuitem"
                   name="Marcas"
-                  parent="marcas_menuitem"
+                  parent="gestion_menuitem"
                   action="berp_03062019_1810_action"/>
-
-
-
-    <menuitem id="eventos_menuitem"
-              name="Eventos"/>
         <menuitem id="evento_submenuitem"
                   name="Eventos"
-                  parent="eventos_menuitem"
+                  parent="gestion_menuitem"
                   action="berp_04062019_1940_action"/>
-
-
-
-    <menuitem id="categorias_menuitem"
-              name="Categorias"/>
         <menuitem id="categoria_submenuitem"
                   name="Categorias"
-                  parent="categorias_menuitem"
-                  action="berp_04062019_1241_action"/>
-
-
-
-    <menuitem id="pistas_menuitem"
-              name="Pistas"/>
+                  parent="gestion_menuitem"
+                  action="berp_04062019_1241_action"
+                  groups="berp.berp_admin"/>
         <menuitem id="pista_submenuitem"
                   name="Pistas"
-                  parent="pistas_menuitem"
-                  action="berp_04062019_1938_action"/>
-
-
-
-    <menuitem id="pruebas_menuitem"
-              name="Pruebas"/>
+                  parent="gestion_menuitem"
+                  action="berp_04062019_1938_action"
+                  groups="berp.berp_admin"/>
         <menuitem id="prueba_submenuitem"
                   name="Pruebas"
-                  parent="pruebas_menuitem"
-                  action="berp_04062019_1942_action"/>
-
-
-
-    <menuitem id="puntos_hungaros_menuitem"
-              name="Puntos Hungaros"/>
+                  parent="gestion_menuitem"
+                  action="berp_04062019_1942_action"
+                  groups="berp.berp_admin"/>
         <menuitem id="puntos_hungaros_submenuitem"
                   name="Puntos Hungaros"
-                  parent="puntos_hungaros_menuitem"
-                  action="berp_05062019_0920_action"/>
+                  parent="gestion_menuitem"
+                  action="berp_05062019_0920_action"
+                  groups="berp.berp_admin"/>
+
 
 </odoo>
