@@ -10,7 +10,7 @@
                 <field name="evento"/>
                 <field name="fecha"/>
                 <field name="prueba"/>
-                <field name="marca_s"/>
+                <field name="marca_s" string="Marca"/>
                 <field name="puntos_hungaros"/>
             </tree>
         </field>
@@ -28,7 +28,8 @@
                         <field name="prueba" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"  domain="[('genero','=',genero_atleta)]"/>
                         <field name="evento" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                         <field name="hide" invisible="1"/>
-                        <field name="marca_s" attrs="{'invisible':[('hide', '=', True)]}"/>
+                        <field name="importado" invisible="1"/>
+                        <field name="marca_s" string="Marca" attrs="{'invisible':[('hide', '=', True)]}"/>
                         <field name="marca" attrs="{'invisible':[('hide', '=', False)]}"/>
                         <field name="fecha" readonly="1"/>
                         <field name="puntos_hungaros" readonly="1"/>
