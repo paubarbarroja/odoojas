@@ -93,6 +93,17 @@
         <field name="perm_unlink" eval="0" />
     </record>
 
+    <!-- ## PUNTOS HUNGAROS ## -->
+    <record id="admin_berp_puntos_hungaros" model="ir.model.access">
+        <field name="name">dt_berp_atleta</field>
+        <field name="model_id" ref="model_berp_puntos_hungaros"/>
+        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0" />
+    </record>
+
 
     <!-- ## RES USERS ##
     <record id="dt_berp_users" model="ir.model.access">
