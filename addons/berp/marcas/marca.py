@@ -9,8 +9,10 @@ _logger = logging.getLogger(__name__)
 class berp_marca(models.Model):
     _name = "berp.marca"
 
-    @api.onchange('atleta')
-    def onchange_atleta(self):
+    #raise exceptions.except_orm(_('Error!!'), _('No has introducido bien la marca'))
+
+    @api.multi
+    def _get_categoria(self):
         if self.atleta:
             if self.atleta.fecha_nac:
                 nacimiento = self.atleta.fecha_nac
@@ -23,24 +25,34 @@ class berp_marca(models.Model):
                 edad = int(edad_final_temporada)
 
                 if edad > 34:
-                    self.categoria = "Master"
+                    categoria = "Master"
                 else:
                     if edad > 22:
-                        self.categoria = "Senior"
+                        categoria = "Senior"
                     else:
                         if edad > 19:
-                            self.categoria = "Sub 23"
+                            categoria = "Sub 23"
                         else:
                             if edad > 17:
-                                self.categoria = "Sub 20"
+                                categoria = "Sub 20"
                             else:
                                 if edad > 15:
-                                    self.categoria = "Sub 18"
+                                    categoria = "Sub 18"
                                 else:
                                     if edad > 13:
-                                        self.categoria = "Sub 16"
+                                        categoria = "Sub 16"
+
         else:
-            self.categoria = ""
+            categoria = ""
+        return categoria
+
+    @api.onchange('atleta')
+    def onchange_socio(self):
+        categoria = self._get_categoria()
+        self.categoria = categoria
+        self.prueba = False
+        self.marca = False
+        self.marca_s = False
 
 
     @api.onchange('prueba')
@@ -60,7 +72,7 @@ class berp_marca(models.Model):
                 tiempo = self.marca_s.split(".")
                 min_seg = tiempo[0] if len(tiempo) > 0 else '0'
                 centesimas = tiempo[1] if len(tiempo) > 1 else '0'
-                if min_seg.find(":"):
+                if min_seg.find(":") == 2:
                     tiempo_v2 = min_seg.split(":")
                     minutos = tiempo_v2[0] if len(tiempo_v2) > 0 else '0'
                     segundos = tiempo_v2[1] if len(tiempo_v2) > 1 else '0'
@@ -69,18 +81,47 @@ class berp_marca(models.Model):
                     minutos = '0'
             self.marca = float(segundos)+(float(minutos)*60)+(float(centesimas)/100)
 
+
+    def _get_puntos_hungaros(self):
+        if self.marca:
+            if self.prueba:
+                marca = self.marca
+                puntos_por_prueba_ids = self.env['berp.puntos_hungaros'].search([('prueba','=',self.prueba.id),('marca','=',marca)])
+                if puntos_por_prueba_ids:
+                    for id in puntos_por_prueba_ids:
+                        object = self.env['berp.puntos_hungaros'].browse(id)
+                        if marca == object.id.marca:
+                            id = object.id.id
+                else:
+                    if self.prueba.especialidad == '4' or self.prueba.especialidad == '5':
+                        while not puntos_por_prueba_ids:
+                            marca = round((marca - 0.01),2)
+                            puntos_por_prueba_ids = self.env['berp.puntos_hungaros'].search([('prueba', '=', self.prueba.id), ('marca', '=', marca)])
+                    else:
+                        while not puntos_por_prueba_ids:
+                            marca = round((marca - 0.01),2)
+                            puntos_por_prueba_ids = self.env['berp.puntos_hungaros'].search([('prueba', '=', self.prueba.id), ('marca', '=', marca)])
+                    for id in puntos_por_prueba_ids:
+                        object = self.env['berp.puntos_hungaros'].browse(id)
+                        if marca == object.id.marca:
+                            id = object.id.id
+        return id
+
+
     @api.onchange('marca')
     def onchange_marca(self):
         if self.marca:
-            if self.prueba:
-                puntos_por_prueba_ids = self.env['berp.puntos_hungaros'].search([('prueba','=',self.prueba.id),('marca','=',self.marca)])
-                for id in puntos_por_prueba_ids:
-                    object = self.env['berp.puntos_hungaros'].browse(id)
-                    if self.marca == object.id.marca:
-                        self.puntos_hungaros = object.id.puntos
+            if self.prueba.especialidad == '4' or self.prueba.especialidad == '5':
+                self.marca_s = str(self.marca)
+            self.puntos_hungaros = self._get_puntos_hungaros()
 
-
-    #todo Comprobar la tabla de los puntos hungaros y poner los puntos que equivalen a la marca introducida.
+    @api.multi
+    def write(self, values):
+        categoria = self._get_categoria()
+        puntos_hungaros = self._get_puntos_hungaros()
+        values.update({'categoria':categoria,'puntos_hungaros':puntos_hungaros})
+        res = super(berp_marca, self).write(values)
+        return res
 
     atleta = fields.Many2one('berp.socio',string="Socio")
     genero_atleta = fields.Selection(related="atleta.genero", store="True")
