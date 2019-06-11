@@ -62,11 +62,35 @@
     </record>
 
 
-    <record id="berp_21052019_2054_action" model="ir.actions.act_window">
+    <record id="berp_21052019_2054_action_todos" model="ir.actions.act_window">
         <field name="name">Socios</field>
         <field name="res_model">berp.socio</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="berp_21052019_2054_action_atl" model="ir.actions.act_window">
+        <field name="name">Atletas</field>
+        <field name="res_model">berp.socio</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('tipo','=','Atleta')]</field>
+    </record>
+
+    <record id="berp_21052019_2054_action_sin_ficha" model="ir.actions.act_window">
+        <field name="name">Socios Sin Ficha</field>
+        <field name="res_model">berp.socio</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('tipo','=','Sin Ficha')]</field>
+    </record>
+
+    <record id="berp_21052019_2054_action_entrenadores" model="ir.actions.act_window">
+        <field name="name">Entrenadores</field>
+        <field name="res_model">berp.socio</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('tipo','=','Entrenador')]</field>
     </record>
 
 </odoo>

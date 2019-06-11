@@ -5,6 +5,7 @@
         <field name="model">berp.pista</field>
         <field name="arch" type="xml">
             <tree string="Pistas">
+                <field name="nombre_mostrado"/>
                 <field name="nombre"/>
                 <field name="ciudad"/>
                 <field name="direccion"/>
@@ -19,6 +20,7 @@
              <form string="Pista">
                  <sheet>
                      <group col="2">
+                        <field name="nombre_mostrado" readonly="1"/>
                         <field name="nombre"/>
                         <field name="ciudad"/>
                         <field name="direccion"/>
