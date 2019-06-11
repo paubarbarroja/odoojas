@@ -6,3 +6,4 @@ from . import pistas
 from . import pruebas
 from . import socios
 from . import puntos_hungaros
+from . import grupos_entreno

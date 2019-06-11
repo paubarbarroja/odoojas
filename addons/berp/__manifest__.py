@@ -12,6 +12,7 @@
         'pistas/pista.xml',
         'pruebas/prueba.xml',
         'socios/socio.xml',
+        'grupos_entreno/grupo_entreno.xml',
         'puntos_hungaros/puntos_hungaros.xml',
         'security/security.xml',
         'security/ir.model.access.xml',

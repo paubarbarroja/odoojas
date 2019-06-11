@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="berp_12062019_0046_tree">
+        <field name="name">grupo_entreno_tree</field>
+        <field name="model">berp.grupo_entreno</field>
+        <field name="arch" type="xml">
+            <tree string="Grupos de Entreno">
+                <field name="nombre"/>
+                <field name="atletas"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="berp_12062019_0046_form">
+        <field name="name">grupo_entreno_tree</field>
+        <field name="model">berp.grupo_entreno</field>
+        <field name="arch" type="xml">
+             <form string="Grupo de Entreno">
+                 <sheet>
+                     <group col="2">
+                        <field name="nombre"/>
+                        <field name="atletas">
+                            <tree>
+                                <field name="ficha"/>
+                                <field name="nombre"/>
+                                <field name="fecha_nac"/>
+                                <field name="genero"/>
+                            </tree>
+                        </field>
+                     </group>
+                 </sheet>
+             </form>
+        </field>
+    </record>
+
+
+    <record id="berp_12062019_0046_action" model="ir.actions.act_window">
+        <field name="name">Grupos de Entreno</field>
+        <field name="res_model">berp.grupo_entreno</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

@@ -23,5 +23,10 @@ class berp_socio(models.Model):
     nombre_cont = fields.Char(string="Contacto de Emergencia")
     telef_cont = fields.Char(string="Teléfono de Emergencia")
     imagen = fields.Binary('Imagen')
+    grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
 
 #todo poner pais por defecto españa y luego mas a delante crear nueva clase para clubes que puede ser res.company hay que mirarselo
+
+# todo poner en el page de informacion del atleta en la vista poner un tree de sus mejores marcas y alguna cosa mas de información sobre el atleta... (mirar si es convincente)
+
+# todo Mirar de poner la categoria en el socio ya que es informacion del atleta, ponerlo en la pagina del atleta y asi sera mas facil cojer la categoria del mismo.

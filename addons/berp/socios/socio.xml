@@ -43,6 +43,12 @@
                                 </group>
                             </group>
                         </page>
+                        <page name="inf_atleta" string="Información del Atleta">
+                            <group col="2">
+                                <field name="especialidad"/>
+                                <field name="grupo_entreno" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
+                            </group>
+                        </page>
                         <page name="inf_otra" string="Otra información">
                             <group col="2">
                                 <group col="2">
@@ -52,6 +58,7 @@
                                 <group col="2">
                                     <field name="cuenta_banc"/>
                                     <field name="especialidad"/>
+                                    <field name="grupo_entreno" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                                 </group>
                             </group>
                         </page>
