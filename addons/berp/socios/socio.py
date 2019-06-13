@@ -10,8 +10,14 @@ class berp_socio(models.Model):
 
     @api.multi
     def _comprobar_grupo_entreno(self):
-        for record in self:
-            record.visible = True
+        socio_id = self.env['berp.socio'].search([('user', '=', self.env.uid)])
+        if socio_id:
+            socio = self.env['berp.socio'].browse(socio_id)
+            if socio.grupo_entreno:
+            grupo = socio.grupo_entreno
+            for record in self:
+                if record.grupo_entreno == grupo:
+                    record.visible = True
 
 
     nombre = fields.Char(string="Nombre")
