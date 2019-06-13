@@ -58,6 +58,7 @@
                                 <group col="2">
                                     <field name="cuenta_banc"/>
                                     <field name="user"/>
+                                    <field name="visible" invisible="1"/>
                                 </group>
                             </group>
                         </page>
