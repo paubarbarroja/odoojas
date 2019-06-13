@@ -31,7 +31,7 @@
                             <group col="2">
                                 <group col="2">
                                     <field name="ficha"/>
-                                    <field name="dni"/>
+                                    <field name="dni" groups="berp.berp_admin, berp.berp_dt"/>
                                     <field name="correo"/>
                                     <field name="telefono"/>
                                 </group>
@@ -39,17 +39,17 @@
                                     <field name="fecha_nac"/>
                                     <field name="genero"/>
                                     <field name="nacionalidad" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
-                                    <field name="direccion"/>
+                                    <field name="direccion" groups="berp.berp_admin, berp.berp_dt"/>
                                 </group>
                             </group>
                         </page>
-                        <page name="inf_atleta" string="Información del Atleta">
+                        <page name="inf_atleta" string="Información del Atleta" groups="berp.berp_admin, berp.berp_dt">
                             <group col="2">
                                 <field name="especialidad"/>
                                 <field name="grupo_entreno" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                             </group>
                         </page>
-                        <page name="inf_otra" string="Otra información">
+                        <page name="inf_otra" string="Otra información" groups="berp.berp_admin, berp.berp_dt">
                             <group col="2">
                                 <group col="2">
                                     <field name="nombre_cont"/>
@@ -57,8 +57,7 @@
                                 </group>
                                 <group col="2">
                                     <field name="cuenta_banc"/>
-                                    <field name="especialidad"/>
-                                    <field name="grupo_entreno" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
+                                    <field name="user"/>
                                 </group>
                             </group>
                         </page>
@@ -98,6 +97,14 @@
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="domain">[('tipo','=','Entrenador')]</field>
+    </record>
+
+    <record id="berp_21052019_2054_action_mi_grupo" model="ir.actions.act_window">
+        <field name="name">Compañeros</field>
+        <field name="res_model">berp.socio</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('visible','=','True')]</field>
     </record>
 
 </odoo>

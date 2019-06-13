@@ -8,6 +8,12 @@ class berp_socio(models.Model):
     _name = "berp.socio"
     _rec_name = "nombre"
 
+    @api.multi
+    def _comprobar_grupo_entreno(self):
+        for record in self:
+            record.visible = True
+
+
     nombre = fields.Char(string="Nombre")
     tipo = fields.Many2many('berp.categoria',string="Tipo")
     correo = fields.Char(string="Correo-e")
@@ -24,6 +30,8 @@ class berp_socio(models.Model):
     telef_cont = fields.Char(string="Teléfono de Emergencia")
     imagen = fields.Binary('Imagen')
     grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
+    visible = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
+    user = fields.Many2one('res.users',string="Usuario")
 
 #todo poner pais por defecto españa y luego mas a delante crear nueva clase para clubes que puede ser res.company hay que mirarselo
 

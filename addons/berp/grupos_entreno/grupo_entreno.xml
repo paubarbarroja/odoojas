@@ -19,7 +19,7 @@
                  <sheet>
                      <group col="2">
                         <field name="nombre"/>
-                        <field name="atletas">
+                        <field name="atletas" widget="many2many" domain="[('tipo','=','Atleta')]">
                             <tree>
                                 <field name="ficha"/>
                                 <field name="nombre"/>

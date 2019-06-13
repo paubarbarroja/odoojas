@@ -75,9 +75,9 @@
                groups="berp.berp_atleta,berp.berp_entrenador,berp.berp_admin"/>
 
         <menuitem id="atletas_mi_grupo_submenuitem"
-                  name="Atletas"
+                  name="Compañeros"
                   parent="mi_grupo_menuitem"
-                  action="berp_21052019_2054_action_atl"/>
+                  action="berp_21052019_2054_action_mi_grupo"/>
 
         <menuitem id="marca_mi_grupo_submenuitem"
                   name="Marcas"
