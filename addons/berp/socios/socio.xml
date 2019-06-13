@@ -104,7 +104,7 @@
         <field name="res_model">berp.socio</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('user','=',uid)]</field>
+        <field name="domain">[('visible','=',True)]</field>
     </record>
 
 </odoo>
