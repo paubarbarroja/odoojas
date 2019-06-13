@@ -8,6 +8,7 @@
                 <field name="ficha"/>
                 <field name="nombre"/>
                 <field name="genero"/>
+                <field name="visible" invisible="1"/>
             </tree>
         </field>
     </record>
