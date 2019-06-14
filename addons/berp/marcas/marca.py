@@ -136,7 +136,10 @@ class berp_marca(models.Model):
             self.puntos_hungaros = self._get_puntos_hungaros()
 
 
+
+    '''###############################################'''
     '''########  Override de la funcion Write ########'''
+    '''###############################################'''
     @api.multi
     def write(self, values):
         categoria = self._get_categoria()
@@ -144,6 +147,7 @@ class berp_marca(models.Model):
         values.update({'categoria':categoria,'puntos_hungaros':puntos_hungaros})
         res = super(berp_marca, self).write(values)
         return res
+
 
 
     '''################################################'''
@@ -246,10 +250,10 @@ class berp_marca(models.Model):
     atleta = fields.Many2one('berp.socio',string="Socio")
     genero_atleta = fields.Selection(related="atleta.genero", store="True")
     prueba = fields.Many2one('berp.prueba',string="Prueba")
-    evento = fields.Many2one('berp.evento',string="Evento")
+    evento = fields.Many2one('berp.evento',string="Evento", required="True")
     fecha = fields.Date(related="evento.fecha",store="True")
     marca = fields.Float(string="Marca")
-    marca_s = fields.Char(string="Marca_s", help="Unidad : metros --> '50,50'   ;   tiempo --> '1:30.55'", default="00:00.00")
+    marca_s = fields.Char(string="Marca_s", help="Unidad : metros --> '50.50'   ;   tiempo --> '1:30.55'", default="00:00.00")
     hide = fields.Boolean(string='Hide',default=False)
     puntos_hungaros = fields.Many2one('berp.puntos_hungaros',string="Puntos Hungaros")
     categoria = fields.Char(string="Categoria")
