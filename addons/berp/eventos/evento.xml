@@ -8,6 +8,7 @@
                 <field name="nombre"/>
                 <field name="pista"/>
                 <field name="fecha"/>
+                <field name="pista_cubierta"/>
             </tree>
         </field>
     </record>
@@ -22,6 +23,9 @@
                         <field name="nombre"/>
                         <field name="pista" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                         <field name="fecha"/>
+                        <field name="pista_cubierta"/>
+                        <field name="atletas"/>
+                        <button name="inscripcion_atleta" string="Inscibirme" type="object" class="oe_highlight"/>
                      </group>
                  </sheet>
              </form>
