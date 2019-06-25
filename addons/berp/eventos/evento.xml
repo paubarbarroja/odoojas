@@ -19,9 +19,9 @@
         <field name="arch" type="xml">
              <form string="Evento">
                  <header>
-                     <button name="inscripcion_atleta" string="Inscibirme" type="object" states="abierto" class="oe_highlight"/>
+                     <button name="inscripcion_atleta" string="Inscibirme" type="object" states="abierto" class="oe_highlight" confirm="¿Quieres inscribirte a este evento?" attrs="{'invisible':[(self.env.user., '=', True)]}"/>
                      <button name="cerrar_evento" string="Cerrar evento" type="object" states="abierto" class="oe_highlight"/>
-                     <button name="abrir_evento" string="Abrir evento" type="object" states="cerrado" class="oe_highlight" confirm="Estas seguro que quieres abrir de nuevo el evento?"/>
+                     <button name="abrir_evento" string="Abrir evento" type="object" states="cerrado" class="oe_highlight" confirm="¿Estas seguro que quieres abrir de nuevo el evento?"/>
                      <field name="state" widget="statusbar" statusbar_visible="abierto,cerrado"/>
                  </header>
                  <sheet>
@@ -30,7 +30,7 @@
                         <field name="pista" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                         <field name="fecha"/>
                         <field name="pista_cubierta"/>
-                        <field name="atletas"/>
+                        <field name="atletas" readonly="1"/>
                      </group>
                  </sheet>
              </form>

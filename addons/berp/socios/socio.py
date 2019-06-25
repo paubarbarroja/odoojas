@@ -6,6 +6,9 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
+
+# todo HERENCIAR CLASE Y VISTA DE RES_USER PARA PONER CAMPO MANY2ONE A BERP.SOCIO.
+
 class berp_socio(models.Model):
     _name = "berp.socio"
     _rec_name = "nombre"
