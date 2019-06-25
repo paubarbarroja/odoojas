@@ -51,6 +51,18 @@ class berp_marca(models.Model):
 
 
     '''####################################################'''
+    '''########  Funcion onchange del campo evento ########'''
+    '''####################################################'''
+    @api.onchange('evento')
+    def onchange_socio(self):
+        categoria = self._get_categoria()
+        self.categoria = categoria
+        self.prueba = False
+        self.marca = False
+        self.marca_s = False
+
+
+    '''####################################################'''
     '''########  Funcion onchange del campo atleta ########'''
     '''####################################################'''
     @api.onchange('atleta')

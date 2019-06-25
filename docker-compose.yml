@@ -9,7 +9,7 @@ services:
       - 'postgresql_data:/bitnami/postgresql'
   odoo:
     container_name: berp_odoo
-    image: 'bitnami/odoo:12'
+    image: 'paubarbarroja/berp_odoo:1'
     ports:
       - '80:8069'
       - '443:8071'

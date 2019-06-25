@@ -22,7 +22,6 @@
                         <field name="nombre"/>
                         <field name="genero"/>
                         <field name="especialidad"/>
-                        <field name="pista_cubierta"/>
                      </group>
                  </sheet>
              </form>
