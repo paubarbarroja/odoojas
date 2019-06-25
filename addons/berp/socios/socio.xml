@@ -48,6 +48,7 @@
                             <group col="2">
                                 <field name="especialidad"/>
                                 <field name="grupo_entreno" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
+                                <field name="categoria"/>
                             </group>
                         </page>
                         <page name="inf_otra" string="Otra información" groups="berp.berp_admin, berp.berp_dt">

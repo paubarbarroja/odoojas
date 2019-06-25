@@ -12,66 +12,16 @@ class berp_marca(models.Model):
     # raise exceptions.except_orm(_('Error!!'), _('No has introducido bien la marca'))
 
 
-    '''######################################################################'''
-    '''########  Funcion para saber la categoria del Socio / Atleta  ########'''
-    '''######################################################################'''
-    @api.multi
-    def _get_categoria(self):
-        if self.atleta:
-            if self.atleta.fecha_nac:
-                nacimiento = self.atleta.fecha_nac
-                hoy = date.today()
-                fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
-                fecha = "31-12-" + fecha_hoy[0]
-                date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
-                diferencia = date_object - nacimiento
-                edad_final_temporada = str(int(diferencia.days/365))
-                edad = int(edad_final_temporada)
-
-                if edad > 34:
-                    categoria = "Master"
-                else:
-                    if edad > 22:
-                        categoria = "Senior"
-                    else:
-                        if edad > 19:
-                            categoria = "Sub 23"
-                        else:
-                            if edad > 17:
-                                categoria = "Sub 20"
-                            else:
-                                if edad > 15:
-                                    categoria = "Sub 18"
-                                else:
-                                    if edad > 13:
-                                        categoria = "Sub 16"
-        else:
-            categoria = ""
-        return categoria
-
-
-    '''####################################################'''
-    '''########  Funcion onchange del campo evento ########'''
-    '''####################################################'''
-    @api.onchange('evento')
-    def onchange_socio(self):
-        categoria = self._get_categoria()
-        self.categoria = categoria
-        self.prueba = False
-        self.marca = False
-        self.marca_s = False
-
-
     '''####################################################'''
     '''########  Funcion onchange del campo atleta ########'''
     '''####################################################'''
     @api.onchange('atleta')
     def onchange_socio(self):
-        categoria = self._get_categoria()
-        self.categoria = categoria
+        self.categoria = self.atleta.categoria
         self.prueba = False
         self.marca = False
         self.marca_s = False
+
 
     '''####################################################'''
     '''########  Funcion onchange del campo prueba ########'''
@@ -84,6 +34,7 @@ class berp_marca(models.Model):
                     self.hide = True
                 else:
                     self.hide = False
+
 
     '''#####################################################'''
     '''########  Funcion onchange del campo marca_s ########'''
@@ -104,6 +55,7 @@ class berp_marca(models.Model):
                         segundos = min_seg
                         minutos = '0'
                 self.marca = float(segundos)+(float(minutos)*60)+(float(centesimas)/100)
+
 
 
     def _get_puntos_hungaros(self):
@@ -137,6 +89,7 @@ class berp_marca(models.Model):
             id = 1
         return id
 
+
     '''###################################################'''
     '''########  Funcion onchange del campo marca ########'''
     '''###################################################'''
@@ -168,36 +121,6 @@ class berp_marca(models.Model):
     @api.model
     def create(self, values):
         id = False
-        categoria = ""
-        if 'atleta' in values:
-            atleta = self.env['berp.socio'].browse(values['atleta'])
-            nacimiento = atleta.fecha_nac
-            hoy = date.today()
-            fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
-            fecha = "31-12-" + fecha_hoy[0]
-            date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
-            diferencia = date_object - nacimiento
-            edad_final_temporada = str(int(diferencia.days / 365))
-            edad = int(edad_final_temporada)
-
-            if edad > 34:
-                categoria = "Master"
-            else:
-                if edad > 22:
-                    categoria = "Senior"
-                else:
-                    if edad > 19:
-                        categoria = "Sub 23"
-                    else:
-                        if edad > 17:
-                            categoria = "Sub 20"
-                        else:
-                            if edad > 15:
-                                categoria = "Sub 18"
-                            else:
-                                if edad > 13:
-                                    categoria = "Sub 16"
-
         if 'prueba' in values:
             prueba = self.env['berp.prueba'].browse(values['prueba'])
             if prueba.especialidad != '4' and prueba.especialidad != '5':
@@ -248,7 +171,7 @@ class berp_marca(models.Model):
                                 if marca == object.id.marca:
                                     id = object.id.id
 
-        values.update({'categoria': categoria, 'puntos_hungaros': id})
+        values.update({'puntos_hungaros': id})
         res = super(berp_marca, self).create(values)
         return res
 
