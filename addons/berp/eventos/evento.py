@@ -19,7 +19,13 @@ class berp_evento(models.Model):
                     socios.append(atleta.id)
             self.write({'atletas':[(6,0,socios)]})
 
+    @api.multi
+    def cerrar_evento(self):
+        self.state = 'cerrado'
 
+    @api.multi
+    def abrir_evento(self):
+        self.state = 'abierto'
 
 
     nombre = fields.Char(string="Nombre")
@@ -27,3 +33,4 @@ class berp_evento(models.Model):
     fecha = fields.Date(string="Fecha")
     pista_cubierta = fields.Boolean(string="Pista Cubierta")
     atletas = fields.Many2many('berp.socio',string="Atletas")
+    state = fields.Selection([('abierto', 'Abierto'), ('cerrado', 'Cerrado')], required=True, default='abierto', string="Estado")

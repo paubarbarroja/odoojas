@@ -18,6 +18,12 @@
         <field name="model">berp.evento</field>
         <field name="arch" type="xml">
              <form string="Evento">
+                 <header>
+                     <button name="inscripcion_atleta" string="Inscibirme" type="object" states="abierto" class="oe_highlight"/>
+                     <button name="cerrar_evento" string="Cerrar evento" type="object" states="abierto" class="oe_highlight"/>
+                     <button name="abrir_evento" string="Abrir evento" type="object" states="cerrado" class="oe_highlight" confirm="Estas seguro que quieres abrir de nuevo el evento?"/>
+                     <field name="state" widget="statusbar" statusbar_visible="abierto,cerrado"/>
+                 </header>
                  <sheet>
                      <group col="2">
                         <field name="nombre"/>
@@ -25,7 +31,6 @@
                         <field name="fecha"/>
                         <field name="pista_cubierta"/>
                         <field name="atletas"/>
-                        <button name="inscripcion_atleta" string="Inscibirme" type="object" class="oe_highlight"/>
                      </group>
                  </sheet>
              </form>

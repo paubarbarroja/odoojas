@@ -20,7 +20,7 @@ class berp_socio(models.Model):
     @api.model
     def create(self, values):
         categoria = ""
-        nacimiento = values['fecha_nac']
+        nacimiento = datetime.strptime(values['fecha_nac'], '%Y-%m-%d').date()
         hoy = date.today()
         fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
         fecha = "31-12-" + fecha_hoy[0]
@@ -75,4 +75,3 @@ class berp_socio(models.Model):
 
 # todo poner en el page de informacion del atleta en la vista poner un tree de sus mejores marcas y alguna cosa mas de información sobre el atleta... (mirar si es convincente)
 
-# todo Mirar de poner la categoria en el socio ya que es informacion del atleta, ponerlo en la pagina del atleta y asi sera mas facil cojer la categoria del mismo.
