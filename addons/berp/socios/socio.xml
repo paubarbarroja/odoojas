@@ -83,7 +83,7 @@
         <field name="res_model">berp.socio</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('tipo','=','atleta')]</field>
+        <field name="domain">[('tipo','=','Atleta')]</field>
     </record>
 
     <record id="berp_21052019_2054_action_sin_ficha" model="ir.actions.act_window">
@@ -91,7 +91,7 @@
         <field name="res_model">berp.socio</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('tipo','=','sin_ficha')]</field>
+        <field name="domain">[('tipo','=','Sin_ficha')]</field>
     </record>
 
     <record id="berp_21052019_2054_action_entrenadores" model="ir.actions.act_window">
@@ -99,7 +99,7 @@
         <field name="res_model">berp.socio</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('tipo','=','entrenador')]</field>
+        <field name="domain">[('tipo','=','Entrenador')]</field>
     </record>
 
     <record id="berp_21052019_2054_action_mi_grupo" model="ir.actions.act_window">
