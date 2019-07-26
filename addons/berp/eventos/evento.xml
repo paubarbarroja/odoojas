@@ -45,6 +45,7 @@
                         <field name="pruebas"/>
                         <field name="atletas" readonly="1"/>
                      </group>
+                     <field name="attachment_ids"  widget="many2many_binary"/>
                  </sheet>
              </form>
         </field>
