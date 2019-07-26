@@ -34,3 +34,4 @@ class berp_evento(models.Model):
     pista_cubierta = fields.Boolean(string="Pista Cubierta")
     atletas = fields.Many2many('berp.socio',string="Atletas")
     state = fields.Selection([('abierto', 'Abierto'), ('cerrado', 'Cerrado')], required=True, default='abierto', string="Estado")
+    pruebas = fields.Many2many('berp.prueba',string="Pruebas")

@@ -13,8 +13,14 @@ class berp_pista(models.Model):
         for record in self:
             record.nombre_mostrado = record.nombre+"("+record.ciudad+")"
 
+    def _search_get_pista(self, operator, value):
+        return [
+            '|',
+            ('nombre', 'ilike', value),
+            ('ciudad', 'ilike', value)
+        ]
 
     nombre = fields.Char(string="Nombre Pista")
     ciudad = fields.Char(string="Ciudad")
     direccion = fields.Char(string="Dirección")
-    nombre_mostrado = fields.Char(compute="_get_nombre_mostrado",string="Nombre")
+    nombre_mostrado = fields.Char(compute="_get_nombre_mostrado",string="Nombre",search="_search_get_pista")
