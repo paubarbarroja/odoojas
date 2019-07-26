@@ -43,7 +43,7 @@
         <field name="name">Eventos</field>
         <field name="res_model">berp.evento</field>
         <field name="view_type">form</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,calendar,gantt,graph</field>
     </record>
 
 </odoo>
