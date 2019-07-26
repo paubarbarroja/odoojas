@@ -5,7 +5,7 @@
         <field name="name">evento_calendar</field>
         <field name="model">berp.evento</field>
         <field name="arch" type="xml">
-            <calendar color="nombre" date_start="fecha" string="Eventos" mode="month">
+            <calendar color="nombre" date_start="fecha" string="Eventos" mode="month" event_open_popup="true" quick_add="False">
                 <field name="nombre"/>
                 <field name="pista"/>
             </calendar>
@@ -42,7 +42,7 @@
                         <field name="pista" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                         <field name="fecha"/>
                         <field name="pista_cubierta" invisible="1"/>
-                        <field name="pruebas" groups="berp_dt"/>
+                        <field name="pruebas"/>
                         <field name="atletas" readonly="1"/>
                      </group>
                  </sheet>
@@ -57,5 +57,23 @@
         <field name="view_type">form</field>
         <field name="view_mode">calendar,tree,form</field>
     </record>
+    <record model="ir.actions.act_window.view" id="berp_04062019_1940_action_calendar">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">calendar</field>
+        <field name="view_id" ref="berp_04062019_1940_calendar"/>
+        <field name="act_window_id" ref="berp_04062019_1940_action"/>
+   </record>
+    <record model="ir.actions.act_window.view" id="berp_04062019_1940_action_tree">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="berp_04062019_1940_tree"/>
+        <field name="act_window_id" ref="berp_04062019_1940_action"/>
+   </record>
+    <record model="ir.actions.act_window.view" id="berp_04062019_1940_action_form">
+        <field name="sequence" eval="3"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="berp_04062019_1940_form"/>
+        <field name="act_window_id" ref="berp_04062019_1940_action"/>
+   </record>
 
 </odoo>
