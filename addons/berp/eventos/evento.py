@@ -35,4 +35,4 @@ class berp_evento(models.Model):
     atletas = fields.Many2many('berp.socio',string="Atletas")
     state = fields.Selection([('abierto', 'Abierto'), ('cerrado', 'Cerrado')], required=True, default='abierto', string="Estado")
     pruebas = fields.Many2many('berp.prueba',string="Pruebas")
-    attachment_ids = fields.Many2many('ir.attachment',string="Horaio")
+    attachment_ids = fields.Many2many('ir.attachment',string="Reglamento y Horario")

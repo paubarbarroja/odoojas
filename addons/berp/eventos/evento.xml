@@ -44,8 +44,8 @@
                         <field name="pista_cubierta" invisible="1"/>
                         <field name="pruebas"/>
                         <field name="atletas" readonly="1"/>
+                        <field name="attachment_ids"  widget="many2many_binary"/>
                      </group>
-                     <field name="attachment_ids"  widget="many2many_binary"/>
                  </sheet>
              </form>
         </field>
