@@ -31,7 +31,7 @@
         <field name="arch" type="xml">
              <form string="Evento">
                  <header>
-                     <button name="inscripcion_atleta" string="Inscibirme" type="object" states="abierto" class="oe_highlight" confirm="¿Quieres inscribirte a este evento?"/>
+                     <button name="inscripcion_atleta" string="Inscibirme" type="object" states="abierto" class="oe_highlight"/>
                      <button name="cerrar_evento" string="Cerrar evento" type="object" states="abierto" class="oe_highlight"/>
                      <button name="abrir_evento" string="Abrir evento" type="object" states="cerrado" class="oe_highlight" confirm="¿Estas seguro que quieres abrir de nuevo el evento?"/>
                      <field name="state" widget="statusbar" statusbar_visible="abierto,cerrado"/>
@@ -42,7 +42,7 @@
                         <field name="pista" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                         <field name="fecha"/>
                         <field name="pista_cubierta" invisible="1"/>
-                        <field name="pruebas"/>
+                        <field name="pruebas" />
                         <field name="atletas" readonly="1"/>
                         <field name="attachment_ids"  widget="many2many_binary"/>
                      </group>
