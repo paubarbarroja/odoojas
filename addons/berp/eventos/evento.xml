@@ -5,7 +5,7 @@
         <field name="name">evento_calendar</field>
         <field name="model">berp.evento</field>
         <field name="arch" type="xml">
-            <calendar color="nombre" date_start="fecha" string="Eventos" mode="month" event_open_popup="true" quick_add="False">
+            <calendar color="state" date_start="fecha" string="Eventos" mode="month" event_open_popup="true" quick_add="False">
                 <field name="nombre"/>
                 <field name="pista"/>
             </calendar>
