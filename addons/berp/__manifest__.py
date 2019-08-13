@@ -8,6 +8,7 @@
     'data': [
         'categorias/categoria.xml',
         'eventos/evento.xml',
+        'eventos/inscripcion_evento.xml',
         'marcas/marca.xml',
         'pistas/pista.xml',
         'pruebas/prueba.xml',

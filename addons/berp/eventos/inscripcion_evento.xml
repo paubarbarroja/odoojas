@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="berp_30072019_2125_form">
+        <field name="name">inscripcion_evento_form</field>
+        <field name="model">berp.inscripcion_evento</field>
+        <field name="arch" type="xml">
+             <form string="Inscripción Evento">
+                 <field name="evento"/>
+                 <field name="atleta"/>
+                 <field name="pruebas"/>
+             </form>
+        </field>
+    </record>
+</odoo>

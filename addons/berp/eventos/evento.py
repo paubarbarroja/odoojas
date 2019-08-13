@@ -17,14 +17,13 @@ class berp_evento(models.Model):
             if self.atletas:
                 for atleta in self.atletas:
                     socios.append(atleta.id)
-            '''
+
             #Todo hacer bien la insripcion al evento por parte del atleta
             #     abrir popup de la clase inscripcion_evento y escojer las pruebas puestas en el evento por parte del director tecnico, o administrador
             #     una vez inscrito veremos una lista de atletas inscritos y para ver las pruebas o podemos hacer un campo en el suyo que sea un function de todas las pruebas escritas o
             #     puede ser al clikar encima del atleta que se abra un ventana o otra vista con la informacion de la inscripcion entre ello las pruebas a las que se ha inscrito
             
-            view_ref = self.pool.get('ir.model.data').get_object_reference(cr, uid, 'operacion_comercial',
-                                                                           'hlp_rel_oc_toc_form')
+            view_ref = self.pool.get('ir.model.data').get_object_reference(cr, uid, 'operacion_comercial','hlp_rel_oc_toc_form')
             view_id = view_ref and view_ref[1] or False
 
             if isinstance(ids, list):
@@ -39,7 +38,7 @@ class berp_evento(models.Model):
                 'view_id': view_id,
                 'res_id': ids,
                 'target': 'new'
-            }'''
+            }
             self.write({'atletas':[(6,0,socios)]})
 
     @api.multi

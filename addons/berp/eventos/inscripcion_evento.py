@@ -10,5 +10,5 @@ class berp_inscripcion_evento(models.Model):
 
 
     evento = fields.Many2one('berp.evento')
-    atletas = fields.Many2one('berp.socio',string="Atletas")
+    atleta = fields.Many2one('berp.socio',string="Atletas")
     pruebas = fields.One2many('berp.prueba','nombre',string="Pruebas")
