@@ -6,7 +6,7 @@ _logger = logging.getLogger(__name__)
 
 class berp_inscripcion_evento(models.Model):
     _name = "berp.inscripcion_evento"
-    _rec_name = "atletas"
+    _rec_name = "atleta"
 
 
     evento = fields.Many2one('berp.evento')
