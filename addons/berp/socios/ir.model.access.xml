@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- ## SOCIO ## -->
     <record id="admin_berp_socio" model="ir.model.access">
         <field name="name">admin_berp_socio</field>
         <field name="model_id" ref="model_berp_socio"/>
@@ -12,10 +11,10 @@
         <field name="perm_unlink" eval="1" />
     </record>
 
-    <record id="dt_berp_socio" model="ir.model.access">
+    <record id="administracion_berp_socio" model="ir.model.access">
         <field name="name">dt_berp_socio</field>
         <field name="model_id" ref="model_berp_socio"/>
-        <field name="group_id" ref="berp.berp_dt"/>
+        <field name="group_id" ref="berp.berp_administracion"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="1"/>
         <field name="perm_create" eval="1"/>
