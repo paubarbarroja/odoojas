@@ -68,6 +68,7 @@ class berp_socio(models.Model):
     fecha_baja = fields.Date(string="Fecha de Baja")
     direccion = fields.Char(string="Dirección")
     cuenta_banc = fields.Char(string="Cuenta Bancaria")
+    titular_cc = fields.Char(string="Titular Cuenta Bancaria")
     nombre_cont = fields.Char(string="Contacto de Emergencia")
     telef_cont = fields.Char(string="Teléfono de Emergencia")
     imagen = fields.Binary('Imagen')
