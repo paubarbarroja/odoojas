@@ -64,10 +64,13 @@ class berp_socio(models.Model):
     fecha_alta = fields.Date(string="Fecha de Alta", required=True, default=fields.Date.context_today)
     fecha_baja = fields.Date(string="Fecha de Baja")
     direccion = fields.Char(string="Dirección")
+    titular_cc = fields.Char(string="Titular Cuenta Bancaria")
     cuenta_banc = fields.Char(string="Cuenta Bancaria", required=True)
     nombre_cont = fields.Char(string="Contacto de Emergencia")
     telef_cont = fields.Char(string="Teléfono de Emergencia")
     imagen = fields.Binary('Imagen')
+    grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
+    visible = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
     user = fields.Many2one('res.users',string="Usuario")
 
 

@@ -18,6 +18,7 @@
                         <page name="inf_socio" string="Información del Socio">
                             <group col="2">
                                 <group col="2">
+                                    <field name="ficha"/>
                                     <field name="dni" groups="berp.berp_admin, berp.berp_dt"/>
                                     <field name="correo"/>
                                     <field name="telefono"/>
@@ -37,7 +38,8 @@
                                     <field name="telef_cont"/>
                                 </group>
                                 <group col="2">
-                                    <field name="cuenta_banc"/>
+                                    <field name="cuenta_banc" data-inputmask="'mask': 'ES99-9999-9999-9999-9999-9999'"/>
+                                    <field name="titular_cc"/>
                                     <field name="user"/>
                                 </group>
                             </group>
@@ -122,6 +124,7 @@
                     <field name="fecha_alta"/>
                     <field name="nacionalidad" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
                     <field name="cuenta_banc"/>
+                    <field name="titular_cc"/>
                     <field name="nombre_cont"/>
                     <field name="telef_cont"/>
                 </group>
