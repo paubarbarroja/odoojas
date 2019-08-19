@@ -18,7 +18,6 @@
                         <page name="inf_socio" string="Información del Socio">
                             <group col="2">
                                 <group col="2">
-                                    <field name="ficha"/>
                                     <field name="dni" groups="berp.berp_admin, berp.berp_dt"/>
                                     <field name="correo"/>
                                     <field name="telefono"/>
@@ -31,13 +30,6 @@
                                 </group>
                             </group>
                         </page>
-                        <page name="inf_atleta" string="Información del Atleta" groups="berp.berp_admin, berp.berp_dt">
-                            <group col="2">
-                                <field name="especialidad"/>
-                                <field name="grupo_entreno" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
-                                <field name="categoria"/>
-                            </group>
-                        </page>
                         <page name="inf_otra" string="Otra información" groups="berp.berp_admin, berp.berp_dt">
                             <group col="2">
                                 <group col="2">
@@ -47,7 +39,6 @@
                                 <group col="2">
                                     <field name="cuenta_banc"/>
                                     <field name="user"/>
-                                    <field name="visible" invisible="1"/>
                                 </group>
                             </group>
                         </page>
@@ -62,10 +53,9 @@
         <field name="model">berp.socio</field>
         <field name="arch" type="xml">
             <tree string="Socios" create="false">
-                <field name="ficha"/>
                 <field name="nombre"/>
                 <field name="genero"/>
-                <field name="visible" invisible="1"/>
+                <field name="fecha_nac"/>
             </tree>
         </field>
     </record>
@@ -124,15 +114,13 @@
                         </h1>
                     </div>
                 <group col="4">
-                    <field name="ficha"/>
                     <field name="dni" groups="berp.berp_admin, berp.berp_dt"/>
+                    <field name="direccion" groups="berp.berp_admin, berp.berp_dt"/>
                     <field name="correo"/>
                     <field name="telefono"/>
                     <field name="fecha_nac"/>
                     <field name="fecha_alta"/>
-                    <field name="genero"/>
                     <field name="nacionalidad" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
-                    <field name="direccion" groups="berp.berp_admin, berp.berp_dt"/>
                     <field name="cuenta_banc"/>
                     <field name="nombre_cont"/>
                     <field name="telef_cont"/>
