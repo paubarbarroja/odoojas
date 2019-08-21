@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="berp_21082019_1027_form" model="ir.ui.view">
+        <field name="name">berp_res_partner_inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr='//field[@name="company_type"]' position='attributes'>
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="parent_id"]' position='attributes'>
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="street2"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="vat"]' position="replace">
+                <field name="dni" data-inputmask="'mask': '99999999A'"/>
+            </xpath>
+            <xpath expr='//field[@name="function"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="mobile"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="website"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="title"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="category_id"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
