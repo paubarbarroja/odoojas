@@ -11,7 +11,7 @@ services:
     container_name: berp_odoo
     image: 'paubarbarroja/berp_odoo:1'
     ports:
-      - '8069:8069'
+      - '80:8069'
       - '443:8071'
     volumes:
       - 'odoo_data:/bitnami'
