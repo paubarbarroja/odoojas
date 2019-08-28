@@ -8,7 +8,6 @@
     'description': """
     """,
     'data': [
-        'security.xml',
         'res_partner.xml',
         'menus.xml',
     ],
