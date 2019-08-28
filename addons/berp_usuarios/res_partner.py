@@ -11,7 +11,6 @@ class Partner(models.Model):
     _inherit = "res.partner"
 
 
-    user = fields.Many2one('res.users', string="Usuario")
     is_socio = fields.Boolean(string="Socio")
     is_atleta = fields.Boolean(string="Atleta")
     fecha_nac = fields.Date(string="Fecha de Nacimiento", required=True)
