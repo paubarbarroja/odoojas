@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="berp_21082019_1027_form" model="ir.ui.view">
+        <field name="name">berp_res_partner_inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <xpath expr='//field[@name="company_type"]' position='replace'>
+                <group col="4">
+                    <field name="is_socio"/>
+                    <field name="is_atleta"/>
+                </group>
+            </xpath>
+            <xpath expr='//field[@name="parent_id"]' position='attributes'>
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="street2"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="vat"]' position="replace">
+                <field name="dni" data-inputmask="'mask': '99999999A'"/>
+                <field name="fecha_nac"/>
+            </xpath>
+            <xpath expr='//field[@name="function"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="mobile"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="website"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="title"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="lang"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//page[@string="Contacts &amp; Addresses"]' position="replace">
+                <page name="socio_page" string="Socio" attrs="{'invisible': [('is_socio', '=', False)]}">
+                    <group col="2">
+                        <field name="fecha_alta"/>
+                        <field name="fecha_baja"/>
+                        <field name="socio_honorario"/>
+                    </group>
+                </page>
+                <page name="atleta_page" string="Atleta" attrs="{'invisible': [('is_atleta', '=', False)]}">
+                    <group col="2">
+                        <field name="genero"/>
+                        <field name="especialidad"/>
+                        <field name="ficha"/>
+                        <field name="categoria"/>
+                        <field name="grupo_entreno"/>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="berp_28082019_1258_action" model="ir.actions.act_window">
+        <field name="name">Socios</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+</odoo>

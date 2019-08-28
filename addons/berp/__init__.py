@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from . import categorias
 from . import eventos
 from . import marcas
 from . import pistas

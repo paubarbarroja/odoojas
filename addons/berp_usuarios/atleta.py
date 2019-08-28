@@ -9,8 +9,8 @@ _logger = logging.getLogger(__name__)
 
 # todo HERENCIAR CLASE Y VISTA DE RES_USER PARA PONER CAMPO MANY2ONE A BERP.SOCIO.
 
-class berp_socio(models.Model):
-    _name = "berp.socio"
+class berp_atleta(models.Model):
+    _name = "berp.atleta"
     _rec_name = "nombre"
 
     @api.multi
@@ -54,32 +54,23 @@ class berp_socio(models.Model):
         res = super(berp_socio, self).create(values)
         return res
 
-    nombre = fields.Char(string="Nombre", required=True)
-    correo = fields.Char(string="Correo-e", required=True)
-    telefono = fields.Char(string="Teléfono", required=True)
-    nacionalidad = fields.Many2one('res.country', string="Nacionalidad", default=68, required=True)
+    nacionalidad = fields.Many2one('res.country',string="Nacionalidad",default=68, required=True)
     dni = fields.Char(string="DNI", required=True)
-    genero = fields.Selection([('1', 'Masculino'), ('2', 'Femenino')], string='Sexo', required=True)
+
     fecha_nac = fields.Date(string="Fecha de Nacimiento", required=True)
+
+    user = fields.Many2one('res.users',string="Socio")
+
+#socio
     fecha_alta = fields.Date(string="Fecha de Alta", required=True, default=fields.Date.context_today)
     fecha_baja = fields.Date(string="Fecha de Baja")
-    direccion = fields.Char(string="Dirección")
-    cuenta_banc = fields.Char(string="Cuenta Bancaria", required=True)
-    titular_cc = fields.Char(string="Titular Cuenta Bancaria", required=True)
-    nombre_cont = fields.Char(string="Contacto de Emergencia")
-    telef_cont = fields.Char(string="Teléfono de Emergencia")
-    imagen = fields.Binary('Imagen')
-    grupo_entreno = fields.Many2one('berp.grupo_entreno', string="Grupo Entreno")
-    visible = fields.Boolean(compute="_comprobar_grupo_entreno", string="visible", default=False)
-    user = fields.Many2one('res.users', string="Usuario")
-    especialidad = fields.Selection(
-        [('1', 'Velocidad'), ('2', 'Fondo'), ('3', 'Medio Fondo'), ('4', 'Lanzamientos'), ('5', 'Saltos'),
-         ('6', 'Marcha Atlética')], string='Especialidad')
+    socio_honorario = fields.Boolean(string="Honorario")
+
+# atleta
+    genero = fields.Selection([('1', 'Masculino'), ('2', 'Femenino')], string='Sexo', required=True)
+    especialidad = fields.Selection([('1', 'Velocidad'),('2', 'Fondo'),('3', 'Medio Fondo'),('4', 'Lanzamientos'),('5', 'Saltos'),('6', 'Marcha Atlética')],string='Especialidad')
     ficha = fields.Char(string="Ficha")
     categoria = fields.Char(string="Categoria")
-    grupo_entreno = fields.Many2one('berp.grupo_entreno', string="Grupo Entreno")
-    visible = fields.Boolean(compute="_comprobar_grupo_entreno", string="visible", default=False)
-
-#todo crear nueva clase para clubes que puede ser res.company hay que mirarselo
-
+    grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
+    visible = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
 
