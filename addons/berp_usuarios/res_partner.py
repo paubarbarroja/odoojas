@@ -10,6 +10,10 @@ _logger = logging.getLogger(__name__)
 class Partner(models.Model):
     _inherit = "res.partner"
 
+
+    is_socio = fields.Boolean(string="Socio")
+    is_atleta = fields.Boolean(string="Atleta")
+
 # socio
     fecha_nac = fields.Date(string="Fecha de Nacimiento", required=True)
     dni = fields.Char(string="DNI", required=True)

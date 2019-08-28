@@ -20,9 +20,8 @@
         'pruebas/ir.model.access.xml',
         'puntos_hungaros/puntos_hungaros.xml',
         'puntos_hungaros/ir.model.access.xml',
-        'socios/socio.xml',
-        'socios/ir.model.access.xml',
-        'socios/menus.xml',
+        'usuarios/socio.xml',
+        'usuarios/ir.model.access.xml'
         'menus.xml',
     ],
     'demo': [],

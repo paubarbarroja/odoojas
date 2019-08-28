@@ -18,20 +18,6 @@
                       parent="atletas_submenuitem"
                       action="berp_21052019_2054_action_todos"/>
 
-            <menuitem id="atletas_atletas_menuitem"
-                      name="Atletas"
-                      parent="atletas_submenuitem"
-                      action="berp_21052019_2054_action_atl"/>
-
-            <menuitem id="atletas_sinficha_menuitem"
-                      name="Socios sin Ficha"
-                      parent="atletas_submenuitem"
-                      action="berp_21052019_2054_action_sin_ficha"/>
-
-            <menuitem id="atletas_entrenadores_menuitem"
-                      name="Entrenadores"
-                      parent="atletas_submenuitem"
-                      action="berp_21052019_2054_action_entrenadores"/>
 
         <menuitem id="marca_submenuitem"
                   name="Marcas"

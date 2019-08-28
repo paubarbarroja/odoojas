@@ -39,4 +39,11 @@
         </field>
     </record>
 
+    <record id="berp_28082019_1258_action_todos" model="ir.actions.act_window">
+        <field name="name">Socios</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
 </odoo>
