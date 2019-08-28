@@ -39,7 +39,7 @@
                 <attribute name="invisible">1</attribute>
             </xpath>
             <xpath expr='//field[@name="category_id"]' position="replace">
-                <field name="user"/>
+                <!--field name="user"/-->
             </xpath>
             <xpath expr='//page[@string="Contacts &amp; Addresses"]' position="replace">
                 <page name="socio_page" string="Socio" attrs="{'invisible': [('is_socio', '=', False)]}">
