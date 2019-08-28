@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <menuitem id="berp_20190814_1731_menuitem"
               name="Socios"
               parent="administracion_menuitem"/>
@@ -13,4 +14,5 @@
                       name="Alta Soci"
                       parent="berp_20190814_1731_menuitem"
                       action="berp_14082019_1800_action_todos"/>
+
 </odoo>

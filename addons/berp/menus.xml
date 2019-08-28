@@ -43,11 +43,7 @@
                   parent="gestion_menuitem"
                   action="berp_04062019_1940_action"/>
 
-        <menuitem id="categoria_submenuitem"
-                  name="Categorias"
-                  parent="gestion_menuitem"
-                  action="berp_04062019_1241_action"
-                  groups="berp.berp_admin"/>
+
 
         <menuitem id="pista_submenuitem"
                   name="Pistas"

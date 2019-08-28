@@ -12,8 +12,6 @@
         'eventos/ir.model.access.xml',
         'grupos_entreno/grupo_entreno.xml',
         'grupos_entreno/ir.model.access.xml',
-        'categorias/categoria.xml',
-        'categorias/ir.model.access.xml',
         'marcas/marca.xml',
         'marcas/ir.model.access.xml',
         'pistas/pista.xml',

@@ -33,6 +33,9 @@
             <xpath expr='//field[@name="category_id"]' position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
+            <xpath expr='//field[@name="user_id"]' position="attributes">
+                <attribute name="string">Usuario</attribute>
+            </xpath>
         </field>
     </record>
 
