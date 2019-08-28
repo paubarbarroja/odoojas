@@ -72,7 +72,7 @@
         <field name="view_id" ref="base.view_partner_tree"/>
         <field name="act_window_id" ref="berp_28082019_1258_action"/>
    </record>
-    <record model="ir.actions.act_window.view" id="berp_28082019_1258_action_form">
+    <record model="ir.actions.act_window.view" id="berp_04062019_1940_action_form">
         <field name="sequence" eval="2"/>
         <field name="view_mode">form</field>
         <field name="view_id" ref="berp_21082019_1027_form"/>
