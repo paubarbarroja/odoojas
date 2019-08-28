@@ -109,12 +109,16 @@
         <field name="arch" type="xml">
             <form string="Socio">
                 <field name="imagen" widget="image" class="oe_avatar" nolabel="1"/>
-                    <div class="oe_title">
-                        <label for="Nombre" class="oe_edit_only" string="Nombre"/>
-                        <h1>
-                            <field name="nombre" placeholder="Nombre del Socio" nolabel="1"/>
-                        </h1>
-                    </div>
+                <div class="oe_title">
+                    <label for="Nombre" class="oe_edit_only" string="Nombre"/>
+                    <h1>
+                        <field name="nombre" placeholder="Nombre del Socio" nolabel="1"/>
+                    </h1>
+                </div>
+                <br/>
+                <br/>
+                <hr/>
+                <separator string="Información General"/>
                 <group col="4">
                     <field name="dni" groups="berp.berp_admin, berp.berp_dt"/>
                     <field name="direccion" groups="berp.berp_admin, berp.berp_dt"/>
@@ -123,8 +127,16 @@
                     <field name="fecha_nac"/>
                     <field name="fecha_alta"/>
                     <field name="nacionalidad" options="{'limit': 20, 'no_open': True, 'no_create': True, 'create_edit': false}"/>
+                </group>
+                <hr/>
+                <separator string="Información bancaria"/>
+                <group col="4">
                     <field name="cuenta_banc"/>
                     <field name="titular_cc"/>
+                </group>
+                <hr/>
+                <separator string="Otra información"/>
+                <group col="4">
                     <field name="nombre_cont"/>
                     <field name="telef_cont"/>
                 </group>
