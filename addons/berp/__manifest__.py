@@ -21,7 +21,7 @@
         'puntos_hungaros/puntos_hungaros.xml',
         'puntos_hungaros/ir.model.access.xml',
         'usuarios/socio.xml',
-        'usuarios/ir.model.access.xml'
+        'usuarios/ir.model.access.xml',
         'menus.xml',
     ],
     'demo': [],
