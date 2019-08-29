@@ -4,7 +4,7 @@
     <record id="berp_21082019_1027_form" model="ir.ui.view">
         <field name="name">berp_res_partner_inherit</field>
         <field name="model">res.partner</field>
-        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="mode">primary</field>
         <field name="arch" type="xml">
             <xpath expr='//field[@name="company_type"]' position='replace'>
@@ -59,8 +59,6 @@
             <xpath expr='//page[@name="internal_notes"]' position="replace">
             </xpath>
             <xpath expr='//page[@name="sales_purchases"]' position="replace">
-            </xpath>
-            <xpath expr='//page[@name="accounting"]' position="replace">
             </xpath>
         </field>
     </record>
