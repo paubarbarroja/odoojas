@@ -2,7 +2,7 @@
     'name': "Usuarios",
     'summary': """Berp - Usuarios""",
     'version': '1.0',
-    'depends': ['base','berp'],
+    'depends': ['account','base','berp'],
     'author': "Pau Barbarroja",
     'category': 'berp',
     'description': """
