@@ -56,7 +56,12 @@
                     </group>
                 </page>
             </xpath>
-
+            <xpath expr='//page[@name="internal_notes"]' position="replace">
+            </xpath>
+            <xpath expr='//page[@name="sales_purchases"]' position="replace">
+            </xpath>
+            <xpath expr='//page[@name="accounting"]' position="replace">
+            </xpath>
         </field>
     </record>
 
@@ -65,6 +70,7 @@
         <field name="res_model">res.partner</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
+        <field name="domain">[('company_type','=','person')]</field>
     </record>
     <record model="ir.actions.act_window.view" id="berp_28082019_1258_action_tree">
         <field name="sequence" eval="1"/>
