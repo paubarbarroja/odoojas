@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <menuitem id="berp_20190828_1421_menuitem"
-              name="Socios"
+              name="Usuarios"
               parent="berp.administracion_menuitem"/>
 
             <menuitem id="berp_20190814_1737_menuitem"
-                      name="Todos"
+                      name="Socios"
+                      parent="berp_20190828_1421_menuitem"
+                      action="berp_28082019_1258_action"/>
+
+            <menuitem id="berp_20190814_1737_menuitem"
+                      name="Atletas"
                       parent="berp_20190828_1421_menuitem"
                       action="berp_28082019_1258_action"/>
 
