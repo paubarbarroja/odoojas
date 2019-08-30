@@ -79,9 +79,8 @@
                     </div>
                     <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 90]}'/>
                     <div class="oe_title">
-                        <field name="type_user" widget="radio"
-                            class="oe_edit_only"
-                            options="{'horizontal': true}"/>
+                        <field name="is_socio"/>
+                        <field name="is_atleta"/>
                         <h1>
                             <field name="name" default_focus="1" placeholder="Name"/>
                         </h1>
@@ -105,7 +104,7 @@
                         </group>
                     </group>
                     <notebook colspan="4">
-                        <page name="socio_page" string="Socio">
+                        <page name="socio_page" string="Socio" attrs="{'invisible': [('type_user', '=', '')]}">
                             <group col="2">
                                 <field name="fecha_alta"/>
                                 <field name="fecha_baja"/>

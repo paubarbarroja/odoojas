@@ -14,6 +14,9 @@ class Partner(models.Model):
     type_user = fields.Selection([('socio', 'Socio'), ('atleta', 'Atleta')], string='a')
     fecha_nac = fields.Date(string="Fecha de Nacimiento")
     dni = fields.Char(string="DNI")
+    is_socio = fields.Boolean(string="Socio")
+    is_atleta = fields.Boolean(string="Atleta")
+
 
     # socio
     fecha_alta = fields.Date(string="Fecha de Alta", required=True, default=fields.Date.context_today)
