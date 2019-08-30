@@ -82,7 +82,6 @@
                         <field name="type_user" widget="radio"
                             class="oe_edit_only"
                             options="{'horizontal': true}"/>
-
                         <h1>
                             <field name="name" default_focus="1" placeholder="Name"/>
                         </h1>
