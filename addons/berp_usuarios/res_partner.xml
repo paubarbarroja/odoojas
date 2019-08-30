@@ -83,7 +83,7 @@
                             class="oe_edit_only"
                             options="{'horizontal': true}"/>
                         <h1>
-                            <field name="name" default_focus="1" placeholder="Name" attrs="{'required' : [('type', '=', 'contact')]}"/>
+                            <field name="name" default_focus="1" placeholder="Name"/>
                         </h1>
                     </div>
                     <group>
@@ -101,7 +101,7 @@
                         <group>
                             <field name="phone" widget="phone"/>
                             <field name="user_id"/>
-                            <field name="email" widget="email" context="{'gravatar_image': True}" attrs="{'required': [('user_ids','!=', [])]}"/>
+                            <field name="email" widget="email" context="{'gravatar_image': True}"/>
                         </group>
                     </group>
                     <notebook colspan="4">
