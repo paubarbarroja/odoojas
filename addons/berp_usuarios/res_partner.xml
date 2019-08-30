@@ -167,7 +167,7 @@
     <record model="ir.actions.act_window.view" id="berp_29082019_1841_action_form">
         <field name="sequence" eval="2"/>
         <field name="view_mode">form</field>
-        <field name="view_id" ref="berp_21082019_1027_form"/>
+        <field name="view_id" ref="berp_29082019_2241_form"/>
         <field name="act_window_id" ref="berp_29082019_1841_action"/>
    </record>
 
