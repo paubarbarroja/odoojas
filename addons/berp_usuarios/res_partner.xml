@@ -69,6 +69,8 @@
             <field name="model">res.partner</field>
             <field name="arch" type="xml">
                 <form string="Partners">
+                    <field name="is_socio" invisible="True"/>
+                    <field name="is_atleta" invisible="True"/>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         <button name="toggle_active" type="object"
@@ -99,8 +101,6 @@
                             <field name="phone" widget="phone"/>
                             <field name="user_id"/>
                             <field name="email" widget="email" context="{'gravatar_image': True}"/>
-                            <field name="is_socio"/>
-                            <field name="is_atleta"/>
                         </group>
                     </group>
                     <notebook colspan="4">
