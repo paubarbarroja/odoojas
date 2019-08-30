@@ -1,68 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="berp_21082019_1027_form" model="ir.ui.view">
-        <field name="name">berp_res_partner_inherit</field>
-        <field name="model">res.partner</field>
-        <field name="inherit_id" ref="account.view_partner_property_form"/>
-        <field name="mode">primary</field>
-        <field name="arch" type="xml">
-            <xpath expr='//field[@name="company_type"]' position='replace'>
-            </xpath>
-            <xpath expr='//field[@name="parent_id"]' position='attributes'>
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr='//field[@name="street2"]' position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr='//field[@name="vat"]' position="replace">
-                <field name="dni" data-inputmask="'mask': '99999999A'"/>
-                <field name="fecha_nac"/>
-            </xpath>
-            <xpath expr='//field[@name="function"]' position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr='//field[@name="mobile"]' position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr='//field[@name="website"]' position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr='//field[@name="title"]' position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr='//field[@name="lang"]' position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr='//page[@name="contacts_and_addresses"]' position="replace">
-                <page name="socio_page" string="Socio">
-                    <group col="2">
-                        <field name="fecha_alta"/>
-                        <field name="fecha_baja"/>
-                        <field name="socio_honorario"/>
-                    </group>
-                </page>
-                <page name="atleta_page" string="Atleta" >
-                    <group col="2">
-                        <field name="genero"/>
-                        <field name="especialidad"/>
-                        <field name="ficha"/>
-                        <field name="categoria"/>
-                        <field name="grupo_entreno"/>
-                    </group>
-                </page>
-            </xpath>
-            <xpath expr='//page[@name="internal_notes"]' position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr='//page[@name="sales_purchases"]' position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr='//page[@name="accounting"]' position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-        </field>
-    </record>
 
     <record id="berp_29082019_2241_form" model="ir.ui.view">
             <field name="name">res.partner.form</field>
@@ -133,7 +71,7 @@
         <field name="name">Socios</field>
         <field name="res_model">res.partner</field>
         <field name="view_type">form</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree</field>
         <field name="domain">[('company_type','=','person')]</field>
     </record>
     <record model="ir.actions.act_window.view" id="berp_28082019_1258_action_tree">
@@ -142,19 +80,13 @@
         <field name="view_id" ref="base.view_partner_tree"/>
         <field name="act_window_id" ref="berp_28082019_1258_action"/>
    </record>
-    <record model="ir.actions.act_window.view" id="berp_04062019_1940_action_form">
-        <field name="sequence" eval="2"/>
-        <field name="view_mode">form</field>
-        <field name="view_id" ref="berp_21082019_1027_form"/>
-        <field name="act_window_id" ref="berp_28082019_1258_action"/>
-   </record>
 
     <!-- ##################### ATLETAS ##################### -->
     <record id="berp_29082019_1841_action" model="ir.actions.act_window">
         <field name="name">Atletas</field>
         <field name="res_model">res.partner</field>
         <field name="view_type">form</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree</field>
         <field name="domain">[('company_type','=','person')]</field>
     </record>
     <record model="ir.actions.act_window.view" id="berp_29082019_1841_action_tree">
@@ -163,14 +95,47 @@
         <field name="view_id" ref="base.view_partner_tree"/>
         <field name="act_window_id" ref="berp_29082019_1841_action"/>
    </record>
-    <record model="ir.actions.act_window.view" id="berp_29082019_1841_action_form">
-        <field name="sequence" eval="2"/>
+
+    <!-- ##################### ALTA SOCI ##################### -->
+    <record id="berp_30082019_1544_action" model="ir.actions.act_window">
+        <field name="name">Socio</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_type">form</field>
         <field name="view_mode">form</field>
+        <field name="target">new</field>
         <field name="view_id" ref="berp_29082019_2241_form"/>
-        <field name="act_window_id" ref="berp_29082019_1841_action"/>
-   </record>
+        <field name="context">{'default_is_socio': True}</field>
+    </record>
+
+    <!-- ##################### ALTA ATLETA ##################### -->
+    <record id="berp_30082019_1546_action" model="ir.actions.act_window">
+        <field name="name">Atletas</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="berp_29082019_2241_form"/>
+        <field name="context">{'default_is_atleta': True}</field>
+    </record>
 
 
 
 
+    <!-- todo search para filtrar usuarios entre socios y atletas  - - - - ->  estudiar la manera de hacerlo con el search y la linea para el action
+    <record id="view_dms_tag_search" model="ir.ui.view">
+	<field name="name">muk_dms_tag.search</field>
+	<field name="model">muk_dms.tag</field>
+    <field name="arch" type="xml">
+        <search string="Categories">
+            <field name="name" filter_domain="[('name', 'ilike', self)]" />
+            <filter string="All" name="all" domain="['|', ('active', '=', False), ('active', '=', True)]" />
+            <group expand="0" name="group_by" string="Group By">
+                <filter name="group_by_category" string="Category" domain="[]" context="{'group_by': 'category'}"/>
+                <filter name="group_by_color" string="Color" domain="[]" context="{'group_by': 'color'}"/>
+            </group>
+        </search>
+    </field>
+</record>
+	<field name="context">{'search_default_group_by_category': 1}</field>
+-->
 </odoo>
