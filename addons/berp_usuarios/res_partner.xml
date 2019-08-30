@@ -135,7 +135,7 @@
         <field name="res_model">res.partner</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('company_type','=','person')</field>
+        <field name="domain">[('company_type','=','person')]</field>
     </record>
     <record model="ir.actions.act_window.view" id="berp_28082019_1258_action_tree">
         <field name="sequence" eval="1"/>
@@ -156,7 +156,7 @@
         <field name="res_model">res.partner</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('company_type','=','person')</field>
+        <field name="domain">[('company_type','=','person')]</field>
     </record>
     <record model="ir.actions.act_window.view" id="berp_29082019_1841_action_tree">
         <field name="sequence" eval="1"/>
