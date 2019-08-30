@@ -10,13 +10,56 @@ _logger = logging.getLogger(__name__)
 class Partner(models.Model):
     _inherit = "res.partner"
 
-    user_id = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.')
-    type_user = fields.Selection([('socio', 'Socio'), ('atleta', 'Atleta')], string='a')
+    @api.onchange('fecha_nac')
+    def get_categoria(self):
+        for record in self:
+            if record.fecha_nac:
+                categoria = ""
+                hoy = date.today()
+                fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
+                fecha = "31-12-" + fecha_hoy[0]
+                date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
+                diferencia = date_object - record.fecha_nac
+                edad_final_temporada = str(int(diferencia.days / 365))
+                edad = int(edad_final_temporada)
+
+
+
+
+                if edad > 34:
+                    record.categoria = "Master"
+                else:
+                    if edad > 22:
+                        record.categoria = "Senior"
+                    else:
+                        if edad > 19:
+                            record.categoria = "Sub 23"
+                        else:
+                            if edad > 17:
+                                record.categoria = "Sub 20"
+                            else:
+                                if edad > 15:
+                                    record.categoria = "Sub 18"
+                                else:
+                                    if edad > 13:
+                                        record.categoria = "Sub 16"
+
+    @api.multi
+    def abrir_popup_crear_socio(self):
+        print('##################################-------------------------> socio')
+
+
+    @api.multi
+    def abrir_popup_crear_atleta(self):
+        print('##################################-------------------------> atleta')
+
+
+    partner_id = fields.Many2one('res.partner',string="Usuario")
+    user_id = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
     fecha_nac = fields.Date(string="Fecha de Nacimiento")
     dni = fields.Char(string="DNI")
     is_socio = fields.Boolean(string="Socio")
     is_atleta = fields.Boolean(string="Atleta")
-
 
     # socio
     fecha_alta = fields.Date(string="Fecha de Alta", required=True, default=fields.Date.context_today)
