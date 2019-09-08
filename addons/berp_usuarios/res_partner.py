@@ -54,7 +54,9 @@ class Partner(models.Model):
         print('##################################-------------------------> atleta')
 
 
-    partner_id = fields.Many2one('res.partner',string="Usuario")
+
+    atleta_id = fields.Many2one('res.partner',string="Atleta", domain="[('is_atleta', '=', True)]")
+    socio_id = fields.Many2one('res.partner',string="Socio", domain="[('is_socio', '=', True)]")
     user_id = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
     fecha_nac = fields.Date(string="Fecha de Nacimiento")
     dni = fields.Char(string="DNI")

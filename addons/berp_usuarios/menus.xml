@@ -26,12 +26,12 @@
                       name="Alta Socio"
                       parent="berp_20190828_1421_menuitem"
                       sequence="3"
-                      action="berp_30082019_1544_action"/>
+                      action="berp_08092019_1135_action"/>
 
             <menuitem id="berp_20190830_1549_menuitem"
                       name="Alta Atleta"
                       parent="berp_20190828_1421_menuitem"
                       sequence="4"
-                      action="berp_30082019_1546_action"/>
+                      action="berp_08092019_1136_action"/>
 
 </odoo>

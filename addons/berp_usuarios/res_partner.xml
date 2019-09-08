@@ -150,49 +150,72 @@
 
 
 
-
-
-
-
+<!-- ##################### CONFIRMACIÓN ALTA SOCIO ##################### -->
     <record id="berp_20190830_1948_form" model="ir.ui.view">
         <field name="name">res.partner.popup_socio</field>
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
-            <form string="Popup Confirmación Socio">
+            <form string="Popup Confirmación Socio" create="false" edit="false">
                 <sheet>
-                    <p>
-                        ¿El SOCIO que quieres registrar esta registrado como ATLETA?
-
-                        -Si es asi, pulsa CONTINUAR.
-
-                        -En caso contrario, BUSCA al ATLETA en el siguiente DESPLEGABLE y pulsa CONTINUAR.
-                    </p>
-                    <field name="partner_id"/>
-                    <button name="abrir_popup_crear_socio" type="object" string="Continuar"/>
+                    <p>¿El SOCIO que quieres registrar esta registrado como ATLETA?</p><br/>
+                    <p>-Si es asi, pulsa CONTINUAR.</p><br/>
+                    <p>-En caso contrario, BUSCA al ATLETA en el siguiente DESPLEGABLE y pulsa CONTINUAR.</p>
+                    <br/><br/><br/>
+                    <group col="2">
+                        <field name="atleta_id"/>
+                    </group>
                 </sheet>
+                <footer>
+                    <button name="abrir_popup_crear_socio" type="object" string="Continuar" class="oe_highlight"/>
+                </footer>
             </form>
         </field>
     </record>
 
 
+    <record id="berp_08092019_1135_action" model="ir.actions.act_window">
+        <field name="name">Socios</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="berp_20190830_1948_form"/>
+        <field name="flags">{'action_buttons': False}</field>
+    </record>
+
+
+
+<!-- ##################### CONFIRMACIÓN ALTA ATLETA ##################### -->
     <record id="berp_20190830_1957_form" model="ir.ui.view">
         <field name="name">res.partner.popup_atleta</field>
         <field name="model">res.partner</field>
         <field name="arch" type="xml">
             <form string="Popup Confirmación Atleta">
                 <sheet>
-                    <p>
-                        ¿El ATLETA que quieres registrar esta registrado como SOCIO?
-
-                        -Si es asi, pulsa CONTINUAR.
-
-                        -En caso contrario, BUSCA al ATLETA en el siguiente DESPLEGABLE y pulsa CONTINUAR.
-                    </p>
-                    <field name="partner_id"/>
-                    <button name="abrir_popup_crear_atleta" type="object" string="Continuar"/>
+                    <p>¿El ATLETA que quieres registrar esta registrado como SOCIO?</p><br/>
+                    <p>-Si es asi, pulsa CONTINUAR.</p><br/>
+                    <p>-En caso contrario, BUSCA al ATLETA en el siguiente DESPLEGABLE y pulsa CONTINUAR.</p>
+                    <br/><br/><br/>
+                    <group col="2">
+                        <field name="socio_id"/>
+                    </group>
                 </sheet>
+                <footer>
+                    <button name="abrir_popup_crear_atleta" type="object" string="Continuar" class="oe_highlight"/>
+                </footer>
             </form>
         </field>
     </record>
+
+
+    <record id="berp_08092019_1136_action" model="ir.actions.act_window">
+        <field name="name">Atletas</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="berp_20190830_1957_form"/>
+    </record>
+
 
 </odoo>
