@@ -38,10 +38,8 @@ class berp_altas_popup(models.TransientModel):
         partner_id = False
         if self.socio_id:
             partner_id = self.socio_id.id
+            self.socio_id.write({'is_atleta':True})
 
-        context = {
-            'default_is_atleta' : True,
-        }
         view_ref = self.env.ref('berp_usuarios.berp_29082019_2241_form')
         view_id = view_ref and view_ref.id or False
         return {
