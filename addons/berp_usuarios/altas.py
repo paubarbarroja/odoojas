@@ -12,12 +12,28 @@ class berp_altas_popup(models.TransientModel):
 
     @api.multi
     def abrir_popup_crear_socio(self):
-        print('##################################-------------------------> socio')
+        context = {
+            'default_is_socio': True,
+        }
+        view_ref = self.env.ref('berp_usuarios.berp_29082019_2241_form')
+        view_id = view_ref and view_ref.id or False
+        return {
+            'type'     : 'ir.actions.act_window',
+            'name'     : 'Alta Socio',
+            'res_model': 'res.partner',
+            'view_type': 'form',
+            'view_mode': 'form',
+            'view_id'  : view_id,
+            'target'   : 'new',
+            'res_id'   : False,
+            'context'  : context,
+        }
 
     @api.multi
     def abrir_popup_crear_atleta(self):
-        print('##################################-------------------------> atleta %r', self)
-
+        context = {
+            'default_is_atleta' : True,
+        }
         view_ref = self.env.ref('berp_usuarios.berp_29082019_2241_form')
         view_id = view_ref and view_ref.id or False
         return {
@@ -29,6 +45,7 @@ class berp_altas_popup(models.TransientModel):
             'view_id'  : view_id,
             'target'   : 'new',
             'res_id'   : False,
+            'context'  : context,
         }
 
 
