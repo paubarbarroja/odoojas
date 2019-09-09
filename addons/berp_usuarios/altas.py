@@ -18,7 +18,7 @@ class berp_altas_popup(models.TransientModel):
     def abrir_popup_crear_atleta(self):
         print('##################################-------------------------> atleta %r', self)
 
-        view_ref = self.env.ref('berp_29082019_2241_form')
+        view_ref = self.env.ref('berp_usuarios.berp_29082019_2241_form')
         view_id = view_ref and view_ref.id or False
         return {
             'type'     : 'ir.actions.act_window',
