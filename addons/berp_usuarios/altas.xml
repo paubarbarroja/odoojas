@@ -24,8 +24,8 @@
 
 
     <record id="berp_08092019_1135_action" model="ir.actions.act_window">
-        <field name="name">Socios</field>
-        <field name="res_model">res.partner</field>
+        <field name="name">Alta Socio</field>
+        <field name="res_model">berp.altas_popup</field>
         <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
@@ -58,8 +58,8 @@
 
 
     <record id="berp_08092019_1136_action" model="ir.actions.act_window">
-        <field name="name">Atletas</field>
-        <field name="res_model">res.partner</field>
+        <field name="name">Alta Atleta</field>
+        <field name="res_model">berp.altas_popup</field>
         <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
