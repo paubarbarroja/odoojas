@@ -11,6 +11,9 @@
                     <p>-Si es asi, pulsa CONTINUAR.</p><br/>
                     <p>-En caso contrario, BUSCA al ATLETA en el siguiente DESPLEGABLE y pulsa CONTINUAR.</p>
                     <br/><br/><br/>
+                    <group col="2">
+                        <field name="atleta_id"/>
+                    </group>
                 </sheet>
                 <footer>
                     <button name="abrir_popup_crear_socio" type="object" string="Continuar" class="oe_highlight"/>
@@ -31,7 +34,6 @@
 
 
 
-
 	<!-- ##################### CONFIRMACIÓN ALTA ATLETA ##################### -->
     <record id="berp_20190909_1609_form" model="ir.ui.view">
         <field name="name">altas_popup</field>
@@ -43,6 +45,9 @@
                     <p>-Si es asi, pulsa CONTINUAR.</p><br/>
                     <p>-En caso contrario, BUSCA al ATLETA en el siguiente DESPLEGABLE y pulsa CONTINUAR.</p>
                     <br/><br/><br/>
+                    <group col="2">
+                        <field name="socio_id"/>
+                    </group>
                 </sheet>
                 <footer>
                     <button name="abrir_popup_crear_atleta" type="object" string="Continuar" class="oe_highlight"/>
