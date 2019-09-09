@@ -9,6 +9,7 @@
     """,
     'data': [
         'res_partner.xml',
+        'altas.xml',
         'menus.xml',
     ],
     'demo': [],

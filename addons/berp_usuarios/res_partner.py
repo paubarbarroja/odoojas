@@ -44,32 +44,11 @@ class Partner(models.Model):
                                     if edad > 13:
                                         record.categoria = "Sub 16"
 
-    @api.multi
-    def abrir_popup_crear_socio(self):
-        print('##################################-------------------------> socio')
-
-
-    @api.multi
-    def abrir_popup_crear_atleta(self):
-        print('##################################-------------------------> atleta %r',self)
-
-        view_ref = self.env.ref('berp_29082019_2241_form')
-        view_id = view_ref and view_ref.id or False
-        return {
-            'type'     : 'ir.actions.act_window',
-            'name'     : 'Alta Atleta',
-            'res_model': 'res.partner',
-            'view_type': 'form',
-            'view_mode': 'form',
-            'view_id'  : view_id,
-            'target'   : 'current',
-            'nodestroy': True,
-        }
 
 
 
-    atleta_id = fields.Many2one('res.partner',string="Atleta", domain="[('is_atleta', '=', True)]")
-    socio_id = fields.Many2one('res.partner',string="Socio", domain="[('is_socio', '=', True)]")
+
+
     user_id = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
     fecha_nac = fields.Date(string="Fecha de Nacimiento")
     dni = fields.Char(string="DNI")

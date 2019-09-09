@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+	<record id="berp_20190909_1604_acces" model="ir.model.access">
+        <field name="name">Berp - altas_popup</field>
+        <field name="model_id" ref="model_berp_altas_popup"/>
+        <field name="group_id" ref="berp.berp_administracion"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1" />
+    </record>
 
 </odoo>
