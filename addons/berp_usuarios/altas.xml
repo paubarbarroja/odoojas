@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<!-- ##################### CONFIRMACIÓN ALTA SOCIO ##################### -->
-    <record id="berp_20190830_1948_form" model="ir.ui.view">
-        <field name="name">res.partner.popup_socio</field>
-        <field name="model">res.partner</field>
+    <record id="berp_20190909_1608_form" model="ir.ui.view">
+        <field name="name">altas_popup</field>
+        <field name="model">berp.altas_popup</field>
         <field name="arch" type="xml">
-            <form string="Popup Confirmación Socio" create="false" edit="false">
+            <form string="Popup Confirmación Socio">
                 <sheet>
                     <p>¿El SOCIO que quieres registrar esta registrado como ATLETA?</p><br/>
                     <p>-Si es asi, pulsa CONTINUAR.</p><br/>
@@ -29,16 +29,15 @@
         <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
-        <field name="view_id" ref="berp_20190830_1948_form"/>
-        <field name="flags">{'action_buttons': False}</field>
+        <field name="view_id" ref="berp_20190909_1608_form"/>
     </record>
 
 
 
 	<!-- ##################### CONFIRMACIÓN ALTA ATLETA ##################### -->
-    <record id="berp_20190830_1957_form" model="ir.ui.view">
-        <field name="name">res.partner.popup_atleta</field>
-        <field name="model">res.partner</field>
+    <record id="berp_20190909_1609_form" model="ir.ui.view">
+        <field name="name">altas_popup</field>
+        <field name="model">berp.altas_popup</field>
         <field name="arch" type="xml">
             <form string="Popup Confirmación Atleta">
                 <sheet>
@@ -64,7 +63,7 @@
         <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
-        <field name="view_id" ref="berp_20190830_1957_form"/>
+        <field name="view_id" ref="berp_20190909_1609_form"/>
     </record>
 
 
