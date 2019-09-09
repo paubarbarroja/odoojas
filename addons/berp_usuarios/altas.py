@@ -27,8 +27,8 @@ class berp_altas_popup(models.TransientModel):
             'view_type': 'form',
             'view_mode': 'form',
             'view_id'  : view_id,
-            'target'   : 'current',
-            'nodestroy': True,
+            'target'   : 'new',
+            'res_id'   : False,
         }
 
 
