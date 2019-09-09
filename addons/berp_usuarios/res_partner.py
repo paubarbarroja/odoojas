@@ -53,15 +53,12 @@ class Partner(models.Model):
     def abrir_popup_crear_atleta(self):
         print('##################################-------------------------> atleta %r',self)
 
-
-
-
-        view_ref = self.env.ref('matacas_curas_form')
+        view_ref = self.env.ref('berp_29082019_2241_form')
         view_id = view_ref and view_ref.id or False
         return {
             'type'     : 'ir.actions.act_window',
-            'name'     : 'Firmar',
-            'res_model': 'matacas.curas',
+            'name'     : 'Alta Atleta',
+            'res_model': 'res.partner',
             'view_type': 'form',
             'view_mode': 'form',
             'view_id'  : view_id,
