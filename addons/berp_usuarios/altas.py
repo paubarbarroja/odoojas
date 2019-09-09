@@ -15,6 +15,7 @@ class berp_altas_popup(models.TransientModel):
         partner_id = False
         if self.atleta_id:
             partner_id = self.atleta_id.id
+            self.atleta_id.write({'is_socio':True})
 
         context = {
             'default_is_socio': True,
