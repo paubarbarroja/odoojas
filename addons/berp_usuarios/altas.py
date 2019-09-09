@@ -12,6 +12,10 @@ class berp_altas_popup(models.TransientModel):
 
     @api.multi
     def abrir_popup_crear_socio(self):
+        partner_id = False
+        if self.atleta_id:
+            partner_id = self.atleta_id.id
+
         context = {
             'default_is_socio': True,
         }
@@ -25,12 +29,16 @@ class berp_altas_popup(models.TransientModel):
             'view_mode': 'form',
             'view_id'  : view_id,
             'target'   : 'new',
-            'res_id'   : False,
+            'res_id'   : partner_id,
             'context'  : context,
         }
 
     @api.multi
     def abrir_popup_crear_atleta(self):
+        partner_id = False
+        if self.socio_id:
+            partner_id = self.socio_id.id
+
         context = {
             'default_is_atleta' : True,
         }
@@ -44,7 +52,7 @@ class berp_altas_popup(models.TransientModel):
             'view_mode': 'form',
             'view_id'  : view_id,
             'target'   : 'new',
-            'res_id'   : False,
+            'res_id'   : partner_id,
             'context'  : context,
         }
 
