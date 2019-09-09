@@ -51,7 +51,23 @@ class Partner(models.Model):
 
     @api.multi
     def abrir_popup_crear_atleta(self):
-        print('##################################-------------------------> atleta')
+        print('##################################-------------------------> atleta %r',self)
+
+
+
+
+        view_ref = self.env.ref('matacas_curas_form')
+        view_id = view_ref and view_ref.id or False
+        return {
+            'type'     : 'ir.actions.act_window',
+            'name'     : 'Firmar',
+            'res_model': 'matacas.curas',
+            'view_type': 'form',
+            'view_mode': 'form',
+            'view_id'  : view_id,
+            'target'   : 'current',
+            'nodestroy': True,
+        }
 
 
 
