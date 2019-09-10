@@ -25,7 +25,7 @@
     'name': 'Odoo Web Login Screen',
     'summary': 'The new configurable Odoo Web Login Screen',
     'version': '12.0.1.0',
-    'category': 'Website',
+    'category': 'berp',
     'summary': """
 The new configurable Odoo Web Login Screen
 """,
