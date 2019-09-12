@@ -77,8 +77,6 @@ class berp_socio(models.Model):
          ('6', 'Marcha Atlética')], string='Especialidad')
     ficha = fields.Char(string="Ficha")
     categoria = fields.Char(string="Categoria")
-    grupo_entreno = fields.Many2one('berp.grupo_entreno', string="Grupo Entreno")
-    visible = fields.Boolean(compute="_comprobar_grupo_entreno", string="visible", default=False)
 
 #todo crear nueva clase para clubes que puede ser res.company hay que mirarselo
 

@@ -12,7 +12,8 @@
                     <p>-En caso contrario, BUSCA al ATLETA en el siguiente DESPLEGABLE y pulsa CONTINUAR.</p>
                     <br/><br/><br/>
                     <group col="2">
-                        <field name="atleta_id"/>
+                        <field name="atleta_list" invisible="1"/>
+                        <field name="atleta_id" domain="[('id','in',atleta_list[0][2])]" />
                     </group>
                 </sheet>
                 <footer>

@@ -58,6 +58,15 @@ class berp_altas_popup(models.TransientModel):
             'context'  : context,
         }
 
+    @api.multi
+    def _get_atletas(self):
+        for object in self:
+            atletas_list = []
+            partners_ids = self.env['res.partner'].search([('is_socio','=',True),('is_atleta','=',False)])
+            if partners_ids:
+                atletas_list = [x.id for x in partners_ids]
+            object.atleta_list = [(6, 0, atletas_list)]
 
-    atleta_id = fields.Many2one('res.partner', string="Atleta", domain="[('is_atleta', '=', True)]")
+    atleta_id = fields.Many2one('res.partner', string="Atleta", ondelete='restrict')
+    atleta_list = fields.Many2many('res.partner',store=True,compute=_get_atletas)
     socio_id = fields.Many2one('res.partner', string="Socio", domain="[('is_socio', '=', True)]")
