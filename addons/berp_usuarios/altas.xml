@@ -48,7 +48,7 @@
                     <br/><br/><br/>
                     <group col="2">
                         <field name="socio_list" invisible="1"/>
-                        <field name="socio_id" domain="[('id','in',socio_list)]" />
+                        <field name="socio_id" domain="[('id','in',socio_list[0][2])]" />
                     </group>
                 </sheet>
                 <footer>
