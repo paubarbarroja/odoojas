@@ -67,6 +67,7 @@ class berp_altas_popup(models.TransientModel):
                 atletas_list = [x.id for x in partners_ids]
             object.atleta_list = [(6, 0, atletas_list)]
 
+
     atleta_id = fields.Many2one('res.partner', string="Atleta", ondelete='restrict')
     atleta_list = fields.Many2many('res.partner',store=True,compute=_get_atletas)
     socio_id = fields.Many2one('res.partner', string="Socio", domain="[('is_socio', '=', True)]")
