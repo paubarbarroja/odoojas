@@ -13,9 +13,9 @@ class berp_altas_popup(models.TransientModel):
     @api.multi
     def abrir_popup_crear_socio(self):
         partner_id = False
-        if self.atleta_id:
-            partner_id = self.atleta_id.id
-            self.atleta_id.write({'is_socio':True})
+        if self.partner_id:
+            partner_id = self.partner_id.id
+            self.partner_id.write({'is_socio':True})
 
 
         context = {
@@ -38,9 +38,9 @@ class berp_altas_popup(models.TransientModel):
     @api.multi
     def abrir_popup_crear_atleta(self):
         partner_id = False
-        if self.socio_id:
-            partner_id = self.socio_id.id
-            self.socio_id.write({'is_atleta':True})
+        if self.partner_id:
+            partner_id = self.partner_id.id
+            self.partner_id.write({'is_atleta':True})
 
         context = {
             'default_is_atleta' : True,
