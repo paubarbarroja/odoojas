@@ -53,7 +53,7 @@
         <field name="name">socio_tree</field>
         <field name="model">berp.socio</field>
         <field name="arch" type="xml">
-            <tree string="Socios" create="false">
+            <tree string="Socios">
                 <field name="nombre"/>
                 <field name="genero"/>
                 <field name="fecha_nac"/>
