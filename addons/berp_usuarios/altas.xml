@@ -12,7 +12,8 @@
                     <p>-En caso contrario, BUSCA al ATLETA en el siguiente DESPLEGABLE y pulsa CONTINUAR.</p>
                     <br/><br/><br/>
                     <group col="2">
-                        <field name="partner_id" string="Atleta" domain="[('is_atleta','=',True),('is_socio','=',False)]" />
+                        <field name="atleta_list" invisible="1"/>
+                        <field name="atleta_id" domain="[('id','in',atleta_list)]" />
                     </group>
                 </sheet>
                 <footer>
@@ -46,7 +47,8 @@
                     <p>-En caso contrario, BUSCA al ATLETA en el siguiente DESPLEGABLE y pulsa CONTINUAR.</p>
                     <br/><br/><br/>
                     <group col="2">
-                        <field name="partner_id" string="Socio" domain="[('is_atleta','=',False),('is_socio','=',True)]" />
+                        <field name="socio_list" invisible="1"/>
+                        <field name="socio_id" domain="[('id','in',socio_list)]" />
                     </group>
                 </sheet>
                 <footer>
