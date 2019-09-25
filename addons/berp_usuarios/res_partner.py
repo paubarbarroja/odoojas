@@ -55,7 +55,6 @@ class Partner(models.Model):
     is_atleta = fields.Boolean(string="Atleta")
 
     # SOCIO
-    num_socio = fields.Integer(string="Numero de Socio")
     fecha_alta = fields.Date(string="Fecha de Alta", required=True, default=fields.Date.context_today)
     fecha_baja = fields.Date(string="Fecha de Baja")
     socio_honorario = fields.Boolean(string="Honorario")
