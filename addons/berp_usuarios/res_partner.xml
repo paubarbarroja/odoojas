@@ -6,6 +6,7 @@
             <field name="model">res.partner</field>
             <field name="arch" type="xml">
                 <tree string="Usuario">
+                    <field name="usuario_name"/>
                     <field name="phone"/>
                     <field name="email"/>
                     <field name="is_socio" invisible="True"/>
@@ -35,6 +36,8 @@
                     <div class="oe_title">
                         <h1>
                             <field name="name" default_focus="1" placeholder="Name"/>
+                            <field name="apellido1" placeholder="Primer apellido"/>
+                            <field name="apellido2" placeholder="Segundo apellido"/>
                         </h1>
                     </div>
                     <group>
