@@ -9,7 +9,6 @@ _logger = logging.getLogger(__name__)
 
 class Partner(models.Model):
     _inherit = "res.partner"
-    _rec_name = "usuario_name"
 
     @api.onchange('fecha_nac')
     def get_categoria(self):
@@ -43,17 +42,7 @@ class Partner(models.Model):
                                         record.categoria = "Sub 16"
 
 
-    @api.depends('apellido1', 'apellido2', 'name')
-    def _get_name(self):
-        for item in self:
-            s = ""
-            if item.apellido1:
-                s += item.apellido1
-            if item.apellido2:
-                s += " " + item.apellido2
-            if item.name:
-                s += ", " + item.name
-            item.usuario_name = s
+
 
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
