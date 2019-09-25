@@ -23,6 +23,7 @@
             <field name="model">res.partner</field>
             <field name="arch" type="xml">
                 <tree string="Usuario">
+                    <field name="usuario_name"/>
                     <field name="phone"/>
                     <field name="email"/>
                     <field name="is_socio" invisible="True"/>
