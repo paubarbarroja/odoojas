@@ -9,6 +9,7 @@ _logger = logging.getLogger(__name__)
 
 class Partner(models.Model):
     _inherit = "res.partner"
+    _rec_name = "usuario_name"
 
     @api.onchange('fecha_nac')
     def get_categoria(self):
@@ -22,9 +23,6 @@ class Partner(models.Model):
                 diferencia = date_object - record.fecha_nac
                 edad_final_temporada = str(int(diferencia.days / 365))
                 edad = int(edad_final_temporada)
-
-
-
 
                 if edad > 34:
                     record.categoria = "Master"
@@ -45,22 +43,37 @@ class Partner(models.Model):
                                         record.categoria = "Sub 16"
 
 
+    @api.depends('apellido1', 'apellido2', 'name')
+    def _get_name(self):
+        for item in self:
+            s = ""
+            if item.apellido1:
+                s += item.apellido1
+            if item.apellido2:
+                s += " " + item.apellido2
+            if item.name:
+                s += ", " + item.name
+            item.usuario_name = s
 
 
-
-
+    #************************************************** -- --  COLUMNAS  -- -- **************************************************
+    # USUARIO
+    apellido1 = fields.Char(string="Apellido 1")
+    apellido2 = fields.Char(string="Apellido 2")
+    usuario_name = fields.Char(compute="_get_name",string="Nombre")
     user_id = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
     fecha_nac = fields.Date(string="Fecha de Nacimiento")
     dni = fields.Char(string="DNI")
     is_socio = fields.Boolean(string="Socio")
     is_atleta = fields.Boolean(string="Atleta")
 
-    # socio
+    # SOCIO
+    num_socio = fields.Integer(string="Numero de Socio")
     fecha_alta = fields.Date(string="Fecha de Alta", required=True, default=fields.Date.context_today)
     fecha_baja = fields.Date(string="Fecha de Baja")
     socio_honorario = fields.Boolean(string="Honorario")
 
-    # atleta
+    # ATLETA
     genero = fields.Selection([('1', 'Masculino'), ('2', 'Femenino')], string='Sexo')
     especialidad = fields.Selection([('1', 'Velocidad'),('2', 'Fondo'),('3', 'Medio Fondo'),('4', 'Lanzamientos'),('5', 'Saltos'),('6', 'Marcha Atlética')],string='Especialidad')
     ficha = fields.Char(string="Ficha")

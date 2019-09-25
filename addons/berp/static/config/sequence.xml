@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- SEQUENCE para numero de socio -->
+	<record id="autoincrement_num_socio_sequence" model="ir.sequence">
+	    <field name="name">Autoincrement - num_socio</field>
+	    <field name="code">increment_num_socio</field>
+		<field name="active">TRUE</field>
+		<field name="prefix"></field>
+		<field name="padding">6</field>
+		<field name="number_next">1</field>
+		<field name="number_increment">1</field>
+	</record>
+</odoo>
