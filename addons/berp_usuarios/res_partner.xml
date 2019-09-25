@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <record id="berp_25092019_2007_search" model="ir.ui.view">
+        <field name="name">res.partner.search</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <search string="Filtros Usuarios">
+                <field name="name" />
+                <field name="apellido1" />
+                <field name="apellido2" />
+                <field name="dni" />
+                <field name="num_socio" />
+                <field name="fecha_alta" />
+                <field name="ficha" />
+                <field name="categoria" />
+            </search>
+        </field>
+    </record>
+
     <record id="berp_29082019_2241_tree" model="ir.ui.view">
             <field name="name">res.partner.tree</field>
             <field name="model">res.partner</field>
@@ -35,10 +52,12 @@
                     <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 120]}'/>
                     <div class="oe_title">
                         <h1>
-                            <field name="name" default_focus="1" placeholder="Name"/>
-                            <field name="apellido1" placeholder="Primer apellido"/>
-                            <field name="apellido2" placeholder="Segundo apellido"/>
+                            <field name="name" default_focus="1" placeholder="Nombre"/>
                         </h1>
+                        <h3>
+                            <field name="apellido1" placeholder="Primer apellido"/><br/>
+                            <field name="apellido2" placeholder="Segundo apellido"/>
+                        </h3>
                     </div>
                     <group>
                         <group>
