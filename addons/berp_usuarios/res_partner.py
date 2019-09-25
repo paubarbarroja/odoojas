@@ -11,6 +11,14 @@ class Partner(models.Model):
     _inherit = "res.partner"
     _rec_name = "usuario_name"
 
+    @api.multi
+    def name_get(self):
+        result = []
+        for s in self:
+            name = s.apellido1 + ' ' + s.apellido2 + ', ' + s.name
+            result.append((s.id, name))
+        return result
+
     @api.onchange('fecha_nac')
     def get_categoria(self):
         for record in self:
