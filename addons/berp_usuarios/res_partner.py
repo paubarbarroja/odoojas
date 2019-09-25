@@ -9,7 +9,6 @@ _logger = logging.getLogger(__name__)
 
 class Partner(models.Model):
     _inherit = "res.partner"
-    _rec_name = "usuario_name"
     _order = "apellido1, apellido2, name asc"
 
     @api.multi
