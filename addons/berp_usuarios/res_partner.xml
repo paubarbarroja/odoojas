@@ -55,8 +55,8 @@
                             <field name="name" default_focus="1" placeholder="Name"/>
                         </h1>
                         <h3>
-                            <field name="apellido1" placeholder="Primer apellido"/>&nbsp;
-                            <field name="apellido2" placeholder="Segundo apellido"/>
+                            <p><field name="apellido1" placeholder="Primer apellido"/></p>
+                            <p><field name="apellido2" placeholder="Segundo apellido"/></p>
                         </h3>
                     </div>
                     <group>
