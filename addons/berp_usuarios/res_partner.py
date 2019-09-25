@@ -12,6 +12,7 @@ class Partner(models.Model):
     _rec_name = "usuario_name"
 
     @api.multi
+    @api.depends('apellido1', 'apellido1', 'name')
     def name_get(self):
         result = []
         for s in self:
