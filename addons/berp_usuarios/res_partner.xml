@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="view_autovacuum_rule_search" model="ir.ui.view">
-        <field name="name">muk_autovacuum_rules.search</field>
-        <field name="model">muk_autovacuum.rules</field>
+    <record id="berp_25092019_2007_search" model="ir.ui.view">
+        <field name="name">res.partner.search</field>
+        <field name="model">res.partner</field>
         <field name="arch" type="xml">
-            <search string="Auto Vacuum Rules">
+            <search string="Filtros Usuarios">
                 <field name="name" />
                 <field name="apellido1" />
                 <field name="apellido2" />
                 <field name="dni" />
-                <field name="active" />
+                <field name="num_socio" />
+                <field name="fecha_alta" />
+                <field name="ficha" />
+                <field name="categoria" />
             </search>
         </field>
     </record>
