@@ -9,7 +9,22 @@ _logger = logging.getLogger(__name__)
 
 class Partner(models.Model):
     _inherit = "res.partner"
-    _rec_name = "usuario_name"
+    _order = "apellido1, apellido2, name asc"
+
+    @api.multi
+    @api.depends('apellido1', 'apellido1', 'name')
+    def name_get(self):
+        result = []
+        for item in self:
+            s = ""
+            if item.apellido1:
+                s += item.apellido1
+            if item.apellido2:
+                s += " " + item.apellido2
+            if item.name:
+                s += ", " + item.name
+            result.append((item.id, s))
+        return result
 
     @api.onchange('fecha_nac')
     def get_categoria(self):
@@ -58,9 +73,10 @@ class Partner(models.Model):
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
+    name = fields.Char(string="Nombre")
     apellido1 = fields.Char(string="Apellido 1")
     apellido2 = fields.Char(string="Apellido 2")
-    usuario_name = fields.Char(compute="_get_name",string="Nombre")
+    usuario_name = fields.Char(compute="_get_name", string="Nombre Completo",store=True)
     user_id = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
     fecha_nac = fields.Date(string="Fecha de Nacimiento")
     dni = fields.Char(string="DNI")
