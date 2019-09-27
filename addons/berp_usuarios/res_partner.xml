@@ -22,7 +22,7 @@
             <field name="name">res.partner.tree</field>
             <field name="model">res.partner</field>
             <field name="arch" type="xml">
-                <tree string="Usuario">
+                <tree string="Usuario" create="false" edit="True">
                     <field name="usuario_name"/>
                     <field name="phone"/>
                     <field name="email"/>
@@ -41,61 +41,61 @@
                 <form string="Usuario">
                     <field name="is_socio" invisible="True"/>
                     <field name="is_atleta" invisible="True"/>
-                <sheet>
-                    <div class="oe_button_box" name="button_box">
-                        <button name="toggle_active" type="object"
-                                class="oe_stat_button" icon="fa-archive">
-                            <field name="active" widget="boolean_button"
-                                options='{"terminology": "archive"}'/>
-                        </button>
-                    </div>
-                    <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 120]}'/>
-                    <div class="oe_title">
-                        <h1>
-                            <field name="name" default_focus="1" placeholder="Nombre"/>
-                        </h1>
-                        <h3>
-                            <field name="apellido1" placeholder="Primer apellido"/><br/>
-                            <field name="apellido2" placeholder="Segundo apellido"/>
-                        </h3>
-                    </div>
-                    <group>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="toggle_active" type="object"
+                                    class="oe_stat_button" icon="fa-archive">
+                                <field name="active" widget="boolean_button"
+                                    options='{"terminology": "archive"}'/>
+                            </button>
+                        </div>
+                        <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 120]}'/>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" default_focus="1" placeholder="Nombre"/>
+                            </h1>
+                            <h3>
+                                <field name="apellido1" placeholder="Primer apellido"/><br/>
+                                <field name="apellido2" placeholder="Segundo apellido"/>
+                            </h3>
+                        </div>
                         <group>
-                            <label for="street" string="Address"/>
-                            <div class="o_address_format">
-                                <field name="street" placeholder="Calle..." class="o_address_street"/>
-                                <field name="city" placeholder="Ciudad" class="o_address_city"/>
-                                <field name="zip" placeholder="Código postal" class="o_address_zip"/>
-                                <field name="country_id" placeholder="País" string="Nacionalidad" class="o_address_country" options='{"no_open": True, "no_create": True}'/>
-                            </div>
-                            <field name="dni" data-inputmask="'mask': '99999999A'"/>
-                            <field name="fecha_nac"/>
-                           </group>
-                        <group>
-                            <field name="phone" widget="phone"/>
-                            <field name="user_id" string="Usuario"/>
-                            <field name="email" widget="email" context="{'gravatar_image': True}"/>
+                            <group>
+                                <label for="street" string="Address"/>
+                                <div class="o_address_format">
+                                    <field name="street" placeholder="Calle..." class="o_address_street"/>
+                                    <field name="city" placeholder="Ciudad" class="o_address_city"/>
+                                    <field name="zip" placeholder="Código postal" class="o_address_zip"/>
+                                    <field name="country_id" placeholder="País" string="Nacionalidad" class="o_address_country" options='{"no_open": True, "no_create": True}'/>
+                                </div>
+                                <field name="dni" data-inputmask="'mask': '99999999A'"/>
+                                <field name="fecha_nac"/>
+                               </group>
+                            <group>
+                                <field name="phone" widget="phone"/>
+                                <field name="user_id" string="Usuario"/>
+                                <field name="email" widget="email" context="{'gravatar_image': True}"/>
+                            </group>
                         </group>
-                    </group>
-                    <notebook colspan="4">
-                        <page name="socio_page" string="Socio" attrs="{'invisible': [('is_socio', '=', False)]}">
-                            <group col="2">
-                                <field name="fecha_alta"/>
-                                <field name="fecha_baja"/>
-                                <field name="socio_honorario"/>
-                            </group>
-                        </page>
-                        <page name="atleta_page" string="Atleta" attrs="{'invisible': [('is_atleta', '=', False)]}">
-                            <group col="2">
-                                <field name="genero"/>
-                                <field name="especialidad"/>
-                                <field name="ficha"/>
-                                <field name="categoria"/>
-                                <field name="grupo_entreno"/>
-                            </group>
-                        </page>
-                    </notebook>
-                </sheet>
+                        <notebook colspan="4">
+                            <page name="socio_page" string="Socio" attrs="{'invisible': [('is_socio', '=', False)]}">
+                                <group col="2">
+                                    <field name="fecha_alta"/>
+                                    <field name="fecha_baja"/>
+                                    <field name="socio_honorario"/>
+                                </group>
+                            </page>
+                            <page name="atleta_page" string="Atleta" attrs="{'invisible': [('is_atleta', '=', False)]}">
+                                <group col="2">
+                                    <field name="genero"/>
+                                    <field name="especialidad"/>
+                                    <field name="ficha"/>
+                                    <field name="categoria"/>
+                                    <field name="grupo_entreno"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
                 </form>
             </field>
         </record>
