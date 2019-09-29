@@ -3,6 +3,7 @@
 from datetime import date, datetime
 from odoo import models, fields, api
 import logging
+from openerp.tools import openerp,image_colorize, image_resize_image_big
 
 _logger = logging.getLogger(__name__)
 
@@ -70,9 +71,14 @@ class Partner(models.Model):
                 s += ", " + item.name
             item.usuario_name = s
 
+    @api.model
+    def _get_default_image(self, colorize=False):
+        image = image_colorize(open(openerp.modules.get_module_resource('base', 'static/src/img', 'avatar.png')).read())
+        return image_resize_image_big(image.encode('base64'))
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
+    image = fields.Binary("Image", attachment=True, default=lambda self:self._get_default_image())
     name = fields.Char(string="Nombre")
     apellido1 = fields.Char(string="Apellido 1")
     apellido2 = fields.Char(string="Apellido 2")
