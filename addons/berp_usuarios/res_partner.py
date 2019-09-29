@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
 from datetime import date, datetime
-from odoo import models, fields, api
+from odoo import models, fields, api, tools
 import logging
+from odoo.modules import get_module_resource
+import base64
 
 _logger = logging.getLogger(__name__)
 
@@ -70,9 +72,20 @@ class Partner(models.Model):
                 s += ", " + item.name
             item.usuario_name = s
 
+    @api.model
+    def _get_default_image(self):
+        image = False
+        img_path = get_module_resource('berp_usuarios', 'static/src/img', 'avatar.png')
+        if img_path:
+            with open(img_path, 'rb') as f:
+                image = f.read()
+        if image:
+            image = tools.image_colorize(image)
+        return tools.image_resize_image_big(base64.b64encode(image))
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
+    image = fields.Binary("Image", attachment=True, default=lambda self:self._get_default_image())
     name = fields.Char(string="Nombre")
     apellido1 = fields.Char(string="Apellido 1")
     apellido2 = fields.Char(string="Apellido 2")
