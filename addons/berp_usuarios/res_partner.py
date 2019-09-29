@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
 from datetime import date, datetime
-from odoo import models, fields, api
+from odoo import models, fields, api, tools
 import logging
-from openerp.tools import openerp,image_colorize, image_resize_image_big
+from odoo.modules import get_module_resource
+import base64
 
 _logger = logging.getLogger(__name__)
 
@@ -72,9 +73,15 @@ class Partner(models.Model):
             item.usuario_name = s
 
     @api.model
-    def _get_default_image(self, colorize=False):
-        image = image_colorize(open(openerp.modules.get_module_resource('base', 'static/src/img', 'avatar.png')).read())
-        return image_resize_image_big(image.encode('base64'))
+    def _get_default_image(self):
+        image = False
+        img_path = get_module_resource('berp_usuarios', 'static/src/img', 'avatar.png')
+        if img_path:
+            with open(img_path, 'rb') as f:
+                image = f.read()
+        if image:
+            image = tools.image_colorize(image)
+        return tools.image_resize_image_big(base64.b64encode(image))
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO

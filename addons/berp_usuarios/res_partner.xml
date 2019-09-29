@@ -54,8 +54,8 @@
                             <h3>
                                 <group col="3">
                                     <field name="name" placeholder="Nombre" nolabel="1"/>
-                                    <field name="apellido1" placeholder="Primer apellido" nolabel="1"/>
-                                    <field name="apellido2" placeholder="Segundo apellido" nolabel="1"/>
+                                    <field name="apellido1" placeholder="1r apellido" nolabel="1"/>
+                                    <field name="apellido2" placeholder="2o apellido" nolabel="1"/>
                                 </group>
                             </h3>
                         </div>
