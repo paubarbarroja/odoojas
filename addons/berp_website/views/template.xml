@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <template id="index" name="Custom Templte">
+            <t t-call="website.layout">
+                <div class="oe_structure">
+                    <strong>Hola Mundo, estoy dentro del Website</strong>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>
