@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <template id="index" name="Custom Templte">
+        <template id="index" name="Custom Template">
             <t t-call="website.layout">
                 <div class="oe_structure">
                     <strong>Hola Mundo, estoy dentro del Website</strong>
