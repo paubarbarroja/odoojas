@@ -1,7 +1,7 @@
 <odoo>
     <data>
         <template inherit_id="website.homepage" name="Inicio">
-            <xpath expr="//t[@t-set='pageName']" position="replace">
+            <xpath expr="//div[@id='wrap']" position="replace">
                 <div class="oe_structure">
                     <strong>Hola Mundo, estoy dentro del Website</strong>
                 </div>
