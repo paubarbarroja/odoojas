@@ -1,11 +1,11 @@
 <odoo>
     <data>
-        <template id="index" name="Custom Template">
-            <t t-call="website.layout">
+        <template inherit_id="website.homepage" name="Inicio">
+            <xpath expr="//t[@t-set='pageName']" position="replace">
                 <div class="oe_structure">
                     <strong>Hola Mundo, estoy dentro del Website</strong>
                 </div>
-            </t>
+            </xpath>
         </template>
     </data>
 </odoo>

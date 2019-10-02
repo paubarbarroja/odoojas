@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+
+
+        <record id="berp_02102019_2300_website" model="ir.ui.view">
+            <field name="name">Home Page JAS</field>
+            <field name="inherit_id" ref="website.homepage"/>
+            <field name="arch" type="xml">
+                <xpath string="Usuario">
+
+                </xpath>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>
