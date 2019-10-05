@@ -8,7 +8,7 @@
         
         <record id="login_form_disable_database_manager" model="ir.config_parameter">
             <field name="key">login_form_disable_database_manager</field>
-            <field name="value">False</field>
+            <field name="value">True</field>
         </record>
         
         <record id="login_form_change_background_by_hour" model="ir.config_parameter">

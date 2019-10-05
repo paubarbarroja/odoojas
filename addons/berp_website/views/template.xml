@@ -3,7 +3,22 @@
         <template inherit_id="website.homepage" id="inicio_berp">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div class="oe_structure">
-                    <strong>Hola Mundo, estoy dentro del Website</strong>
+                    <section class="s_banner parallax s_parallax_is_fixed pt96 pb96" data-scroll-background-ratio="1" style="background-image: none;">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('#{fondo_home}'); background-size: cover; background-position: 50% 0px;"/>
+                        <div class="container">
+                            <div class="row s_nb_column_fixed">
+                                <div class="bg-white jumbotron pb32 pt40 col-lg-7 rounded" data-name="Box">
+                                    <div class="row">
+                                        <div class="s_title s_col_no_bgcolor col-lg-12" data-name="Title">
+                                            <h1 class="s_title_thin">
+                                                <span style="font-size: 62px;">Joventut Atletica Sabadell</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </xpath>
         </template>
