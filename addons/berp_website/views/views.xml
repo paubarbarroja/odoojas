@@ -1,17 +1,38 @@
 <odoo>
     <data>
 
-
         <record id="berp_02102019_2300_website" model="ir.ui.view">
             <field name="name">Home Page JAS</field>
-            <field name="inherit_id" ref="website.homepage"/>
+            <field name="type">qweb</field>
+            <field name="key">berp_website.home</field>
             <field name="arch" type="xml">
-                <xpath string="Usuario">
-
-                </xpath>
+                <t name="Inicio" priority="29" t-name="berp_website.home">
+                    <t t-call="website.layout">
+                        <t t-set="pageName" t-value="'Inicio'"/>
+                        <div id="wrap" class="oe_structure oe_empty">
+                            <div class="oe_structure">
+                                <section class="s_banner parallax s_parallax_is_fixed pt96 pb96" data-scroll-background-ratio="1" style="background-image: none;">
+                                    <img src="/home/odoojas/addons/berp_website/static/img/fondo_home.jpg"/>
+                                    <div class="container">
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="bg-white jumbotron pb32 pt40 col-lg-7 rounded" data-name="Box">
+                                                <div class="row">
+                                                    <div class="s_title s_col_no_bgcolor col-lg-12" data-name="Title">
+                                                        <h1 class="s_title_thin">
+                                                            <span style="font-size: 62px;">JAS</span>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </t>
+                </t>
             </field>
         </record>
-
 
     </data>
 </odoo>

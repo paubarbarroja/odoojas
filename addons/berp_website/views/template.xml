@@ -1,26 +1,56 @@
 <odoo>
     <data>
+
         <template inherit_id="website.homepage" id="inicio_berp">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div class="oe_structure">
-                    <section class="s_banner parallax s_parallax_is_fixed pt96 pb96" data-scroll-background-ratio="1" style="background-image: none;">
-                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('#{fondo_home}'); background-size: cover; background-position: 50% 0px;"/>
-                        <div class="container">
-                            <div class="row s_nb_column_fixed">
-                                <div class="bg-white jumbotron pb32 pt40 col-lg-7 rounded" data-name="Box">
-                                    <div class="row">
-                                        <div class="s_title s_col_no_bgcolor col-lg-12" data-name="Title">
-                                            <h1 class="s_title_thin">
-                                                <span style="font-size: 62px;">Joventut Atletica Sabadell</span>
-                                            </h1>
-                                        </div>
+                    <section class="s_banner parallax s_parallax_is_fixed pt0 pb208" data-scroll-background-ratio="1" style="background-image: none;">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('https://berp-bucket.s3.eu-west-2.amazonaws.com/img/pista1.jpg'); background-position: 49.83% 94.07%;"/>
+                        <div class="row s_nb_column_fixed">
+                            <div class="jumbotron rounded bg-black-75 pt48 pb48 col-lg-6" data-name="Box" style="">
+                                <div class="row">
+                                    <div class="s_title s_col_no_bgcolor offset-lg-1 col-lg-11" data-name="Title">
+                                        <h1 class="s_title_thin">
+                                            <span style="font-size: 62px;">Joventut Atlètica Sabadell</span>
+                                        </h1>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
+                    <section class="s_text_block pt32 pb32">
+                <div class="container">
+                    <div class="row">
+                        <div class="pt32 pb32 col-lg-12">
+                            <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
+                                <font style="font-size: 24px;">QUI SOM ?</font>
+                                <hr/>
+                            </h1>
+                            <pre style="color: rgb(0, 0, 0); font-family: &quot;Source Code Pro&quot;;">
+                                <p style="font-size: 14px">
+    La Joventut Atlètica Sabadell (JAS) és un club d'atletisme de Sabadell (Barcelona), afiliat a la Federació Catalana d'Atletisme (FCA).&amp;nbsp;
+    Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la Real Federación Española de Atletismo (RFEA). Fundat al 1921,&amp;nbsp;
+    l'entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà...
+                                </p>
+                                <a href="/" class="rounded-circle">&amp;gt;Més</a>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
                 </div>
             </xpath>
         </template>
+
+        <template id="berp_website_home">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <div class="oe_structure">
+                        <h1>Joventut Atlètica Sabadell</h1>
+                    </div>
+                </div>
+            </t>
+        </template>
+
     </data>
 </odoo>
