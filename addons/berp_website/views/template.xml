@@ -7,84 +7,95 @@
                     <section class="s_banner parallax s_parallax_is_fixed pt0 pb208" data-scroll-background-ratio="1" style="background-image: none;">
                         <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/pista1.jpg);background-position:47.06% 100%"/>
                         <div class="row s_nb_column_fixed">
-                          <div class="jumbotron rounded bg-black-75 pt48 pb48 col-lg-6" data-name="Box" style="">
+                            <div class="jumbotron rounded bg-black-75 pt48 pb48 col-lg-6" data-name="Box" style="">
+                                <div class="row">
+                                    <div class="s_title s_col_no_bgcolor offset-lg-1 col-lg-11" data-name="Title">
+                                        <h1 class="s_title_thin">
+                                            <span style="font-size: 62px;">Joventut Atlètica Sabadell</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_block pt32 pb32">
+                        <div class="container">
                             <div class="row">
-                              <div class="s_title s_col_no_bgcolor offset-lg-1 col-lg-11" data-name="Title">
-                                <h1 class="s_title_thin">
-                                  <span style="font-size: 62px;">Joventut Atlètica Sabadell</span>
-                                </h1>
-                              </div>
+                                <div class="pt0 col-lg-12 pb0">
+                                    <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> QUI SOM ?
+                                        <hr/>
+                                    </h1>
+                                    <pre style="color: rgb(0, 0, 0); font-family: &quot;Source Code Pro&quot;;">
+                                        <p class="lead o_default_snippet_text">La Joventut Atlètica Sabadell (JAS) és un club d'atletisme de Sabadell (Barcelona), afiliat a la Federació Catalana d'Atletisme (FCA).
+                                            <br/>Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la Real Federación Española de Atletismo (RFEA). Fundat al 1921,
+                                            <br/>l'entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà...
+                                        </p>
+                                        <div class="s_btn col-lg-12 text-right pt0 pb0">
+                                            <a href="/" class="rounded-circle rounded-circle btn btn-outline-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip717931"> Més
+                                                <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109"/>
+                                            </a>
+                                        </div>
+                                    </pre>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </section>
-                      <section class="s_text_block pt32 pb32">
+                    </section>
+                    <section class="s_three_columns pt32 pb32 oe_custom_bg" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
-                          <div class="row">
-                            <div class="pt0 col-lg-12 pb0">
-                              <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> QUI SOM ?<hr/></h1>
-                              <pre style="color: rgb(0, 0, 0); font-family: &quot;Source Code Pro&quot;;">
-                                <p class="lead o_default_snippet_text">La Joventut Atlètica Sabadell (JAS) és un club d'atletisme de Sabadell (Barcelona), afiliat a la Federació Catalana d'Atletisme (FCA).<br/>Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la Real Federación Española de Atletismo (RFEA). Fundat al 1921,<br/>l'entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà...</p>
-                                <div class="s_btn col-lg-12 text-right pt0 pb0">
-                                  <a href="/" class="rounded-circle rounded-circle btn btn-outline-primary rounded-circle" data-original-title="" title="" aria-describedby="tooltip717931"> Més <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109"/> </a>
+                            <div class="row d-flex align-items-stretch">
+                                <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                                    <div class="card bg-white">
+                                        <img class="card-img-top" src="/web/image/website.library_image_11" alt="Odoo - Prueba 1 a tres columnas"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">Característica uno</h3>
+                                            <p class="card-text o_default_snippet_text">Adapte estas tres columnas para que se ajusten a sus necesidades de diseño Para duplicar, eliminar o mover columnas, seleccione la columna y use los iconos superiores para realizar su acción.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                              </pre>
+                                <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                                    <div class="card bg-white">
+                                        <img class="card-img-top" src="/web/image/website.library_image_13" alt="Odoo - Prueba 2 a tres columnas"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">Característica dos</h3>
+                                            <p class="card-text o_default_snippet_text">Para añadir una cuarta columna, reduzca el tamaño de estas tres columnas usando el icono adecuado de cada bloque. Entonces, duplique una de las columnas para crear una nueva como copia.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <i class="fa fa-info-circle mr-1"/>
+                                            <small class="o_default_snippet_text">Información adicional</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                                    <div class="card bg-white">
+                                        <img class="card-img-top" src="/web/image/website.library_image_07" alt="Odoo - Prueba 3 a tres columnas"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">Característica tres</h3>
+                                            <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's
+                                                <em class="o_default_snippet_text">rounded corner</em> style.
+                                            </p>
+                                            <div class="s_btn text-left pb0 pt16" data-name="Button">
+                                                <a href="#" class="btn btn-primary btn-sm o_default_snippet_text">Descubre más </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                                    <div class="card bg-white">
+                                        <img class="card-img-top" src="/web/image/website.library_image_07" alt="Odoo - Prueba 3 a tres columnas"/>
+                                        <div class="card-body">
+                                            <h3 class="card-title o_default_snippet_text">Característica tres</h3>
+                                            <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's
+                                                <em class="o_default_snippet_text">rounded corner</em> style.
+                                            </p>
+                                            <div class="s_btn text-left pb0 pt16" data-name="Button">
+                                                <a href="#" class="btn btn-primary btn-sm o_default_snippet_text">Descubre más </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </section>
-                      <section class="s_three_columns pt32 pb32 oe_custom_bg" style="background-color: rgb(107, 173, 222);">
-                        <div class="container">
-                          <div class="row d-flex align-items-stretch">
-                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
-                              <div class="card bg-white">
-                                <img class="card-img-top" src="/web/image/website.library_image_11" alt="Odoo - Prueba 1 a tres columnas"/>
-                                <div class="card-body">
-                                  <h3 class="card-title o_default_snippet_text">Característica uno</h3>
-                                  <p class="card-text o_default_snippet_text">Adapte estas tres columnas para que se ajusten a sus necesidades de diseño Para duplicar, eliminar o mover columnas, seleccione la columna y use los iconos superiores para realizar su acción.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
-                              <div class="card bg-white">
-                                <img class="card-img-top" src="/web/image/website.library_image_13" alt="Odoo - Prueba 2 a tres columnas"/>
-                                <div class="card-body">
-                                  <h3 class="card-title o_default_snippet_text">Característica dos</h3>
-                                  <p class="card-text o_default_snippet_text">Para añadir una cuarta columna, reduzca el tamaño de estas tres columnas usando el icono adecuado de cada bloque. Entonces, duplique una de las columnas para crear una nueva como copia.</p>
-                                </div>
-                                <div class="card-footer">
-                                  <i class="fa fa-info-circle mr-1"/>
-                                  <small class="o_default_snippet_text">Información adicional</small>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
-                              <div class="card bg-white">
-                                <img class="card-img-top" src="/web/image/website.library_image_07" alt="Odoo - Prueba 3 a tres columnas"/>
-                                <div class="card-body">
-                                  <h3 class="card-title o_default_snippet_text">Característica tres</h3>
-                                  <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's <em class="o_default_snippet_text">rounded corner</em> style.</p>
-                                  <div class="s_btn text-left pb0 pt16" data-name="Button">
-                                    <a href="#" class="btn btn-primary btn-sm o_default_snippet_text">Descubre más </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
-                              <div class="card bg-white">
-                                <img class="card-img-top" src="/web/image/website.library_image_07" alt="Odoo - Prueba 3 a tres columnas"/>
-                                <div class="card-body">
-                                  <h3 class="card-title o_default_snippet_text">Característica tres</h3>
-                                  <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's <em class="o_default_snippet_text">rounded corner</em> style.</p>
-                                  <div class="s_btn text-left pb0 pt16" data-name="Button">
-                                    <a href="#" class="btn btn-primary btn-sm o_default_snippet_text">Descubre más </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
+                    </section>
                 </div>
             </xpath>
         </template>
