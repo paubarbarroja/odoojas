@@ -100,6 +100,103 @@
             </xpath>
         </template>
 
+        <template inherit_id="website.layout" id="inicio_berp_footer">
+            <xpath expr="//footer" position="replace">
+                <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                    <section class="s_text_block pt16 pb8">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h5>Our Products &amp; Services</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="/">Home</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4" id="connect">
+                                    <h5>Connect with us</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="/contactus">Contact us</a></li>
+                                        <li><i class="fa fa-phone"/> <span t-field="res_company.phone"/></li>
+                                        <li><i class="fa fa-envelope"/>  <span t-field="res_company.email"/></li>
+                                    </ul>
+                                    <p>
+                                        <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link"><i class="fa fa-2x fa-facebook-square"/></a>
+                                        <a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link"><i class="fa fa-2x fa-twitter"/></a>
+                                        <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link"><i class="fa fa-2x fa-linkedin"/></a>
+                                        <a t-if="website.social_youtube" t-att-href="website.social_youtube" class="btn btn-sm btn-link"><i class="fa fa-2x fa-youtube-play"/></a>
+                                        <a t-if="website.social_googleplus" t-att-href="website.social_googleplus" class="btn btn-sm btn-link" rel="publisher"><i class="fa fa-2x fa-google-plus-square"/></a>
+                                        <a t-if="website.social_github" t-att-href="website.social_github" class="btn btn-sm btn-link"><i class="fa fa-2x fa-github"/></a>
+                                        <a t-if="website.social_instagram" t-att-href="website.social_instagram" class="btn btn-sm btn-link"><i class="fa fa-2x fa-instagram"/></a>
+                                    </p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h5>
+                                        <span t-field="res_company.name"/>
+                                        <small> - <a href="/aboutus">About us</a></small>
+                                    </h5>
+                                    <p>
+                                        We are a team of passionate people whose goal is to improve everyone's
+                                        life through disruptive products. We build great products to solve your
+                                        business problems.
+                                    </p>
+                                    <p>
+                                        Our products are designed for small to medium size companies willing to optimize
+                                        their performance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="o_footer_copyright" style="background-color: rgb(36, 88, 128)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 text-muted text-center text-md-left">
+                                <span style="color:white">Copyright &amp;copy;</span> <span t-field="res_company.name" itemprop="name" style="color:white">Joventut Atlètica Sabadell</span>
+                                <span class="terms_of_use" style="color:white">-
+                                    <a href="/legal/terms-of-use">Terms of use</a>
+                                </span>
+                                <span class="privacy_policy" style="color:white">-
+                                    <a href="/legal/privacy-policy">Privacy Policy</a>
+                                </span>
+                                <span class="legal_advice" style="color:white">-
+                                    <a href="/legal/advice">Legal Advice</a>
+                                </span>
+                                <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <li class="list-inline-item">
+                                        <div class="dropup">
+                                            <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <span t-esc="list(filter(lambda lg : lg[0] == lang, languages))[0][1].split('/').pop()"/>
+                                                <span class="caret ml4"/>
+                                            </button>
+                                            <div class="dropdown-menu" role="menu">
+                                                <t t-foreach="languages" t-as="lg">
+                                                    <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" class="dropdown-item js_change_lang" t-att-data-default-lang="(editable or translatable) and 'true' if website and lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]">
+                                                        <t t-esc="lg[1].split('/').pop()"/>
+                                                    </a>
+                                                </t>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li groups="website.group_website_publisher" class="list-inline-item">
+                                        <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                                        <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id if website else ''}&amp;url_return=#{url_return}" style="color:white">
+                                            <i class="fa fa-plus-circle"/>
+                                            Add a language...
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 text-right o_not_editable" t-if="not editable">
+                                <t t-call="website.brand_promotion"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+
         <template id="berp_website_home">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
