@@ -154,13 +154,13 @@
                             <div class="col-lg-6 text-muted text-center text-md-left">
                                 <span style="color:white">Copyright &amp;copy;</span> <span t-field="res_company.name" itemprop="name" style="color:white">Joventut Atlètica Sabadell</span>
                                 <span class="terms_of_use" style="color:white">-
-                                    <a href="/legal/terms-of-use">Terms of use</a>
+                                    <a href="/legal/terms-of-use" style="color:white">Terms of use</a>
                                 </span>
                                 <span class="privacy_policy" style="color:white">-
-                                    <a href="/legal/privacy-policy">Privacy Policy</a>
+                                    <a href="/legal/privacy-policy" style="color:white">Privacy Policy</a>
                                 </span>
                                 <span class="legal_advice" style="color:white">-
-                                    <a href="/legal/advice">Legal Advice</a>
+                                    <a href="/legal/advice" style="color:white">Legal Advice</a>
                                 </span>
                                 <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
                                     <li class="list-inline-item">
