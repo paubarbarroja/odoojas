@@ -85,7 +85,7 @@ class Partner(models.Model):
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
-    image = fields.Binary("Image", attachment=True, default=lambda self:self._get_default_image())
+    image = fields.Binary("Image", attachment=True, default=lambda self:self._get_default_image('a','b','c'))
     name = fields.Char(string="Nombre")
     apellido1 = fields.Char(string="Apellido 1")
     apellido2 = fields.Char(string="Apellido 2")
