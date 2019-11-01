@@ -73,7 +73,7 @@ class Partner(models.Model):
             item.usuario_name = s
 
     @api.model
-    def _get_default_image(self):
+    def _get_default_image(self,aa,bb,cc):
         image = False
         img_path = get_module_resource('berp_usuarios', 'static/src/img', 'avatar.png')
         if img_path:
