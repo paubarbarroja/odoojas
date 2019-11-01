@@ -73,7 +73,7 @@ class Partner(models.Model):
             item.usuario_name = s
 
     @api.model
-    def berp_get_default_image(self):
+    def _get_default_image(self):
         image = False
         img_path = get_module_resource('berp_usuarios', 'static/src/img', 'avatar.png')
         if img_path:
@@ -85,7 +85,7 @@ class Partner(models.Model):
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
-    image = fields.Binary("Image", attachment=True, default=lambda self:self.berp_get_default_image())
+    image = fields.Binary("Image", attachment=True, default=lambda self:self._get_default_image('a','b','c'))
     name = fields.Char(string="Nombre")
     apellido1 = fields.Char(string="Apellido 1")
     apellido2 = fields.Char(string="Apellido 2")
