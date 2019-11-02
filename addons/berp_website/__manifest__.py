@@ -2,7 +2,7 @@
     'name': "Website",
     'summary': """Berp - Website""",
     'version': '1.0',
-    'depends': ['berp','website'],
+    'depends': ['berp','website','website_sale'],
     'author': "Pau Barbarroja",
     'category': 'berp',
     'description': """
