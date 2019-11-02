@@ -233,7 +233,7 @@
         </template>
 
         <template inherit_id="website_sale.product" id="notsale_products">
-            <xpath expr="//a[@id='product_details']" position="replace">
+            <xpath expr="//div[@id='product_details']" position="replace">
                 <div class="col-md-6 col-xl-4 offset-xl-2" id="product_details">
                     <h1 itemprop="name" t-field="product.name">Product Name</h1>
                     <span itemprop="url" style="display:none;" t-esc="'%sshop/product/%s' % (request.httprequest.url_root, slug(product))"/>
