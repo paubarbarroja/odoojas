@@ -86,7 +86,6 @@ class Partner(models.Model):
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
-    picking_warn = fields.Selection(WARNING_MESSAGE, 'Stock Picking', help=WARNING_HELP, default='no-message')
     image = fields.Binary("Image", attachment=True, default=lambda self:self._get_default_image('a','b','c'))
     name = fields.Char(string="Nombre")
     apellido1 = fields.Char(string="Apellido 1")
