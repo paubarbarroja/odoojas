@@ -266,6 +266,9 @@
                     </div>
                 </div>
             </xpath>
+        </template>
+
+        <template inherit_id="website_sale.products" id="products_list_view_notsale">
             <xpath expr="//div[@id='products_grid']//table" position="replace">
             <t t-foreach="products" t-as="product">
                 <t t-if="not product.categ_id.id == 4">
