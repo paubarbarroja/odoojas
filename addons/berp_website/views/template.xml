@@ -253,7 +253,7 @@
                             </t>
                             <t t-call="website_sale.product_price" />
                             <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not exist.</p>
-                            <t t-if="product.categ_id == 'Not Sale'">
+                            <t t-if="not product.categ_id.id == 4">
                                 <a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">Add to Cart</a>
                             </t>
                         </div>
@@ -264,12 +264,6 @@
                     <div class="o_not_editable">
                         <p t-field="product.description_sale" class="text-muted" />
                     </div>
-                    <hr />
-                    <p class="text-muted">
-                      30-day money-back guarantee<br />
-                      Free Shipping in U.S.<br />
-                      Buy now, get in 2 days
-                    </p>
                 </div>
             </xpath>
         </template>
