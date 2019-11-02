@@ -22,11 +22,10 @@
                         <div class="container">
                             <div class="row">
                                 <div class="pt0 col-lg-12 pb0">
-                                    <h1 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);"> Fes-te Soci, vine a corre amb nosaltres!
-                                        <hr/>
-                                    </h1>
+                                    <h1 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES-TE SOCI !</h1>
+                                    <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES ATLETISME AMB NOSALTRES<hr/></h2>
                                     <div class="s_btn col-lg-12 text-center pt0 pb0">
-                                        <a href="/" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Més <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109"/> </a>
+                                        <a href="/" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Entra Aqui <span class="fa fa-1x fa-fw ml-1 fa-user-plus" style=""/></a>
                                     </div>
                                 </div>
                             </div>
@@ -34,10 +33,10 @@
                     </section>
                     <section class="s_three_columns pt32 pb32 oe_custom_bg" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
+                            <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> Últimes Notícies
+                                <hr/>
+                            </h1>
                             <div class="row d-flex align-items-stretch">
-                                <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> Últimes Notícies
-                                    <hr/>
-                                </h1>
                                 <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
                                     <div class="card bg-white">
                                         <img class="card-img-top" src="/web/image/website.library_image_11" alt="Odoo - Prueba 1 a tres columnas"/>
