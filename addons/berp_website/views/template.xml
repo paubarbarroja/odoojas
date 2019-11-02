@@ -232,6 +232,14 @@
             </xpath>
         </template>
 
+        <template inherit_id="website_sale.product" id="notsale_products">
+            <xpath expr="//a[@id='add_to_cart']" position="replace">
+                <t t-if="product.categ_id == 'Not Sale'">
+                    <a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">Add to Cart</a>
+                </t>
+            </xpath>
+        </template>
+
 
         <template id="berp_website_home">
             <t t-call="website.layout">
