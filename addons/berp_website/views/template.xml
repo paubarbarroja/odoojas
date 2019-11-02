@@ -266,6 +266,17 @@
                     </div>
                 </div>
             </xpath>
+            <xpath expr="//div[@id='products_grid']//table" position="replace">
+            <t t-foreach="products" t-as="product">
+                <t t-if="not product.categ_id.id == 4">
+                    <div class="oe_product oe_list oe_product_cart" t-att-data-publish="product.website_published and 'on' or 'off'">
+                        <t t-call="website_sale.products_item">
+                            <t t-set="show_publish" t-value="True"/>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </xpath>
         </template>
 
 
