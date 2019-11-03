@@ -29,9 +29,9 @@
                 <form string="Solicitut Soci">
                     <sheet>
                         <group col="2">
-                            <field name="name"/>
-                            <field name="phone"/>
-                            <field name="email_from"/>
+                            <field name="name" string="Nom"/>
+                            <field name="phone" string="Telèfon/Móvil"/>
+                            <field name="email_from" string="E-mail"/>
                             <field name="genre"/>
                             <field name="dni"/>
                             <field name="direccion_postal"/>
