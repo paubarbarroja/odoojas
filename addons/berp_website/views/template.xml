@@ -1,6 +1,16 @@
 <odoo>
     <data>
 
+        <!--
+        Formularios herenciados de las paginas web creadas por defecto como:
+
+        -> website.homepage -> all
+        -> website.layout -> footer
+        -> website_sale.product -> view of product
+        -> website_sale.products -> list of products
+
+        -->
+
         <template inherit_id="website.homepage" id="inicio_berp">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div class="oe_structure">
@@ -258,17 +268,6 @@
                 </t>
             </t>
         </xpath>
-        </template>
-
-
-        <template id="berp_website_home">
-            <t t-call="website.layout">
-                <div id="wrap" class="oe_structure oe_empty">
-                    <div class="oe_structure">
-                        <h1>Joventut Atlètica Sabadell</h1>
-                    </div>
-                </div>
-            </t>
         </template>
 
     </data>

@@ -9,7 +9,7 @@
     """,
     'data': [
         'views/template.xml',
-        'views/views.xml'
+        'views/formulari_soci.xml'
     ],
     'demo': [],
     'application': True,
