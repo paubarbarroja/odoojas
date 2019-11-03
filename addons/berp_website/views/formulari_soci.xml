@@ -46,8 +46,9 @@
                                                     <input type="text" class="form-control o_website_form_input" name="dni" required="" t-att-value="request.params.get('dni', '')"/>
                                                 </div>
                                             </div>
+                                            <h4 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">Direcció Postal</h4>
                                             <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="direccion_postal">Direcció Postal</label>
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="direccion_postal">Adreça</label>
                                                 <div class="col-lg-7 col-md-8">
                                                     <input type="text" class="form-control o_website_form_input" name="direccion_postal" required="" t-att-value="request.params.get('direccion_postal', '')" placeholder="Cami Can Quadres 147"/>
                                                 </div>
