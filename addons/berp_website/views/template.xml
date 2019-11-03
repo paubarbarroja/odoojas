@@ -35,7 +35,7 @@
                                     <h1 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES-TE SOCI !</h1>
                                     <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES ATLETISME AMB NOSALTRES<hr/></h2>
                                     <div class="s_btn col-lg-12 text-center pt0 pb0">
-                                        <a href="/form_add_socio" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Entra Aqui <span class="fa fa-1x fa-fw ml-1 fa-user-plus" style=""/></a>
+                                        <a href="/formulari_soci" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Entra Aqui <span class="fa fa-1x fa-fw ml-1 fa-user-plus" style=""/></a>
                                     </div>
                                 </div>
                             </div>
