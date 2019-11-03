@@ -13,6 +13,7 @@
                                         <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES ATLETISME AMB NOSALTRES<hr/></h2>
                                         <br/><br/>
                                         <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+                                            <h4 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">Dades Generals<hr/></h4>
                                             <div class="form-group row form-field o_website_form_required_custom">
                                                 <label class="col-lg-3 col-md-4 col-form-label" for="name">Nom Complet</label>
                                                 <div class="col-lg-7 col-md-8">
@@ -46,6 +47,13 @@
                                                     <input type="text" class="form-control o_website_form_input" name="dni" required="" t-att-value="request.params.get('dni', '')"/>
                                                 </div>
                                             </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="birthday_date">Data Naixement</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="date" class="form-control o_website_form_input" name="birthday_date" required="" t-att-value="request.params.get('birthday_date', '')"/>
+                                                </div>
+                                            </div>
+                                            <br/>
                                             <h4 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">Direcció Postal<hr/></h4>
                                             <div class="form-group row form-field o_website_form_required_custom">
                                                 <label class="col-lg-3 col-md-4 col-form-label" for="direccion_postal">Adreça</label>
@@ -60,14 +68,9 @@
                                                 <div class="col-lg-7 col-md-8">
                                                     <input type="text" class="form-control o_website_form_input" name="poblacion" required="" t-att-value="request.params.get('poblacion', '')" placeholder="Sabadell"/>
                                                 </div>
-                                                <hr/>
                                             </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="birthday_date">Data Naixement</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="date" class="form-control o_website_form_input" name="birthday_date" required="" t-att-value="request.params.get('birthday_date', '')"/>
-                                                </div>
-                                            </div>
+                                            <br/>
+                                            <h4 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">Dades Bancaries<hr/></h4>
                                             <div class="form-group row form-field o_website_form_required_custom">
                                                 <label class="col-lg-3 col-md-4 col-form-label" for="compte_bancari">Compte Bancari</label>
                                                 <div class="col-lg-7 col-md-8">
