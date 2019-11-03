@@ -9,7 +9,9 @@
     """,
     'data': [
         'views/template.xml',
-        'views/formulari_soci.xml'
+        'views/formulari_soci.xml',
+        'crm_lead/crm_lead.xml',
+        'crm_lead/menus.xml'
     ],
     'demo': [],
     'application': True,

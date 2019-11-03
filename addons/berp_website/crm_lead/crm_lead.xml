@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- ##################### CONFIRMACIÓN ALTA SOCIO ##################### -->
+    <record id="berp_03112019_2237_tree" model="ir.ui.view">
+            <field name="name">crm.lead.tree</field>
+            <field name="model">crm.lead</field>
+            <field name="arch" type="xml">
+                <tree string="Solicituts Socis">
+                    <field name="name"/>
+                    <field name="phone"/>
+                    <field name="email_from"/>
+                    <field name="genre"/>
+                    <field name="dni"/>
+                    <field name="direccion_postal"/>
+                    <field name="birthday_date"/>
+                    <field name="compte_bancari"/>
+                    <field name="banc"/>
+                    <field name="poblacion"/>
+                    <field name="codigo_postal"/>
+                </tree>
+            </field>
+    </record>
+
+
+    <record id="berp_03112019_2237_form" model="ir.ui.view">
+            <field name="name">crm.lead.form</field>
+            <field name="model">crm.lead</field>
+            <field name="arch" type="xml">
+                <form string="Solicitut Soci">
+                    <sheet>
+                        <group col="2">
+                            <field name="name"/>
+                            <field name="phone"/>
+                            <field name="email_from"/>
+                            <field name="genre"/>
+                            <field name="dni"/>
+                            <field name="direccion_postal"/>
+                            <field name="birthday_date"/>
+                            <field name="compte_bancari"/>
+                            <field name="banc"/>
+                            <field name="poblacion"/>
+                            <field name="codigo_postal"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+    <!-- ##################### SOCIS ##################### -->
+    <record id="berp_03112019_2237_action" model="ir.actions.act_window">
+        <field name="name">Solicituts Socis</field>
+        <field name="res_model">crm.lead</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+</odoo>
