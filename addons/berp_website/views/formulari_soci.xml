@@ -29,7 +29,7 @@
                                                 </div>
                                                 <label class="col-lg-3 col-md-4 col-form-label" for="genre">Genere</label>
                                                 <div class="col-lg-7 col-md-8">
-                                                    <select name="genre" t-att-value="request.params.get('genre', '')"  style="width: 100%;">
+                                                    <select name="genre" t-att-value="request.params.get('genre', '')"  style="width: 100%;height: calc(2.0625rem + 2px);">
                                                         <option value="1">Masculi</option>
                                                         <option value="2">Femeni</option>
                                                     </select>
