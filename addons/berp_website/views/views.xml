@@ -1,38 +1,70 @@
 <odoo>
     <data>
 
-        <record id="berp_02102019_2300_website" model="ir.ui.view">
-            <field name="name">Home Page JAS</field>
-            <field name="type">qweb</field>
-            <field name="key">berp_website.home</field>
-            <field name="arch" type="xml">
-                <t name="Inicio" priority="29" t-name="berp_website.home">
-                    <t t-call="website.layout">
-                        <t t-set="pageName" t-value="'Inicio'"/>
-                        <div id="wrap" class="oe_structure oe_empty">
-                            <div class="oe_structure">
-                                <section class="s_banner parallax s_parallax_is_fixed pt96 pb96" data-scroll-background-ratio="1" style="background-image: none;">
-                                    <img src="/home/odoojas/addons/berp_website/static/img/fondo_home.jpg"/>
-                                    <div class="container">
-                                        <div class="row s_nb_column_fixed">
-                                            <div class="bg-white jumbotron pb32 pt40 col-lg-7 rounded" data-name="Box">
-                                                <div class="row">
-                                                    <div class="s_title s_col_no_bgcolor col-lg-12" data-name="Title">
-                                                        <h1 class="s_title_thin">
-                                                            <span style="font-size: 62px;">JAS</span>
-                                                        </h1>
-                                                    </div>
+        <template id="berp_20191103_1522_website" name="form_add_socio">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="oe_structure">
+                        <section class="s_text_block pt32 pb32">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="pt0 col-lg-12 pb0">
+                                        <h1 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES-TE SOCI !</h1>
+                                        <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES ATLETISME AMB NOSALTRES<hr/></h2>
+                                        <br/><br/>
+                                        <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="contact_name">Your Name</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="contact_name" t-att-value="request.params.get('contact_name', '')" required=""/>
                                                 </div>
                                             </div>
-                                        </div>
+                                            <div class="form-group row form-field">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="phone">Phone Number</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="phone" t-att-value="request.params.get('phone', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="email_from">Email</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="email_from" required="" t-att-value="request.params.get('email_from', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="partner_name">Your Company</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="partner_name" required="" t-att-value="request.params.get('partner_name', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="name">Subject</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="name" required="" t-att-value="request.params.get('name', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Your Question</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <textarea class="form-control o_website_form_input" name="description" required=""><t t-esc="request.params.get('description', '')"/></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
+                                                    <a role="button" t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary" id="o_contact_mail">Send us an email</a>
+                                                    <span id="o_website_form_result"/>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                </section>
+                                </div>
                             </div>
-                        </div>
-                    </t>
-                </t>
-            </field>
-        </record>
+                            <br/><br/>
+                        </section>
+                    </div>
+                </div>
+            </t>
+        </template>
 
     </data>
 </odoo>

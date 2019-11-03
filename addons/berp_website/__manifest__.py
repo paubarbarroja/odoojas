@@ -8,7 +8,8 @@
     'description': """
     """,
     'data': [
-        'views/template.xml'
+        'views/template.xml',
+        'views/views.xml'
     ],
     'demo': [],
     'application': True,
