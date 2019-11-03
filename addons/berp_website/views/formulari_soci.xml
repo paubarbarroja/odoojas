@@ -46,7 +46,7 @@
                                                     <input type="text" class="form-control o_website_form_input" name="dni" required="" t-att-value="request.params.get('dni', '')"/>
                                                 </div>
                                             </div>
-                                            <h4 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">Direcció Postal</h4>
+                                            <h4 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">Direcció Postal<hr/></h4>
                                             <div class="form-group row form-field o_website_form_required_custom">
                                                 <label class="col-lg-3 col-md-4 col-form-label" for="direccion_postal">Adreça</label>
                                                 <div class="col-lg-7 col-md-8">
@@ -60,6 +60,7 @@
                                                 <div class="col-lg-7 col-md-8">
                                                     <input type="text" class="form-control o_website_form_input" name="poblacion" required="" t-att-value="request.params.get('poblacion', '')" placeholder="Sabadell"/>
                                                 </div>
+                                                <hr/>
                                             </div>
                                             <div class="form-group row form-field o_website_form_required_custom">
                                                 <label class="col-lg-3 col-md-4 col-form-label" for="birthday_date">Data Naixement</label>
