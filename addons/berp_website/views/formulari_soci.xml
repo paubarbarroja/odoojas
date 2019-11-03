@@ -12,46 +12,16 @@
                                         <h1 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES-TE SOCI !</h1>
                                         <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES ATLETISME AMB NOSALTRES<hr/></h2>
                                         <br/><br/>
-                                        <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/contactus-thank-you" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+                                        <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
                                             <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="contact_name">Your Name</label>
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="name">Nom Complet</label>
                                                 <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="contact_name" t-att-value="request.params.get('contact_name', '')" required=""/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="phone">Phone Number</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="phone" t-att-value="request.params.get('phone', '')"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="email_from">Email</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="email_from" required="" t-att-value="request.params.get('email_from', '')"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="partner_name">Your Company</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="partner_name" required="" t-att-value="request.params.get('partner_name', '')"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="name">Subject</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="name" required="" t-att-value="request.params.get('name', '')"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Your Question</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <textarea class="form-control o_website_form_input" name="description" required=""><t t-esc="request.params.get('description', '')"/></textarea>
+                                                    <input type="text" class="form-control o_website_form_input" name="name" t-att-value="request.params.get('name', '')" required=""/>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
-                                                    <a role="button" t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary" id="o_contact_mail">Send us an email</a>
+                                                     <a href="#" role="button" class="btn btn-primary btn-lg o_website_form_send">Enviar</a>
                                                     <span id="o_website_form_result"/>
                                                 </div>
                                             </div>
@@ -68,3 +38,55 @@
 
     </data>
 </odoo>
+<!--<div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="phone">Nº Telèfon/Mòvil</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="phone" required="" t-att-value="request.params.get('phone', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="email_from">Correu Electronic</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="email_from" required="" t-att-value="request.params.get('email_from', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="partner_name">Genere</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <select name="genre" t-att-value="request.params.get('genre', '')"  style="width: 100%;">
+                                                        <option value="1">Masculi</option>
+                                                        <option value="2">Femeni</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="name">DNI</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="dni" required="" t-att-value="request.params.get('dni', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Direcció Postal</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="direccion_postal" required="" t-att-value="request.params.get('direccion_postal', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Data Naixement</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="birthday_date" required="" t-att-value="request.params.get('birthday_date', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Compte Bancari</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="compte_bancari" required="" t-att-value="request.params.get('compte_bancari', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Banc</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="banc" required="" t-att-value="request.params.get('banc', '')"/>
+                                                </div>
+                                            </div>
+-->
