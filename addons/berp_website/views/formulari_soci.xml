@@ -19,6 +19,63 @@
                                                     <input type="text" class="form-control o_website_form_input" name="name" t-att-value="request.params.get('name', '')" required=""/>
                                                 </div>
                                             </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="phone">Nº Telèfon/Mòvil</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="phone" required="" t-att-value="request.params.get('phone', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="email_from">Correu Electronic</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="email_from" required="" t-att-value="request.params.get('email_from', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="genre">Genere</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <select name="genre" t-att-value="request.params.get('genre', '')"  style="width: 100%;">
+                                                        <option value="1">Masculi</option>
+                                                        <option value="2">Femeni</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="dni">DNI</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="dni" required="" t-att-value="request.params.get('dni', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="direccion_postal">Direcció Postal</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="direccion_postal" required="" t-att-value="request.params.get('direccion_postal', '')" placeholder="Cami Can Quadres 147"/>
+                                                </div>
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="codigo_postal">Codi Postal</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="codigo_postal" required="" t-att-value="request.params.get('codigo_postal', '')" placeholder="08203"/>
+                                                </div>
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="poblacion">Població</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="poblacion" required="" t-att-value="request.params.get('poblacion', '')" placeholder="Sabadell"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="birthday_date">Data Naixement</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="date" class="form-control o_website_form_input" name="birthday_date" required="" t-att-value="request.params.get('birthday_date', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row form-field o_website_form_required_custom">
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="compte_bancari">Compte Bancari</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="compte_bancari" required="" t-att-value="request.params.get('compte_bancari', '')" placeholder="ES00 0000 0000 0000 0000 0000"/>
+                                                </div>
+                                                <label class="col-lg-3 col-md-4 col-form-label" for="banc">Banc</label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input type="text" class="form-control o_website_form_input" name="banc" required="" t-att-value="request.params.get('banc', '')" placeholder="CaixaBank"/>
+                                                </div>
+                                            </div>
                                             <div class="form-group row">
                                                 <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
                                                      <a href="#" role="button" class="btn btn-primary btn-lg o_website_form_send">Enviar</a>
@@ -38,55 +95,3 @@
 
     </data>
 </odoo>
-<!--<div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="phone">Nº Telèfon/Mòvil</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="phone" required="" t-att-value="request.params.get('phone', '')"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="email_from">Correu Electronic</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="email_from" required="" t-att-value="request.params.get('email_from', '')"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="partner_name">Genere</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <select name="genre" t-att-value="request.params.get('genre', '')"  style="width: 100%;">
-                                                        <option value="1">Masculi</option>
-                                                        <option value="2">Femeni</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="name">DNI</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="dni" required="" t-att-value="request.params.get('dni', '')"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Direcció Postal</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="direccion_postal" required="" t-att-value="request.params.get('direccion_postal', '')"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Data Naixement</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="birthday_date" required="" t-att-value="request.params.get('birthday_date', '')"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Compte Bancari</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="compte_bancari" required="" t-att-value="request.params.get('compte_bancari', '')"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="description">Banc</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="banc" required="" t-att-value="request.params.get('banc', '')"/>
-                                                </div>
-                                            </div>
--->
