@@ -1,0 +1,37 @@
+version: '2'
+services:
+  postgresql:
+    container_name: berp_postgresql
+    image: 'bitnami/postgresql:11'
+    ports:
+      - "5432:5432"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - 'postgresql_data:/bitnami/postgresql'
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100k"
+        max-file: "3"
+  odoo:
+    container_name: berp_odoo
+    image: 'paubarbarroja/berp_odoo:1'
+    ports:
+      - '8069:8069'
+      - '443:8071'
+    volumes:
+      - 'odoo_data:/bitnami'
+      - './addons:/home/odoojas'
+    depends_on:
+      - postgresql
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100k"
+        max-file: "3"
+volumes:
+  postgresql_data:
+    driver: local
+  odoo_data:
+    driver: local
