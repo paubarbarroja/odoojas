@@ -15,10 +15,6 @@
 
         <xpath expr="//*[hasclass('o_blog_post_teaser')]/.." position="replace">
             <div class="row">
-                <!-- Wrap text content with a .row element -->
-                <div class="col">$0</div>
-
-                <!-- Insert social share thumbnail next to teaser -->
                 <t t-set="blog_post_meta" t-value="blog_post.get_website_meta()" />
                 <div
                     t-if="blog_post_meta['opengraph_meta']['og:image']"
@@ -29,6 +25,11 @@
                         t-att-src="blog_post_meta['opengraph_meta']['og:image']"
                     />
                 </div>
+                <!-- Wrap text content with a .row element -->
+                <div class="col">$0</div>
+
+                <!-- Insert social share thumbnail next to teaser -->
+                
             </div>
         </xpath>
 
