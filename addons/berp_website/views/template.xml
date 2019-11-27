@@ -41,63 +41,12 @@
                             </div>
                         </div>
                     </section>
-                    <section class="s_three_columns pt32 pb32 oe_custom_bg" style="background-color: rgb(107, 173, 222);">
+                    <section class="s_latest_posts s_three_columns pt32 pb32 oe_custom_bg" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
                             <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> Últimes Notícies
                                 <hr/>
                             </h1>
-                            <div class="row d-flex align-items-stretch">
-                                <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
-                                    <div class="card bg-white">
-                                        <img class="card-img-top" src="/web/image/website.library_image_11" alt="Odoo - Prueba 1 a tres columnas"/>
-                                        <div class="card-body">
-                                            <h3 class="card-title o_default_snippet_text">Característica uno</h3>
-                                            <p class="card-text o_default_snippet_text">Adapte estas tres columnas para que se ajusten a sus necesidades de diseño Para duplicar, eliminar o mover columnas, seleccione la columna y use los iconos superiores para realizar su acción.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
-                                    <div class="card bg-white">
-                                        <img class="card-img-top" src="/web/image/website.library_image_13" alt="Odoo - Prueba 2 a tres columnas"/>
-                                        <div class="card-body">
-                                            <h3 class="card-title o_default_snippet_text">Característica dos</h3>
-                                            <p class="card-text o_default_snippet_text">Para añadir una cuarta columna, reduzca el tamaño de estas tres columnas usando el icono adecuado de cada bloque. Entonces, duplique una de las columnas para crear una nueva como copia.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <i class="fa fa-info-circle mr-1"/>
-                                            <small class="o_default_snippet_text">Información adicional</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
-                                    <div class="card bg-white">
-                                        <img class="card-img-top" src="/web/image/website.library_image_07" alt="Odoo - Prueba 3 a tres columnas"/>
-                                        <div class="card-body">
-                                            <h3 class="card-title o_default_snippet_text">Característica tres</h3>
-                                            <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's
-                                                <em class="o_default_snippet_text">rounded corner</em> style.
-                                            </p>
-                                            <div class="s_btn text-left pb0 pt16" data-name="Button">
-                                                <a href="#" class="btn btn-primary btn-sm o_default_snippet_text">Descubre más </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
-                                    <div class="card bg-white">
-                                        <img class="card-img-top" src="/web/image/website.library_image_07" alt="Odoo - Prueba 3 a tres columnas"/>
-                                        <div class="card-body">
-                                            <h3 class="card-title o_default_snippet_text">Característica tres</h3>
-                                            <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's
-                                                <em class="o_default_snippet_text">rounded corner</em> style.
-                                            </p>
-                                            <div class="s_btn text-left pb0 pt16" data-name="Button">
-                                                <a href="#" class="btn btn-primary btn-sm o_default_snippet_text">Descubre más </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true" data-template="website_blog.ultimas_noticias_inicio"/>
                         </div>
                     </section>
                     <section class="s_text_block pt32 pb32">
@@ -269,6 +218,30 @@
                 </t>
             </xpath>
         </template>
+
+        <template id="ultimas_noticias_inicio">
+            <t t-foreach="posts" t-as="p">
+                <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+                <div class="row d-flex align-items-stretch">
+                    <div class="s_col_no_bgcolor pt16 pb16 col-lg-3 loading_container s_latest_posts_post">
+                        <div class="card bg-white">
+                            <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" class="card-img-top">
+                                <t t-call="website_blog.blog_cover">
+                                    <t t-set="cover_properties" t-value="properties"/>
+                                    <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+                                </t>
+                            </a>
+                            <div class="card-body">
+                                <h2 class="card-title" t-field="p.name"/>
+                                <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+                            
+
 
     </data>
 </odoo>
