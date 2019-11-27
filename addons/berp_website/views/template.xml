@@ -223,20 +223,17 @@
             <xpath expr="." position="replace">
                 <t t-foreach="posts" t-as="p">
                     <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
-                    <div class="row d-flex align-items-stretch">
-                        <div class="s_col_no_bgcolor pt16 pb16 col-lg-3 loading_container s_latest_posts_post">
-                            <div class="card bg-white">
-                                <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" class="card-img-top">
-                                    <t t-call="website_blog.blog_cover">
-                                        <t t-set="cover_properties" t-value="properties"/>
-                                        <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
-                                    </t>
-                                </a>
-                                <div class="card-body">
-                                    <h2 class="card-title" t-field="p.name"/>
-                                    <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
-                                </div>
-                            </div>
+                    <div class="col-12 media mt-3 s_latest_posts_post">
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                            <t t-call="website_blog.blog_cover">
+                                <t t-set="cover_properties" t-value="properties"/>
+                                <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+                            </t>
+                        </a>
+                        <div class="media-body ml-3 pb-2">
+                            <h4 t-field="p.name"/>
+                            <p t-field="p.subtitle"/>
+                            <a class="btn btn-sm btn-secondary" t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
                         </div>
                     </div>
                 </t>
