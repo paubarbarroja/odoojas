@@ -46,7 +46,7 @@
                             <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> Últimes Notícies
                                 <hr/>
                             </h1>
-                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true" data-template="website_blog.ultimas_noticias_inicio"/>
+                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true" data-template="berp_website.ultimas_noticias_inicio"/>
                         </div>
                     </section>
                     <section class="s_text_block pt32 pb32">
