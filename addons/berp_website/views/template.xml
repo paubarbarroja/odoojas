@@ -50,19 +50,17 @@
                     <section class="s_text_block pt32 pb32">
                         <div class="container">
                             <div class="row">
-                                <div class="pt0 col-lg-12 pb0">
+                                <div class="col-lg-12">
                                     <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> QUI SOM ?
                                         <hr/>
                                     </h1>
-                                    <pre style="color: rgb(0, 0, 0); font-family: sans-serif, serif, Helvetica;">
-                                        <p class="lead o_default_snippet_text">La Joventut Atlètica Sabadell (JAS) és un club d'atletisme de Sabadell (Barcelona), afiliat a la Federació Catalana d'Atletisme (FCA).
-                                            <br/>Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la Real Federación Española de Atletismo (RFEA). Fundat al 1921,
-                                            <br/>l'entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà...
-                                        </p>
-                                        <div class="s_btn col-lg-12 text-right pt0 pb0">
-                                            <a href="/historia" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Més <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109"/> </a>
-                                        </div>
-                                    </pre>
+                                    <p class="lead o_default_snippet_text" style="font-family: sans-serif, serif, Helvetica;">La Joventut Atlètica Sabadell (JAS) és un club d'atletisme de Sabadell (Barcelona), afiliat a la Federació Catalana d'Atletisme (FCA).
+                                        <br/>Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la Real Federación Española de Atletismo (RFEA). Fundat al 1921,
+                                        l'entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà...
+                                    </p>
+                                    <div class="s_btn col-lg-12 text-right pt0 pb0">
+                                        <a href="/historia" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Més <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109"/> </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
