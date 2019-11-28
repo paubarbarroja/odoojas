@@ -215,7 +215,22 @@
             </xpath>
         </template>
                             
-
+        <template id="holkase">
+            <t t-foreach="posts" t-as="p">
+                <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+                <div class="col-12 col-md-6 my-3 loading_container s_latest_posts_post">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="properties"/>
+                        <t t-set="additionnal_classes" t-value="'thumb'"/>
+                    </t>
+                    <div>
+                        <h2 t-field="p.name"/>
+                        <p t-field="p.subtitle"/>
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
+                    </div>
+                </div>
+            </t>
+        </template>
 
     </data>
 </odoo>
