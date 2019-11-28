@@ -44,7 +44,7 @@
                     <section class="s_latest_posts_big_picture s_three_columns pt32 pb32 oe_custom_bg" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
                             <h1 class="s_title_default" style="text-align: left; color: rgb(255, 255, 255); "> Últimes Notícies <hr/></h1>
-                            <div class="row s_col_no_bgcolor js_get_posts active" data-loading="true" data-template="website_blog.s_latest_posts_big_picture_template" data-filter-by-blog-id="1" data-posts-limit="4"/>
+                            <div class="row s_col_no_bgcolor js_get_posts active" data-loading="true" data-template="berp_website.view_last_news" data-filter-by-blog-id="1" data-posts-limit="4"/>
                         </div>
                     </section>
                     <section class="s_text_block pt32 pb32">
@@ -215,10 +215,10 @@
             </xpath>
         </template>
                             
-        <template id="holkase">
+        <template id="view_last_news">
             <t t-foreach="posts" t-as="p">
                 <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
-                <div class="col-12 col-md-6 my-3 loading_container s_latest_posts_post">
+                <div class="loading_container s_latest_posts_post">
                     <t t-call="website_blog.blog_cover">
                         <t t-set="cover_properties" t-value="properties"/>
                         <t t-set="additionnal_classes" t-value="'thumb'"/>
