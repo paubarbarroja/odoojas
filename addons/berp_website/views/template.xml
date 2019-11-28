@@ -41,12 +41,10 @@
                             </div>
                         </div>
                     </section>
-                    <section class="s_latest_posts s_three_columns pt32 pb32 oe_custom_bg" style="background-color: rgb(107, 173, 222);">
+                    <section class="s_latest_posts_big_picture s_three_columns pt32 pb32 oe_custom_bg" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
-                            <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> Últimes Notícies
-                                <hr/>
-                            </h1>
-                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true" data-template="website_blog.s_latest_posts"/>
+                            <h1 class="s_title_default" style="text-align: left; color: rgb(255, 255, 255); "> Últimes Notícies <hr/></h1>
+                            <div class="row s_col_no_bgcolor js_get_posts active" data-loading="true" data-template="website_blog.s_latest_posts_big_picture_template" data-filter-by-blog-id="1" data-posts-limit="4"/>
                         </div>
                     </section>
                     <section class="s_text_block pt32 pb32">
@@ -56,7 +54,7 @@
                                     <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> QUI SOM ?
                                         <hr/>
                                     </h1>
-                                    <pre style="color: rgb(0, 0, 0); font-family: &quot;Source Code Pro&quot;;">
+                                    <pre style="color: rgb(0, 0, 0); font-family: sans-serif, serif, Helvetica;">
                                         <p class="lead o_default_snippet_text">La Joventut Atlètica Sabadell (JAS) és un club d'atletisme de Sabadell (Barcelona), afiliat a la Federació Catalana d'Atletisme (FCA).
                                             <br/>Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la Real Federación Española de Atletismo (RFEA). Fundat al 1921,
                                             <br/>l'entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà...
@@ -215,27 +213,6 @@
                             </t>
                         </div>
                     </t>
-                </t>
-            </xpath>
-        </template>
-
-        <template id="ultimas_noticias_inicio" inherit_id="website_blog.s_latest_posts_list_template">
-            <xpath expr="." position="replace">
-                <t t-foreach="posts" t-as="p">
-                    <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
-                    <div class="col-12 media mt-3 s_latest_posts_post">
-                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
-                            <t t-call="website_blog.blog_cover">
-                                <t t-set="cover_properties" t-value="properties"/>
-                                <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
-                            </t>
-                        </a>
-                        <div class="media-body ml-3 pb-2">
-                            <h4 t-field="p.name"/>
-                            <p t-field="p.subtitle"/>
-                            <a class="btn btn-sm btn-secondary" t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
-                        </div>
-                    </div>
                 </t>
             </xpath>
         </template>
