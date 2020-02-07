@@ -109,7 +109,8 @@ class Partner(models.Model):
     is_socio = fields.Boolean(string="Socio")
     is_atleta = fields.Boolean(string="Atleta")
     telefono = fields.Char(string="Teléfono 2")
-    numero_bancario = fields.char(string="Número Bancario")
+    numero_bancario = fields.Char(string="Número Bancario")
+    notas = fields.Text(string="Notas")
 
     # SOCIO
     num_socio = fields.Integer(string="Numero de Socio")
@@ -120,7 +121,7 @@ class Partner(models.Model):
     # ATLETA
     genero = fields.Selection([('1', 'Masculino'), ('2', 'Femenino')], string='Sexo')
     especialidad = fields.Selection([('1', 'Velocidad'),('2', 'Fondo'),('3', 'Medio Fondo'),('4', 'Lanzamientos'),('5', 'Saltos'),('6', 'Marcha Atlética')],string='Especialidad')
-    ficha = fields.Char(string="Ficha")
+    ficha = fields.Char(string="N.º Licencia")
     categoria = fields.Char(string="Categoria")
     grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
     visible = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
