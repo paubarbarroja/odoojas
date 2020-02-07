@@ -73,18 +73,6 @@ class Partner(models.Model):
                 s += ", " + item.name
             item.usuario_name = s
 
-    @api.depends('apellido1', 'apellido2', 'name')
-    def _get_name_normal(self):
-        for item in self:
-            s = ""
-            if item.name:
-                s += " " + item.name
-            if item.apellido1:
-                s += item.apellido1
-            if item.apellido2:
-                s += " " + item.apellido2
-            item.usuario_name_tree = s
-
     @api.model
     def _get_default_image(self,aa,bb,cc):
         image = False
@@ -108,9 +96,6 @@ class Partner(models.Model):
     dni = fields.Char(string="DNI")
     is_socio = fields.Boolean(string="Socio")
     is_atleta = fields.Boolean(string="Atleta")
-    telefono = fields.Char(string="Teléfono 2")
-    numero_bancario = fields.Char(string="Número Bancario")
-    notas = fields.Text(string="Notas")
 
     # SOCIO
     num_socio = fields.Integer(string="Numero de Socio")
@@ -121,7 +106,7 @@ class Partner(models.Model):
     # ATLETA
     genero = fields.Selection([('1', 'Masculino'), ('2', 'Femenino')], string='Sexo')
     especialidad = fields.Selection([('1', 'Velocidad'),('2', 'Fondo'),('3', 'Medio Fondo'),('4', 'Lanzamientos'),('5', 'Saltos'),('6', 'Marcha Atlética')],string='Especialidad')
-    ficha = fields.Char(string="N.º Licencia")
+    ficha = fields.Char(string="Ficha")
     categoria = fields.Char(string="Categoria")
     grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
     visible = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
