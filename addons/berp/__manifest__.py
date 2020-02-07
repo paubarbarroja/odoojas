@@ -1,5 +1,6 @@
 {
     'name': "berp",
+    'summary': """Berp""",
     'version': '1.0',
     'depends': ['base'],
     'author': "Pau Barbarroja",

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="berp_20191103_2253_menuitem"
+              name="Solicituts Socis"
+              parent="berp.administracion_menuitem"
+              sequence="1"
+              action="berp_03112019_2237_action"/>
+
+</odoo>
+
