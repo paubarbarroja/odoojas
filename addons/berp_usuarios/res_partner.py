@@ -65,18 +65,6 @@ class Partner(models.Model):
     def _get_name(self):
         for item in self:
             s = ""
-            if item.apellido1:
-                s += item.apellido1
-            if item.apellido2:
-                s += " " + item.apellido2
-            if item.name:
-                s += ", " + item.name
-            item.usuario_name = s
-
-    @api.depends('apellido1', 'apellido2', 'name')
-    def _get_name_normal(self):
-        for item in self:
-            s = ""
             if item.name:
                 s += " " + item.name
             if item.apellido1:
@@ -84,6 +72,18 @@ class Partner(models.Model):
             if item.apellido2:
                 s += " " + item.apellido2
             item.usuario_name = s
+
+    @api.depends('apellido1', 'apellido2', 'name')
+    def _get_name_tree(self):
+        for item in self:
+            s = ""
+            if item.apellido1:
+                s += item.apellido1
+            if item.apellido2:
+                s += " " + item.apellido2
+            if item.name:
+                s += ", " + item.name
+            item.usuario_name_tree = s
 
     @api.model
     def _get_default_image(self,aa,bb,cc):
@@ -103,6 +103,7 @@ class Partner(models.Model):
     apellido1 = fields.Char(string="Apellido 1")
     apellido2 = fields.Char(string="Apellido 2")
     usuario_name = fields.Char(compute="_get_name", string="Nombre Completo",store=True)
+    usuario_name_tree = fields.Char(compute="_get_name_tree", string="Nombre Completo",store=True)
     user_id = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
     fecha_nac = fields.Date(string="Fecha de Nacimiento")
     dni = fields.Char(string="DNI")
