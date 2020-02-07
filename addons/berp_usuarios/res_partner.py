@@ -102,7 +102,7 @@ class Partner(models.Model):
     name = fields.Char(string="Nombre")
     apellido1 = fields.Char(string="Apellido 1")
     apellido2 = fields.Char(string="Apellido 2")
-    usuario_name_tree = fields.Char(compute="_get_name_tree", string="Nombre Completo",store=True)
+    usuario_name = fields.Char(compute="_get_name", string="Nombre Completo",store=True)
     user_id = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
     fecha_nac = fields.Date(string="Fecha de Nacimiento")
     dni = fields.Char(string="DNI")
