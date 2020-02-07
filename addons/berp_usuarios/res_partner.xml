@@ -72,7 +72,7 @@
                                 <field name="fecha_nac"/>
                                </group>
                             <group>
-                                <field name="phone" widget="phone"/>
+                                <field name="phone" string="Telèfono 1" widget="phone"/>
                                 <field name="user_id" string="Usuario"/>
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
                             </group>
