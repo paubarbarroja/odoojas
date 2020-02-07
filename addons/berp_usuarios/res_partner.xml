@@ -59,6 +59,7 @@
                                 </group>
                             </h3>
                         </div>
+                        <hr/>
                         <group>
                             <group>
                                 <label for="street" string="Direccion"/>
@@ -78,6 +79,7 @@
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
                             </group>
                         </group>
+                        <hr/>
                         <group col="2">
                             <field name="notas" placeholder="Notas Internas"/>
                         </group>
