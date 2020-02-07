@@ -125,3 +125,6 @@ class Partner(models.Model):
     categoria = fields.Char(string="Categoria")
     grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
     visible = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
+    ficha_esp = fields.Boolean(string="Ficha Española")
+    ficha_cat = fields.Boolean(string="Ficha Catalana")
+    ficha_fondo_ruta = fields.Boolean(string="Ficha Fondo y Ruta")
