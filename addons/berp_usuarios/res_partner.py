@@ -109,9 +109,6 @@ class Partner(models.Model):
     dni = fields.Char(string="DNI")
     is_socio = fields.Boolean(string="Socio")
     is_atleta = fields.Boolean(string="Atleta")
-    telefono = fields.Char(string="Teléfono 2")
-    numero_bancario = fields.Char(string="Número Bancario")
-    notas = fields.Text(string="Notas")
 
     # SOCIO
     num_socio = fields.Integer(string="Numero de Socio")
