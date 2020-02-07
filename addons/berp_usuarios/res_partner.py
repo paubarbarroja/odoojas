@@ -62,7 +62,7 @@ class Partner(models.Model):
 
 
     @api.depends('apellido1', 'apellido2', 'name')
-    def _get_name_tree(self):
+    def _get_name(self):
         for item in self:
             s = ""
             if item.apellido1:
@@ -71,7 +71,7 @@ class Partner(models.Model):
                 s += " " + item.apellido2
             if item.name:
                 s += ", " + item.name
-            item.usuario_name_tree = s
+            item.usuario_name = s
 
     @api.depends('apellido1', 'apellido2', 'name')
     def _get_name_normal(self):
