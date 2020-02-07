@@ -78,10 +78,10 @@
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
                             </group>
                         </group>
-                        <group>
+                        <group col="2">
                             <field name="notas" placeholder="Notas Internas"/>
                         </group>
-                        <notebook colspan="4">
+                        <notebook colspan="6">
                             <page name="socio_page" string="Socio" attrs="{'invisible': [('is_socio', '=', False)]}">
                                 <group col="2">
                                     <field name="fecha_alta"/>
