@@ -71,7 +71,7 @@ class Partner(models.Model):
                 s += " " + item.apellido2
             if item.name:
                 s += ", " + item.name
-            item.usuario_name = s
+            item.usuario_name_tree = s
 
     @api.depends('apellido1', 'apellido2', 'name')
     def _get_name_normal(self):
@@ -83,7 +83,7 @@ class Partner(models.Model):
                 s += item.apellido1
             if item.apellido2:
                 s += " " + item.apellido2
-            item.usuario_name = s
+            item.usuario_name_tree = s
 
     @api.model
     def _get_default_image(self,aa,bb,cc):
@@ -102,13 +102,14 @@ class Partner(models.Model):
     name = fields.Char(string="Nombre")
     apellido1 = fields.Char(string="Apellido 1")
     apellido2 = fields.Char(string="Apellido 2")
-    usuario_name_tree = fields.Char(compute="_get_name", string="Nombre Completo",store=True)
+    usuario_name_tree = fields.Char(compute="_get_name_tree", string="Nombre Completo",store=True)
     user_id = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
     fecha_nac = fields.Date(string="Fecha de Nacimiento")
     dni = fields.Char(string="DNI")
     is_socio = fields.Boolean(string="Socio")
     is_atleta = fields.Boolean(string="Atleta")
-    telefono = fields.Char(string="Telèfono 2")
+    telefono = fields.Char(string="Teléfono 2")
+    numero_bancario = fields.char(string="Número Bancario")
 
     # SOCIO
     num_socio = fields.Integer(string="Numero de Socio")
