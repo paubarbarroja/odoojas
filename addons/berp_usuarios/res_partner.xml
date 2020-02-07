@@ -73,9 +73,11 @@
                                </group>
                             <group>
                                 <field name="phone" widget="phone"/>
+                                <field name="telefono" widget="phone"/>
                                 <field name="user_id" string="Usuario"/>
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
                             </group>
+                            <field name="notas"/>
                         </group>
                         <notebook colspan="4">
                             <page name="socio_page" string="Socio" attrs="{'invisible': [('is_socio', '=', False)]}">
@@ -83,6 +85,7 @@
                                     <field name="fecha_alta"/>
                                     <field name="fecha_baja"/>
                                     <field name="socio_honorario"/>
+                                    <field name="numero_bancario"/>
                                 </group>
                             </page>
                             <page name="atleta_page" string="Atleta" attrs="{'invisible': [('is_atleta', '=', False)]}">
