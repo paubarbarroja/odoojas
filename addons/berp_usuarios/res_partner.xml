@@ -78,6 +78,9 @@
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
                             </group>
                         </group>
+                        <group col="2">
+                            <field name="notas" placeholder="Notas Internas"/>
+                        </group>
                         <notebook colspan="4">
                             <page name="socio_page" string="Socio" attrs="{'invisible': [('is_socio', '=', False)]}">
                                 <group col="2">
@@ -89,8 +92,12 @@
                             </page>
                             <page name="atleta_page" string="Atleta" attrs="{'invisible': [('is_atleta', '=', False)]}">
                                 <group col="2">
-                                    <field name="genero"/>ficha_esp
+                                    <field name="genero"/>
                                     <field name="categoria"/>
+                                    <field name="ficha"/>
+                                    <field name="ficha_esp"/>
+                                    <field name="ficha_cat"/>
+                                    <field name="ficha_fondo_ruta"/>
                                     <field name="especialidad" invisible="1"/>
                                     <field name="grupo_entreno" invisible="1"/>
                                 </group>
