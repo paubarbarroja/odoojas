@@ -96,6 +96,19 @@ class Partner(models.Model):
             image = tools.image_colorize(image)
         return tools.image_resize_image_big(base64.b64encode(image))
 
+    @api.onchange('ficha_esp')
+    def onchange_ficha_esp(self):
+        for record in self:
+            if record.ficha_esp == True:
+                record.ficha_cat = True
+                record.ficha_fondo_ruta = True
+
+    @api.onchange('ficha_cat')
+    def onchange_ficha_cat(self):
+        for record in self:
+            if record.ficha_cat == True:
+                record.ficha_fondo_ruta = True
+
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
     image = fields.Binary("Image", attachment=True, default=lambda self:self._get_default_image('a','b','c'))
