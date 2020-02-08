@@ -82,7 +82,7 @@
                             <field name="notas" placeholder="Notas Internas"/>
                         </group>
                         <notebook colspan="4">
-                            <page name="socio_page" string="Socio" attrs="{'invisible': [('is_socio', '=', False)]}">
+                            <page name="socio_page" string="Datos Generales" attrs="{'invisible': [('is_socio', '=', False)]}">
                                 <group col="2">
                                     <field name="fecha_alta"/>
                                     <field name="fecha_baja"/>
@@ -90,7 +90,7 @@
                                     <field name="cuenta_bancaria"/>
                                 </group>
                             </page>
-                            <page name="atleta_page" string="Atleta" attrs="{'invisible': [('is_atleta', '=', False)]}">
+                            <page name="atleta_page" string="Datos Atleta" attrs="{'invisible': [('is_atleta', '=', False)]}">
                                 <group col="2">
                                     <field name="genero"/>
                                     <field name="categoria"/>
