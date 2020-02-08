@@ -78,9 +78,7 @@
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
                             </group>
                         </group>
-                        <group col="2">
-                            <field name="notas" placeholder="Notas Internas"/>
-                        </group>
+                        <field name="notas" placeholder="Notas Internas"/>
                         <notebook colspan="4">
                             <page name="socio_page" string="Datos Generales" attrs="{'invisible': [('is_socio', '=', False)]}">
                                 <group col="2">
