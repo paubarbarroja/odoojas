@@ -92,10 +92,8 @@
                                 <group col="2">
                                     <field name="genero"/>
                                     <field name="categoria"/>
+                                    <field name="tipo_ficha"/>
                                     <field name="ficha"/>
-                                    <field name="ficha_esp"/>
-                                    <field name="ficha_cat"/>
-                                    <field name="ficha_fondo_ruta"/>
                                     <field name="especialidad" invisible="1"/>
                                     <field name="grupo_entreno" invisible="1"/>
                                 </group>

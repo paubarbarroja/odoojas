@@ -96,18 +96,7 @@ class Partner(models.Model):
             image = tools.image_colorize(image)
         return tools.image_resize_image_big(base64.b64encode(image))
 
-    @api.onchange('ficha_esp')
-    def onchange_ficha_esp(self):
-        for record in self:
-            if record.ficha_esp == True:
-                record.ficha_cat = True
-                record.ficha_fondo_ruta = True
 
-    @api.onchange('ficha_cat')
-    def onchange_ficha_cat(self):
-        for record in self:
-            if record.ficha_cat == True:
-                record.ficha_fondo_ruta = True
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
@@ -138,6 +127,4 @@ class Partner(models.Model):
     categoria = fields.Char(string="Categoria")
     grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
     visible = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
-    ficha_esp = fields.Boolean(string="Ficha Española")
-    ficha_cat = fields.Boolean(string="Ficha Catalana")
-    ficha_fondo_ruta = fields.Boolean(string="Ficha Fondo y Ruta")
+    tipo_ficha = fields.Selection([('esp', 'Ficha Española'), ('cat', 'Ficha Catalana'), ('fondo', 'Ficha Fondo y Ruta')], string='Tipo de Ficha')
