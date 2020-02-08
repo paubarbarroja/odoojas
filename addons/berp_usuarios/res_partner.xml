@@ -75,9 +75,9 @@
                                 <field name="phone" widget="phone"/>
                                 <field name="mobile" widget="phone"/>
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
-                                <group col="3">
+                                <group col="4">
                                     <field name="descuento"/>
-                                    <field name="descuento_tipo" nolabel="1"/>
+                                    <field name="descuento_tipo" nolabel="1" invisible="[('descuento', '=', True)]"/>
                                 </group>
                                 <field name="user_id" string="Usuario" invisible="1"/>
                             </group>
