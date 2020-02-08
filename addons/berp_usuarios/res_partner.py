@@ -128,4 +128,5 @@ class Partner(models.Model):
     grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
     visible = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
     tipo_ficha = fields.Selection([('esp', 'Ficha Española'), ('cat', 'Ficha Catalana'), ('fondo', 'Ficha Fondo y Ruta')], string='Tipo de Ficha')
-
+    descuento = fields.Boolean(string="Descuento")
+    descuento_tipo = fields.Char(string="Tipo descuento")
