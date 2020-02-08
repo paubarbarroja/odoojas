@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <menuitem id="berp_20190828_1421_menuitem"
+    <!--menuitem id="berp_20190828_1421_menuitem"
               name="Usuarios"
-              parent="berp.administracion_menuitem"/>
+              parent="berp.administracion_menuitem"/-->
 
-        <menuitem id="berp_20190830_1550_menuitem"
-                  name="Listados"
-                  parent="berp_20190828_1421_menuitem"
-                  sequence="1"/>
 
             <menuitem id="berp_20190814_1737_menuitem"
                       name="Socios"
-                      parent="berp_20190830_1550_menuitem"
+                      parent="berp.administracion_menuitem"
                       sequence="1"
                       action="berp_28082019_1258_action"/>
 
             <menuitem id="berp_20190829_1850_menuitem"
                       name="Atletas"
-                      parent="berp_20190830_1550_menuitem"
+                      parent="berp.administracion_menuitem"
                       sequence="2"
                       action="berp_29082019_1841_action"/>
 
             <menuitem id="berp_20190830_1548_menuitem"
                       name="Alta Socio"
-                      parent="berp_20190828_1421_menuitem"
+                      parent="berp.administracion_menuitem"
                       sequence="3"
                       action="berp_08092019_1135_action"/>
 
             <menuitem id="berp_20190830_1549_menuitem"
                       name="Alta Atleta"
-                      parent="berp_20190828_1421_menuitem"
+                      parent="berp.administracion_menuitem"
                       sequence="4"
                       action="berp_08092019_1136_action"/>
 
