@@ -111,7 +111,7 @@ class Partner(models.Model):
     dni = fields.Char(string="DNI")
     is_socio = fields.Boolean(string="Socio")
     is_atleta = fields.Boolean(string="Atleta")
-    cuenta_bancaria = fields.Many2one("res.partner.bank",string="Cuenta Bancaria")
+    cuenta_bancaria = fields.Char(string="Cuenta Bancaria")
     notas = fields.Text(string="Notas")
 
     # SOCIO
