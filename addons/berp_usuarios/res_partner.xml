@@ -77,9 +77,9 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <group>
-                                        <field name="city" placeholder="Ciudad" class="o_address_city" nolabe="1"/>
-                                        <field name="zip" placeholder="Código postal" class="o_address_zip" nolabe="1"/>
+                                    <group cols="2">
+                                        <field name="city" placeholder="Ciudad" class="o_address_city" nolabel="1"/>
+                                        <field name="zip" placeholder="Código postal" class="o_address_zip" nolabel="1"/>
                                     </group>
                                 </td>
                                 <td>
@@ -107,7 +107,7 @@
                                     </group>
                                 </td>
                                 <td>
-                                    <group>
+                                    <group cols="3">
                                         <field name="descuento"/>
                                         <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
                                     </group>
