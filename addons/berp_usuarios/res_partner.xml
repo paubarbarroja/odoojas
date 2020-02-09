@@ -63,7 +63,7 @@
                         <br/>
                         <br/>
                         <table>
-                            <tr colspan="3">
+                            <tr>
                                 <td>
                                     <group>
                                         <field name="street" placeholder="Calle..." class="o_address_street" string="Dirección"/>
@@ -79,10 +79,6 @@
                                 <td>
                                     <group>
                                         <field name="city" placeholder="Ciudad" class="o_address_city" nolabe="1"/>
-                                    </group>
-                                </td>
-                                <td>
-                                    <group>
                                         <field name="zip" placeholder="Código postal" class="o_address_zip" nolabe="1"/>
                                     </group>
                                 </td>
@@ -92,7 +88,7 @@
                                     </group>
                                 </td>
                             </tr>
-                            <tr colspan="3">
+                            <tr>
                                 <td>
                                     <group>
                                         <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
@@ -113,15 +109,11 @@
                                 <td>
                                     <group>
                                         <field name="descuento"/>
-                                    </group>
-                                </td>
-                                <td>
-                                    <group>
                                         <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
                                     </group>
                                 </td>
                             </tr>
-                            <tr colspan="3">
+                            <tr>
                                 <td>
                                     <group>
                                         <field name="fecha_nac"/>
