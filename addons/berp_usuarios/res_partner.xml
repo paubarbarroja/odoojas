@@ -61,25 +61,50 @@
                         </div>
                         <table>
                             <tr>
-                                <label for="street" string="Direccion"/>
-                                <div class="o_address_format">
-                                    <field name="street" placeholder="Calle..." class="o_address_street"/>
-                                    <field name="city" placeholder="Ciudad" class="o_address_city"/>
-                                    <field name="zip" placeholder="Código postal" class="o_address_zip"/>
-                                </div>
-                                <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
-                                <field name="dni" data-inputmask="'mask': '99999999A'"/>
-                                <field name="fecha_nac"/>
+                                <td>
+                                    <field name="street" placeholder="Calle..." class="o_address_street" string="Dirección"/>
+                                </td>
+                                <td>
+                                    <field name="phone" widget="phone"/>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td>
+                                    <field name="city" placeholder="Ciudad" class="o_address_city" nolabe="1"/>
+                                </td>
+                                <td>
+                                    <field name="zip" placeholder="Código postal" class="o_address_zip" nolabe="1"/>
+                                </td>
+                                <td>
+                                    <field name="mobile" widget="phone"/>
+                                </td>
                             </tr>
                             <tr>
-                                <field name="phone" widget="phone"/>
-                                <field name="mobile" widget="phone"/>
-                                <field name="email" widget="email" context="{'gravatar_image': True}"/>
-                                <group colspan="2">
+                                <td>
+                                    <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
+                                </td>
+                                <td>
+                                    <field name="email" widget="email" context="{'gravatar_image': True}"/>
+                                </td>
+                            </tr>
+                            <tr colspan="3">
+                                <td>
+                                    <field name="dni" data-inputmask="'mask': '99999999A'"/>
+                                </td>
+                                <td>
                                     <field name="descuento"/>
+                                </td>
+                                <td>
                                     <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
-                                </group>
-                                <field name="user_id" string="Usuario" invisible="1"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <field name="fecha_nac"/>
+                                </td>
+                                <td>
+                                    <field name="user_id" string="Usuario" invisible="1"/>
+                                </td>
                             </tr>
                         </table>
                         <field name="notas" placeholder="Notas Internas"/>
