@@ -75,7 +75,7 @@
                                 <field name="phone" widget="phone"/>
                                 <field name="mobile" widget="phone"/>
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
-                                <group colspan="2" cols="3">
+                                <group colspan="2">
                                     <field name="descuento"/>
                                     <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
                                 </group>
