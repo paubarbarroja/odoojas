@@ -59,51 +59,78 @@
                                 </group>
                             </h3>
                         </div>
+                        <br/>
+                        <br/>
+                        <br/>
                         <table>
-                            <tr>
+                            <tr colspan="3">
                                 <td>
-                                    <field name="street" placeholder="Calle..." class="o_address_street" string="Dirección"/>
+                                    <group>
+                                        <field name="street" placeholder="Calle..." class="o_address_street" string="Dirección"/>
+                                    </group>
                                 </td>
                                 <td>
-                                    <field name="phone" widget="phone"/>
-                                </td>
-                            </tr>
-                            <tr >
-                                <td>
-                                    <field name="city" placeholder="Ciudad" class="o_address_city" nolabe="1"/>
-                                </td>
-                                <td>
-                                    <field name="zip" placeholder="Código postal" class="o_address_zip" nolabe="1"/>
-                                </td>
-                                <td>
-                                    <field name="mobile" widget="phone"/>
+                                    <group>
+                                        <field name="phone" widget="phone"/>
+                                    </group>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
+                                    <group>
+                                        <field name="city" placeholder="Ciudad" class="o_address_city" nolabe="1"/>
+                                    </group>
                                 </td>
                                 <td>
-                                    <field name="email" widget="email" context="{'gravatar_image': True}"/>
+                                    <group>
+                                        <field name="zip" placeholder="Código postal" class="o_address_zip" nolabe="1"/>
+                                    </group>
+                                </td>
+                                <td>
+                                    <group>
+                                        <field name="mobile" widget="phone"/>
+                                    </group>
                                 </td>
                             </tr>
                             <tr colspan="3">
                                 <td>
-                                    <field name="dni" data-inputmask="'mask': '99999999A'"/>
+                                    <group>
+                                        <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
+                                    </group>
                                 </td>
                                 <td>
-                                    <field name="descuento"/>
-                                </td>
-                                <td>
-                                    <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
+                                    <group>
+                                        <field name="email" widget="email" context="{'gravatar_image': True}"/>
+                                    </group>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <field name="fecha_nac"/>
+                                    <group>
+                                        <field name="dni" data-inputmask="'mask': '99999999A'"/>
+                                    </group>
                                 </td>
                                 <td>
-                                    <field name="user_id" string="Usuario" invisible="1"/>
+                                    <group>
+                                        <field name="descuento"/>
+                                    </group>
+                                </td>
+                                <td>
+                                    <group>
+                                        <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
+                                    </group>
+                                </td>
+                            </tr>
+                            <tr colspan="3">
+                                <td>
+                                    <group>
+                                        <field name="fecha_nac"/>
+                                    </group>
+                                </td>
+                                <td>
+                                    <group>
+                                        <field name="user_id" string="Usuario" invisible="1"/>
+                                    </group>
                                 </td>
                             </tr>
                         </table>
