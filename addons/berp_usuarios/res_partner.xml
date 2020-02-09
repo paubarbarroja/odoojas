@@ -79,8 +79,8 @@
                             </group>
                         </group>
                         <group>
-                            <field name="descuento"/>
-                            <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
+                            <group><field name="descuento"/></group>
+                            <group><field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/></group>
                         </group>
                         <field name="notas" placeholder="Notas Internas"/>
                         <notebook colspan="4">
