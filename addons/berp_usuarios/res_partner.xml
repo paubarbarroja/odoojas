@@ -69,9 +69,9 @@
                                 </div>
                                 <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
                                 <field name="dni" data-inputmask="'mask': '99999999A'"/>
-                                <field name="fecha_nac"/>
                             </group>
                             <group>
+                                <field name="fecha_nac"/>
                                 <field name="phone" widget="phone"/>
                                 <field name="mobile" widget="phone"/>
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
