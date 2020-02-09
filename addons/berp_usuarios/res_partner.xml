@@ -71,11 +71,11 @@
                                 <field name="dni" data-inputmask="'mask': '99999999A'"/>
                                 <field name="fecha_nac"/>
                             </group>
-                            <group>
+                            <group cols="2">
                                 <field name="phone" widget="phone"/>
                                 <field name="mobile" widget="phone"/>
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
-                                <group>
+                                <group colspan="2" cols="3">
                                     <field name="descuento"/>
                                     <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
                                 </group>
