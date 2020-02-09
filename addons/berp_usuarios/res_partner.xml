@@ -59,73 +59,29 @@
                                 </group>
                             </h3>
                         </div>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <table>
-                            <tr>
-                                <td>
-                                    <group>
-                                        <field name="street" placeholder="Calle..." class="o_address_street" string="Dirección"/>
-                                    </group>
-                                </td>
-                                <td>
-                                    <group>
-                                        <field name="phone" widget="phone"/>
-                                    </group>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <group cols="2">
-                                        <field name="city" placeholder="Ciudad" class="o_address_city" nolabel="1"/>
-                                        <field name="zip" placeholder="Código postal" class="o_address_zip" nolabel="1"/>
-                                    </group>
-                                </td>
-                                <td>
-                                    <group>
-                                        <field name="mobile" widget="phone"/>
-                                    </group>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <group>
-                                        <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
-                                    </group>
-                                </td>
-                                <td>
-                                    <group>
-                                        <field name="email" widget="email" context="{'gravatar_image': True}"/>
-                                    </group>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <group>
-                                        <field name="dni" data-inputmask="'mask': '99999999A'"/>
-                                    </group>
-                                </td>
-                                <td>
-                                    <group cols="3">
-                                        <field name="descuento"/>
-                                        <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
-                                    </group>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <group>
-                                        <field name="fecha_nac"/>
-                                    </group>
-                                </td>
-                                <td>
-                                    <group>
-                                        <field name="user_id" string="Usuario" invisible="1"/>
-                                    </group>
-                                </td>
-                            </tr>
-                        </table>
+                        <group>
+                            <group>
+                                <label for="street" string="Direccion"/>
+                                <div class="o_address_format">
+                                    <field name="street" placeholder="Calle..." class="o_address_street"/>
+                                    <field name="city" placeholder="Ciudad" class="o_address_city"/>
+                                    <field name="zip" placeholder="Código postal" class="o_address_zip"/>
+                                </div>
+                                <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
+                                <field name="dni" data-inputmask="'mask': '99999999A'"/>
+                                <field name="fecha_nac"/>
+                            </group>
+                            <group cols="2">
+                                <field name="phone" widget="phone"/>
+                                <field name="mobile" widget="phone"/>
+                                <field name="email" widget="email" context="{'gravatar_image': True}"/>
+                                <group colspan="4">
+                                    <field name="descuento"/>
+                                    <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
+                                </group>
+                                <field name="user_id" string="Usuario" invisible="1"/>
+                            </group>
+                        </group>
                         <field name="notas" placeholder="Notas Internas"/>
                         <notebook colspan="4">
                             <page name="socio_page" string="Datos Generales" attrs="{'invisible': [('is_socio', '=', False)]}">
