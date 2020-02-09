@@ -59,8 +59,8 @@
                                 </group>
                             </h3>
                         </div>
-                        <group>
-                            <group>
+                        <table>
+                            <tr>
                                 <label for="street" string="Direccion"/>
                                 <div class="o_address_format">
                                     <field name="street" placeholder="Calle..." class="o_address_street"/>
@@ -70,8 +70,8 @@
                                 <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
                                 <field name="dni" data-inputmask="'mask': '99999999A'"/>
                                 <field name="fecha_nac"/>
-                            </group>
-                            <group cols="2">
+                            </tr>
+                            <tr>
                                 <field name="phone" widget="phone"/>
                                 <field name="mobile" widget="phone"/>
                                 <field name="email" widget="email" context="{'gravatar_image': True}"/>
@@ -80,8 +80,8 @@
                                     <field name="descuento_tipo" nolabel="1" attrs="{'invisible': [('descuento', '=', False)]}" placeholder="Nota Descuentos"/>
                                 </group>
                                 <field name="user_id" string="Usuario" invisible="1"/>
-                            </group>
-                        </group>
+                            </tr>
+                        </table>
                         <field name="notas" placeholder="Notas Internas"/>
                         <notebook colspan="4">
                             <page name="socio_page" string="Datos Generales" attrs="{'invisible': [('is_socio', '=', False)]}">
