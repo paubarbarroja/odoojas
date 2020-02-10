@@ -23,6 +23,7 @@
             <field name="model">res.partner</field>
             <field name="arch" type="xml">
                 <tree string="Usuario">
+                    <field name="num_socio"/>
                     <field name="usuario_name_tree"/>
                     <field name="phone"/>
                     <field name="email"/>
@@ -39,14 +40,15 @@
             <field name="model">res.partner</field>
             <field name="arch" type="xml">
                 <form string="Usuario">
-                    <field name="is_socio" invisible="True"/>
-                    <field name="is_atleta" invisible="True"/>
                     <sheet>
                         <div class="oe_button_box" name="button_box">
                             <button name="toggle_active" type="object"
                                     class="oe_stat_button" icon="fa-archive">
-                                <field name="active" widget="boolean_button"
-                                    options='{"terminology": "archive"}'/>
+                                <field name="active" widget="boolean_button" invisible="1"/>
+                                <field name="is_socio" widget="boolean_button"
+                                    options='{"terminology": "Socio"}'/>
+                                <field name="is_atleta" widget="boolean_button"
+                                    options='{"terminology": "Atleta"}'/>
                             </button>
                         </div>
                         <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 120]}'/>
