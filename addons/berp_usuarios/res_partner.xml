@@ -46,7 +46,7 @@
                             <table>
                                 <tr>
                                     <td><field name="is_socio"/></td>
-                                    <td>Socio</td>
+                                    <td style="width:5%">Socio</td>
                                 </tr>
                                 <tr>
                                     <td><field name="is_atleta"/></td>
