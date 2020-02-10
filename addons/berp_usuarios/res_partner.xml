@@ -40,11 +40,13 @@
             <field name="model">res.partner</field>
             <field name="arch" type="xml">
                 <form string="Usuario">
+                    <field name="active" invisible="1"/>
                     <sheet>
                         <div class="oe_button_box" name="button_box">
-                            <field name="active" widget="boolean_button" invisible="1"/>
-                            <field name="is_socio"/>
-                            <field name="is_atleta"/>
+                            <group>
+                                <field name="is_socio"/>
+                                <field name="is_atleta"/>
+                            </group>
                         </div>
                         <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 120]}'/>
                         <div class="oe_title">
