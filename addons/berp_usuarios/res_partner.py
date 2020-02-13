@@ -13,6 +13,13 @@ _logger = logging.getLogger(__name__)
 class Partner(models.Model):
     _inherit = "res.partner"
     _order = "apellido1, apellido2, name asc"
+    
+    
+    @api.model
+    def create(self,values):
+        res = super(Partner, self).create(values)
+        _logger.error('########## res --> %r',res)
+        return res
 
     @api.multi
     @api.depends('apellido1', 'apellido1', 'name')
