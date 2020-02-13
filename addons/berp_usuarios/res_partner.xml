@@ -167,13 +167,13 @@
         <field name="sequence" eval="1"/>
         <field name="view_mode">tree</field>
         <field name="view_id" ref="berp_28082019_1258_action"/>
-        <field name="act_window_id" ref="berp_29082019_1841_action"/>
+        <field name="act_window_id" ref="berp_14022020_0042_action"/>
    </record>
     <record model="ir.actions.act_window.view" id="berp_14022020_0042_action_form">
         <field name="sequence" eval="2"/>
         <field name="view_mode">form</field>
         <field name="view_id" ref="berp_29082019_2241_form"/>
-        <field name="act_window_id" ref="berp_29082019_1841_action"/>
+        <field name="act_window_id" ref="berp_14022020_0042_action"/>
    </record>
 
 </odoo>
