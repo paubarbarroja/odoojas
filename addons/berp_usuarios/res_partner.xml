@@ -91,6 +91,7 @@
                                     <field name="fecha_alta"/>
                                     <field name="fecha_baja"/>
                                     <field name="descuento_tipo"/>
+                                    <field name="descuento"/>
                                     <field name="socio_honorario"/>
                                     <field name="cuenta_bancaria"/>
                                 </group>
