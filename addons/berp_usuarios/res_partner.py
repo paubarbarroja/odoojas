@@ -123,7 +123,7 @@ class Partner(models.Model):
             if item.name:
                 s += ", " + item.name
             item.usuario_name_tree = s
-            
+
 
     @api.model
     def _get_default_image(self,aa,bb,cc):
@@ -159,6 +159,8 @@ class Partner(models.Model):
     fecha_alta = fields.Date(string="Fecha de Alta",  default=fields.Date.context_today)
     fecha_baja = fields.Date(string="Fecha de Baja")
     socio_honorario = fields.Boolean(string="Honorario")
+    #descuento = fields.Selection([('25', '+25 años'),('50', '+50 años'),('protector', 'Socio Protector'),('3f', '+3 Familiar')],string="Descuento")
+    descuento_tipo = fields.Char(string="Tipo descuento")
 
     # ATLETA
     genero = fields.Selection([('1', 'Masculino'), ('2', 'Femenino')], string='Sexo')
@@ -168,5 +170,3 @@ class Partner(models.Model):
     grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
     visible = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
     tipo_ficha = fields.Selection([('esp', 'Ficha Española'), ('cat', 'Ficha Catalana'), ('fondo', 'Ficha Fondo y Ruta')], string='Tipo de Ficha')
-    descuento = fields.Boolean(string="Descuento")
-    descuento_tipo = fields.Char(string="Tipo descuento")
