@@ -64,32 +64,34 @@
                                 </group>
                             </h3>
                         </div>
-                        <group>
-                            <group>
-                                <field name="num_socio"/>
-                                <label for="street" string="Direccion"/>
-                                <div class="o_address_format">
-                                    <field name="street" placeholder="Calle..." class="o_address_street"/>
-                                    <field name="city" placeholder="Ciudad" class="o_address_city"/>
-                                    <field name="zip" placeholder="Código postal" class="o_address_zip"/>
-                                </div>
-                                <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
-                                <field name="dni" data-inputmask="'mask': '99999999A'"/>
-                            </group>
-                            <group>
-                                <field name="fecha_nac"/>
-                                <field name="phone" widget="phone"/>
-                                <field name="mobile" widget="phone"/>
-                                <field name="email" widget="email" context="{'gravatar_image': True}"/>
-                                <field name="user_id" string="Usuario" invisible="1"/>
-                            </group>
+                        <group col="2">
+                            <field name="fecha_alta"/>
+                            <field name="fecha_baja"/>
                         </group>
                         <field name="notas" placeholder="Notas Internas"/>
                         <notebook colspan="4">
                             <page name="socio_page" string="Datos Generales" attrs="{'invisible': [('is_socio', '=', False)]}">
+                                <group>
+                                    <group>
+                                        <field name="num_socio"/>
+                                        <label for="street" string="Direccion"/>
+                                        <div class="o_address_format">
+                                            <field name="street" placeholder="Calle..." class="o_address_street"/>
+                                            <field name="city" placeholder="Ciudad" class="o_address_city"/>
+                                            <field name="zip" placeholder="Código postal" class="o_address_zip"/>
+                                        </div>
+                                        <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
+                                        <field name="dni" data-inputmask="'mask': '99999999A'"/>
+                                    </group>
+                                    <group>
+                                        <field name="fecha_nac"/>
+                                        <field name="phone" widget="phone"/>
+                                        <field name="mobile" widget="phone"/>
+                                        <field name="email" widget="email" context="{'gravatar_image': True}"/>
+                                        <field name="user_id" string="Usuario" invisible="1"/>
+                                    </group>
+                                </group>
                                 <group col="2">
-                                    <field name="fecha_alta"/>
-                                    <field name="fecha_baja"/>
                                     <field name="descuento_tipo"/>
                                     <field name="descuento"/>
                                     <field name="socio_honorario"/>
