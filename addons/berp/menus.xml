@@ -5,7 +5,7 @@
               groups="berp.berp_administracion,berp.berp_admin"/>
 
 
-    <menuitem id="gestion_menuitem"
+    <!--menuitem id="gestion_menuitem"
                name="Gestión del Club"
                groups="berp.berp_admin,berp.berp_dt"/>
 
@@ -53,7 +53,7 @@
                   name="Grupos de Entreno"
                   parent="gestion_menuitem"
                   action="berp_12062019_0046_action"
-                  groups="berp.berp_admin"/>
+                  groups="berp.berp_admin"/-->
 
 
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+	<!-- ##################### Formulario Tarea ##################### -->
+    <record id="berp_20200218_1445_form" model="ir.ui.view">
+        <field name="name">tarea</field>
+        <field name="model">berp.tareas</field>
+        <field name="arch" type="xml">
+            <form string="Tarea">
+                <sheet>
+	                <table>
+		                <tr>
+			                <td>
+				                <field name="descripcion"/>
+			                </td>
+			                <td>
+				                <field name="comentario"/>
+			                </td>
+			                <td>
+				                <field name="fecha_demanda"/>
+			                </td>
+			                <td>
+				                <field name="solicitado_por"/>
+			                </td>
+			                <td>
+				                <field name="tiempo_imputado"/>
+			                </td>
+			                <td>
+				                <field name="publicado"/>
+			                </td>
+		                </tr>
+	                </table>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>
