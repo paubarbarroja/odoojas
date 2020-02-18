@@ -40,9 +40,9 @@
             <field name="model">res.partner</field>
             <field name="arch" type="xml">
                 <form string="Usuario">
-                    <tree style="width:60%">
                         <field name="active" invisible="1"/>
                         <sheet>
+                            <tree style="width:60%">
                             <div class="oe_button_box" name="button_box">
                                 <table>
                                     <tr>
@@ -110,8 +110,8 @@
                                     </group>
                                 </page>
                             </notebook>
-                        </sheet>
-                    </tree>
+                        </tree>
+                    </sheet>
                 </form>
             </field>
         </record>
