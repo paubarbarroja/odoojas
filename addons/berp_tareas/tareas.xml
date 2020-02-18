@@ -3,9 +3,9 @@
 
 
 	<!-- ##################### Tree Tareas ##################### -->
-	<record model="ir.ui.view" id="berp_04062019_1938_tree">
-        <field name="name">pista_tree</field>
-        <field name="model">berp.pista</field>
+	<record model="ir.ui.view" id="berp_20200218_1444_tree">
+        <field name="name">tareas</field>
+        <field name="model">berp.tarea</field>
         <field name="arch" type="xml">
             <tree string="Pistas">
 	            <field name="descripcion"/>
@@ -22,7 +22,7 @@
 	<!-- ##################### Formulario Tarea ##################### -->
     <record id="berp_20200218_1445_form" model="ir.ui.view">
         <field name="name">tarea</field>
-        <field name="model">berp.tareas</field>
+        <field name="model">berp.tarea</field>
         <field name="arch" type="xml">
             <form string="Tarea">
                 <sheet>
@@ -51,6 +51,13 @@
                 </sheet>
             </form>
         </field>
+    </record>
+
+	<record id="berp_18022020_1500_action" model="ir.actions.act_window">
+        <field name="name">Tareas</field>
+        <field name="res_model">berp.tarea</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
 

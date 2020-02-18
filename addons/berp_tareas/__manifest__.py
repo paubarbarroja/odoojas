@@ -10,6 +10,7 @@
     """,
     'data': [
         'tareas.xml',
+        'ir.model.access.xml',
         'menus.xml',
     ],
     'demo': [],
