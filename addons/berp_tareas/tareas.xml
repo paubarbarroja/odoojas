@@ -7,7 +7,7 @@
         <field name="name">tareas</field>
         <field name="model">berp.tarea</field>
         <field name="arch" type="xml">
-            <tree string="Pistas">
+            <tree string="Tareas">
 	            <field name="descripcion"/>
                 <field name="comentario"/>
                 <field name="fecha_demanda"/>
@@ -26,7 +26,7 @@
         <field name="arch" type="xml">
             <form string="Tarea">
                 <sheet>
-	                <table>
+	                <table style="width:100%">
 		                <tr>
 			                <td><group><field name="descripcion"/></group></td>
 		                </tr>
