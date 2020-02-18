@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-        <menuitem id="berp_20200218_1502_menuitem"
-                  name="Tareas"
-                  parent="berp.administracion_menuitem"
-                  sequence="2"
-                  action="berp_18022020_1500_action"/>
+        <menuitem id="tareas_menuitem"
+                      name="Tareas"
+                      groups="berp.berp_admin"/>
+
+
+                <menuitem id="berp_20200218_1502_menuitem"
+                          name="Tareas"
+                          parent="tareas_menuitem"
+                          sequence="2"
+                          action="berp_18022020_1500_action"/>
 
 
 

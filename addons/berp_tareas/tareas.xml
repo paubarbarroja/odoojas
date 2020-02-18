@@ -28,24 +28,12 @@
                 <sheet>
 	                <table>
 		                <tr>
-			                <td>
-				                <field name="descripcion"/>
-			                </td>
-			                <td>
-				                <field name="comentario"/>
-			                </td>
-			                <td>
-				                <field name="fecha_demanda"/>
-			                </td>
-			                <td>
-				                <field name="solicitado_por"/>
-			                </td>
-			                <td>
-				                <field name="tiempo_imputado"/>
-			                </td>
-			                <td>
-				                <field name="publicado"/>
-			                </td>
+			                <td><group><field name="descripcion"/></group></td>
+			                <td><group><field name="comentario"/></group></td>
+			                <td><group><field name="fecha_demanda"/></group></td>
+			                <td><group><field name="solicitado_por"/></group></td>
+			                <td><group><field name="tiempo_imputado"/></group></td>
+			                <td><group><field name="publicado"/></group></td>
 		                </tr>
 	                </table>
                 </sheet>
