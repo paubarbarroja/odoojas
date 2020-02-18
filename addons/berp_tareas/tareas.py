@@ -10,6 +10,11 @@ _logger = logging.getLogger(__name__)
 class berp_tarea(models.Model):
     _name = "berp.tarea"
 
+    @api.multi
+    def _get_tiempo_imputado(self):
+        for record in self:
+            record.tiempo_imputado = 0
+
     descripcion         = fields.Char('Descripción')
     comentario          = fields.Text('Comentario')
     fecha_demanda       = fields.Date('Fecha de demanda')
