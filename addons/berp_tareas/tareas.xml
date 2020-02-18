@@ -2,6 +2,23 @@
 <odoo>
 
 
+	<!-- ##################### Tree Tareas ##################### -->
+	<record model="ir.ui.view" id="berp_04062019_1938_tree">
+        <field name="name">pista_tree</field>
+        <field name="model">berp.pista</field>
+        <field name="arch" type="xml">
+            <tree string="Pistas">
+	            <field name="descripcion"/>
+                <field name="comentario"/>
+                <field name="fecha_demanda"/>
+                <field name="solicitado_por"/>
+                <field name="tiempo_imputado"/>
+                <field name="publicado"/>
+            </tree>
+        </field>
+    </record>
+
+
 	<!-- ##################### Formulario Tarea ##################### -->
     <record id="berp_20200218_1445_form" model="ir.ui.view">
         <field name="name">tarea</field>
