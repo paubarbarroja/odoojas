@@ -29,10 +29,20 @@
 	                <table>
 		                <tr>
 			                <td><group><field name="descripcion"/></group></td>
+		                </tr>
+		                <tr>
 			                <td><group><field name="comentario"/></group></td>
+		                </tr>
+		                <tr>
 			                <td><group><field name="fecha_demanda"/></group></td>
+		                </tr>
+		                <tr>
 			                <td><group><field name="solicitado_por"/></group></td>
+		                </tr>
+		                <tr>
 			                <td><group><field name="tiempo_imputado"/></group></td>
+		                </tr>
+		                <tr>
 			                <td><group><field name="publicado"/></group></td>
 		                </tr>
 	                </table>
