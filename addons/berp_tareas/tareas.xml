@@ -26,7 +26,7 @@
         <field name="arch" type="xml">
             <form string="Tarea">
                 <sheet>
-	                <table style="width:100%">
+	                <table style="width:60%">
 		                <tr>
 			                <td><group><field name="descripcion"/></group></td>
 		                </tr>

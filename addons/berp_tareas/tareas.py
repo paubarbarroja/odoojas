@@ -9,6 +9,7 @@ _logger = logging.getLogger(__name__)
 
 class berp_tarea(models.Model):
     _name = "berp.tarea"
+    _rec_name = "descripcion"
 
     @api.multi
     def _get_tiempo_imputado(self):
