@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 {
     'name': "Usuarios",
     'summary': """Berp - Usuarios""",
@@ -9,10 +10,9 @@
     """,
     'data': [
         'res_partner.xml',
-        'altas.xml',
         'menus.xml',
     ],
     'demo': [],
     'application': True,
 }
-# -*- coding: utf-8 -*-
+
