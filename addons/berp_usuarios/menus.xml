@@ -18,7 +18,7 @@
                       sequence="2"
                       action="berp_29082019_1841_action"/>
 
-            <menuitem id="berp_20190830_1548_menuitem"
+            <!--menuitem id="berp_20190830_1548_menuitem"
                       name="Alta Socio"
                       parent="berp.administracion_menuitem"
                       sequence="3"
@@ -28,6 +28,6 @@
                       name="Alta Atleta"
                       parent="berp.administracion_menuitem"
                       sequence="4"
-                      action="berp_08092019_1136_action"/>
+                      action="berp_08092019_1136_action"/-->
 
 </odoo>
