@@ -180,4 +180,14 @@
         <field name="act_window_id" ref="berp_14022020_0042_action"/>
    </record>
 
+
+    <record id="berp_num_socio_seq" model="ir.sequence">
+        <field name="name">Berp Numero de Socio Sequence</field>
+        <field name="code">res_partner.num_socio</field>
+        <field name="prefix">A</field>
+        <field eval="1796" name="number_next"/>
+        <field eval="1" name="number_increment"/>
+        <field eval="False" name="company_id"/>
+    </record>
+
 </odoo>
