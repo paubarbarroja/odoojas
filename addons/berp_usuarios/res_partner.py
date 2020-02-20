@@ -142,7 +142,31 @@ class Partner(models.Model):
         items = self.browse()
         for item in items:
             if item.fecha_nac:
-                item.get_categoria()
+                hoy = date.today()
+                fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
+                fecha = "31-12-" + fecha_hoy[0]
+                date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
+                diferencia = date_object - item.fecha_nac
+                edad_final_temporada = str(int(diferencia.days / 365))
+                edad = int(edad_final_temporada)
+
+                if edad > 34:
+                    item.write({'categoria':'Master'})
+                else:
+                    if edad > 22:
+                        item.write({'categoria': 'Senior'})
+                    else:
+                        if edad > 19:
+                            item.write({'categoria': 'Sub 23'})
+                        else:
+                            if edad > 17:
+                                item.write({'categoria': 'Sub 20'})
+                            else:
+                                if edad > 15:
+                                    item.write({'categoria': 'Sub 18'})
+                                else:
+                                    if edad > 13:
+                                        item.write({'categoria': 'Sub 16'})
 
 
 
