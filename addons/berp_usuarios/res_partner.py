@@ -139,7 +139,9 @@ class Partner(models.Model):
 
     @api.multi
     def funcion_categoria(self):
+        _logger.error('################ ~~ Hola')
         items = self.browse()
+        _logger.error('################ ~~ items --> %r',items)
         for item in items:
             if item.fecha_nac:
                 hoy = date.today()
@@ -150,23 +152,30 @@ class Partner(models.Model):
                 edad_final_temporada = str(int(diferencia.days / 365))
                 edad = int(edad_final_temporada)
 
+                _logger.error('################ ~~ Hola 1')
                 if edad > 34:
                     item.write({'categoria':'Master'})
+                    _logger.error('################ ~~ categoria --> %r',item.categoria)
                 else:
                     if edad > 22:
                         item.write({'categoria': 'Senior'})
+                        _logger.error('################ ~~ categoria --> %r',item.categoria)
                     else:
                         if edad > 19:
                             item.write({'categoria': 'Sub 23'})
+                            _logger.error('################ ~~ categoria --> %r',item.categoria)
                         else:
                             if edad > 17:
                                 item.write({'categoria': 'Sub 20'})
+                                _logger.error('################ ~~ categoria --> %r',item.categoria)
                             else:
                                 if edad > 15:
                                     item.write({'categoria': 'Sub 18'})
+                                    _logger.error('################ ~~ categoria --> %r',item.categoria)
                                 else:
                                     if edad > 13:
                                         item.write({'categoria': 'Sub 16'})
+                                        _logger.error('################ ~~ categoria --> %r',item.categoria)
 
 
 
