@@ -140,7 +140,7 @@ class Partner(models.Model):
     @api.multi
     def funcion_categoria(self):
         _logger.error('################ ~~ Hola')
-        items = self.search()
+        items = self.search([])
         _logger.error('################ ~~ items --> %r',items)
         for item in items:
             if item.fecha_nac:
