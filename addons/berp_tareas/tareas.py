@@ -16,6 +16,22 @@ class berp_tarea(models.Model):
         for record in self:
             record.tiempo_imputado = 0
 
+    @api.model
+    def cerrar_tarea(self):
+        for record in self:
+            record.estado = 'cerrada'
+
+    @api.model
+    def acabar_tarea(self):
+        for record in self:
+            record.estado = 'acabada'
+
+    @api.model
+    def reabrir_tarea(self):
+        for record in self:
+            record.estado = 'pendiente'
+
+
     descripcion         = fields.Char('Descripción')
     comentario          = fields.Text('Comentario')
     fecha_demanda       = fields.Date('Fecha de demanda')
