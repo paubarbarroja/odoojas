@@ -137,16 +137,6 @@ class Partner(models.Model):
         return tools.image_resize_image_big(base64.b64encode(image))
 
 
-    @api.multi
-    def funcion_categoria(self):
-        _logger.error('################ ~~ Hola')
-        items = self.search([])
-        _logger.error('################ ~~ items --> %r',items)
-        for item in items:
-            if item.ficha:
-                item.write({'is_atleta':True})
-
-
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
