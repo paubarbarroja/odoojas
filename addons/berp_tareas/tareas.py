@@ -22,3 +22,4 @@ class berp_tarea(models.Model):
     solicitado_por      = fields.Many2one('res.users','Solicitado por')
     tiempo_imputado     = fields.Float(compute='_get_tiempo_imputado',string='Tiempo imputado')
     publicado           = fields.Boolean('Publicado')
+    estado              = fields.Selection([('pendiente','Pendiente'),('acabada','Acabada'),('cerrada','Cerrada')])
