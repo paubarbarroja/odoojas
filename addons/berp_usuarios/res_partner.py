@@ -143,39 +143,8 @@ class Partner(models.Model):
         items = self.search([])
         _logger.error('################ ~~ items --> %r',items)
         for item in items:
-            if item.fecha_nac:
-                hoy = date.today()
-                fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
-                fecha = "31-12-" + fecha_hoy[0]
-                date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
-                diferencia = date_object - item.fecha_nac
-                edad_final_temporada = str(int(diferencia.days / 365))
-                edad = int(edad_final_temporada)
-
-                _logger.error('################ ~~ Hola 1')
-                if edad > 34:
-                    item.write({'categoria':'Master'})
-                    _logger.error('################ ~~ categoria --> %r',item.categoria)
-                else:
-                    if edad > 22:
-                        item.write({'categoria': 'Senior'})
-                        _logger.error('################ ~~ categoria --> %r',item.categoria)
-                    else:
-                        if edad > 19:
-                            item.write({'categoria': 'Sub 23'})
-                            _logger.error('################ ~~ categoria --> %r',item.categoria)
-                        else:
-                            if edad > 17:
-                                item.write({'categoria': 'Sub 20'})
-                                _logger.error('################ ~~ categoria --> %r',item.categoria)
-                            else:
-                                if edad > 15:
-                                    item.write({'categoria': 'Sub 18'})
-                                    _logger.error('################ ~~ categoria --> %r',item.categoria)
-                                else:
-                                    if edad > 13:
-                                        item.write({'categoria': 'Sub 16'})
-                                        _logger.error('################ ~~ categoria --> %r',item.categoria)
+            if item.ficha:
+                item.write({'is_atleta':True})
 
 
 
