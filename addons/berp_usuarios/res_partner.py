@@ -137,6 +137,14 @@ class Partner(models.Model):
         return tools.image_resize_image_big(base64.b64encode(image))
 
 
+    @api.multi
+    def funcion_categoria(self):
+        items = self.browse()
+        for item in items:
+            if item.fecha_nac:
+                item.get_categoria()
+
+
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
