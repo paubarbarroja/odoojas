@@ -17,7 +17,7 @@ class Partner(models.Model):
 
     @api.model
     def create(self,values):
-        vals['num_socio'] = self.env['ir.sequence'].next_by_code('res_partner.num_socio')
+        values['num_socio'] = self.env['ir.sequence'].next_by_code('res_partner.num_socio')
         res = super(Partner, self).create(values)
         categoria = ""
         if 'fecha_nac' in values:
