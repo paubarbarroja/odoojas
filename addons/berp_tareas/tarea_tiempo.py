@@ -12,10 +12,17 @@ class berp_tarea_tiempo(models.Model):
     _rec_name = "descripcion"
 
 
+    @api.onchange('hora_ini','hora_fin')
+    def onchange_hora_ini(self):
+        self.tiempo_trabajado = self.hora_ini-self.hora_fin
+
+
+
+
     tarea_id            = fields.Many2one('berp.tarea','Tarea')
     descripcion         = fields.Char('Descripción')
     comentario          = fields.Text('Comentario')
-    fecha               = fields.Date('Fecha')
+    fecha               = fields.Date('Fecha', default=fields.Date.context_today)
     hora_ini            = fields.Float('Hora Inicio')
     hora_fin            = fields.Float('Hora Fin')
     tiempo_trabajado    = fields.Float('Tiempo Trabajado')

@@ -55,6 +55,7 @@
                     </br>
                     <notebook>
                         <page string="Horas Imputadas">
+                            <button name="imputar_horas" string="Imputar Horas" type="object"/>
                             <field name="tarea_tiempo_id">
                                 <tree string="Tarea Tiempo">
                                     <field name="comentario"/>

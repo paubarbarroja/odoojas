@@ -31,7 +31,28 @@ class berp_tarea(models.Model):
         for record in self:
             record.estado = 'pendiente'
 
-    
+    @api.multi
+    def imputar_horas(self):
+        for record in self:
+            context = {
+                'default_tarea_id'      : record.id,
+                'default_descripcion'   : record.descripcion,
+            }
+            view_ref = self.env.ref('berp_usuarios.berp_29082019_2241_form')
+            view_id = view_ref and view_ref.id or False
+            return {
+                'type'     : 'ir.actions.act_window',
+                'name'     : 'Alta Atleta',
+                'res_model': 'res.partner',
+                'view_type': 'form',
+                'view_mode': 'form',
+                'view_id'  : view_id,
+                'target'   : 'new',
+                'context'  : context,
+            }
+
+
+
     descripcion         = fields.Char('Descripción')
     comentario          = fields.Text('Comentario')
     fecha_demanda       = fields.Date('Fecha de demanda')
