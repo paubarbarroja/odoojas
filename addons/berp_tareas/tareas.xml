@@ -52,7 +52,7 @@
 			                <td><group><field name="publicado" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
 		                </tr>
 	                </table>
-                    </br>
+                    <br/>
                     <notebook>
                         <page string="Horas Imputadas">
                             <button name="imputar_horas" string="Imputar Horas" type="object"/>
