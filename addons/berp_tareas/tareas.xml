@@ -52,14 +52,20 @@
 			                <td><group><field name="publicado" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
 		                </tr>
 	                </table>
-                    <field name="tarea_tiempo_id">
-                        <tree string="Tarea Tiempo">
-                            <field name="comentario"/>
-                            <field name="fecha"/>
-                            <field name="imputado_por"/>
-                            <field name="tiempo_trabajado" widget="float_time"/>
-                        </tree>
-                    </field>
+                    </br>
+                    <notebook>
+                        <page string="Horas Imputadas">
+                            <field name="tarea_tiempo_id">
+                                <tree string="Tarea Tiempo">
+                                    <field name="comentario"/>
+                                    <field name="fecha"/>
+                                    <field name="imputado_por"/>
+                                    <field name="tiempo_trabajado" widget="float_time"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    
                 </sheet>
             </form>
         </field>
