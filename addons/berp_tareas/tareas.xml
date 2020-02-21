@@ -26,9 +26,9 @@
         <field name="arch" type="xml">
             <form string="Tarea">
                 <header>
-                    <button name="cerrar_tarea" type="object" string="Cerrar" attrs="{'invisible':[('estado', '!=', 'acabada')]}"/>
-                    <button name="acabar_tarea" type="object" string="Acabar" attrs="{'invisible':[('estado', '!=', 'pendiente')]}"/>
-                    <button name="reabrir_tarea" type="object" string="Reabrir" attrs="{'invisible':[('estado', '!=', 'acabada')]}"/>
+                    <button name="cerrar_tarea" type="object" string="Cerrar" class="btn btn-primary" attrs="{'invisible':[('estado', '!=', 'acabada')]}"/>
+                    <button name="acabar_tarea" type="object" string="Acabar" class="btn btn-primary" attrs="{'invisible':[('estado', '!=', 'pendiente')]}"/>
+                    <button name="reabrir_tarea" type="object" string="Reabrir" class="btn btn-primary" attrs="{'invisible':[('estado', '!=', 'acabada')]}"/>
                     <field name="estado" widget="statusbar" class="oe_right"/>
                 </header>
                 <sheet>
@@ -114,7 +114,9 @@
                         </tr>
                     </table>
                 </body>
-                <footer>
+                <footer> 
+                    <button name="write" type="object" string="Save" class="btn btn-primary"/>
+                    <button name="cancel" string="Cancel" special="cancel" class="btn btn-default"/> 
                 </footer>
             </form>
         </field>
