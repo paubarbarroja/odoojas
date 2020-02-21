@@ -103,6 +103,8 @@
                         <tr>
                             <td><group><field name="imputado_por" readonly="1"/></group></td>
                         </tr>
+                    </table>
+                    <table>
                         <tr>
                             <td><group><field name="hora_ini" widget="float_time"/></group></td>
                             <td><group><field name="hora_fin" widget="float_time"/></group></td>
