@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- ## PISTA ## -->
+    <!-- ## TAREA ## -->
     <record id="admin_berp_tarea" model="ir.model.access">
         <field name="name">admin_berp_tarea</field>
         <field name="model_id" ref="model_berp_tarea"/>
+        <field name="group_id" ref="berp.berp_admin"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1" />
+    </record>
+
+    <!-- ## TAREA TIEMPO ## -->
+    <record id="admin_berp_tarea_tiempo" model="ir.model.access">
+        <field name="name">admin_berp_tarea_tiempo</field>
+        <field name="model_id" ref="model_berp_tarea_tiempo"/>
         <field name="group_id" ref="berp.berp_admin"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="1"/>
