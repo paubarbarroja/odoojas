@@ -21,32 +21,33 @@ class Partner(models.Model):
         res = super(Partner, self).create(values)
         categoria = ""
         if 'fecha_nac' in values:
-            nacimiento = datetime.strptime(values['fecha_nac'], '%Y-%m-%d').date()
-            hoy = date.today()
-            fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
-            fecha = "31-12-" + fecha_hoy[0]
-            date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
-            diferencia = date_object - nacimiento
-            edad_final_temporada = str(int(diferencia.days / 365))
-            edad = int(edad_final_temporada)
+            if not isinstance(values['fecha_nac'],bool):
+                nacimiento = datetime.strptime(values['fecha_nac'], '%Y-%m-%d').date()
+                hoy = date.today()
+                fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
+                fecha = "31-12-" + fecha_hoy[0]
+                date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
+                diferencia = date_object - nacimiento
+                edad_final_temporada = str(int(diferencia.days / 365))
+                edad = int(edad_final_temporada)
 
-            if edad > 34:
-                categoria = "Master"
-            else:
-                if edad > 22:
-                    categoria = "Senior"
+                if edad > 34:
+                    categoria = "Master"
                 else:
-                    if edad > 19:
-                        categoria = "Sub 23"
+                    if edad > 22:
+                        categoria = "Senior"
                     else:
-                        if edad > 17:
-                            categoria = "Sub 20"
+                        if edad > 19:
+                            categoria = "Sub 23"
                         else:
-                            if edad > 15:
-                                categoria = "Sub 18"
+                            if edad > 17:
+                                categoria = "Sub 20"
                             else:
-                                if edad > 13:
-                                    categoria = "Sub 16"
+                                if edad > 15:
+                                    categoria = "Sub 18"
+                                else:
+                                    if edad > 13:
+                                        categoria = "Sub 16"
 
         res.categoria = categoria
         return res
