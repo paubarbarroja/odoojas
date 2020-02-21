@@ -170,7 +170,7 @@
     <record model="ir.actions.act_window.view" id="berp_14022020_0042_action_tree">
         <field name="sequence" eval="1"/>
         <field name="view_mode">tree</field>
-        <field name="view_id" ref="berp_28082019_1258_action"/>
+        <field name="view_id" ref="berp_29082019_2241_tree"/>
         <field name="act_window_id" ref="berp_14022020_0042_action"/>
    </record>
     <record model="ir.actions.act_window.view" id="berp_14022020_0042_action_form">
