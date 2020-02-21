@@ -156,7 +156,7 @@ class Partner(models.Model):
     notas = fields.Text(string="Notas")
 
     # SOCIO
-    num_socio = fields.Char(string="Numero de Socio")
+    num_socio = fields.Integer(string="Numero de Socio")
     fecha_alta = fields.Date(string="Fecha de Alta",  default=fields.Date.context_today)
     fecha_baja = fields.Date(string="Fecha de Baja")
     socio_honorario = fields.Boolean(string="Honorario")
