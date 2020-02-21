@@ -138,12 +138,6 @@ class Partner(models.Model):
             image = tools.image_colorize(image)
         return tools.image_resize_image_big(base64.b64encode(image))
 
-    @api.multi
-    def funcion_categoria(self):
-        items = self.search([])
-        for item in items:
-            if item.ficha:
-                item.write({'is_atleta': True})
 
 
 
