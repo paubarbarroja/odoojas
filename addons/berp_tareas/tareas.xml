@@ -115,7 +115,6 @@
                     </table>
                 </body>
                 <footer>
-                    <button name="imputar_tiempo" string="Imputar Tiempo" type="object"/>
                 </footer>
             </form>
         </field>

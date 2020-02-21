@@ -37,18 +37,20 @@ class berp_tarea(models.Model):
             context = {
                 'default_tarea_id'      : record.id,
                 'default_descripcion'   : record.descripcion,
+                'default_imputado_por'  : self.env.user.id
             }
-            view_ref = self.env.ref('berp_usuarios.berp_29082019_2241_form')
+            view_ref = self.env.ref('berp_tareas.berp_20200221_1233_form')
             view_id = view_ref and view_ref.id or False
             return {
                 'type'     : 'ir.actions.act_window',
-                'name'     : 'Alta Atleta',
-                'res_model': 'res.partner',
+                'name'     : 'Imputar Horas',
+                'res_model': 'berp.tarea_tiempo',
                 'view_type': 'form',
                 'view_mode': 'form',
                 'view_id'  : view_id,
                 'target'   : 'new',
                 'context'  : context,
+                'flags': {'form': {'action_buttons': True},}
             }
 
 

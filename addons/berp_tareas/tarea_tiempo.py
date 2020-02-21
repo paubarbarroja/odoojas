@@ -18,7 +18,6 @@ class berp_tarea_tiempo(models.Model):
 
 
 
-
     tarea_id            = fields.Many2one('berp.tarea','Tarea')
     descripcion         = fields.Char('Descripción')
     comentario          = fields.Text('Comentario')
