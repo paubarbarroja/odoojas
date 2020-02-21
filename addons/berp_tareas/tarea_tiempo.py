@@ -14,7 +14,8 @@ class berp_tarea_tiempo(models.Model):
 
     @api.onchange('hora_ini','hora_fin')
     def onchange_hora_ini(self):
-        self.tiempo_trabajado = self.hora_fin-self.hora_ini
+        tiempo_trabajado = self.hora_fin-self.hora_ini
+        self.write({'tiempo_trabajado':tiempo_trabajado})
 
 
 
