@@ -42,6 +42,7 @@
                 <form string="Usuario">
                     <field name="active" invisible="1"/>
                     <sheet>
+                        <button name="funcion_categoria" type="object" string="Dale"/>
                         <div class="oe_button_box" name="button_box">
                             <table>
                                 <tr>
