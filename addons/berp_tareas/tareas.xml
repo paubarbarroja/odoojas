@@ -86,7 +86,7 @@
         <field name="model">berp.tarea_tiempo</field>
         <field name="arch" type="xml">
             <form string="Tarea Tiempo">
-                <body>
+                <sheet>
                     <table style="width:60%">
                         <tr>
                             <td><group><field name="tarea_id" invisible="1"/></group></td>
@@ -101,19 +101,15 @@
                             <td><group><field name="fecha"/></group></td>
                         </tr>
                         <tr>
-                            <td><group><field name="imputado_por"/></group></td>
-                        </tr>
-                        <tr>
-                            <td><group><field name="tiempo_trabajado" widget="float_time"/></group></td>
+                            <td><group><field name="imputado_por" readonly="1"/></group></td>
                         </tr>
                         <tr>
                             <td><group><field name="hora_ini" widget="float_time"/></group></td>
-                        </tr>
-                        <tr>
                             <td><group><field name="hora_fin" widget="float_time"/></group></td>
+                            <td><group><field name="tiempo_trabajado" widget="float_time" readonly="1"/></group></td>
                         </tr>
                     </table>
-                </body>
+                </sheet>
                 <footer> 
                     <button name="write" type="object" string="Save" class="btn btn-primary"/>
                     <button name="cancel" string="Cancel" special="cancel" class="btn btn-default"/> 
