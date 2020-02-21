@@ -71,13 +71,25 @@
             </form>
         </field>
     </record>
+
     <!-- ##################### Action Tarea ##################### -->
 	<record id="berp_18022020_1500_action" model="ir.actions.act_window">
         <field name="name">Tareas</field>
         <field name="res_model">berp.tarea</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
+        <field name="domain">[('estado','in',['pendiente','acabada'])]</field>
     </record>
+
+    <record id="berp_18022021_1901_action" model="ir.actions.act_window">
+        <field name="name">Tareas Cerradas</field>
+        <field name="res_model">berp.tarea</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('estado','=','cerrada')]</field>
+    </record>
+
+
 
 
     <!-- ##################### Formulario Tarea Tiempo ##################### -->
