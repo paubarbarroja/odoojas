@@ -181,6 +181,9 @@
    </record>
 
 
+
+
+   <!-- ##################### SEQUENCIA PARA NUM SOCIO ##################### -->
     <record id="berp_num_socio_seq" model="ir.sequence">
         <field name="name">Berp Numero de Socio Sequence</field>
         <field name="code">res_partner.num_socio</field>

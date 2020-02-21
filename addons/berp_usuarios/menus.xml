@@ -18,16 +18,11 @@
                       sequence="2"
                       action="berp_29082019_1841_action"/>
 
-            <!--menuitem id="berp_20190830_1548_menuitem"
-                      name="Alta Socio"
+            <menuitem id="berp_20190830_1548_menuitem"
+                      name="No Socios"
                       parent="berp.administracion_menuitem"
                       sequence="3"
-                      action="berp_08092019_1135_action"/>
+                      action="berp_14022020_0042_action"/>
 
-            <menuitem id="berp_20190830_1549_menuitem"
-                      name="Alta Atleta"
-                      parent="berp.administracion_menuitem"
-                      sequence="4"
-                      action="berp_08092019_1136_action"/-->
 
 </odoo>
