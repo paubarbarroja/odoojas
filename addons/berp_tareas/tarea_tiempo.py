@@ -15,7 +15,7 @@ class berp_tarea_tiempo(models.Model):
     tarea_id            = fields.Many2one('berp.tarea','Tarea')
     descripcion         = fields.Char('Descripción')
     comentario          = fields.Text('Comentario')
-    fecha_ini           = fields.Date('Fecha')
+    fecha               = fields.Date('Fecha')
     hora_ini            = fields.Float('Hora Inicio')
     hora_fin            = fields.Float('Hora Fin')
     tiempo_trabajado    = fields.Float('Tiempo Trabajado')

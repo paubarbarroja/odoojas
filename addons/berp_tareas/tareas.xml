@@ -25,11 +25,13 @@
         <field name="model">berp.tarea</field>
         <field name="arch" type="xml">
             <form string="Tarea">
-                <sheet>
+                <header>
                     <button name="cerrar_tarea" type="object" string="Cerrar" attrs="{'invisible':[('estado', '!=', 'acabada')]}"/>
                     <button name="acabar_tarea" type="object" string="Acabar" attrs="{'invisible':[('estado', '!=', 'pendiente')]}"/>
                     <button name="reabrir_tarea" type="object" string="Reabrir" attrs="{'invisible':[('estado', '!=', 'acabada')]}"/>
                     <field name="estado" widget="statusbar" class="oe_right"/>
+                </header>
+                <sheet>
 	                <table style="width:60%">
 		                <tr>
 			                <td><group><field name="descripcion" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
@@ -49,13 +51,20 @@
 		                <tr>
 			                <td><group><field name="publicado" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
 		                </tr>
-                        
 	                </table>
+                    <field name="tarea_tiempo_id">
+                        <tree string="Tarea Tiempo">
+                            <field name="comentario"/>
+                            <field name="fecha"/>
+                            <field name="imputado_por"/>
+                            <field name="tiempo_trabajado" widget="float_time"/>
+                        </tree>
+                    </field>
                 </sheet>
             </form>
         </field>
     </record>
-
+    <!-- ##################### Action Tarea ##################### -->
 	<record id="berp_18022020_1500_action" model="ir.actions.act_window">
         <field name="name">Tareas</field>
         <field name="res_model">berp.tarea</field>
@@ -63,5 +72,46 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+
+    <!-- ##################### Formulario Tarea Tiempo ##################### -->
+    <record id="berp_20200221_1233_form" model="ir.ui.view">
+        <field name="name">tarea_tiempo</field>
+        <field name="model">berp.tarea_tiempo</field>
+        <field name="arch" type="xml">
+            <form string="Tarea Tiempo">
+                <body>
+                    <table style="width:60%">
+                        <tr>
+                            <td><group><field name="tarea_id" invisible="1"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="descripcion"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="comentario"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="fecha"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="imputado_por"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="tiempo_trabajado" widget="float_time"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="hora_ini" widget="float_time"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="hora_fin" widget="float_time"/></group></td>
+                        </tr>
+                    </table>
+                </body>
+                <footer>
+                    <button name="imputar_tiempo" string="Imputar Tiempo" type="object"/>
+                </footer>
+            </form>
+        </field>
+    </record>
 
 </odoo>
