@@ -31,7 +31,7 @@ class berp_tarea(models.Model):
         for record in self:
             record.estado = 'pendiente'
 
-
+    
     descripcion         = fields.Char('Descripción')
     comentario          = fields.Text('Comentario')
     fecha_demanda       = fields.Date('Fecha de demanda')
@@ -39,3 +39,4 @@ class berp_tarea(models.Model):
     tiempo_imputado     = fields.Float(compute='_get_tiempo_imputado',string='Tiempo imputado')
     publicado           = fields.Boolean('Publicado')
     estado              = fields.Selection([('pendiente','Pendiente'),('acabada','Acabada'),('cerrada','Cerrada')], default="pendiente", string="Estado")
+    tarea_tiempo_id     = fields.One2many('berp.tarea_tiempo','tarea_id','Tarea Tiempo')

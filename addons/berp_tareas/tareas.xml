@@ -44,11 +44,12 @@
 			                <td><group><field name="solicitado_por" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
 		                </tr>
 		                <tr>
-			                <td><group><field name="tiempo_imputado" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
+			                <td><group><field name="tiempo_imputado" attrs="{'readonly':[('estado', '!=', 'pendiente')]}" widget="float_time"/></group></td>
 		                </tr>
 		                <tr>
 			                <td><group><field name="publicado" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
 		                </tr>
+                        
 	                </table>
                 </sheet>
             </form>
