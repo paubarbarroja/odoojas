@@ -17,7 +17,7 @@ class Partner(models.Model):
 
     @api.model
     def create(self,values):
-        #values['num_socio'] = self.env['ir.sequence'].next_by_code('res_partner.num_socio')
+        values['num_socio'] = self.env['ir.sequence'].next_by_code('res_partner.num_socio')
         res = super(Partner, self).create(values)
         categoria = ""
         if 'fecha_nac' in values:
@@ -137,6 +137,13 @@ class Partner(models.Model):
         if image:
             image = tools.image_colorize(image)
         return tools.image_resize_image_big(base64.b64encode(image))
+
+    @api.multi
+    def funcion_categoria(self):
+        items = self.search([])
+        for item in items:
+            if item.ficha:
+                item.write({'is_atleta': True})
 
 
 
