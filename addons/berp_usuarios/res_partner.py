@@ -140,6 +140,7 @@ class Partner(models.Model):
 
     @api.multi
     def funcion_categoria_cron(self):
+        _logger.error('Hola Soy el cron')
         items = self.search([])
         for item in items:
             if item.fecha_nac:
