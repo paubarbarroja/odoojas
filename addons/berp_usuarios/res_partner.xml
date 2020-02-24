@@ -58,7 +58,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    hola
+                                    <field name="not_jas"/>
                                 </td>
                                 <td>Jas</td>
                             </tr>
