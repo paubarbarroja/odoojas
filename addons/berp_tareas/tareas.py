@@ -12,11 +12,6 @@ class berp_tarea(models.Model):
     _rec_name = "descripcion"
 
     @api.multi
-    def _get_tiempo_imputado(self):
-        for record in self:
-            record.tiempo_imputado = 0
-
-    @api.multi
     def cerrar_tarea(self):
         for record in self:
             record.estado = 'cerrada'

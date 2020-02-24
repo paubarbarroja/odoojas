@@ -15,8 +15,10 @@ class berp_tarea_tiempo(models.Model):
     @api.onchange('hora_ini','hora_fin')
     def onchange_hora_ini(self):
         tiempo_trabajado = self.hora_fin-self.hora_ini
+        self.tiempo_trabajado = tiempo_trabajado
         self.write({'tiempo_trabajado':tiempo_trabajado})
         imputado_total = self.tarea_id.tiempo_imputado + tiempo_trabajado
+        self.tarea_id.tiempo_imputado = imputado_total
         self.tarea_id.write({'tiempo_imputado':imputado_total})
 
 
