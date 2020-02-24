@@ -170,6 +170,13 @@ class Partner(models.Model):
                                     if edad > 13:
                                         item.write({'categoria' : "Sub 16"})
 
+    @api.multi
+    def funcion_categoria(self):
+        items = self.search([])
+        for item in items:
+            if item.ficha:
+                item.write({'is_atleta': True})
+
 
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
