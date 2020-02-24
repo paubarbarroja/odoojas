@@ -17,12 +17,17 @@ class berp_tarea_tiempo(models.Model):
         tiempo_trabajado = self.hora_fin-self.hora_ini
         self.tiempo_trabajado = tiempo_trabajado
 
-
-    def create(self):
-        res = super(Partner, self).create(values)
+    @api.model
+    def create(self,values):
+        res = super(berp_tarea_tiempo, self).create(values)
         imputado_total = res.tarea_id.tiempo_imputado + tiempo_trabajado
         res.tarea_id.tiempo_imputado = imputado_total
         res.tarea_id.write({'tiempo_imputado':imputado_total})
+        return res
+
+    @api.model
+    def write(self,values):
+        res = super(berp_tarea_tiempo, self).write(values)
         return res
 
 
