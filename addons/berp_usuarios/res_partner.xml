@@ -56,12 +56,6 @@
                                 </td>
                                 <td>Atleta</td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <field name="not_jas"/>
-                                </td>
-                                <td>Jas</td>
-                            </tr>
                         </table>
                     </div>
                     <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 120]}'/>
@@ -137,7 +131,7 @@
         <field name="res_model">res.partner</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('is_company','=',False),('is_socio','=',True)]</field>
+        <field name="domain">[('is_company','=',False),('is_socio','=',True),('not_jas','=',False)]</field>
     </record>
     <record model="ir.actions.act_window.view" id="berp_28082019_1258_action_tree">
         <field name="sequence" eval="1"/>
@@ -158,7 +152,7 @@
         <field name="res_model">res.partner</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('is_company','=',False),('is_atleta','=',True)]</field>
+        <field name="domain">[('is_company','=',False),('is_atleta','=',True),('not_jas','=',False)]</field>
     </record>
     <record model="ir.actions.act_window.view" id="berp_29082019_1841_action_tree">
         <field name="sequence" eval="1"/>
@@ -179,7 +173,7 @@
         <field name="res_model">res.partner</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('is_company','=',False),('is_socio','=',False)]</field>
+        <field name="domain">[('is_company','=',False),('is_socio','=',False),('not_jas','=',False)]</field>
     </record>
     <record model="ir.actions.act_window.view" id="berp_14022020_0042_action_tree">
         <field name="sequence" eval="1"/>
