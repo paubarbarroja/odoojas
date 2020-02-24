@@ -201,8 +201,9 @@ class Partner(models.Model):
     fecha_alta              = fields.Date(string="Fecha de Alta", default=fields.Date.context_today)
     fecha_baja              = fields.Date(string="Fecha de Baja")
     socio_honorario         = fields.Boolean(string="Honorario")
-    descuento               = fields.Selection([('25', '+25 años'),('50', '+50 años'),('protector', 'Socio Protector'),('3f', '+3 Familiar')],string="Descuento")
+    descuento               = fields.Selection([('25', '+25 años'),('50', '+50 años'),('bayunt', 'Beca Ayuntamiento'),('bclub', 'Beca Club'),('3f', '+3 Familiar')],string="Descuento")
     descuento_tipo          = fields.Char(string="Tipo descuento")
+    socio_protector         = fields.Boolean(string="Socio Protector")
     dinero_socio            = fields.Float(string="¿ Cuanto paga el socio ?")
 
     # ATLETA
