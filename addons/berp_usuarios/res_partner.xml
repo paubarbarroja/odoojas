@@ -42,7 +42,6 @@
             <form string="Usuario">
                 <field name="active" invisible="1"/>
                 <sheet>
-                    <button name="funcion_categoria" string="dale" type="object"/>
                     <div class="oe_button_box" name="button_box">
                         <table>
                             <tr>
@@ -59,7 +58,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <field name="not_jas"/>
+                                    hola
                                 </td>
                                 <td>Jas</td>
                             </tr>
