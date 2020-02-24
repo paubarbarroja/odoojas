@@ -54,7 +54,7 @@ class berp_tarea(models.Model):
     comentario          = fields.Text('Comentario')
     fecha_demanda       = fields.Date('Fecha de demanda')
     solicitado_por      = fields.Many2one('res.users','Solicitado por')
-    tiempo_imputado     = fields.Float(compute='_get_tiempo_imputado',string='Tiempo imputado')
+    tiempo_imputado     = fields.Float(string='Tiempo imputado')
     publicado           = fields.Boolean('Publicado')
     estado              = fields.Selection([('pendiente','Pendiente'),('acabada','Acabada'),('cerrada','Cerrada')], default="pendiente", string="Estado")
     tarea_tiempo_id     = fields.One2many('berp.tarea_tiempo','tarea_id','Tarea Tiempo')
