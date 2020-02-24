@@ -19,103 +19,106 @@
     </record>
 
     <record id="berp_29082019_2241_tree" model="ir.ui.view">
-            <field name="name">res.partner.tree</field>
-            <field name="model">res.partner</field>
-            <field name="arch" type="xml">
-                <tree string="Usuario">
-                    <field name="num_socio"/>
-                    <field name="usuario_name_tree"/>
-                    <field name="phone"/>
-                    <field name="email"/>
-                    <field name="is_socio" invisible="True"/>
-                    <field name="is_atleta" invisible="True"/>
-                    <field name="is_company" invisible="True"/>
-                </tree>
-            </field>
+        <field name="name">res.partner.tree</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <tree string="Usuario">
+                <field name="num_socio"/>
+                <field name="usuario_name_tree"/>
+                <field name="phone"/>
+                <field name="email"/>
+                <field name="is_socio" invisible="True"/>
+                <field name="is_atleta" invisible="True"/>
+                <field name="is_company" invisible="True"/>
+            </tree>
+        </field>
     </record>
 
 
     <record id="berp_29082019_2241_form" model="ir.ui.view">
-            <field name="name">res.partner.form</field>
-            <field name="model">res.partner</field>
-            <field name="arch" type="xml">
-                <form string="Usuario">
-                    <field name="active" invisible="1"/>
-                    <sheet>
-                        <button name="funcion_categoria" type="object" string="Dale"/>
-                        <div class="oe_button_box" name="button_box">
-                            <table>
-                                <tr>
-                                    <td><field name="is_socio"/></td>
-                                    <td style="width:5%">Socio</td>
-                                </tr>
-                                <tr>
-                                    <td><field name="is_atleta"/></td>
-                                    <td>Atleta</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 120]}'/>
-                        <div class="oe_title">
-                            <h3>
-                                <group col="3">
-                                    <field name="name" placeholder="Nombre" nolabel="1"/>
-                                    <field name="apellido1" placeholder="1r apellido" nolabel="1"/>
-                                    <field name="apellido2" placeholder="2o apellido" nolabel="1"/>
-                                </group>
-                            </h3>
-                        </div>
-                        <group col="2">
-                            <field name="num_socio"/>
-                        </group>
-                        <group col="4">
-                            <field name="fecha_alta"/>
-                            <field name="fecha_baja"/>
-                        </group>
-                        <field name="notas" placeholder="Notas Internas"/>
-                        <notebook colspan="4">
-                            <page name="socio_page" string="Datos Generales" attrs="{'invisible': [('is_socio', '=', False)]}">
+        <field name="name">res.partner.form</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <form string="Usuario">
+                <field name="active" invisible="1"/>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <table>
+                            <tr>
+                                <td>
+                                    <field name="is_socio"/>
+                                </td>
+                                <td style="width:5%">Socio</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <field name="is_atleta"/>
+                                </td>
+                                <td>Atleta</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 120]}'/>
+                    <div class="oe_title">
+                        <h3>
+                            <group col="3">
+                                <field name="name" placeholder="Nombre" nolabel="1"/>
+                                <field name="apellido1" placeholder="1r apellido" nolabel="1"/>
+                                <field name="apellido2" placeholder="2o apellido" nolabel="1"/>
+                            </group>
+                        </h3>
+                    </div>
+                    <group col="2">
+                        <field name="num_socio" readonly="1"/>
+                    </group>
+                    <group col="4">
+                        <field name="fecha_alta"/>
+                        <field name="fecha_baja"/>
+                    </group>
+                    <field name="notas" placeholder="Notas Internas"/>
+                    <notebook colspan="4">
+                        <page name="socio_page" string="Datos Generales" attrs="{'invisible': [('is_socio', '=', False)]}">
+                            <group>
                                 <group>
-                                    <group>
-                                        <label for="street" string="Direccion"/>
-                                        <div class="o_address_format">
-                                            <field name="street" placeholder="Calle..." class="o_address_street"/>
-                                            <field name="city" placeholder="Ciudad" class="o_address_city"/>
-                                            <field name="zip" placeholder="Código postal" class="o_address_zip"/>
-                                        </div>
-                                        <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
-                                        <field name="dni" data-inputmask="'mask': '99999999A'"/>
-                                    </group>
-                                    <group>
-                                        <field name="fecha_nac"/>
-                                        <field name="phone" widget="phone"/>
-                                        <field name="mobile" widget="phone"/>
-                                        <field name="email" widget="email" context="{'gravatar_image': True}"/>
-                                        <field name="user_id" string="Usuario" invisible="1"/>
-                                    </group>
+                                    <label for="street" string="Direccion"/>
+                                    <div class="o_address_format">
+                                        <field name="street" placeholder="Calle..." class="o_address_street"/>
+                                        <field name="city" placeholder="Ciudad" class="o_address_city"/>
+                                        <field name="zip" placeholder="Código postal" class="o_address_zip"/>
+                                    </div>
+                                    <field name="country_id" placeholder="País" string="Nacionalidad" options='{"no_open": True, "no_create": True}'/>
+                                    <field name="dni" data-inputmask="'mask': '99999999A'"/>
                                 </group>
-                                <group col="2">
-                                    <field name="descuento_tipo"/>
-                                    <field name="descuento"/>
-                                    <field name="socio_honorario"/>
-                                    <field name="cuenta_bancaria"/>
+                                <group>
+                                    <field name="fecha_nac"/>
+                                    <field name="phone" widget="phone"/>
+                                    <field name="mobile" widget="phone"/>
+                                    <field name="email" widget="email" context="{'gravatar_image': True}"/>
+                                    <field name="user_id" string="Usuario" invisible="1"/>
                                 </group>
-                            </page>
-                            <page name="atleta_page" string="Datos Atleta" attrs="{'invisible': [('is_atleta', '=', False)]}">
-                                <group col="2">
-                                    <field name="genero"/>
-                                    <field name="categoria"/>
-                                    <field name="tipo_ficha"/>
-                                    <field name="ficha"/>
-                                    <field name="especialidad" invisible="1"/>
-                                    <field name="grupo_entreno" invisible="1"/>
-                                </group>
-                            </page>
-                        </notebook>
-                    </sheet>
-                </form>
-            </field>
-        </record>
+                            </group>
+                            <group col="2">
+                                <field name="cuenta_bancaria"/>
+                                <field name="descuento_tipo"/>
+                                <field name="descuento"/>
+                                <field name="dinero_socio" attrs="{'invisible': [('descuento','!=','protector')]}"/>
+                            </group>
+                        </page>
+                        <page name="atleta_page" string="Datos Atleta" attrs="{'invisible': [('is_atleta', '=', False)]}">
+                            <group col="2">
+                                <field name="genero"/>
+                                <field name="categoria" readonly="1"/>
+                                <field name="tipo_ficha"/>
+                                <field name="ficha"/>
+                                <field name="especialidad" invisible="1"/>
+                                <field name="grupo_entreno" invisible="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
 
     <!-- ##################### SOCIS ##################### -->
@@ -131,13 +134,13 @@
         <field name="view_mode">tree</field>
         <field name="view_id" ref="berp_29082019_2241_tree"/>
         <field name="act_window_id" ref="berp_28082019_1258_action"/>
-   </record>
+    </record>
     <record model="ir.actions.act_window.view" id="berp_28082019_1258_action_form">
         <field name="sequence" eval="2"/>
         <field name="view_mode">form</field>
         <field name="view_id" ref="berp_29082019_2241_form"/>
         <field name="act_window_id" ref="berp_28082019_1258_action"/>
-   </record>
+    </record>
 
     <!-- ##################### ATLETAS ##################### -->
     <record id="berp_29082019_1841_action" model="ir.actions.act_window">
@@ -152,15 +155,15 @@
         <field name="view_mode">tree</field>
         <field name="view_id" ref="berp_29082019_2241_tree"/>
         <field name="act_window_id" ref="berp_29082019_1841_action"/>
-   </record>
+    </record>
     <record model="ir.actions.act_window.view" id="berp_29082019_1841_action_form">
         <field name="sequence" eval="2"/>
         <field name="view_mode">form</field>
         <field name="view_id" ref="berp_29082019_2241_form"/>
         <field name="act_window_id" ref="berp_29082019_1841_action"/>
-   </record>
+    </record>
 
-   <!-- ##################### DONATS DE BAIXA ##################### -->
+    <!-- ##################### DONATS DE BAIXA ##################### -->
     <record id="berp_14022020_0042_action" model="ir.actions.act_window">
         <field name="name">Bajas</field>
         <field name="res_model">res.partner</field>
@@ -173,18 +176,18 @@
         <field name="view_mode">tree</field>
         <field name="view_id" ref="berp_29082019_2241_tree"/>
         <field name="act_window_id" ref="berp_14022020_0042_action"/>
-   </record>
+    </record>
     <record model="ir.actions.act_window.view" id="berp_14022020_0042_action_form">
         <field name="sequence" eval="2"/>
         <field name="view_mode">form</field>
         <field name="view_id" ref="berp_29082019_2241_form"/>
         <field name="act_window_id" ref="berp_14022020_0042_action"/>
-   </record>
+    </record>
 
 
 
 
-   <!-- ##################### SEQUENCIA PARA NUM SOCIO ##################### -->
+    <!-- ##################### SEQUENCIA PARA NUM SOCIO ##################### -->
     <record id="berp_num_socio_seq" model="ir.sequence">
         <field name="name">Berp Numero de Socio Sequence</field>
         <field name="code">res_partner.num_socio</field>

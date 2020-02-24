@@ -11,7 +11,6 @@
     'data': [
         'res_partner.xml',
         'menus.xml',
-        'ir.cron.xml',
     ],
     'demo': [],
     'application': True,

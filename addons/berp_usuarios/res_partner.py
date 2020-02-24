@@ -138,9 +138,9 @@ class Partner(models.Model):
             image = tools.image_colorize(image)
         return tools.image_resize_image_big(base64.b64encode(image))
 
+
     @api.multi
     def funcion_categoria_cron(self):
-        _logger.error('Hola Soy el cron')
         items = self.search([])
         for item in items:
             if item.fecha_nac:
@@ -174,33 +174,34 @@ class Partner(models.Model):
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
     # USUARIO
-    image = fields.Binary("Image", attachment=True, default=lambda self:self._get_default_image('a','b','c'))
-    name = fields.Char(string="Nombre")
-    apellido1 = fields.Char(string="Apellido 1")
-    apellido2 = fields.Char(string="Apellido 2")
-    usuario_name = fields.Char(compute="_get_name", string="Nombre Completo",store=True)
-    usuario_name_tree = fields.Char(compute="_get_name_tree", string="Nombre Completo",store=True)
-    user_id = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
-    fecha_nac = fields.Date(string="Fecha de Nacimiento")
-    dni = fields.Char(string="DNI")
-    is_socio = fields.Boolean(string="Socio")
-    is_atleta = fields.Boolean(string="Atleta")
-    cuenta_bancaria = fields.Char(string="Cuenta Bancaria")
-    notas = fields.Text(string="Notas")
+    image                   = fields.Binary("Image", attachment=True, default=lambda self:self._get_default_image('a','b','c'))
+    name                    = fields.Char(string="Nombre")
+    apellido1               = fields.Char(string="Apellido 1")
+    apellido2               = fields.Char(string="Apellido 2")
+    usuario_name            = fields.Char(compute="_get_name", string="Nombre Completo",store=True)
+    usuario_name_tree       = fields.Char(compute="_get_name_tree", string="Nombre Completo",store=True)
+    user_id                 = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
+    fecha_nac               = fields.Date(string="Fecha de Nacimiento")
+    dni                     = fields.Char(string="DNI")
+    is_socio                = fields.Boolean(string="Socio", default=True)
+    is_atleta               = fields.Boolean(string="Atleta")
+    cuenta_bancaria         = fields.Char(string="Cuenta Bancaria")
+    notas                   = fields.Text(string="Notas")
 
     # SOCIO
-    num_socio = fields.Integer(string="Numero de Socio")
-    fecha_alta = fields.Date(string="Fecha de Alta",  default=fields.Date.context_today)
-    fecha_baja = fields.Date(string="Fecha de Baja")
-    socio_honorario = fields.Boolean(string="Honorario")
-    descuento = fields.Selection([('25', '+25 años'),('50', '+50 años'),('protector', 'Socio Protector'),('3f', '+3 Familiar')],string="Descuento")
-    descuento_tipo = fields.Char(string="Tipo descuento")
+    num_socio               = fields.Integer(string="Numero de Socio")
+    fecha_alta              = fields.Date(string="Fecha de Alta", default=fields.Date.context_today)
+    fecha_baja              = fields.Date(string="Fecha de Baja")
+    socio_honorario         = fields.Boolean(string="Honorario")
+    descuento               = fields.Selection([('25', '+25 años'),('50', '+50 años'),('protector', 'Socio Protector'),('3f', '+3 Familiar')],string="Descuento")
+    descuento_tipo          = fields.Char(string="Tipo descuento")
+    dinero_socio            = fields.Float(string="¿ Cuanto paga el socio ?")
 
     # ATLETA
-    genero = fields.Selection([('1', 'Masculino'), ('2', 'Femenino')], string='Sexo')
-    especialidad = fields.Selection([('1', 'Velocidad'),('2', 'Fondo'),('3', 'Medio Fondo'),('4', 'Lanzamientos'),('5', 'Saltos'),('6', 'Marcha Atlética')],string='Especialidad')
-    ficha = fields.Char(string="N.º Licencia")
-    categoria = fields.Char(string="Categoria")
-    grupo_entreno = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
-    visible = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
-    tipo_ficha = fields.Selection([('esp', 'Ficha Española'), ('cat', 'Ficha Catalana'), ('fondo', 'Ficha Fondo y Ruta')], string='Tipo de Ficha')
+    genero                  = fields.Selection([('1', 'Masculino'), ('2', 'Femenino')], string='Sexo')
+    especialidad            = fields.Selection([('1', 'Velocidad'),('2', 'Fondo'),('3', 'Medio Fondo'),('4', 'Lanzamientos'),('5', 'Saltos'),('6', 'Marcha Atlética')],string='Especialidad')
+    ficha                   = fields.Char(string="N.º Licencia")
+    categoria               = fields.Char(string="Categoria")
+    grupo_entreno           = fields.Many2one('berp.grupo_entreno',string="Grupo Entreno")
+    visible                 = fields.Boolean(compute="_comprobar_grupo_entreno",string="visible",default=False)
+    tipo_ficha              = fields.Selection([('esp', 'Ficha Española'), ('cat', 'Ficha Catalana'), ('fondo', 'Ficha Fondo y Ruta')], string='Tipo de Ficha')
