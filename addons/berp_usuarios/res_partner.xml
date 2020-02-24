@@ -99,12 +99,13 @@
                             </group>
                             <group>
                                 <group>
+                                    <field name="socio_protector"/>
                                     <field name="descuento_tipo"/>
                                     <field name="descuento"/>
                                     <field name="cuenta_bancaria"/>
                                 </group>
                                 <group>
-                                    <field name="dinero_socio" attrs="{'invisible': [('descuento','!=','protector')]}"/>
+                                    <field name="dinero_socio" attrs="{'invisible': [('socio_protector','=','False')]}"/>
                                 </group>
                             </group>
                         </page>
