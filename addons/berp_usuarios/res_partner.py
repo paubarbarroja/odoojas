@@ -195,6 +195,7 @@ class Partner(models.Model):
     socio_honorario         = fields.Boolean(string="Honorario")
     descuento               = fields.Selection([('25', '+25 años'),('50', '+50 años'),('protector', 'Socio Protector'),('3f', '+3 Familiar')],string="Descuento")
     descuento_tipo          = fields.Char(string="Tipo descuento")
+    dinero_socio            = fields.Float(string="¿ Cuanto paga el socio ?")
 
     # ATLETA
     genero                  = fields.Selection([('1', 'Masculino'), ('2', 'Femenino')], string='Sexo')
