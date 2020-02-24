@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="get_categoria_cron" model="ir.cron">
+        <field name="name">Get Categoria Cron</field>
+        <field name="interval_number">12</field>
+        <field name="interval_type">months</field>
+        <field name="numbercall">-1</field>
+        <field name="doall" eval="False"/>
+        <field name="model_id" ref="model_res_partner"/>
+        <field name="code">model.funcion_categoria_cron()</field>
+        <field name="state">code</field>
+        <field name="user_id" ref="base.user_root" />
+        <field name="function">True</field>
+    </record>
+
+</odoo>
