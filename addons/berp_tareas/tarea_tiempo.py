@@ -26,11 +26,6 @@ class berp_tarea_tiempo(models.Model):
         res.tarea_id.write({'tiempo_imputado':imputado_total})
         return res
 
-    @api.model
-    def write(self,values):
-        res = super(berp_tarea_tiempo, self).write(values)
-        return res
-
 
 
     tarea_id            = fields.Many2one('berp.tarea','Tarea')
