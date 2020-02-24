@@ -20,6 +20,7 @@ class berp_tarea_tiempo(models.Model):
     @api.model
     def create(self,values):
         res = super(berp_tarea_tiempo, self).create(values)
+        tiempo_trabajado = res.hora_fin - res.hora_ini
         imputado_total = res.tarea_id.tiempo_imputado + tiempo_trabajado
         res.tarea_id.tiempo_imputado = imputado_total
         res.tarea_id.write({'tiempo_imputado':imputado_total})
