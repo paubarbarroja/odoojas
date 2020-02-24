@@ -17,7 +17,7 @@ class Partner(models.Model):
 
     @api.model
     def create(self,values):
-        #values['num_socio'] = self.env['ir.sequence'].next_by_code('res_partner.num_socio')
+        values['num_socio'] = self.env['ir.sequence'].next_by_code('res_partner.num_socio')
         res = super(Partner, self).create(values)
         categoria = ""
         if 'fecha_nac' in values:
@@ -180,6 +180,7 @@ class Partner(models.Model):
 
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************
+    not_jas                 = fields.Boolean('Not Jas')
     # USUARIO
     image                   = fields.Binary("Image", attachment=True, default=lambda self:self._get_default_image('a','b','c'))
     name                    = fields.Char(string="Nombre")

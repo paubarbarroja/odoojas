@@ -57,6 +57,12 @@
                                 </td>
                                 <td>Atleta</td>
                             </tr>
+                            <tr>
+                                <td>
+                                    <field name="not_jas"/>
+                                </td>
+                                <td>Jas</td>
+                            </tr>
                         </table>
                     </div>
                     <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 120]}'/>
