@@ -69,7 +69,7 @@
                         </h3>
                     </div>
                     <group col="2">
-                        <field name="num_socio" readonly="1"/>
+                        <field name="num_socio"/>
                     </group>
                     <group col="4">
                         <field name="fecha_alta"/>

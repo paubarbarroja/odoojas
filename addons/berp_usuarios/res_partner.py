@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from datetime import date, datetime
-from odoo import models, fields, api, tools
+from odoo import models, fields, api, tools, exceptions, _
 import logging
 from odoo.modules import get_module_resource
 import base64
@@ -15,41 +15,54 @@ class Partner(models.Model):
     _order = "apellido1, apellido2, name asc"
 
 
-    @api.model
-    def create(self,values):
-        values['num_socio'] = self.env['ir.sequence'].next_by_code('res_partner.num_socio')
-        res = super(Partner, self).create(values)
-        categoria = ""
-        if 'fecha_nac' in values:
-            if not isinstance(values['fecha_nac'],bool):
-                nacimiento = datetime.strptime(values['fecha_nac'], '%Y-%m-%d').date()
-                hoy = date.today()
-                fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
-                fecha = "31-12-" + fecha_hoy[0]
-                date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
-                diferencia = date_object - nacimiento
-                edad_final_temporada = str(int(diferencia.days / 365))
-                edad = int(edad_final_temporada)
+    def _get_categoria(self, fecha_nac):
+        if isinstance(fecha_nac,string):
+            nacimiento = datetime.strptime(fecha_nac, '%Y-%m-%d').date()
+        else:
+            nacimiento = fecha_nac
+        hoy = date.today()
+        fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
+        fecha = "31-12-" + fecha_hoy[0]
+        date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
+        diferencia = date_object - nacimiento
+        edad_final_temporada = str(int(diferencia.days / 365))
+        edad = int(edad_final_temporada)
 
-                if edad > 34:
-                    categoria = "Master"
+        if edad > 34:
+            categoria = "Master"
+        else:
+            if edad > 22:
+                categoria = "Senior"
+            else:
+                if edad > 19:
+                    categoria = "Sub 23"
                 else:
-                    if edad > 22:
-                        categoria = "Senior"
+                    if edad > 17:
+                        categoria = "Sub 20"
                     else:
-                        if edad > 19:
-                            categoria = "Sub 23"
+                        if edad > 15:
+                            categoria = "Sub 18"
                         else:
-                            if edad > 17:
-                                categoria = "Sub 20"
-                            else:
-                                if edad > 15:
-                                    categoria = "Sub 18"
-                                else:
-                                    if edad > 13:
-                                        categoria = "Sub 16"
+                            if edad > 13:
+                                categoria = "Sub 16"
 
-        res.categoria = categoria
+        return categoria
+
+
+    @api.model
+    def create(self, values):
+        res = False
+        if values['is_socio'] == False and values['is_atleta'] == False:
+            raise exceptions.except_orm(_('Error!!'), _('Indica en el formulario si es atleta, socio o ambas'))
+        else:
+            if values['is_socio']:
+                values['num_socio'] = self.env['ir.sequence'].next_by_code('res_partner.num_socio')
+            res = super(Partner, self).create(values)
+            categoria = ""
+            if 'fecha_nac' in values:
+                if not isinstance(values['fecha_nac'],bool):
+                    categoria = self._get_categoria(values['fecha_nac'])
+            res.categoria = categoria
         return res
 
 
@@ -73,32 +86,9 @@ class Partner(models.Model):
     def get_categoria(self):
         for record in self:
             if record.fecha_nac:
-                categoria = ""
-                hoy = date.today()
-                fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
-                fecha = "31-12-" + fecha_hoy[0]
-                date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
-                diferencia = date_object - record.fecha_nac
-                edad_final_temporada = str(int(diferencia.days / 365))
-                edad = int(edad_final_temporada)
+                categoria = self._get_categoria(record.fecha_nac)
+                record.categoria = categoria
 
-                if edad > 34:
-                    record.categoria = "Master"
-                else:
-                    if edad > 22:
-                        record.categoria = "Senior"
-                    else:
-                        if edad > 19:
-                            record.categoria = "Sub 23"
-                        else:
-                            if edad > 17:
-                                record.categoria = "Sub 20"
-                            else:
-                                if edad > 15:
-                                    record.categoria = "Sub 18"
-                                else:
-                                    if edad > 13:
-                                        record.categoria = "Sub 16"
 
 
     @api.depends('apellido1', 'apellido2', 'name')
@@ -144,31 +134,9 @@ class Partner(models.Model):
         items = self.search([])
         for item in items:
             if item.fecha_nac:
-                hoy = date.today()
-                fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
-                fecha = "31-12-" + fecha_hoy[0]
-                date_object = datetime.strptime(fecha, '%d-%m-%Y').date()
-                diferencia = date_object - item.fecha_nac
-                edad_final_temporada = str(int(diferencia.days / 365))
-                edad = int(edad_final_temporada)
+                categoria = self._get_categoria(item.fecha_nac)
+                item.write({'categoria' : categoria})
 
-                if edad > 34:
-                    item.write({'categoria' : "Master"})
-                else:
-                    if edad > 22:
-                        item.write({'categoria' : "Senior"})
-                    else:
-                        if edad > 19:
-                            item.write({'categoria' : "Sub 23"})
-                        else:
-                            if edad > 17:
-                                item.write({'categoria' : "Sub 20"})
-                            else:
-                                if edad > 15:
-                                    item.write({'categoria' : "Sub 18"})
-                                else:
-                                    if edad > 13:
-                                        item.write({'categoria' : "Sub 16"})
 
     @api.multi
     def funcion_categoria(self):
@@ -191,7 +159,7 @@ class Partner(models.Model):
     user_id                 = fields.Many2one('res.users', string='Usuario', help='The internal user in charge of this contact.', domain="[('active', '=', True)]",)
     fecha_nac               = fields.Date(string="Fecha de Nacimiento")
     dni                     = fields.Char(string="DNI")
-    is_socio                = fields.Boolean(string="Socio", default=True)
+    is_socio                = fields.Boolean(string="Socio")
     is_atleta               = fields.Boolean(string="Atleta")
     cuenta_bancaria         = fields.Char(string="Cuenta Bancaria")
     notas                   = fields.Text(string="Notas")
