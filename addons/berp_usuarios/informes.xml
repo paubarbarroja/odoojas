@@ -12,37 +12,37 @@
 
     <template id="listado_socios">
         <t t-call="web.html_container">
-            <t t-foreach="docs" t-as="o">
-                <t t-call="web.external_layout">
-                    <div class="page">
-                        <table>
-                            <tr>
-                                <th>Nº Socio</th>
-                                <th>Nombre</th>
-                            </tr>
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <table>
+                        <tr>
+                            <th>Nº Socio</th>
+                            <th>Nombre</th>
+                        </tr>
+                        <t t-foreach="docs" t-as="o">
                             <tr>
                                 <td><span t-field="o.num_socio"/></td>
                                 <td><span t-field="o.name"/> <span t-field="o.apellido1"/> <span t-field="o.apellido2"/></td>
                             </tr>
-                        </table>
-                    </div>
-                    <div class="footer">
-                        <div class="row text-center" style="border-top: 1px solid black;">
-                            <div class="col col-3 offset-9 text-right">
-                                <ul class="list-inline mt-2">
-                                    <li class="list-inline-item">Page:</li>
-                                    <li class="list-inline-item">
-                                        <span class="page"/>
-                                    </li>
-                                    <li class="list-inline-item">/</li>
-                                    <li class="list-inline-item">
-                                        <span class="topage"/>
-                                    </li>
-                                </ul>
-                            </div>
+                        </t>
+                    </table>
+                </div>
+                <div class="footer">
+                    <div class="row text-center" style="border-top: 1px solid black;">
+                        <div class="col col-3 offset-9 text-right">
+                            <ul class="list-inline mt-2">
+                                <li class="list-inline-item">Page:</li>
+                                <li class="list-inline-item">
+                                    <span class="page"/>
+                                </li>
+                                <li class="list-inline-item">/</li>
+                                <li class="list-inline-item">
+                                    <span class="topage"/>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </t>
+                </div>
             </t>
         </t>
     </template>
