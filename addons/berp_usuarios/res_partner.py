@@ -14,15 +14,6 @@ class Partner(models.Model):
     _inherit = "res.partner"
     _order = "apellido1, apellido2, name asc"
 
-    @api.multi
-    def imprimir_informe(self):
-        _logger.error('heloudaaaaaa --> %r',self.ids)
-        data = {
-            'ids': self.ids,
-            'model': self._name
-        }
-        return self.env.ref("berp_usuarios.berp_listado_socios_activos").report_action(self, data=data)
-
     @api.model
     def _get_categoria(self, fecha_nac):
         if isinstance(fecha_nac,str):
