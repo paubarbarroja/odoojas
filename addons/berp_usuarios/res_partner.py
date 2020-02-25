@@ -75,6 +75,22 @@ class Partner(models.Model):
         return res
 
 
+    @api.multi
+    @api.depends('apellido1', 'apellido1', 'name')
+    def name_get(self):
+        result = []
+        for item in self:
+            s = ""
+            if item.apellido1:
+                s += item.apellido1
+            if item.apellido2:
+                s += " " + item.apellido2
+            if item.name:
+                s += ", " + item.name
+            result.append((item.id, s))
+        return result
+
+
     @api.onchange('fecha_nac')
     def get_categoria(self):
         for record in self:
