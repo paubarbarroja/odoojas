@@ -14,7 +14,15 @@ class Partner(models.Model):
     _inherit = "res.partner"
     _order = "apellido1, apellido2, name asc"
 
+    @api.multi
+    def imprimir_informe(self):
+        data = {
+            'ids': self.ids,
+            'model': self._name
+        }
+        return self.env.ref("berp_usuarios.berp_listado_socios_activos").report_action(self, data=data)
 
+    @api.model
     def _get_categoria(self, fecha_nac):
         if isinstance(fecha_nac,str):
             nacimiento = datetime.strptime(fecha_nac, '%Y-%m-%d').date()
@@ -66,29 +74,12 @@ class Partner(models.Model):
         return res
 
 
-    @api.multi
-    @api.depends('apellido1', 'apellido1', 'name')
-    def name_get(self):
-        result = []
-        for item in self:
-            s = ""
-            if item.apellido1:
-                s += item.apellido1
-            if item.apellido2:
-                s += " " + item.apellido2
-            if item.name:
-                s += ", " + item.name
-            result.append((item.id, s))
-        return result
-
-
     @api.onchange('fecha_nac')
     def get_categoria(self):
         for record in self:
             if record.fecha_nac:
                 categoria = self._get_categoria(record.fecha_nac)
                 record.categoria = categoria
-
 
 
     @api.depends('apellido1', 'apellido2', 'name')
