@@ -43,7 +43,6 @@
                 <field name="active" invisible="1"/>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
-                        <button name="imprimir_informe" type="object" string="Imprimir"/>
                         <table>
                             <tr>
                                 <td>
