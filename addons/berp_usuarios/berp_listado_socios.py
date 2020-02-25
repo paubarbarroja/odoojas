@@ -11,6 +11,6 @@ class report_berp_listado_socios_activos(models.AbstractModel):
     def _get_report_values(self, docids, data=None):
         return {
                 'doc_ids':docids,
-                'docs':self.env['res.partner'].browse(docids),
+                'docs':sorted(self.env['res.partner'].browse(docids).items(),key = lambda kv:(kv[1], kv[0])),
                 'data':data,
                 }
