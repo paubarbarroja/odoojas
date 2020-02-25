@@ -22,7 +22,7 @@
                         <t t-foreach="docs" t-as="o">
                             <tr>
                                 <td><span t-field="o.num_socio"/></td>
-                                <td><span t-field="o.name"/> <span t-field="o.apellido1"/> <span t-field="o.apellido2"/></td>
+                                <td><span t-field="o.apellido1"/> <span t-field="o.apellido2"/>, <span t-field="o.name"/> </td>
                             </tr>
                         </t>
                     </table>
