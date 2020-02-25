@@ -8,6 +8,8 @@ class report_berp_listado_socios_activos(models.AbstractModel):
 
     @api.model
     def _get_report_values(self, docids, data=None):
+
+        _logger.error('heloudaaaaaa --> %r',data['ids'])
         return {
                 'doc_ids':docids,
                 'docs':self.env['res.partner'].browse(data['ids']),

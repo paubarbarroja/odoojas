@@ -16,7 +16,7 @@ class Partner(models.Model):
 
     @api.multi
     def imprimir_informe(self):
-        _logger.error('heloudaaaaaa --> %r',self._ids)
+        _logger.error('heloudaaaaaa --> %r',self.ids)
         data = {
             'ids': self.ids,
             'model': self._name
