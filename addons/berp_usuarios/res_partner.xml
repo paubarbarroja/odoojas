@@ -68,16 +68,17 @@
                             </group>
                         </h3>
                     </div>
-                    <group col="2">
-                        <field name="num_socio"/>
-                    </group>
-                    <group col="4">
-                        <field name="fecha_alta"/>
-                        <field name="fecha_baja"/>
-                    </group>
-                    <field name="notas" placeholder="Notas Internas"/>
+                    <div attrs="{'invisible': [('is_socio', '=', False)]}">
+                        <group col="2">
+                            <field name="num_socio"/>
+                        </group>
+                        <group col="4">
+                            <field name="fecha_alta"/>
+                            <field name="fecha_baja"/>
+                        </group>
+                    </div>
                     <notebook colspan="4">
-                        <page name="socio_page" string="Datos Generales" attrs="{'invisible': [('is_socio', '=', False)]}">
+                        <page name="socio_page" string="Datos Generales">
                             <group>
                                 <group>
                                     <label for="street" string="Direccion"/>
@@ -97,7 +98,7 @@
                                     <field name="user_id" string="Usuario" invisible="1"/>
                                 </group>
                             </group>
-                            <group>
+                            <group attrs="{'invisible': [('is_socio', '=', False)]}">
                                 <group>
                                     <field name="socio_protector"/>
                                     <field name="descuento_tipo"/>
@@ -120,6 +121,7 @@
                             </group>
                         </page>
                     </notebook>
+                    <field name="notas" placeholder="Notas Internas"/>
                 </sheet>
             </form>
         </field>
