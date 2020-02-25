@@ -16,7 +16,7 @@ class Partner(models.Model):
 
 
     def _get_categoria(self, fecha_nac):
-        if isinstance(fecha_nac,string):
+        if isinstance(fecha_nac,char):
             nacimiento = datetime.strptime(fecha_nac, '%Y-%m-%d').date()
         else:
             nacimiento = fecha_nac
