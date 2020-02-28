@@ -201,7 +201,7 @@
             </xpath>
         </template>
 
-        <template inherit_id="website_sale.products" id="products_list_view_notsale">
+        <!--template inherit_id="website_sale.products" id="products_list_view_notsale">
             <xpath expr="//div[@id='products_grid']//table" position="replace">
                 <t t-foreach="products" t-as="product">
                     <t t-if="not product.categ_id.id == 4">
@@ -213,7 +213,7 @@
                     </t>
                 </t>
             </xpath>
-        </template>
+        </template-->
                             
         <template id="view_last_news">
             <t t-foreach="posts" t-as="p">
