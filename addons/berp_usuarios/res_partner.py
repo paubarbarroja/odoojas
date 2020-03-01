@@ -46,6 +46,17 @@ class Partner(models.Model):
                         else:
                             if edad > 13:
                                 categoria = "Sub 16"
+                            else:
+                                if edad > 11:
+                                    categoria = "Sub 14"
+                                else:
+                                    if edad > 9:
+                                        categoria = "Sub 12"
+                                    else:
+                                        if edad > 7:
+                                            categoria = "Sub 10"
+                                        else:
+                                            categoria = "Sub 8"
 
         return categoria
 
