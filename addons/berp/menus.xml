@@ -2,7 +2,8 @@
 <odoo>
     <menuitem id="administracion_menuitem"
               name="Administración"
-              groups="berp.berp_administracion,berp.berp_admin"/>
+              groups="berp.berp_administracion,berp.berp_admin"
+              web_icon="berp,static/description/icon.png"/>
 
 
     <!--menuitem id="gestion_menuitem"
