@@ -34,6 +34,22 @@
         </field>
     </record>
 
+    <record id="berp_01032020_2019_tree" model="ir.ui.view">
+        <field name="name">res.partner.tree.atleta</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <tree string="Atletas">
+                <field name="usuario_name_tree"/>
+                <field name="categoria"/>
+                <field name="phone"/>
+                <field name="email"/>
+                <field name="is_socio" invisible="True"/>
+                <field name="is_atleta" invisible="True"/>
+                <field name="is_company" invisible="True"/>
+            </tree>
+        </field>
+    </record>
+
 
     <record id="berp_29082019_2241_form" model="ir.ui.view">
         <field name="name">res.partner.form</field>
