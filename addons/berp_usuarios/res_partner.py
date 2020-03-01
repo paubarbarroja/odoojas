@@ -28,6 +28,7 @@ class Partner(models.Model):
         edad_final_temporada = str(int(diferencia.days / 365))
         edad = int(edad_final_temporada)
 
+        categoria = ""
         if edad > 34:
             categoria = "Master"
         else:
