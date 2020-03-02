@@ -5,7 +5,9 @@
               name="Solicituts Socis"
               parent="berp.administracion_menuitem"
               sequence="1"
-              action="berp_03112019_2237_action"/>
+              action="berp_03112019_2237_action"
+              groups="berp.berp_admin"
+            />
 
 </odoo>
 
