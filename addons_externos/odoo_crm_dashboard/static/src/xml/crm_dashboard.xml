@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="crm_dashboard.dashboard">
+         <div class="divmain" style="width: 100%;height:100%;">
+          <div class="row">         
+            
+            <div class="col-md-12 col-lg-12 divright" >           
+                <div class="row mt-5">
+                    <div class="col-md-5">
+					 <div class="panel ">
+                              <div class="panel-heading ">
+                                  <h3 class="panel-title">Total Expected Revenue</h3>
+                              </div>
+                              <div class="panel-body ">
+							   <canvas  id="Chart" style="width:500px;height:400px;"/>
+							  </div>
+                          </div>
+					</div>
+					
+                <div class="col-md-7">
+                    
+                <div class="row">
+                    <div class="col-md-1" >
+                    </div>
+                
+                    <div class="col-md-4 divfirst" >                       
+                                <div class="dash-box-icon0">                                   
+                                
+                                    <i class="fas fa-grip-lines"></i>
+                                
+                                </div>
+                                <div class="dash-box-body"> 
+                                    <span class="dash-box-title">My Pipeline</span>
+                                    <span class="dash-box-count"><t t-esc="widget.crm_data.my_pipe_line"/></span>                                   
+                                            </div>
+                                <div class="line">
+                                </div>
+                                <div class="dash-box-function my_pipeline">									
+                                    <button>More Info</button>
+                                </div>            
+
+                    </div>
+                
+                    <div class="col-md-4 divsecond" >                             
+                                <div class="dash-box-icon0 dash-box-icon1">  
+                                    <i class="fas fa-user" style="padding-left:5px;"></i>
+                                </div>
+                                <div class="dash-box-body">
+                                    <span class="dash-box-title">Overdue Opportunities</span>									
+                                    <span class="dash-box-count"><t t-esc="widget.crm_data.tot_overdue_opportunities"/> </span>                   
+                                    
+                                </div>
+                                <div class="line">
+                                </div>
+
+                                <div class="dash-box-function opportunities">
+                                    <button>More Info</button>
+                                </div>
+                        
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-1" >
+                    </div>    
+                    <div class="col-md-4 divthird" >                      
+                            <div class="dash-box-icon0 dash-box-icon2 ">  
+                                <i class="fas fa-grin-stars" style="align-content:center "></i>
+                            </div>
+                            <div class="dash-box-body">                                    
+                                <span class="dash-box-title">Open Opportunities</span>
+                                <span class="dash-box-count"><t t-esc="widget.crm_data.tot_open_opportunities"/></span>
+                            </div>
+                            <div class="line">
+                            </div>
+                            <div class="dash-box-function open_opportunities">									
+                                <button>More Info</button>
+                            </div>
+                    </div>
+                
+                    <div class="col-md-4 divforth" >
+                                <div class="dash-box-icon0 dash-box-icon3"> 
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="dash-box-body">
+									<span class="dash-box-title">Won Count</span>
+                                    <span class="dash-box-count"><t t-esc="widget.crm_data.tot_won"/></span>                                    
+                                </div>
+                                <div class="line">
+                                </div>
+                                <div class="dash-box-function won_count">
+                                    <button>More Info</button>
+                                </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1" >
+                    </div>
+                    
+                    <div class="col-md-4 divfifth" >
+                                <div class="dash-box-icon0 dash-box-icon4">   
+                                    <i class="fas fa-grin-tears"></i>
+                                </div>
+                                <div class="dash-box-body">								    
+									<span class="dash-box-title">Loss Count</span>
+                                    <span class="dash-box-count"><t t-esc="widget.crm_data.tot_lost"/></span>                                    
+                                </div>
+                                <div class="line">
+                                </div>
+                                <div class="dash-box-function loss_count">
+                                    <button>More Info</button>
+                                </div>
+                    </div>
+                    <div class="col-md-4 divsixth" >
+                                <div class="dash-box-icon0 dash-box-icon5"> 
+                                    <i class="fas fa-calculator" style="padding-left:5px"></i>
+                                </div>
+                                <div class="dash-box-body">								    
+									<span class="dash-box-title">Total Expected Revenue</span>
+                                    <span class="dash-box-count"><t t-esc="widget.crm_data.expected_revenue"/></span>                                    
+                                </div>
+                                <div class="line">
+                                </div>
+                                <!-- <div class="dash-box-function tot_exp_revenue">
+                                    <button>More Info</button>
+                                </div> -->
+                    </div>
+                </div>
+             
+                </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        
+        
+    </t>
+</templates>

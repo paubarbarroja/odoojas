@@ -73,7 +73,6 @@ class Partner(models.Model):
     def get_categoria(self):
         for record in self:
             if record.fecha_nac:
-                categoria = ""
                 hoy = date.today()
                 fecha_hoy = hoy.strftime('%Y-%m-%d').split('-')
                 fecha = "31-12-" + fecha_hoy[0]
