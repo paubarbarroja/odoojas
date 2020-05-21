@@ -136,6 +136,8 @@
                                 <field name="grupo_entreno" invisible="1"/>
                             </group>
                         </page>
+                        <page name="admin_page" string="Pagina Administrador" groups="berp.berp_admin">
+                        </page>
                     </notebook>
                     <field name="notas" placeholder="Notas Internas"/>
                 </sheet>
