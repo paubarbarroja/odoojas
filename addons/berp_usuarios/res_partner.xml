@@ -111,7 +111,7 @@
                                     <field name="phone" widget="phone"/>
                                     <field name="mobile" widget="phone"/>
                                     <field name="email" widget="email" context="{'gravatar_image': True}"/>
-                                    <field name="user_id" string="Usuario" invisible="1"/>
+                                    
                                 </group>
                             </group>
                             <group attrs="{'invisible': [('is_socio', '=', False)]}">
@@ -137,6 +137,7 @@
                             </group>
                         </page>
                         <page name="admin_page" string="Pagina Administrador" groups="berp.berp_admin">
+                            <field name="user_id" string="Usuario"/>
                         </page>
                     </notebook>
                     <field name="notas" placeholder="Notas Internas"/>

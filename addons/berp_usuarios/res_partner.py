@@ -64,20 +64,17 @@ class Partner(models.Model):
     @api.model
     def create(self, values):
         res = False
-        if values['is_socio'] and values['is_atleta']:
-            if values['is_socio'] == False and values['is_atleta'] == False:
-                raise exceptions.except_orm(_('Error!!'), _('Indica en el formulario si es atleta, socio o ambas'))
-            else:
-                if values['is_socio']:
-                    values['num_socio'] = self.env['ir.sequence'].next_by_code('res_partner.num_socio')
-                res = super(Partner, self).create(values)
-                categoria = ""
-                if 'fecha_nac' in values:
-                    if not isinstance(values['fecha_nac'],bool):
-                        categoria = self._get_categoria(values['fecha_nac'])
-                res.categoria = categoria
+        if values['is_socio'] == False and values['is_atleta'] == False:
+            raise exceptions.except_orm(_('Error!!'), _('Indica en el formulario si es atleta, socio o ambas'))
         else:
+            if values['is_socio']:
+                values['num_socio'] = self.env['ir.sequence'].next_by_code('res_partner.num_socio')
             res = super(Partner, self).create(values)
+            categoria = ""
+            if 'fecha_nac' in values:
+                if not isinstance(values['fecha_nac'],bool):
+                    categoria = self._get_categoria(values['fecha_nac'])
+            res.categoria = categoria
         return res
 
 
