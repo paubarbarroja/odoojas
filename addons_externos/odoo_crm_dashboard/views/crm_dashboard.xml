@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Default View for CRM Dashboard -->
+        <record model="ir.ui.view" id="crm_dashboard_view">
+            <field name="name">CRM Dashboard</field>
+            <field name="model">crm.dashboard</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <!--<field name="name"/>-->
+                </kanban>
+            </field>
+        </record>
+
+        <!-- Action For Menu CRM Dashboard -->
+        <record id="action_crm_dashboard" model="ir.actions.client">
+            <field name="name">Dashboard</field>
+            <field name="tag">crm_dashboard.dashboard</field>
+        </record>
+
+        <!-- Menu CRM Dashbaord -->
+        <menuitem id="menu_crm_dashboard"
+                  name="CRM Dashboard"
+                  action="action_crm_dashboard"  groups="sales_team.group_sale_manager"                
+                  sequence="1"/>
+
+        <!-- CRM Dashboard Assests. We are making changes on assets backend -->
+        <template id="assets_backend" name="CRM assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/odoo_crm_dashboard/static/src/js/crm_dashboard.js"/>
+                <!-- Css scripts for dashboard view and table -->
+                <link rel="stylesheet" href="/odoo_crm_dashboard/static/src/css/crm_dashboard.css"/>
+                <link rel="stylesheet" href="/odoo_crm_dashboard/static/lib/dataTables/datatables.min.css"/>
+                <link rel="stylesheet" href="/odoo_crm_dashboard/static/lib/dataTables/buttons.dataTables.min.css"/>                 
+                <link rel="stylesheet" href="/odoo_crm_dashboard/static/css/all.css"/>	            
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
