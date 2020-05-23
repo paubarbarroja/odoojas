@@ -159,11 +159,12 @@ class Partner(models.Model):
     
     @api.multi
     def create_user(self):
-        _logger.error('##########################  self --> %r',self)
-        # values = {
-        #     'partner_id': self
-        # }
-        # self.env['res.users'].create(values)
+         values = {
+             'partner_id'   : self.id,
+             'name'         : self.name,
+             'login'        : self.email
+         }
+         self.env['res.users'].create(values)
 
 
 
