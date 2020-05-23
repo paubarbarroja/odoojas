@@ -156,6 +156,16 @@ class Partner(models.Model):
             if item.ficha:
                 item.write({'is_atleta': True})
 
+    
+    @api.multi
+    def create_user(self):
+        _logger.error('##########################  self --> %r',self)
+        # values = {
+        #     'partner_id': self
+        # }
+        # self.env['res.users'].create(values)
+
+
 
 
     #************************************************** -- --  COLUMNAS  -- -- **************************************************

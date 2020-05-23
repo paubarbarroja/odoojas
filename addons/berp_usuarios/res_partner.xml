@@ -138,6 +138,7 @@
                         </page>
                         <page name="admin_page" string="Pagina Administrador" groups="berp.berp_admin">
                             <field name="user_id" string="Usuario"/>
+                            <button string="Crear usuario" name="create_user" class="oe_highlight" type="object"/>
                         </page>
                     </notebook>
                     <field name="notas" placeholder="Notas Internas"/>
