@@ -6,17 +6,16 @@
             <field name="model">crm.lead</field>
             <field name="arch" type="xml">
                 <tree string="Solicituts Socis">
-                    <field name="name"/>
-                    <field name="phone"/>
-                    <field name="email_from"/>
-                    <field name="genre"/>
-                    <field name="dni"/>
-                    <field name="direccion_postal"/>
-                    <field name="birthday_date"/>
-                    <field name="compte_bancari"/>
-                    <field name="banc"/>
-                    <field name="poblacion"/>
-                    <field name="codigo_postal"/>
+                    <field name="name" string="Nom"/>
+                    <field name="phone" string="Telèfon/Móvil"/>
+                    <field name="email_from" string="E-mail"/>
+                    <field name="contact_name" string="DNI"/>
+                    <field name="date_deadline" string="Data Naixement"/>
+                    <field name="function" string="Compte Bancari"/>
+                    <field name="referred" string="Banc"/>
+                    <field name="street" string="Adreça"/>
+                    <field name="city" string="Població"/>
+                    <field name="zip" string="Codi Postal"/>
                 </tree>
             </field>
     </record>
@@ -32,14 +31,14 @@
                             <field name="name" string="Nom"/>
                             <field name="phone" string="Telèfon/Móvil"/>
                             <field name="email_from" string="E-mail"/>
-                            <field name="genre"/>
-                            <field name="dni"/>
-                            <field name="direccion_postal"/>
-                            <field name="birthday_date"/>
-                            <field name="compte_bancari"/>
-                            <field name="banc"/>
-                            <field name="poblacion"/>
-                            <field name="codigo_postal"/>
+                            <field name="contact_name" string="DNI"/>
+                            <field name="date_deadline" string="Data Naixement"/>
+                            <field name="function" string="Compte Bancari"/>
+                            <field name="referred" string="Banc"/>
+                            <field name="street" string="Adreça"/>
+                            <field name="city" string="Població"/>
+                            <field name="zip" string="Codi Postal"/>
+                            <field name="description" string="Genere"/>
                         </group>
                     </sheet>
                 </form>
