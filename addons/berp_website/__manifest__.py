@@ -11,6 +11,10 @@
         'views/template.xml',
         'views/formulari_soci.xml',
         'views/escola_atletisme.xml',
+        'views/grups_entrenament.xml',
+        'views/butlleti.xml',
+        'views/ranquing_records.xml',
+        'views/historia.xml',
         'crm_lead/crm_lead.xml',
         'crm_lead/menus.xml'
     ],

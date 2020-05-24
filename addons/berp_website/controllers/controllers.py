@@ -12,3 +12,27 @@ class berp_website_escola_atletisme(http.Controller):
     @http.route('/escola_atletisme', auth='public', website=True)
     def index(self, **kw):
         return http.request.render("berp_website.berp_20200524_1414_website",{})
+
+
+class berp_website_grups_entrenament(http.Controller):
+    @http.route('/grups_entrenament', auth='public', website=True)
+    def index(self, **kw):
+        return http.request.render("berp_website.berp_20200524_1623_website",{})
+
+
+class berp_website_butlleti(http.Controller):
+    @http.route('/butlleti', auth='public', website=True)
+    def index(self, **kw):
+        return http.request.render("berp_website.berp_20200524_1624_website",{})
+
+
+class berp_website_ranquing_records(http.Controller):
+    @http.route('/ranquing_records', auth='public', website=True)
+    def index(self, **kw):
+        return http.request.render("berp_website.berp_20200524_1625_website",{})
+
+
+class berp_website_historia(http.Controller):
+    @http.route('/historia', auth='public', website=True)
+    def index(self, **kw):
+        return http.request.render("berp_website.berp_20200524_1626_website",{})

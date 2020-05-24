@@ -1,0 +1,571 @@
+<odoo>
+    <data>
+
+        <template id="berp_20200524_1624_website" name="butlleti">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96" data-scroll-background-ratio="1" style="background-image: none;">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image:url(/web/image/website.s_cover_default_image);background-position:50% 0"/>
+                    <div class="container">
+                    <div class="row s_nb_column_fixed">
+                        <div class="col-lg-12 s_title" data-name="Title">
+                        <h1 class="s_title_thin o_default_snippet_text" style="font-size: 62px; text-align: center;">Catchy Headline</h1>
+                        </div>
+                        <div class="col-lg-12 s_text pt16 pb16" data-name="Text">
+                        <p class="lead o_default_snippet_text" style="text-align: center;">Escriba uno o dos párrafos describiendo su producto, servicio o característica especifica. Para tener éxito su contenido debe ser útil a sus lectores.</p>
+                        </div>
+                        <div class="col-lg-12 s_btn text-center pt16 pb16" data-name="Buttons">
+                        <a href="/aboutus" class="btn btn-delta rounded-circle o_default_snippet_text">Acerca de</a>
+                        <a href="/contactus" class="btn btn-primary rounded-circle o_default_snippet_text">Contáctenos</a>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_block pt32 pb32">
+                    <div class="container">
+                    <div class="row">
+                        <div class="pt32 pb32 col-lg-11">
+                        <p class="lead">En els butlletins hi trobareu petits reportatges de les actuacions dels i les atletes de la JA Sabadell, entrevistes als nostres atletes, experiències en viatges amb la JA Sabadell i un llarg etcètera d'esdeveniments relacionats amb el món de l'atletisme a Sabadell.</p>
+                        <p>Recordem que des de la JA Sabadell estem oberts a què qualsevol soci, atleta o simpatitzant que vulgui escriu-re un petit reportatge sobre qualsevol tema dels indicats anteriorment serà benvingut. Podeu enviar el reportatge a la direcció de correu electrònic de la JA Sabadell ( joventutatleticasabadell@gmail.com ).</p>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32 oe_custom_bg" style="background-color: rgb(206, 231, 247);">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 15</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>Josep Orriols. President de la comissió del Centenari de la JA Sabadell</p>
+                            </li>
+                            <li>
+                            <p>XXI Campionat d'Europa Màster (Venècia)</p>
+                            </li>
+                            <li>
+                            <p>Obie Igbokwe, un rècordman a Sabadell</p>
+                            </li>
+                            <li>
+                            <p>Jack Holden, atleta llegendari en un àlbum de Tintín</p>
+                            </li>
+                            <li>
+                            <p>Maleït quart / "No hay quinto malo"</p>
+                            </li>
+                            <li>
+                            <p>XXXI Campionat d'Espanya Màster en Pista Coberta (Antequera)</p>
+                            </li>
+                            <li>
+                            <p>Els Top-8 de la JA Sabadell a nivell nacional</p>
+                            </li>
+                            <li>
+                            <p>Pel forat del pany</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Març 2020<br/></p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34831/PORTADA%20BULLETI%20N%C2%BA15.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip200514"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 14</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>Europeu a Tilburg. (Per Laia Casajoana)</p>
+                            </li>
+                            <li>
+                            <p>De Sululta a Sabadell (Per Merem Gabriel)</p>
+                            </li>
+                            <li>
+                            <p>Assemblea AEEA (Santander)</p>
+                            </li>
+                            <li>
+                            <p>VIII Campionat del Món Màster en Pista Coberta (Torun)</p>
+                            </li>
+                            <li>
+                            <p>XXX Campionat d'Espanya Màster en Pista Coberta (Ourense)</p>
+                            </li>
+                            <li>
+                            <p>Terrassa - La Mata (Marxa Atlètica)</p>
+                            </li>
+                            <li>
+                            <p>LIV Campionat d'Espanya Màster en Aire Lliure (Sagunto)</p>
+                            </li>
+                            <li>
+                            <p>Tomàs Barris rep la creu de Sant Jordi.</p>
+                            </li>
+                            <li>
+                            <p>Josep Urpí ens ha deixat</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Setembre 2019<br/></p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34829/PORTADA%20BULLETI%20N%C2%BA14.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip631701"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32 oe_custom_bg" style="background-color: rgb(206, 231, 247);">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 13</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>Homenatge a Montse Pujol</p>
+                            </li>
+                            <li>
+                            <p>41a Trobada d'ex-atletes, ex-directius i ex-entrenadors</p>
+                            </li>
+                            <li>
+                            <p>40é aniversari del rècord del món sub-20 de Montse Pujol</p>
+                            </li>
+                            <li>
+                            <p>Palmarès de Montse Pujol</p>
+                            </li>
+                            <li>
+                            <p>Bob Beamon: 50 anys de la seva gesta</p>
+                            </li>
+                            <li>
+                            <p>La torxa olímpica de Mèxic '68 i el seu pas per la nostra terra</p>
+                            </li>
+                            <li>
+                            <p>Altres distincions a membres de la JA Sabadell</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Febrer 2019<br/></p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34827/PORTADA%20BULLETI%20N%C2%BA13.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip71968"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 12</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>Eloi Santafé. Campionat d'Europa Sub-18</p>
+                            </li>
+                            <li>
+                            <p>Campionats d'Europa Màster Aire Lliure (Màlaga 2018)</p>
+                            </li>
+                            <li>
+                            <p>Christina Schwanitz</p>
+                            </li>
+                            <li>
+                            <p>Campionat d'Europa Màster en Ruta (Alacant)</p>
+                            </li>
+                            <li>
+                            <p>Campionat d'Espanya Màster 10000 Aire Lliure (Gavà)</p>
+                            </li>
+                            <li>
+                            <p>Quí va ser Jean Bouin?</p>
+                            </li>
+                            <li>
+                            <p>Pistes Municipals 1974</p>
+                            </li>
+                            <li>
+                            <p>Campionat d'Espanya Màster Aire Lliure (Vitòria)</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Desembre 2018<br/></p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34825/PORTADA%20BULLETI%20N%C2%BA12.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip513154"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32 oe_custom_bg" style="background-color: rgb(206, 231, 247);">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 11</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>Carme Valero es penja el dorsal 261</p>
+                            </li>
+                            <li>
+                            <p>Kathy Switzer i Victor Mora</p>
+                            </li>
+                            <li>
+                            <p>Així va ser la primera Marató de Catalunya</p>
+                            </li>
+                            <li>
+                            <p>Josep Busoms i la seva llum</p>
+                            </li>
+                            <li>
+                            <p>XXIX Campionat d'Espanya Màster (Salamanca)</p>
+                            </li>
+                            <li>
+                            <p>XXII Campionat d'Espanya Màster (Madrid 2018)</p>
+                            </li>
+                            <li>
+                            <p>Atletes JA Sabadell dins el rànquing del món</p>
+                            </li>
+                            <li>
+                            <p>Atletes Sabadellencs dins el rànquing del món</p>
+                            </li>
+                            <li>
+                            <p>Dossier Campionat d'Espanya de Cros per equips</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Maig 2018<br/></p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34823/PORTADA%20BULLETI%20N%C2%BA11.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip521074"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 10</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>Homenatge a Carme Valero</p>
+                            </li>
+                            <li>
+                            <p>Campionat d'Europa Màster a Aarhus 2016</p>
+                            </li>
+                            <li>
+                            <p>Els lideratges imprescindibles</p>
+                            </li>
+                            <li>
+                            <p>Valero, premi "Runners World" millora atleta espanyola de la història</p>
+                            </li>
+                            <li>
+                            <p>Màsters JA Sabadell. Millor club de relleus 2017</p>
+                            </li>
+                            <li>
+                            <p>1r Campionat d'Espanya Màster 1966</p>
+                            </li>
+                            <li>
+                            <p>Ricard Rof, atleta sabadellenc amb més decathlons</p>
+                            </li>
+                            <li>
+                            <p>Campionat d'Espanya Màster Logronyo/Elx 2017</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Desembre 2017<br/></p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34821/PORTADA%20BULLETI%20N%C2%BA10.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip847911" data-pagespeed-url-hash="473413721" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32 oe_custom_bg" style="background-color: rgb(206, 231, 247);">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 9</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>Editorial. La JA Sabadell a la Viquipèdia</p>
+                            </li>
+                            <li>
+                            <p>Campionat d'Europa (Ancona)</p>
+                            </li>
+                            <li>
+                            <p>La JA Sabadell campiona estatal Màster de relleus (Antequera)</p>
+                            </li>
+                            <li>
+                            <p>Mis anécdotas y curiosidades deportivas</p>
+                            </li>
+                            <li>
+                            <p>Tot recordant: Josep Busoms</p>
+                            </li>
+                            <li>
+                            <p>Triple títol estatal per la JA Sabadell Màster (Elx)</p>
+                            </li>
+                            <li>
+                            <p>Interviu a Kurt Kaschke</p>
+                            </li>
+                            <li>
+                            <p>Bona collita de medalles pels Màsters de la JA Sabadell</p>
+                            </li>
+                        </ul>
+                        <p>&amp;nbsp;Data de Publicació: Novembre 2016</p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34819/PORTADA%20BULLETI%20N%C2%BA9.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip142467" data-pagespeed-url-hash="3681787660" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 8</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>Fets i gestes de l'esport Sabadellenc (1ª part)<br/></p>
+                            </li>
+                        </ul>
+                        <p>&amp;nbsp;Data de Publicació: Gener 2016</p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34817/PORTADA%20BULLETI%20N%C2%BA8.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip71813" data-pagespeed-url-hash="1724502197" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32 oe_custom_bg" style="background-color: rgb(206, 231, 247);">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 7</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>5è aniversari de la Pista Coberta de Catalunya</p>
+                            </li>
+                            <li>
+                            <p>Recordant Munich '72 (final olímpica dels 10000)</p>
+                            </li>
+                            <li>
+                            <p>Josep Mª Antentas: l'home marató de la JA Sabadell</p>
+                            </li>
+                            <li>
+                            <p>Campionat del Món Màster a l'aire lliure (Lyon)</p>
+                            </li>
+                            <li>
+                            <p>Trobada d'ex-atletes i ex-directius de la JA Sabadell</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Novembre 2015<br/></p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34815/PORTADA%20BULLETI%20N%C2%BA7.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip987865" data-pagespeed-url-hash="4062184030" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 6</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>Fets i gestes de l'esport Sabadellenc</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Gener 2015<br/></p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34813/PORTADA%20BULLETI%20N%C2%BA6.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip549467" data-pagespeed-url-hash="2104898567" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32 oe_custom_bg" style="background-color: rgb(206, 231, 247);">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 5</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>L'entrevista a Alexis Rodríguez</p>
+                            </li>
+                            <li>
+                            <p>Llorenç Esteve al Campionat del Món Sub-20</p>
+                            </li>
+                            <li>
+                            <p>Campionat d'Europa Màster (Izmir - Turquia)</p>
+                            </li>
+                            <li>
+                            <p>Rànquing de les ciutats on s'ha corregut més ràpid</p>
+                            </li>
+                            <li>
+                            <p>Informe de la Pista Coberta de Catalunya</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Novembre 2014<br/></p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34811/PORTADA%20BULLETI%20N%C2%BA5.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip296567" data-pagespeed-url-hash="147613104" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2>Butlletí Digital - Nº 4</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>50è Campionat d'Espanya en Pista Coberta</p>
+                            </li>
+                            <li>
+                            <p>Campionat del Món Màster en Pista Coberta (Budapest '14)</p>
+                            </li>
+                            <li>
+                            <p>Rodant pel Món</p>
+                            </li>
+                            <li>
+                            <p>XXVII Assemblea A.E.E.A</p>
+                            </li>
+                            <li>
+                            <p>Campions d'Espanya Universitaris</p>
+                            </li>
+                            <li>
+                            <p>Equips Màster</p>
+                            </li>
+                            <li>
+                            <p>Doblets i Triplets</p>
+                            </li>
+                            <li>
+                            <p>Atletes de la JA Sabadell amb més temporades al club&amp;nbsp;</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Juliol 2014</p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34809/PORTADA%20BULLETI%20N%C2%BA4.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip859577" data-pagespeed-url-hash="2818501102" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32 oe_custom_bg" style="background-color: rgb(206, 231, 247);">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2>Butlletí Digital - Nº 3</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>L'entrevista a Sergio Ruiz</p>
+                            </li>
+                            <li>
+                            <p>Natàlia Amiel "In Memoriam"</p>
+                            </li>
+                            <li>
+                            <p>Festa de l'esport Sabadellenc</p>
+                            </li>
+                            <li>
+                            <p>Festival Olímpic de la Joventut</p>
+                            </li>
+                            <li>
+                            <p>Ricard Rof - Màster 1000</p>
+                            </li>
+                            <li>
+                            <p>Entrevista a Gerard Badia</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Novembre 2013</p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                        <img src="/web/image/34807/PORTADA%20BULLETI%20N%C2%BA3.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip232692" data-pagespeed-url-hash="861215639" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(33, 37, 41);">Butlletí Digital - Nº 2</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>L'entrevista a Llorenç Esteve</p>
+                            </li>
+                            <li>
+                            <p>Fa 50 anys - Encontre Espanya vs Itàlia "B" a Sabadell</p>
+                            </li>
+                            <li>
+                            <p>18è Campionat d'Europa Màster Aire Lliure a Zittau</p>
+                            </li>
+                            <li>
+                            <p>A peu de pista - Els Jutges</p>
+                            </li>
+                            <li>
+                            <p>Reconeixement a l'atletisme català Màster</p>
+                            </li>
+                            <li>
+                            <p>Festa Social de la JA Sabadell</p>
+                            </li>
+                        </ul>
+                        <p>&amp;nbsp;Data de Publicació: Març 2013</p>
+                        <p>&amp;nbsp;</p>
+                        </div>
+                        <div class="pb0 pt0 col-lg-3">
+                        <img src="/web/image/34805/PORTADA%20BULLETI%20N%C2%BA2.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip388477" data-pagespeed-url-hash="3198897472" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="s_text_image pt32 pb32 oe_custom_bg" style="background-color: rgb(206, 231, 247);">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2>Butlletí Digital - Nº 1</h2>
+                        <p>En aquest butlletí trobareu els següents articles:</p>
+                        <ul>
+                            <li>
+                            <p>L'entrevista a Xavier Carrión</p>
+                            </li>
+                            <li>
+                            <p>L'època daurada de la JA Sabadell</p>
+                            </li>
+                            <li>
+                            <p>Campionat del Món Màster (Jyvaskyla, FIN)</p>
+                            </li>
+                            <li>
+                            <p>Memòries olímpiques</p>
+                            </li>
+                            <li>
+                            <p>Campionat d'Espanya de Clubs Cadet a l'Aire Lliure</p>
+                            </li>
+                            <li>
+                            <p>Rècords Absoluts de la Pista Coberta de Sabadell</p>
+                            </li>
+                            <li>
+                            <p>Sergei Bubka a Sabadell 1992</p>
+                            </li>
+                            <li>
+                            <p>La JA Sabadell al rànquing espanyol per clubs</p>
+                            </li>
+                        </ul>
+                        <p>Data de Publicació: Agost 2012</p>
+                        </div>
+                        <div class="pb0 pt0 col-lg-3">
+                        <img src="/web/image/34803/PORTADA%20BULLETI%20N%C2%BA1.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-pagespeed-url-hash="3702836058" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" data-original-title="" title="" aria-describedby="tooltip821035"/>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                </div>
+            </t>
+        </template>
+
+    </data>
+</odoo>
