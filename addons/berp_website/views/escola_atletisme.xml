@@ -4,46 +4,46 @@
         <template id="berp_20200524_1414_website" name="escola_atletisme">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
-                    <section class="s_cover parallax bg-black-50 pt256 pb256" data-scroll-background-ratio="0" style="background-image: none;">
+                    <section class="s_cover parallax pt256 pb256" data-scroll-background-ratio="0" style="background-image: none;">
                         <span class="s_parallax_bg oe_img_bg oe_custom_bg o_bg_img_opt_custom" style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/escola19_20.jpeg);background-size:auto;background-position:70% 78%"/>
                     </section>
                     <section class="pt32 pb0">
                         <div class="container">
-                        <div class="row s_nb_column_fixed">
-                            <div class="col-lg-12 s_title pb0 pt0" style="text-align: center;">
-                            <h1 class="s_title_default">
-                                <font style="font-size: 62px;">Escola d'Atletisme</font>
-                                <hr/>
-                            </h1>
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12 s_title pb0 pt0" style="text-align: center;">
+                                    <h1 class="s_title_default">
+                                        <font style="font-size: 62px;">Escola d'Atletisme</font>
+                                        <hr/>
+                                    </h1>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </section>
-                    <section class="s_text_block pb32 pt0">
+                    <section class="s_text_block pb4 pt0">
                         <div class="container">
-                        <div class="row">
-                            <div class="pt32 pb32 col-lg-12">
-                            <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">L'Escola d'Atletisme de la JA Sabadell té com a objectiu principal proporcionar els valors de l'esforç, l'amistat i el companyerisme mitjançant el nostre esport.</p>
-                            <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">Actualment tenim més de 250 atletes a la nostre escola, des de la categoria sub-8 fins la categoria sub-16.</p>
-                            <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">L'activitat esportiva d'entrenaments es realitzarà a les Pistes Municipals "Josep Molins" de Sabadell durant els mesos de Setembre - Novembre i Març - Juny i durant els mesos de Desembre - Febrer s'entrenarà a la Pista Coberta. </p>
-                            <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">
-                                <i>Enguany, degut al Covid-19 la pista coberta està inhabilitada i no la podrem fer servir.</i>
-                            </p>
-                            <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;"> A continuació trobareu tota la informació sobre la nostra escola: grups d'entrenament, entrenadors, quotes...&amp;nbsp;</p>
+                            <div class="row">
+                                <div class="pt32 pb32 col-lg-12">
+                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">L'Escola d'Atletisme de la JA Sabadell té com a objectiu principal proporcionar els valors de l'esforç, l'amistat i el companyerisme mitjançant el nostre esport.</p>
+                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">Actualment tenim més de 250 atletes a la nostre escola, des de la categoria sub-8 fins la categoria sub-16.</p>
+                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">L'activitat esportiva d'entrenaments es realitzarà a les Pistes Municipals "Josep Molins" de Sabadell durant els mesos de Setembre - Novembre i Març - Juny i durant els mesos de Desembre - Febrer s'entrenarà a la Pista Coberta. </p>
+                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">
+                                        <i>Enguany, degut al Covid-19 la pista coberta està inhabilitada i no la podrem fer servir.</i>
+                                    </p>
+                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;"> A continuació trobareu tota la informació sobre la nostra escola: grups d'entrenament, entrenadors, quotes...&amp;nbsp;</p>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </section>
-                    <section class="oe_custom_bg pb0 pt4" style="">
+                    <section class="oe_custom_bg pb0 pt32" style="">
                         <div class="container">
-                        <div class="row s_nb_column_fixed">
-                            <div class="col-lg-12" >
-                            <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
-                                <font style="font-size: 35px;">Grups d'entrenament</font>
-                                <hr/>
-                            </h1>
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12" >
+                                    <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
+                                        <font style="font-size: 35px;">Grups d'entrenament</font>
+                                        <hr/>
+                                    </h1>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </section>
                     <section class="s_text_image pt32 pb32" style="background-color: rgb(107, 173, 222);">
@@ -65,71 +65,82 @@
                     </section>
                     <section class="s_text_image pt32 pb32">
                         <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 pt16 pb16">
-                                <h2 style="text-align: left; color: rgb(33, 37, 41); font-size: 30px; ">Sub 10</h2>
-                                <p style="color: rgb(33, 37, 41); font-size: 15px;">A la categoria Sub-10 pertanyen els atletes nascuts l'any 2012 i 2013. Per aquesta categoria tenim dos grups d'entrenament.</p>
-                                <p style="color: rgb(33, 37, 41); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
-                                <p style="color: rgb(33, 37, 41); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 pt16 pb16">
+                                    <h2 style="text-align: left; color: rgb(33, 37, 41); font-size: 30px; ">Sub 10</h2>
+                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">A la categoria Sub-10 pertanyen els atletes nascuts l'any 2012 i 2013. Per aquesta categoria tenim dos grups d'entrenament.</p>
+                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
+                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
+                                </div>
+                                <div class="pt0 pb0 col-lg-4">
+                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub10.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip802578"/>
+                                </div>
                             </div>
-                            <div class="pt0 pb0 col-lg-4">
-                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub10.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip802578"/>
-                            </div>
-                        </div>
                         </div>
                     </section>
                     <section class="s_text_image pt32 pb32" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
-                        <div class="row align-items-stretch">
-                            <div class="col-lg-6 pt16 pb16">
-                                <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 12</h2>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-12 pertanyen els atletes nascuts l'any 2010 i 2011. Per aquesta categoria tenim dos grups d'entrenament.</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">&amp;nbsp;</p>
+                            <div class="row align-items-stretch">
+                                <div class="col-lg-6 pt16 pb16">
+                                    <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 12</h2>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-12 pertanyen els atletes nascuts l'any 2010 i 2011. Per aquesta categoria tenim dos grups d'entrenament.</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">&amp;nbsp;</p>
+                                </div>
+                                <div class="pt0 pb0 col-lg-4">
+                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub12.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip312020" data-pagespeed-url-hash="46108210" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                                </div>
                             </div>
-                            <div class="pt0 pb0 col-lg-4">
-                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub12.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip312020" data-pagespeed-url-hash="46108210" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
-                            </div>
-                        </div>
                         </div>
                     </section>
                     <section class="s_text_image pt32 pb32">
                         <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 pt16 pb16">
-                                <h2 style="text-align: left; color: rgb(33, 37, 41); font-size: 30px; ">Sub 14</h2>
-                                <p style="color: rgb(33, 37, 41); font-size: 15px;">A la categoria Sub-14 pertanyen els atletes nascuts l'any 2008 i 2009. Per aquesta categoria tenim dos grups d'entrenament.</p>
-                                <p style="color: rgb(33, 37, 41); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
-                                <p style="color: rgb(33, 37, 41); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
-                                <p style="color: rgb(33, 37, 41); font-size: 15px;">
-                                    <span style="text-align: left;">En especials ocasions, degudament informat pels seus entrenadors/es, hi haurà entrenament els divendres de 18:00 a 19:30</span>
-                                </p>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 pt16 pb16">
+                                    <h2 style="text-align: left; color: rgb(33, 37, 41); font-size: 30px; ">Sub 14</h2>
+                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">A la categoria Sub-14 pertanyen els atletes nascuts l'any 2008 i 2009. Per aquesta categoria tenim dos grups d'entrenament.</p>
+                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
+                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
+                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">
+                                        <span style="text-align: left;">En especials ocasions, degudament informat pels seus entrenadors/es, hi haurà entrenament els divendres de 18:00 a 19:30</span>
+                                    </p>
+                                </div>
+                                <div class="pb0 pt0 col-lg-4">
+                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub14.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip908016"/>
+                                </div>
                             </div>
-                            <div class="pb0 pt0 col-lg-4">
-                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub14.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip908016"/>
-                            </div>
-                        </div>
                         </div>
                     </section>
                     <section class="s_text_image pt32 pb32" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
-                        <div class="row align-items-stretch">
-                            <div class="col-lg-6 pt16 pb16">
-                                <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 16</h2>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-16 pertanyen els atletes nascuts l'any 2006 i 2007. Per aquesta categoria tenim dos grups d'entrenament.</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns, Dimecres i Divendres de 18:30 a 20:30</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts, Dijous i Divendres de 18:30 a 20:30</p>
+                            <div class="row align-items-stretch">
+                                <div class="col-lg-6 pt16 pb16">
+                                    <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 16</h2>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-16 pertanyen els atletes nascuts l'any 2006 i 2007. Per aquesta categoria tenim dos grups d'entrenament.</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns, Dimecres i Divendres de 18:30 a 20:30</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts, Dijous i Divendres de 18:30 a 20:30</p>
+                                </div>
+                                <div class="pt0 pb0 col-lg-4">
+                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub16.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip470834" data-pagespeed-url-hash="1671273745" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                                </div>
                             </div>
-                            <div class="pt0 pb0 col-lg-4">
-                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub16.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip470834" data-pagespeed-url-hash="1671273745" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                        </div>
+                    </section>
+                    <section class="oe_custom_bg pb50 pt64" >
+                        <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-12" >
+                            <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
+                                <font style="font-size: 35px;">Entrenadors/es de l'Escola d'Atletisme de la JA SABADELL</font>
+                                <hr/>
+                            </h1>
                             </div>
                         </div>
                         </div>
                     </section>
-                    <section class="s_company_team pt48">
+                    <section class="s_company_team pb32 pt0">
                         <div class="container">
-                        <h1 style="text-align: center;">Entrenadors/es de l'Escola d'Atletisme de la JA SABADELL</h1>
                         <div class="row s_nb_column_fixed">
                             <div class="col-lg-6 pt16 pb16">
                             <div class="row s_col_no_resize s_col_no_bgcolor">
@@ -244,94 +255,104 @@
                         </div>
                         </div>
                     </section>
-                    <section class="s_text_block pt32 pb0" style="background-color: rgb(107, 173, 222);">
+                    <section class="oe_custom_bg pb4 pt32" style="">
+                        <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-12" >
+                            <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
+                                <font style="font-size: 35px;">Inscripcions temporada 2020 - 2021</font>
+                                <hr/>
+                            </h1>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                    <section class="s_text_block pt32 pb4" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
                             <div class="row">
-                                <div class="pb32 col-lg-12 pt0">
-                                <p class="lead">
-                                    <font style="font-size: 24px;">
-                                    <u>
-                                        <b>Inscripcions temporada 2020 - 2021</b>
-                                    </u>
-                                    </font>
-                                </p>
-                                <p class="lead">La inscripció a l'Escola d'Atletisme de la JA Sabadell es farà via telemàtica, segons s'indicarà en aquest apartat.</p>
-                                <h4 class="lead">
-                                    <font style="font-size: 18px;">
-                                    <b>
-                                        <u>Preus</u>
-                                    </b>
-                                    </font>
-                                </h4>
-                                <table class="table table-bordered">
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                        <b>Sub - 8 (2014 - 2015)</b>
-                                        </td>
-                                        <td>Total: 280€ (Setembre '20)<br/>Fraccionat: 175€&amp;nbsp;(Setembre '20)&amp;nbsp;+ 115€ (Febrer '21)<br/></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                        <b>Sub - 10 (2012 - 2013)</b>
-                                        </td>
-                                        <td>Total: 300€ (Setembre '20)<br/>Fraccionat: 185€&amp;nbsp;(Setembre '20)&amp;nbsp;+ 125€ (Febrer '21)<br/></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                        <b>Sub - 12 (2010 - 2011)</b>
-                                        </td>
-                                        <td>Total: 300€ (Setembre '20)<br/>Fraccionat: 185€&amp;nbsp;(Setembre '20)&amp;nbsp;+ 125€ (Febrer '21)<br/></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                        <b>Sub - 14 (2008 - 2009)</b>
-                                        </td>
-                                        <td>Total: 320€ (Setembre '20)&amp;nbsp;<br/>Fraccionat: 195€&amp;nbsp;(Setembre '20)&amp;nbsp;+ 135€&amp;nbsp;(Febrer '21)&amp;nbsp;<br/></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                        <b>Sub - 16 (2006 - 2007)</b>
-                                        </td>
-                                        <td>Total: 340€ (Setembre '20)<br/>Fraccionat: 205€&amp;nbsp;(Setembre '20)&amp;nbsp;+ 145€ (Febrer '21)<br/></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <p class="lead">
-                                    <i>&amp;nbsp;<b>Descomptes</b>:&amp;nbsp;S'aplicarà un 10% de descompte a la quota a families nombroses.</i>
-                                </p>
-                                <p class="lead">
-                                    <br/>
-                                </p>
-                                <p class="lead">
-                                    <u>REVISIONS MÈDIQUES</u>
-                                </p>
-                                <p class="lead">Tot atleta de l'escola d'atletisme de la JA Sabadell realitzarà una prova d'esforç amb electrocardiograma gracies als nostres amics d'ARS SALUT.</p>
-                                <p class="lead">Durant la revisió, l'atleta ha de ser acompanyat per un tutor legal major d'edat (pare, mare, avis..).</p>
-                                <p class="lead">
-                                    <br/>
-                                </p>
-                                <p class="lead">Qualsevol dubte ens ho podeu fer arribar al correu electrònic de l'escola d'atletisme -- <b><u>escola.atletisme.jas@gmail.com</u></b></p>
-                                <p class="lead">
-                                    <b>
-                                    <u>
+                                <div class="pb0 col-lg-12 pt0">
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">La inscripció a l'Escola d'Atletisme de la JA Sabadell es farà via telemàtica, segons s'indicarà en aquest apartat.</p>
+                                    <h4 class="lead"  style="color: rgb(255, 255, 255);">
+                                        <font style="font-size: 18px;">
+                                        <b>
+                                            <u>Preus</u>
+                                        </b>
+                                        </font>
+                                    </h4>
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                            <b  style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 8 (2014 - 2015)</b>
+                                            </td>
+                                            <td  style="color: rgb(255, 255, 255); font-size: 15px;">Total: 280€ (Setembre '20)<br/>Fraccionat: 175€&amp;nbsp;(Setembre '20)&amp;nbsp;+ 115€ (Febrer '21)<br/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <b  style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 10 (2012 - 2013)</b>
+                                            </td>
+                                            <td  style="color: rgb(255, 255, 255); font-size: 15px;">Total: 300€ (Setembre '20)<br/>Fraccionat: 185€&amp;nbsp;(Setembre '20)&amp;nbsp;+ 125€ (Febrer '21)<br/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 12 (2010 - 2011)</b>
+                                            </td>
+                                            <td style="color: rgb(255, 255, 255); font-size: 15px;">Total: 300€ (Setembre '20)<br/>Fraccionat: 185€&amp;nbsp;(Setembre '20)&amp;nbsp;+ 125€ (Febrer '21)<br/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 14 (2008 - 2009)</b>
+                                            </td>
+                                            <td style="color: rgb(255, 255, 255); font-size: 15px;">Total: 320€ (Setembre '20)&amp;nbsp;<br/>Fraccionat: 195€&amp;nbsp;(Setembre '20)&amp;nbsp;+ 135€&amp;nbsp;(Febrer '21)&amp;nbsp;<br/></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 16 (2006 - 2007)</b>
+                                            </td>
+                                            <td style="color: rgb(255, 255, 255); font-size: 15px;">Total: 340€ (Setembre '20)<br/>Fraccionat: 205€&amp;nbsp;(Setembre '20)&amp;nbsp;+ 145€ (Febrer '21)<br/></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <p class="lead" style="color: rgb(255, 255, 255); font-size: 15px;">
+                                        <i>&amp;nbsp;<b>Descomptes</b>:&amp;nbsp;S'aplicarà un 10% de descompte a la quota a families nombroses.</i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_block pt4 pb32">
+                        <div class="container">
+                            <div class="row">
+                                <div class="pb32 col-lg-12 pt24">
+                                    <p class="lead">
+                                        <u>REVISIONS MÈDIQUES</u>
+                                    </p>
+                                    <p class="lead">Tot atleta de l'escola d'atletisme de la JA Sabadell realitzarà una prova d'esforç amb electrocardiograma gracies als nostres amics d'ARS SALUT.</p>
+                                    <p class="lead">Durant la revisió, l'atleta ha de ser acompanyat per un tutor legal major d'edat (pare, mare, avis..).</p>
+                                    <p class="lead">
                                         <br/>
-                                    </u>
-                                    </b>
-                                </p>
-                                <p class="lead">
-                                    <b>
-                                    <u>EQUIPACIONS</u>
-                                    </b>
-                                </p>
-                                <p class="lead">És <b>obligatori</b> disposar de <u>samarreta/top de competició, pantaló/malla de competició i samarreta d'escalfament</u></p>
-                                <p class="lead">A la pestanya de "<b>Botiga</b>" trobareu tots els articles d'equipament que disposem a la JA Sabadell.</p>
-                                <p class="lead">
-                                    <br/>
-                                </p>
-                                <p class="lead">
-                                    <br/>
-                                </p>
+                                    </p>
+                                    <p class="lead">Qualsevol dubte ens ho podeu fer arribar al correu electrònic de l'escola d'atletisme -- <b><u>escola.atletisme.jas@gmail.com</u></b></p>
+                                    <p class="lead">
+                                        <b>
+                                        <u>
+                                            <br/>
+                                        </u>
+                                        </b>
+                                    </p>
+                                    <p class="lead">
+                                        <b>
+                                        <u>EQUIPACIONS</u>
+                                        </b>
+                                    </p>
+                                    <p class="lead">És <b>obligatori</b> disposar de <u>samarreta/top de competició, pantaló/malla de competició i samarreta d'escalfament</u></p>
+                                    <p class="lead">A la pestanya de "<b>Botiga</b>" trobareu tots els articles d'equipament que disposem a la JA Sabadell.</p>
+                                    <p class="lead">
+                                        <br/>
+                                    </p>
+                                    <p class="lead">
+                                        <br/>
+                                    </p>
                                 </div>
                             </div>
                         </div>
