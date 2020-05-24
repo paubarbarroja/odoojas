@@ -10,6 +10,7 @@
     'data': [
         'views/template.xml',
         'views/formulari_soci.xml',
+        'views/escola_atletisme.xml',
         'crm_lead/crm_lead.xml',
         'crm_lead/menus.xml'
     ],

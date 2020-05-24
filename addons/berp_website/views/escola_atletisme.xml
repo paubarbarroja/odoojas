@@ -5,7 +5,7 @@
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
                     <section class="s_cover parallax bg-black-50 pt256 pb256" data-scroll-background-ratio="0" style="background-image: none;">
-                        <span class="s_parallax_bg oe_img_bg oe_custom_bg o_bg_img_opt_custom" style="background-image:url(/web/image/34800/WhatsApp%20Image%202019-12-14%20at%2016.59.51%20\(1\).jpeg);background-size:auto;background-position:70% 78%"/>
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg o_bg_img_opt_custom" style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/escola19_20.jpeg);background-size:auto;background-position:70% 78%"/>
                     </section>
                     <section class="pt32 pb0">
                         <div class="container">
@@ -13,6 +13,7 @@
                             <div class="col-lg-12 s_title pb0 pt0" style="text-align: center;">
                             <h1 class="s_title_default">
                                 <font style="font-size: 62px;">Escola d'Atletisme</font>
+                                <hr/>
                             </h1>
                             </div>
                         </div>
@@ -36,27 +37,59 @@
                     <section class="oe_custom_bg pb0 pt4" style="">
                         <div class="container">
                         <div class="row s_nb_column_fixed">
-                            <div class="col-lg-12 s_title pt16 pb16 rounded" style="text-align: center;">
-                            <h1 class="s_title_default">
-                                <font style="font-size: 48px;">Grups d'entrenament</font>
+                            <div class="col-lg-12" >
+                            <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
+                                <font style="font-size: 35px;">Grups d'entrenament</font>
+                                <hr/>
                             </h1>
                             </div>
                         </div>
                         </div>
                     </section>
+                    <section class="s_text_image pt32 pb32" style="background-color: rgb(107, 173, 222);">
+                        <div class="container">
+                            <div class="row align-items-stretch">
+                                <div class="col-lg-6 pt16 pb16">
+                                    <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 8</h2>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-8 pertanyen els atletes nascuts l'any 2014 i 2015. Per aquesta categoria tenim un grup d'entrenament.</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
+                                    <p>
+                                        <br/>
+                                    </p>
+                                </div>
+                                <div class="pt0 pb0 col-lg-4">
+                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub8.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip475659" data-pagespeed-url-hash="2490261932" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <section class="s_text_image pt32 pb32">
+                        <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 pt16 pb16">
+                                <h2 style="text-align: left; color: rgb(33, 37, 41); font-size: 30px; ">Sub 10</h2>
+                                <p style="color: rgb(33, 37, 41); font-size: 15px;">A la categoria Sub-10 pertanyen els atletes nascuts l'any 2012 i 2013. Per aquesta categoria tenim dos grups d'entrenament.</p>
+                                <p style="color: rgb(33, 37, 41); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
+                                <p style="color: rgb(33, 37, 41); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
+                            </div>
+                            <div class="pt0 pb0 col-lg-4">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub10.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip802578"/>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                    <section class="s_text_image pt32 pb32" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
                         <div class="row align-items-stretch">
                             <div class="col-lg-6 pt16 pb16">
-                            <h2>Sub 8</h2>
-                            <p>A la categoria Sub-8 pertanyen els atletes nascuts l'any 2014 i 2015. Per aquesta categoria tenim un grup d'entrenament.</p>
-                            <p>Dimarts i Dijous de 18:00 a 19:30</p>
-                            <p>
-                                <br/>
-                            </p>
+                                <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 12</h2>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-12 pertanyen els atletes nascuts l'any 2010 i 2011. Per aquesta categoria tenim dos grups d'entrenament.</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">&amp;nbsp;</p>
                             </div>
                             <div class="pt0 pb0 col-lg-4">
-                            <img src="/web/image/34790/WhatsApp%20Image%202019-12-14%20at%2016.59.52.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip475659" data-pagespeed-url-hash="2490261932" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub12.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip312020" data-pagespeed-url-hash="46108210" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
                             </div>
                         </div>
                         </div>
@@ -65,62 +98,31 @@
                         <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6 pt16 pb16">
-                            <h2 style="color: rgb(33, 37, 41);">Sub 10</h2>
-                            <p>A la categoria Sub-10 pertanyen els atletes nascuts l'any 2012 i 2013. Per aquesta categoria tenim dos grups d'entrenament.</p>
-                            <p style="text-align: justify;">Dilluns i Dimecres de 18:00 a 19:30</p>
-                            <p style="text-align: justify;">Dimarts i Dijous de 18:00 a 19:30</p>
-                            </div>
-                            <div class="pt0 pb0 col-lg-4">
-                            <img src="/web/image/34833/WhatsApp%20Image%202019-12-14%20at%2016.59.50%20(1).jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip802578"/>
-                            </div>
-                        </div>
-                        </div>
-                    </section>
-                    <section class="s_text_image pt32 pb32">
-                        <div class="container">
-                        <div class="row align-items-stretch">
-                            <div class="col-lg-6 pt16 pb16">
-                            <h2>Sub 12</h2>
-                            <p>A la categoria Sub-12 pertanyen els atletes nascuts l'any 2010 i 2011. Per aquesta categoria tenim dos grups d'entrenament.</p>
-                            <p style="text-align: justify;">Dilluns i Dimecres de 18:00 a 19:30</p>
-                            <p style="text-align: justify;">Dimarts i Dijous de 18:00 a 19:30</p>
-                            <p>&amp;nbsp;</p>
-                            </div>
-                            <div class="pt0 pb0 col-lg-4">
-                            <img src="/web/image/34794/WhatsApp%20Image%202019-12-14%20at%2016.59.50.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip312020" data-pagespeed-url-hash="46108210" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
-                            </div>
-                        </div>
-                        </div>
-                    </section>
-                    <section class="s_text_image pt32 pb32">
-                        <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 pt16 pb16">
-                            <h2 style="color: rgb(33, 37, 41);">Sub 14</h2>
-                            <p>A la categoria Sub-14 pertanyen els atletes nascuts l'any 2008 i 2009. Per aquesta categoria tenim dos grups d'entrenament.</p>
-                            <p>Dilluns i Dimecres de 18:00 a 19:30</p>
-                            <p>Dimarts i Dijous de 18:00 a 19:30</p>
-                            <p style="text-align: justify;">
-                                <span style="text-align: left;">En especials ocasions, degudament informat pels seus entrenadors/es, hi haurà entrenament els divendres de 18:00 a 19:30</span>
-                            </p>
+                                <h2 style="text-align: left; color: rgb(33, 37, 41); font-size: 30px; ">Sub 14</h2>
+                                <p style="color: rgb(33, 37, 41); font-size: 15px;">A la categoria Sub-14 pertanyen els atletes nascuts l'any 2008 i 2009. Per aquesta categoria tenim dos grups d'entrenament.</p>
+                                <p style="color: rgb(33, 37, 41); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
+                                <p style="color: rgb(33, 37, 41); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
+                                <p style="color: rgb(33, 37, 41); font-size: 15px;">
+                                    <span style="text-align: left;">En especials ocasions, degudament informat pels seus entrenadors/es, hi haurà entrenament els divendres de 18:00 a 19:30</span>
+                                </p>
                             </div>
                             <div class="pb0 pt0 col-lg-4">
-                            <img src="/web/image/34835/WhatsApp%20Image%202019-12-14%20at%2016.59.51%20(2).jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip908016"/>
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub14.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip908016"/>
                             </div>
                         </div>
                         </div>
                     </section>
-                    <section class="s_text_image pt32 pb32">
+                    <section class="s_text_image pt32 pb32" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
                         <div class="row align-items-stretch">
                             <div class="col-lg-6 pt16 pb16">
-                            <h2>Sub 16</h2>
-                            <p>A la categoria Sub-16 pertanyen els atletes nascuts l'any 2006 i 2007. Per aquesta categoria tenim dos grups d'entrenament.</p>
-                            <p>Dilluns, Dimecres i Divendres de 18:30 a 20:30</p>
-                            <p>Dimarts, Dijous i Divendres de 18:30 a 20:30</p>
+                                <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 16</h2>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-16 pertanyen els atletes nascuts l'any 2006 i 2007. Per aquesta categoria tenim dos grups d'entrenament.</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns, Dimecres i Divendres de 18:30 a 20:30</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts, Dijous i Divendres de 18:30 a 20:30</p>
                             </div>
                             <div class="pt0 pb0 col-lg-4">
-                            <img src="/web/image/34798/WhatsApp%20Image%202019-12-14%20at%2016.59.51.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip470834" data-pagespeed-url-hash="1671273745" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub16.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip470834" data-pagespeed-url-hash="1671273745" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
                             </div>
                         </div>
                         </div>
@@ -242,7 +244,7 @@
                         </div>
                         </div>
                     </section>
-                    <section class="s_text_block pt32 pb0">
+                    <section class="s_text_block pt32 pb0" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
                             <div class="row">
                                 <div class="pb32 col-lg-12 pt0">
