@@ -1,92 +1,126 @@
 <odoo>
     <data>
 
-        <template id="berp_20191103_1522_website" name="form_add_socio">
+       <template id="berp_20191103_1522_website" name="form_add_socio">
             <t t-call="website.layout">
                 <div id="wrap">
                     <div class="oe_structure">
-                        <section class="s_text_block pt32 pb32">
+                        <section class="container readable o_website_form_builder pt32 pb32">
                             <div class="container">
                                 <div class="row">
                                     <div class="pt0 col-lg-12 pb0">
                                         <h1 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES-TE SOCI !</h1>
                                         <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES ATLETISME AMB NOSALTRES<hr/></h2>
                                         <br/><br/>
-                                        <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
-                                            <h4 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">Dades Generals<hr/></h4>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="name">Nom Complet</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="name" t-att-value="request.params.get('name', '')" required=""/>
+                                        <form accept-charset="UTF-8" action="/website_form/" class="s_website_form container-fluid mt32" data-model_name="crm.lead" data-force_action="" data-success_page="/" enctype="multipart/form-data" method="post">
+                                            <div class="o_website_form_fields">
+                                                <div class="o_not_editable d-none o_default_snippet_text">
+                                                    This placeholder prevents its parent from
+                                                    disappearing when emptied
                                                 </div>
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="phone">Nº Telèfon/Mòvil</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="phone" required="" t-att-value="request.params.get('phone', '')"/>
+                                                <h4 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">Dades Generals<hr/></h4>
+                                                <div class="form-field form-field-char form-group o_required" data-model-field="true" data-optional="false">
+                                                    <label class="control-label" for="name"><span>Nom Complet</span></label>
+                                                    <input name="name" required="required" class="form-control o_website_form_input" type="text"/>
                                                 </div>
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="email_from">Correu Electronic</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="email_from" required="" t-att-value="request.params.get('email_from', '')"/>
+                                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                    <label class="control-label" for="phone">
+                                                        <span>Nº Telèfon/Mòvil</span>
+                                                    </label>
+                                                    <input name="phone" class="form-control o_website_form_input" type="text"/>
                                                 </div>
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="genre">Genere</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <select name="genre" t-att-value="request.params.get('genre', '')"  style="width: 100%;height: calc(2.0625rem + 2px);">
-                                                        <option value="1">Masculi</option>
-                                                        <option value="2">Femeni</option>
-                                                    </select>
+                                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                    <label class="control-label" for="email_from">
+                                                        <span>Correu Electronic</span>
+                                                    </label>
+                                                    <input name="email_from" class="form-control o_website_form_input" type="text"/>
+                                                    <p class="help-block">
+                                                        <br/>
+                                                    </p>
                                                 </div>
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="dni">DNI</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="dni" required="" t-att-value="request.params.get('dni', '')"/>
+                                                <div class="form-group form-field  form-field-selection-radio" data-model-field="false" data-optional="true">
+                                                    <label class="control-label" for="Campo Selección única personalizado">
+                                                        <span>Genere</span>
+                                                    </label>
+                                                    <div class="radio">
+                                                        <label class="control-label">
+                                                        <input name="Genere" type="radio" class="o_website_form_input" value="Masculí"/>
+                                                        <span>Masculí</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label class="control-label">
+                                                        <input name="Genere" type="radio" class="o_website_form_input" value="Femeni"/>
+                                                        <span>Femeni</span>
+                                                        </label>
+                                                    </div> 
                                                 </div>
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="birthday_date">Data Naixement</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="date" class="form-control o_website_form_input" name="birthday_date" required="" t-att-value="request.params.get('birthday_date', '')"/>
+                                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                    <label class="control-label" for="contact_name">
+                                                        <span>DNI</span>
+                                                    </label>
+                                                    <input name="contact_name" class="form-control o_website_form_input" type="text"/>
+                                                </div>
+                                                <div class="form-group form-field  form-field-date" data-model-field="true" data-optional="true">
+                                                    <label class="control-label" for="date_deadline">
+                                                        <span>Data Naixement</span>
+                                                    </label>
+                                                    <input name="date_deadline" class="form-control o_website_form_input o_website_form_date" type="text"/>
+                                                    <p class="help-block">
+                                                        <br/>
+                                                    </p>
+                                                </div>
+                                                <br/>
+                                                <h4 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">Direcció Postal<hr/></h4>
+                                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                    <label class="control-label" for="street">
+                                                        <span>Adreça</span>
+                                                    </label>
+                                                    <input name="street" class="form-control o_website_form_input" type="text"/>
+                                                </div>
+                                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                    <label class="control-label" for="zip">
+                                                        <span>Codi postal</span>
+                                                    </label>
+                                                    <input name="zip" class="form-control o_website_form_input" type="text"/>
+                                                </div>
+                                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                    <label class="control-label" for="city">
+                                                        <span>Població</span>
+                                                    </label>
+                                                    <input name="city" class="form-control o_website_form_input" type="text"/>
+                                                </div>
+                                                <br/>
+                                                <h4 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">Dades Bancaries<hr/></h4>
+                                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                    <label class="control-label" for="function">
+                                                        <span>Compte Bancari</span>
+                                                    </label>
+                                                    <input name="function" class="form-control o_website_form_input" type="text"/>
+                                                </div>
+                                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                    <label class="control-label" for="referred">
+                                                        <span>Banc</span>
+                                                    </label>
+                                                    <input name="referred" class="form-control o_website_form_input" type="text"/>
                                                 </div>
                                             </div>
-                                            <br/>
-                                            <h4 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">Direcció Postal<hr/></h4>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="direccion_postal">Adreça</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="direccion_postal" required="" t-att-value="request.params.get('direccion_postal', '')" placeholder="Cami Can Quadres 147"/>
-                                                </div>
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="codigo_postal">Codi Postal</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="codigo_postal" required="" t-att-value="request.params.get('codigo_postal', '')" placeholder="08203"/>
-                                                </div>
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="poblacion">Població</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="poblacion" required="" t-att-value="request.params.get('poblacion', '')" placeholder="Sabadell"/>
-                                                </div>
-                                            </div>
-                                            <br/>
-                                            <h4 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">Dades Bancaries<hr/></h4>
-                                            <div class="form-group row form-field o_website_form_required_custom">
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="compte_bancari">Compte Bancari</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="compte_bancari" required="" t-att-value="request.params.get('compte_bancari', '')" placeholder="ES00 0000 0000 0000 0000 0000"/>
-                                                </div>
-                                                <label class="col-lg-3 col-md-4 col-form-label" for="banc">Banc</label>
-                                                <div class="col-lg-7 col-md-8">
-                                                    <input type="text" class="form-control o_website_form_input" name="banc" required="" t-att-value="request.params.get('banc', '')" placeholder="CaixaBank"/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
-                                                     <a href="#" role="button" class="btn btn-primary btn-lg o_website_form_send">Enviar</a>
-                                                    <span id="o_website_form_result"/>
-                                                </div>
+                                            <div class="form-group">
+                                                <button type="button" class="btn btn-primary btn-lg o_website_form_send o_default_snippet_text">
+                                                    Enviar
+                                                </button>
+                                                <span id="o_website_form_result"/>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
                             </div>
-                            <br/><br/>
                         </section>
                     </div>
                 </div>
             </t>
         </template>
+
 
     </data>
 </odoo>
