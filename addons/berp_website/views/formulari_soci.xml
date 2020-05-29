@@ -104,6 +104,8 @@
                                                     </label>
                                                     <input name="referred" class="form-control o_website_form_input" type="text"/>
                                                 </div>
+                                                <br/>
+                                                <br/>
                                                 <div class="row form-group form-field o_website_form_custom o_fake_not_editable o_website_form_required_custom">
                                                     <div class="col-lg-3 col-md-4">
                                                     <label class="col-form-label o_fake_editable" for="Custom Casilla de verificación">
