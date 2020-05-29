@@ -16,6 +16,7 @@ services:
     volumes:
       - 'odoo_data:/bitnami'
       - './addons:/home/odoojas'
+      - './addons_externos:/home/addons_externos'
     depends_on:
       - postgresql
 volumes:
