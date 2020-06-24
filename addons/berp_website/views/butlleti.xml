@@ -66,7 +66,9 @@
                         <p  style="color: rgb(255, 255, 255); font-size: 15px;">Data de Publicació: Març 2020<br/></p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                            <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA15.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip200514"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+15.2020.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA15.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip200514"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -109,7 +111,9 @@
                         <p>Data de Publicació: Setembre 2019<br/></p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                            <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA14.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip631701"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+14.2019.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA14.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip631701"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -146,7 +150,9 @@
                         <p  style="color: rgb(255, 255, 255); font-size: 15px;">Data de Publicació: Febrer 2019<br/></p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA13.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip71968"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+13.2019.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA13.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip71968"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -186,7 +192,9 @@
                         <p>Data de Publicació: Desembre 2018<br/></p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA12.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip513154"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+12.2018.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA12.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip513154"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -229,7 +237,9 @@
                         <p  style="color: rgb(255, 255, 255); font-size: 15px;">Data de Publicació: Maig 2018<br/></p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA11.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip521074"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+11.2018.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA11.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip521074"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -269,7 +279,9 @@
                         <p>Data de Publicació: Desembre 2017<br/></p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA10.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip847911" data-pagespeed-url-hash="473413721" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+10.2017.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA10.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip847911" data-pagespeed-url-hash="473413721" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -309,7 +321,9 @@
                         <p  style="color: rgb(255, 255, 255); font-size: 15px;">&amp;nbsp;Data de Publicació: Novembre 2016</p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA9.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip142467" data-pagespeed-url-hash="3681787660" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+9.2016.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA9.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip142467" data-pagespeed-url-hash="3681787660" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -328,7 +342,9 @@
                         <p>&amp;nbsp;Data de Publicació: Gener 2016</p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA8.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip71813" data-pagespeed-url-hash="1724502197" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+8.2016.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA8.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip71813" data-pagespeed-url-hash="1724502197" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -359,7 +375,9 @@
                         <p  style="color: rgb(255, 255, 255); font-size: 15px;">Data de Publicació: Novembre 2015<br/></p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA7.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip987865" data-pagespeed-url-hash="4062184030" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+7.2015.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA7.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip987865" data-pagespeed-url-hash="4062184030" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -378,7 +396,9 @@
                         <p>Data de Publicació: Gener 2015<br/></p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA6.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip549467" data-pagespeed-url-hash="2104898567" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+6.2015.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA6.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip549467" data-pagespeed-url-hash="2104898567" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -409,7 +429,9 @@
                         <p  style="color: rgb(255, 255, 255); font-size: 15px;">Data de Publicació: Novembre 2014<br/></p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA5.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip296567" data-pagespeed-url-hash="147613104" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+5.2014.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA5.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip296567" data-pagespeed-url-hash="147613104" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -449,7 +471,9 @@
                         <p>Data de Publicació: Juliol 2014</p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA4.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip859577" data-pagespeed-url-hash="2818501102" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+4.2014.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA4.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip859577" data-pagespeed-url-hash="2818501102" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -483,7 +507,9 @@
                         <p  style="color: rgb(255, 255, 255); font-size: 15px;">Data de Publicació: Novembre 2013</p>
                         </div>
                         <div class="pt0 pb0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA3.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip232692" data-pagespeed-url-hash="861215639" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+3.2013.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA3.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip232692" data-pagespeed-url-hash="861215639" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -518,7 +544,9 @@
                         <p>&amp;nbsp;</p>
                         </div>
                         <div class="pb0 pt0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA2.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip388477" data-pagespeed-url-hash="3198897472" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+2.2013.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA2.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip388477" data-pagespeed-url-hash="3198897472" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            </a>
                         </div>
                     </div>
                     </div>
@@ -558,7 +586,9 @@
                         <p  style="color: rgb(255, 255, 255); font-size: 15px;">Data de Publicació: Agost 2012</p>
                         </div>
                         <div class="pb0 pt0 col-lg-3">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA1.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip470834" data-pagespeed-url-hash="1671273745" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+1.2012.pdf">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA1.PNG" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip470834" data-pagespeed-url-hash="1671273745" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                            </a>
                         </div>
                     </div>
                     </div>
