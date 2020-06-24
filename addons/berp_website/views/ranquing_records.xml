@@ -52,7 +52,7 @@
                             <div class="card-body tab-content">
                             <div class="tab-pane fade" id="nav_tabs_content_1590245549391_100" role="tabpanel" aria-labelledby="nav_tabs_link_1590245549391_100">
                                 <p>En el següent enllaç disposeu dels rànquings actuals de les proves de velocitat:</p>
-                                <ul>
+                                <ul style="columns: 2;">
                                     <li>
                                         <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/records+y+ranquings/100+m.ll.+D.pdf" target="_blank"><p><b>100 metres llisos Femení</b></p></a>
                                     </li>
