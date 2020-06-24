@@ -54,11 +54,14 @@
                     </div>
                     </div>
                 </section>
-                <section class="s_company_team oe_custom_bg" style="">
+                <section class="s_company_team oe_custom_bg" style="background-color: rgb(107, 173, 222);">
                     <div class="container">
+                    <br/>
                     <h1 style="text-align: center; ">
-                        <font style="font-size: 48px;">Entrenadors/es de la JA SABADELL</font>
+                        <font style="color: rgb(255, 255, 255); font-size: 48px;">Entrenadors/es de la JA SABADELL</font>
                     </h1>
+                    <br/>
+                    <br/>
                     <div class="row s_nb_column_fixed">
                         <div class="col-lg-6 pt16 pb16">
                         <div class="row s_col_no_resize s_col_no_bgcolor">
@@ -66,34 +69,16 @@
                             <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
                             </div>
                             <div class="col-lg-8">
-                            <h4>Josep Molins</h4>
-                            <p class="text-muted">President de la JAS, entrenador nacional i atleta olímpic a Roma 60.</p>
-                            <p class="text-muted">Entrenador del grup de Fons. </p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
+                            <h4  style="color: rgb(255, 255, 255);">Josep Molins</h4>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">President de la JAS, entrenador nacional i atleta olímpic a Roma 60.</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Fons. </p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                            <ul style="list-style-type: circle;">
                                 <li>
-                                <p class="text-muted">Dilluns a Divendres: 19:00 - 21:00</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns a Divendres: 19:00 - 21:00</p>
                                 </li>
                                 <li>
-                                <p class="text-muted">Dissabte i Diumenge: 11:00 - 13:00</p>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-lg-6 pt16 pb16">
-                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                            <div class="col-lg-4">
-                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                            </div>
-                            <div class="col-lg-8">
-                            <h4>Llorenç Esteve </h4>
-                            <p class="text-muted">Atleta internacional</p>
-                            <p class="text-muted">Entrenador del grup de Fons.</p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
-                                <li>
-                                <p class="text-muted">Dilluns ...</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Dissabte i Diumenge: 11:00 - 13:00</p>
                                 </li>
                             </ul>
                             </div>
@@ -105,13 +90,13 @@
                             <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
                             </div>
                             <div class="col-lg-8">
-                            <h4>Juanpe Martinez</h4>
-                            <p class="text-muted">Entrenador nacional&amp;nbsp;</p>
-                            <p class="text-muted">Entrenador del grup de Velocitat / tanques.</p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
+                            <h4 style="color: rgb(255, 255, 255);">Llorenç Esteve </h4>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Atleta internacional</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Fons.</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                            <ul style="list-style-type: circle;">
                                 <li>
-                                <p class="text-muted">Dilluns ...&amp;nbsp;</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                 </li>
                             </ul>
                             </div>
@@ -123,13 +108,13 @@
                             <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
                             </div>
                             <div class="col-lg-8">
-                            <h4>Raul Julian</h4>
-                            <p class="text-muted">Entrenador i atleta de la JA Sabadell</p>
-                            <p class="text-muted">Entrenador del grup de Salts.</p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
+                            <h4 style="color: rgb(255, 255, 255);">Juan Pedro Martinez</h4>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador nacional&amp;nbsp;</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Velocitat / tanques.</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                            <ul style="list-style-type: circle;">
                                 <li>
-                                <p class="text-muted">Dilluns a&amp;nbsp;</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                 </li>
                             </ul>
                             </div>
@@ -141,13 +126,13 @@
                             <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
                             </div>
                             <div class="col-lg-8">
-                            <h4>Estefania Llorente</h4>
-                            <p class="text-muted">Entrenadora nacional i atleta de la JA Sabadell</p>
-                            <p class="text-muted">Entrenador del grup de Llançaments.</p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
+                            <h4 style="color: rgb(255, 255, 255);">Estefania Llorente</h4>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenadora nacional i atleta de la JA Sabadell</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Llançaments.</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                            <ul style="list-style-type: circle;">
                                 <li>
-                                <p class="text-muted">Dilluns a&amp;nbsp;</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                 </li>
                             </ul>
                             </div>
@@ -159,13 +144,13 @@
                             <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
                             </div>
                             <div class="col-lg-8">
-                            <h4>Antonio Redondo</h4>
-                            <p class="text-muted">Entrenador i atleta de la JA Sabadell<br/></p>
-                            <p class="text-muted">Entrenador del grup de Velocitat / tanques.</p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
+                            <h4 style="color: rgb(255, 255, 255);">Manuel Martinez</h4>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador i exatleta</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Perxa.</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                            <ul style="list-style-type: circle;">
                                 <li>
-                                <p class="text-muted">&amp;nbsp;</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                 </li>
                             </ul>
                             </div>
@@ -177,13 +162,13 @@
                             <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
                             </div>
                             <div class="col-lg-8">
-                            <h4>Manuel Martinez</h4>
-                            <p class="text-muted">Entrenador i exatleta</p>
-                            <p class="text-muted">Entrenador del grup de Perxa.</p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
+                            <h4 style="color: rgb(255, 255, 255);">David Rua</h4>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrandor nacional</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Fons / Salts.</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                            <ul style="list-style-type: circle;">
                                 <li>
-                                <p class="text-muted">Dilluns a&amp;nbsp;</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                 </li>
                             </ul>
                             </div>
@@ -195,52 +180,15 @@
                             <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
                             </div>
                             <div class="col-lg-8">
-                            <h4>David Rua</h4>
-                            <p class="text-muted">Entrandor nacional</p>
-                            <p class="text-muted">Entrenador del grup de Fons / Salts.</p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
+                            <h4 style="color: rgb(255, 255, 255);">Jose Manuel Gomez</h4>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador i atleta internacional</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Marxa atlètica.</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                            <ul style="list-style-type: circle;">
                                 <li>
-                                <p class="text-muted">Dilluns a 0</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                 </li>
                             </ul>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-lg-6 pt16 pb0">
-                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                            <div class="col-lg-4">
-                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                            </div>
-                            <div class="col-lg-8">
-                            <h4>Eloi Santafe</h4>
-                            <p class="text-muted">Entrenador i atleta internacional</p>
-                            <p class="text-muted">Entrenador del grup de Combinades.</p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
-                                <li>
-                                <p class="text-muted">Dilluns a 0 - 21:00</p>
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="col-lg-6 pt16 pb16">
-                        <div class="row s_col_no_resize s_col_no_bgcolor">
-                            <div class="col-lg-4">
-                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                            </div>
-                            <div class="col-lg-8">
-                            <h4>Jose Manuel Gomez</h4>
-                            <p class="text-muted">Entrenador i atleta internacional</p>
-                            <p class="text-muted">Entrenador del grup de Marxa atlètica.</p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
-                                <li>
-                                <p class="text-muted">&amp;nbsp;</p>
-                                </li>
-                            </ul>
-                            <p class="text-muted">&amp;nbsp;</p>
                             </div>
                         </div>
                         </div>
@@ -250,19 +198,19 @@
                             <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
                             </div>
                             <div class="col-lg-8">
-                            <h4>Consol</h4>
-                            <p class="text-muted">Entrenadora nacional</p>
-                            <p class="text-muted">Entrenador del grup de Màsters</p>
-                            <p class="text-muted">Horari d'entrenament:&amp;nbsp;</p>
-                            <ul>
+                            <h4 style="color: rgb(255, 255, 255);">Consol Gay</h4>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenadora nacional</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Màsters</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                            <ul style="list-style-type: circle;">
                                 <li>
-                                <p class="text-muted">&amp;nbsp;</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                 </li>
                             </ul>
-                            <p class="text-muted">
+                            <p>
                                 <br/>
                             </p>
-                            <p class="text-muted">&amp;nbsp;</p>
+                            <p style="color: rgb(255, 255, 255); font-size: 15px;">&amp;nbsp;</p>
                             </div>
                         </div>
                         </div>
@@ -279,7 +227,7 @@
                             </span>
                         </p>
                         <p class="lead">És&amp;nbsp;<span style="font-weight: bolder;">obligatori</span>&amp;nbsp;disposar de&amp;nbsp;<u>samarreta/top de competició, pantaló/malla de competició i samarreta d'escalfament </u>per a les competicions.</p>
-                        <p class="lead">A la pestanya de "<span style="font-weight: bolder;">Botiga</span>" trobareu tots els articles d'equipament que disposem a la JA Sabadell.</p>
+                        <p class="lead">A la pestanya de "<a href="/shop" ><span style="font-weight: bolder;">Botiga</span></a>" trobareu tots els articles d'equipament que disposem a la JA Sabadell.</p>
                         <p>
                             <b>
                             <br/>

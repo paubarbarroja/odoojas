@@ -51,381 +51,216 @@
                             </div>
                             <div class="card-body tab-content">
                             <div class="tab-pane fade" id="nav_tabs_content_1590245549391_100" role="tabpanel" aria-labelledby="nav_tabs_link_1590245549391_100">
-                                <p>
-                                En el següent enllaç disposeu dels rànquings actuals de les proves de velocitat:
-                                </p>
+                                <p>En el següent enllaç disposeu dels rànquings actuals de les proves de velocitat:</p>
                                 <ul>
-                                <li>
-                                    <p>
-                                    <b>100 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>100 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>200 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>200 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>400 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>400 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>100 metres tanques&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>110 metres tanques&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>400 metres tanques&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>400 metres tanques&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Relleu 4x100&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Relleu 4x100&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Relleu 4x400&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Relleu 4x400&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
+                                    <li>
+                                        <p><b>100 metres llisos Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>100 metres llisos Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>200 metres llisos Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>200 metres llisos Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>400 metres llisos Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>400 metres llisos Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>100 metres tanques Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>110 metres tanques Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>400 metres tanques Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>400 metres tanques Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Relleu 4x100 Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Relleu 4x100 Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Relleu 4x400 Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Relleu 4x400 Masculí</b></p>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590245549391_101" role="tabpanel" aria-labelledby="nav_tabs_link_1590245549391_101">
-                                <p>
-                                En el següent enllaç disposeu dels rànquings actuals de les proves de fons:
-                                </p>
+                                <p>En el següent enllaç disposeu dels rànquings actuals de les proves de fons:</p>
                                 <ul>
-                                <li>
-                                    <p>
-                                    <b>800 metres llisos&amp;nbsp;<span style="font-weight: bolder;">Femení</span><br/></b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>800 metres llisos&amp;nbsp;<span style="font-weight: bolder;">Masculí</span><br/></b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>1500 metres llisos&amp;nbsp;<span style="font-weight: bolder;">Femení</span><br/></b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>1500 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>3000 metres llisos&amp;nbsp;<span style="font-weight: bolder;">Femení</span><br/></b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>3000 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>5000 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>5000 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>10000 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>10000 metres llisos&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>2000/3000 metres obstacles&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>3000 metres obstacles&amp;nbsp;</b>
-                                    <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                </li>
+                                    <li>
+                                        <p><b>800 metres llisos Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>800 metres llisos Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>1500 metres llisos Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>1500 metres llisos Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>3000 metres llisos Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>3000 metres llisos Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>5000 metres llisos Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>5000 metres llisos Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>10000 metres llisos Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>10000 metres llisos Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>2000/3000 metres obstacles Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>3000 metres obstacles Masculí</b></p>
+                                    </li>
                                 </ul>
-                                <p>
-                                <br/>
-                                </p>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590245549391_102" role="tabpanel" aria-labelledby="nav_tabs_link_1590245549391_102">
                                 <blockquote>
-                                <p>
-                                    En el següent enllaç disposeu dels rànquings actuals de les proves de salts:
-                                </p>
-                                <ul>
-                                    <li>
-                                    <p>
-                                        <b>Salt de Llargada Femení<br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">Salt de Llargada</span>&amp;nbsp;Masculí<br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>Salt de d'Alçada&amp;nbsp;<span style="font-weight: bolder;">Femení</span><br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;"><span style="font-weight: bolder;">Salt de d'Alçada</span></span>&amp;nbsp;</b>
-                                        <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>Salt de Perxa&amp;nbsp;<span style="font-weight: bolder;">Femení</span><br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">Salt de Perxa</span>&amp;nbsp;</b>
-                                        <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>Triple Salt&amp;nbsp;</b>
-                                        <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>
-                                        <span style="font-weight: bolder;">Triple Salt&amp;nbsp;</span>
-                                        </b>
-                                        <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                    </li>
-                                </ul>
+                                    <p>En el següent enllaç disposeu dels rànquings actuals de les proves de salts:</p>
+                                    <ul>
+                                        <li>
+                                            <p><b>Salt de Llargada Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Salt de Llargada Masculí</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Salt de d'Alçada Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Salt de d'Alçada Masculí</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Salt de Perxa Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Salt de Perxa Masculí</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Triple Salt Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Triple Salt Masculí</b></p>
+                                        </li>
+                                    </ul>
                                 </blockquote>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590245549391_103" role="tabpanel" aria-labelledby="nav_tabs_link_1590245549391_103">
                                 <blockquote>
-                                <p>
-                                    En el següent enllaç disposeu dels rànquings actuals de les proves de llançaments:
-                                </p>
-                                <ul>
-                                    <li>
-                                    <p>
-                                        <b>Llançament de Pes Femení<br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">Llançament de Pes</span>&amp;nbsp;Masculí<br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>Llançament de Disc&amp;nbsp;<span style="font-weight: bolder;">Femení</span><br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">Llançament de Disc</span>&amp;nbsp;</b>
-                                        <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>Llançament de Martell&amp;nbsp;<span style="font-weight: bolder;">Femení</span><br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">Llançament de Martell</span>&amp;nbsp;</b>
-                                        <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>Llançament de Javelina&amp;nbsp;</b>
-                                        <span style="font-weight: bolder;">Femení</span>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>
-                                        <span style="font-weight: bolder;"><span style="font-weight: bolder;">Llançament de Javelina</span>&amp;nbsp;</span>
-                                        </b>
-                                        <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                    </li>
-                                </ul>
+                                    <p>En el següent enllaç disposeu dels rànquings actuals de les proves de llançaments:</p>
+                                    <ul>
+                                        <li>
+                                            <p><b>Llançament de Pes Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Llançament de Pes Masculí</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Llançament de Disc Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Llançament de Disc Masculí</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Llançament de Martell Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Llançament de Martell Masculí</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Llançament de Javelina Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Llançament de Javelina Masculí</b></p>
+                                        </li>
+                                    </ul>
                                 </blockquote>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590245549391_104" role="tabpanel" aria-labelledby="nav_tabs_link_1590245549391_104">
                                 <blockquote>
-                                <p>
-                                    En el següent enllaç disposeu dels rànquings actuals de les proves de marxa atlètica:
-                                </p>
-                                <ul>
-                                    <li>
-                                    <p>
-                                        <b>5000 marxa en pista Femení<br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">5000 marxa en pista</span>&amp;nbsp;Masculí<br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">3000, 10000 marxa en pista</span>&amp;nbsp;<span style="font-weight: bolder;">Femení</span><br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">10000 marxa en pista</span>&amp;nbsp;</b>
-                                        <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>5, 10, 20 km. marxa en ruta&amp;nbsp;<span style="font-weight: bolder;">Femení</span><br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">10, 20, 35, 50 km. marxa en ruta</span>&amp;nbsp;</b>
-                                        <span style="font-weight: bolder;">Masculí</span>
-                                    </p>
-                                    </li>
-                                </ul>
+                                    <p>En el següent enllaç disposeu dels rànquings actuals de les proves de marxa atlètica:</p>
+                                    <ul>
+                                        <li>
+                                            <p><b>5000 marxa en pista Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>5000 marxa en pista Masculí</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>3000, 10000 marxa en pista Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>10000 marxa en pista Masculí</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>5, 10, 20 km. marxa en ruta Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>10, 20, 35, 50 km. marxa en ruta Masculí</b></p>
+                                        </li>
+                                    </ul>
                                 </blockquote>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590245549391_105" role="tabpanel" aria-labelledby="nav_tabs_link_1590245549391_105">
                                 <blockquote>
-                                <p>
-                                    En el següent enllaç disposeu dels rànquings actuals de les proves de combinades:
-                                </p>
-                                <ul>
-                                    <li>
-                                    <p>
-                                        <b>Pentatló / Heptatló Femení<br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">Decatló</span>&amp;nbsp;Masculí<br/></b>
-                                    </p>
-                                    </li>
-                                </ul>
+                                    <p>En el següent enllaç disposeu dels rànquings actuals de les proves de combinades:</p>
+                                    <ul>
+                                        <li>
+                                            <p><b>Pentatló / Heptatló Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Decatló Masculí</b></p>
+                                        </li>
+                                    </ul>
                                 </blockquote>
                             </div>
                             <div class="tab-pane fade active show" id="nav_tabs_content_1590245549391_106" role="tabpanel" aria-labelledby="nav_tabs_link_1590245549391_106">
                                 <blockquote>
-                                <p>
-                                    En el següent enllaç disposeu dels rànquings actuals de les proves de ruta:
-                                </p>
-                                <ul>
-                                    <li>
-                                    <p>
-                                        <b>10 km. ruta Femení<br/></b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b><span style="font-weight: bolder;">10 km. ruta</span>&amp;nbsp;Masculí</b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>Mitja Marató Femení</b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>Mitja Marató Masculí</b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>Marató Femení</b>
-                                    </p>
-                                    </li>
-                                    <li>
-                                    <p>
-                                        <b>Marató Masculí</b>
-                                    </p>
-                                    </li>
-                                </ul>
+                                    <p>En el següent enllaç disposeu dels rànquings actuals de les proves de ruta:</p>
+                                    <ul>
+                                        <li>
+                                            <p><b>10 km. ruta Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>10 km. ruta Masculí</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Mitja Marató Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Mitja Marató Masculí</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Marató Femení</b></p>
+                                        </li>
+                                        <li>
+                                            <p><b>Marató Masculí</b></p>
+                                        </li>
+                                    </ul>
                                 </blockquote>
                             </div>
                             </div>
@@ -465,102 +300,65 @@
                             </div>
                             <div class="card-body tab-content">
                             <div class="tab-pane fade" id="nav_tabs_content_1590238510063_15" role="tabpanel" aria-labelledby="nav_tabs_link_1590238510063_15">
-                                <p>
-                                En el següent enllaç disposeu dels rècords de Sabadell.
-                                </p>
+                                <p>En el següent enllaç disposeu dels rècords de Sabadell.</p>
                                 <ul>
-                                <li>
-                                    <p>
-                                    <b>Absolut Pista Aire Lliure</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Absolut Pista Coberta</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Absolut Ruta</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Absolut Altres proves</b>
-                                    </p>
-                                </li>
+                                    <li>
+                                        <p><b>Absolut Pista Aire Lliure</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Absolut Pista Coberta</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Absolut Ruta</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Absolut Altres proves</b></p>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590238510063_16" role="tabpanel" aria-labelledby="nav_tabs_link_1590238510063_16">
-                                <p>
-                                En el següent enllaç disposeu de l'històric de rècords de Sabadell.
-                                <br/>
-                                </p>
+                                <p>En el següent enllaç disposeu de l'històric de rècords de Sabadell.</p>
                                 <ul>
-                                <li>
-                                    <p>
-                                    <b>Aire Lliure Femení</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Aire Lliure Masculí</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Pista Coberta Femení</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Pista Coberta Masculí</b>
-                                    </p>
-                                </li>
+                                    <li>
+                                        <p><b>Aire Lliure Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Aire Lliure Masculí</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Pista Coberta Femení</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Pista Coberta Masculí</b></p>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade active show" id="nav_tabs_content_1590238510063_17" role="tabpanel" aria-labelledby="nav_tabs_link_1590238510063_17">
                                 <blockquote>
-                                <p>
-                                    En el següent enllaç disposeu d'altres de rècords. 
-                                </p>
+                                    <p>En el següent enllaç disposeu d'altres de rècords.</p>
                                 </blockquote>
                                 <ul>
-                                <li>
-                                    <p>
-                                    <b>Rècords de Sabadell per edats</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Rècords de Sabadell Màster</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Rècords de l'estadi Josep Molins</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Rècords de la Pista Coberta de Catalunya (Sabadell)</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Rècords d'Espanya batuts a Sabadell</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Rècords Iberoamericans batuts a Sabadell</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Altres rècords peculiars</b>
-                                    </p>
-                                </li>
+                                    <li>
+                                        <p><b>Rècords de Sabadell per edats</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Rècords de Sabadell Màster</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Rècords de l'estadi Josep Molins</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Rècords de la Pista Coberta de Catalunya (Sabadell)</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Rècords d'Espanya batuts a Sabadell</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Rècords Iberoamericans batuts a Sabadell</b></p>
+                                    </li>
+                                    <li>
+                                        <p><b>Altres rècords peculiars</b></p>
+                                    </li>
                                 </ul>
                             </div>
                             </div>

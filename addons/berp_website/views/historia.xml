@@ -108,14 +108,6 @@
                         </div>
                     </div>
                     </div>
-                    <div class="carousel-control-prev" data-target="#myCarousel1590240795942" data-slide="prev" role="img" aria-label="Anterior" title="Anterior">
-                    <span class="carousel-control-prev-icon"/>
-                    <span class="sr-only o_default_snippet_text">Anterior</span>
-                    </div>
-                    <div class="carousel-control-next" data-target="#myCarousel1590240795942" data-slide="next" role="img" aria-label="Siguiente" title="Siguiente">
-                    <span class="carousel-control-next-icon"/>
-                    <span class="sr-only o_default_snippet_text">Siguiente</span>
-                    </div>
                 </div>
                 <section class="s_text_block pt32 pb32">
                     <div class="container">
@@ -133,7 +125,7 @@
                             </font>
                             </b>
                         </h3>
-                        <p style="margin: 0.5em 0px; color: rgb(32, 33, 34); font-family: sans-serif;">La&amp;nbsp;<b>Joventut Atlètica Sabadell</b>&amp;nbsp;(JAS) és un club d'atletisme de Sabadell (Barcelona) , afiliat a la Federació Catalana d'Atletisme (FCA). Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la&amp;nbsp;<a href="https://ca.wikipedia.org/wiki/Real_Federaci%C3%B3n_Espa%C3%B1ola_de_Atletismo" class="mw-redirect" title="Real Federación Española de Atletismo" style="color: rgb(11, 0, 128); background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Real Federación Española de Atletismo</a>&amp;nbsp;(RFEA). Els atletes representen a l'entitat en totes les diferents categories existents de competició atlètica des dels benjamins fins als veterans.</p>
+                        <p style="margin: 0.5em 0px; color: rgb(32, 33, 34); font-family: sans-serif;">La&amp;nbsp;<b>Joventut Atlètica Sabadell</b>&amp;nbsp;(JAS) és un club d'atletisme de Sabadell (Barcelona) , afiliat a la <a href="http://fcatletisme.cat/" target="_blank">Federació Catalana d'Atletisme (FCA)</a>. Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la&amp;nbsp;<a href="https://www.rfea.es/" target="_blank">Real Federación Española de Atletismo</a>&amp;nbsp;(RFEA). Els atletes representen a l'entitat en totes les diferents categories existents de competició atlètica des dels benjamins fins als veterans.</p>
                         <p style="margin: 0.5em 0px; color: rgb(32, 33, 34); font-family: sans-serif;">Al mateix temps, es tracta d'una entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà. Com a tal, l'entitat té un conveni amb l'Ajuntament de Sabadell per col·laborar en totes les activitats d'atletisme que s'adrecen a la ciutadania i per participar activament en l'organització de l'escola municipal d'atletisme.</p>
                         <p style="margin: 0.5em 0px; color: rgb(32, 33, 34); font-family: sans-serif;">Fundat en 1921 i registrat en 1924 com entitat excursionista, en 1927 crea la secció atlètica i des de 1946 existeix únicament com a club atlètic. És a partir de 1950, quan l'entitat adopta el nom actual i en la denominació en què és coneguda des de llavors: Joventut Atlètica Sabadell (JAS).</p>
                         <p style="margin: 0.5em 0px; color: rgb(32, 33, 34); font-family: sans-serif;">Esportistes olímpics com Josep Molins (Roma-1960), Carme Valero (Montreal-1976), Montse Pujol (Seül-1988) i Miguel Quesada (Atenes-2004 i Pequin-2008) i mundialistes com: Angels Guitart (Dusseldorf-1977), Rosa MªMorató (Osaka-2007), Ana Pinero (Daegu-2011), Xavier Carrión (Istanbul-2012) i Sergio Ruiz (Moscou-2013) es van forjar al planter de la JAS. José Santos, medallista en dues edicions dels Jocs Paralímpics (Toronto-1976 i Arhem-1980), també va créixer dins la JAS.</p>
