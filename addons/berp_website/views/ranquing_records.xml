@@ -25,36 +25,36 @@
                         <div class="pt48 pb48 col-lg-12">
                         <div class="card bg-white" style="">
                             <div class="card-header">
-                            <ul class="nav nav-tabs card-header-tabs" role="tablist">
-                                <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590245549391_100" data-toggle="tab" href="#nav_tabs_content_1590245549391_100" role="tab" aria-controls="nav_tabs_content_1590245549391_100" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip30513">Velocitat</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590245549391_101" data-toggle="tab" href="#nav_tabs_content_1590245549391_101" role="tab" aria-controls="nav_tabs_content_1590245549391_101" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip136422">Fons</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590245549391_102" data-toggle="tab" href="#nav_tabs_content_1590245549391_102" role="tab" aria-controls="nav_tabs_content_1590245549391_102" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip860732">Salts</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590245549391_103" data-toggle="tab" href="#nav_tabs_content_1590245549391_103" role="tab" aria-controls="nav_tabs_content_1590245549391_103" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip860732">Llançaments</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590245549391_104" data-toggle="tab" href="#nav_tabs_content_1590245549391_104" role="tab" aria-controls="nav_tabs_content_1590245549391_104" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip860732">Marxa Atlètica</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590245549391_105" data-toggle="tab" href="#nav_tabs_content_1590245549391_105" role="tab" aria-controls="nav_tabs_content_1590245549391_105" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip860732">Proves Combinades</a>
-                                </li>
-                                <li class="nav-item">
-                                <a class="nav-link active show" id="nav_tabs_link_1590245549391_106" data-toggle="tab" href="#nav_tabs_content_1590245549391_106" role="tab" aria-controls="nav_tabs_content_1590245549391_106" aria-selected="true" data-original-title="" title="" aria-describedby="tooltip860732">Ruta</a>
-                                </li>
-                            </ul>
+                                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="nav_tabs_link_1590245549391_100" data-toggle="tab" href="#nav_tabs_content_1590245549391_100" role="tab" aria-controls="nav_tabs_content_1590245549391_100" aria-selected="true" data-original-title="" title="" aria-describedby="tooltip30513">Velocitat</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="nav_tabs_link_1590245549391_101" data-toggle="tab" href="#nav_tabs_content_1590245549391_101" role="tab" aria-controls="nav_tabs_content_1590245549391_101" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip136422">Fons</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="nav_tabs_link_1590245549391_102" data-toggle="tab" href="#nav_tabs_content_1590245549391_102" role="tab" aria-controls="nav_tabs_content_1590245549391_102" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip860732">Salts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="nav_tabs_link_1590245549391_103" data-toggle="tab" href="#nav_tabs_content_1590245549391_103" role="tab" aria-controls="nav_tabs_content_1590245549391_103" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip860732">Llançaments</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="nav_tabs_link_1590245549391_104" data-toggle="tab" href="#nav_tabs_content_1590245549391_104" role="tab" aria-controls="nav_tabs_content_1590245549391_104" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip860732">Marxa Atlètica</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="nav_tabs_link_1590245549391_105" data-toggle="tab" href="#nav_tabs_content_1590245549391_105" role="tab" aria-controls="nav_tabs_content_1590245549391_105" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip860732">Proves Combinades</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active show" id="nav_tabs_link_1590245549391_106" data-toggle="tab" href="#nav_tabs_content_1590245549391_106" role="tab" aria-controls="nav_tabs_content_1590245549391_106" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip860732">Ruta</a>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="card-body tab-content">
                             <div class="tab-pane fade" id="nav_tabs_content_1590245549391_100" role="tabpanel" aria-labelledby="nav_tabs_link_1590245549391_100">
                                 <p>En el següent enllaç disposeu dels rànquings actuals de les proves de velocitat:</p>
                                 <ul>
                                     <li>
-                                        <p><b>100 metres llisos Femení</b></p>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/records+y+ranquings/100+m.ll.+D.pdf" target="_blank"><p><b>100 metres llisos Femení</b></p></a>
                                     </li>
                                     <li>
                                         <p><b>100 metres llisos Masculí</b></p>
