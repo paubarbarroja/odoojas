@@ -9,6 +9,7 @@
     """,
     'data': [
         'views/template.xml',
+        'views/informacio_soci.xml',
         'views/formulari_soci.xml',
         'views/escola_atletisme.xml',
         'views/grups_entrenament.xml',
