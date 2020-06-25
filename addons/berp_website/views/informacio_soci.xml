@@ -1,0 +1,125 @@
+<odoo>
+    <data>
+
+       <template id="berp_20200625_1449_website" name="Informació Inscripció Soci">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="oe_structure">
+                        <section class="container readable o_website_form_builder pt32 pb32">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-10 offset-lg-1 pt32 pb32">
+                                        <h1 class="lead">
+                                            <b>
+                                            <font style="font-size: 36px;">SOCI DE LA J.A. SABADELL</font>
+                                            </b>
+                                        </h1>
+                                        <p class="lead">
+                                            <font style="">
+                                            <br/>
+                                            </font>
+                                        </p>
+                                        <p class="lead">
+                                            <font style="">La JOVENTUT ATLÈTICA SABADELL és un club atlètic que fou fundat l'any 1921 i s'ubica a la ciutat de Sabadell.</font>
+                                        </p>
+                                        <h1 class="lead">
+                                            <b>
+                                            <font style="font-size: 18px;">QUE POT FER UN SOCI DE LA JAS?</font>
+                                            </b>
+                                        </h1>
+                                        <p class="lead">
+                                            <font style="">Un soci de la Joventut Atlètica Sabadell té els següents avantatges.</font>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <p class="lead">
+                                                    <font style="">Accés a l'estadi municipal Josep Molins a qualsevol moment, sempre que les instal·lacions siguin obertes.</font>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">
+                                                    <font style="">Carnet de soci de l'any en curs</font>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">
+                                                    <font style="">Utilització de l'anella exterior de gespa artificial</font>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">
+                                                    <font style="">Utilització del carril nº2 de la pista d'atletisme</font>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">
+                                                    <font style="">Utilització de la gespa natural interior de la pista d'atletisme</font>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">
+                                                    <font style="">Utilització dels vestuaris de la instal·lació</font>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="lead">
+                                                    <font style="">Utilització del gimnàs (Horari de Dilluns a Divendres de 18:00 a 21:00)</font>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <h1 class="lead">
+                                            <font style="font-size: 18px;">
+                                                <b>MATRICULA INICIAL</b>
+                                            </font>
+                                        </h1>
+                                        <p class="lead">
+                                            <font style="">Per fer-se soci de la Joventut Atlètica Sabadell, i disposar dels avantatges anteriorment indicats, s'ha de realitzar una matricula inicial de 25€. Aquest pagament es realitzarà a les oficines de l'entitat en metàl·lic en el moment de recollir el carnet d'usuari.</font>
+                                        </p>
+                                        <h1 class="lead">
+                                            <b>
+                                                <font style="font-size: 18px;">QUOTES SOCI DE LA JAS</font>
+                                            </b>
+                                        </h1>
+                                        <p class="lead">
+                                            <font style="">La quota de la Joventut Atlètica Sabadell és de 100€ anuals, els quals es cobraran únicament per rebut domiciliari. No s'admetrà cap pagament en metàl·lic. Aquesta quota es dividirà en dos pagaments. El primer al Gener (50€) i el segon pagament al Juliol (50€).</font>
+                                        </p>
+                                        <p class="lead">
+                                            <font style="">Els socis amb una antiguitat superior als 25 anys tenen un descompte del 20% sobre la quota anual. També es beneficiaran d'aquest descompte les famílies amb més de 3 socis a l'entitat.</font>
+                                        </p>
+                                        <p class="lead">
+                                            <font style="">Els socis amb una antiguitat superior als 50 anys estan exempts de pagament.&amp;nbsp;</font>
+                                        </p>
+                                        <p class="lead">
+                                            <font style="">
+                                                <br/>
+                                            </font>
+                                        </p>
+                                        <p class="lead">
+                                            <font style="">Per a més informació, podeu enviar un correu electrònic a l'adreça joventutatleticasabadell@gmail.com</font>
+                                        </p>
+                                        <p class="lead">
+                                            <font style="">
+                                                <br/>
+                                            </font>
+                                        </p>
+                                        <div class="s_btn col-lg-12 text-right pt0 pb0">
+                                            <a href="/formulari_soci" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Següent <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109"/> </a>
+                                        </div>
+                                        <p>
+                                            <br/>
+                                        </p>
+                                        <h3 class="lead">
+                                            <font style=""/>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+
+    </data>
+</odoo>

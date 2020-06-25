@@ -1,7 +1,7 @@
 <odoo>
     <data>
 
-        <template id="berp_20200524_1624_website" name="butlleti">
+        <template id="berp_20200524_1624_website" name="Butlletí">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
                 <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96" data-scroll-background-ratio="1" style="background-image: none;">

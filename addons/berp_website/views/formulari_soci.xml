@@ -1,7 +1,7 @@
 <odoo>
     <data>
 
-       <template id="berp_20191103_1522_website" name="form_add_socio">
+       <template id="berp_20191103_1522_website" name="Formulari Inscripció Soci">
             <t t-call="website.layout">
                 <div id="wrap">
                     <div class="oe_structure">

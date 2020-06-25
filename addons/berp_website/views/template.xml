@@ -11,7 +11,7 @@
 
         -->
 
-        <template inherit_id="website.homepage" id="inicio_berp">
+        <template inherit_id="website.homepage" id="Inici">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div class="oe_structure">
                     <section class="s_banner parallax s_parallax_is_fixed pt0 pb208" data-scroll-background-ratio="1" style="background-image: none;">
@@ -35,7 +35,7 @@
                                     <h1 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES-TE SOCI !</h1>
                                     <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES ATLETISME AMB NOSALTRES<hr/></h2>
                                     <div class="s_btn col-lg-12 text-center pt0 pb0">
-                                        <a href="/formulari_soci" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Entra Aqui <span class="fa fa-1x fa-fw ml-1 fa-user-plus" style=""/></a>
+                                        <a href="/informacio_soci" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Entra Aqui <span class="fa fa-1x fa-fw ml-1 fa-user-plus" style=""/></a>
                                     </div>
                                 </div>
                             </div>

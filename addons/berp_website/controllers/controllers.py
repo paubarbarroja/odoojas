@@ -6,6 +6,13 @@ class berp_website_formulari_soci(http.Controller):
     @http.route('/formulari_soci', auth='public', website=True)
     def index(self, **kw):
         return http.request.render("berp_website.berp_20191103_1522_website",{})
+        
+
+class berp_website_informacio_soci(http.Controller):
+
+    @http.route('/informacio_soci', auth='public', website=True)
+    def index(self, **kw):
+        return http.request.render("berp_website.berp_20200625_1449_website",{})
 
 
 class berp_website_escola_atletisme(http.Controller):

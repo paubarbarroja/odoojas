@@ -1,7 +1,7 @@
 <odoo>
     <data>
 
-        <template id="berp_20200524_1626_website" name="historia">
+        <template id="berp_20200524_1626_website" name="Història">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
                 <div id="myCarousel1590249109140" class="s_carousel s_carousel_default carousel slide" data-interval="10000">

@@ -1,7 +1,7 @@
 <odoo>
     <data>
 
-        <template id="berp_20200524_1414_website" name="escola_atletisme">
+        <template id="berp_20200524_1414_website" name="Escola d'Atletisme">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
                     <section class="s_cover parallax pt256 pb256" data-scroll-background-ratio="0" style="background-image: none;">
