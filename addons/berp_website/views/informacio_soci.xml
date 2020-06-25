@@ -95,16 +95,16 @@
                                             </font>
                                         </p>
                                         <p class="lead">
-                                            <font style="">Per a més informació, podeu enviar un correu electrònic a l'adreça joventutatleticasabadell@gmail.com</font>
+                                            <font style=""><b>Per a més informació, podeu enviar un correu electrònic a l'adreça joventutatleticasabadell@gmail.com</b></font>
                                         </p>
                                         <p class="lead">
                                             <font style="">
                                                 <br/>
                                             </font>
                                         </p>
-                                        <div class="s_btn col-lg-12 text-right pt0 pb0">
+                                        <!-- <div class="s_btn col-lg-12 text-right pt0 pb0">
                                             <a href="/formulari_soci" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Següent <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109"/> </a>
-                                        </div>
+                                        </div> -->
                                         <p>
                                             <br/>
                                         </p>
