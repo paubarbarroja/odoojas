@@ -181,7 +181,7 @@
                                         <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
                                         <!-- <img class="img-fluid o_we_custom_image" style="border-radius: 50%;" src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/marti.png"/> -->
                                     </div>
-                                    <div class="col-lg-8 pt48">
+                                    <div class="col-lg-8"> <!--pt48-->
                                         <h4>Martí Manyosa</h4>
                                         <p class="text-muted">Entrenador del grup Sub - 16<br/></p>
                                     </div>
