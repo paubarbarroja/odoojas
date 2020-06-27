@@ -5,7 +5,7 @@
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
                 <section class="s_cover parallax pt256 pb256" data-scroll-background-ratio="0" style="background-image: none;">
-                    <span class="s_parallax_bg oe_img_bg oe_custom_bg o_bg_img_opt_custom" style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/historia/historia2.jpg);background-size:auto;background-position:70% 78%"/>
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url(&quot;https://berp-bucket.s3.eu-west-2.amazonaws.com/img/historia/historia2.jpg&quot;); background-position: 50.39% 32.75%;"/>
                 </section>
                 <section class="pt32 pb32">
                     <div class="container">
