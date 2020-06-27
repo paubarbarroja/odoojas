@@ -1,0 +1,198 @@
+<odoo>
+    <data>
+
+        <template id="berp_20200527_2230_website" name="Política de Cookies">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">   
+                    <header style="box-sizing: inherit; padding-left: 0px; color: rgba(0, 0, 0, 0.87); font-size: 15px;">
+                        <h2 style="box-sizing: inherit; font-weight: bold; line-height: 42.24px; font-size: 2.56rem; margin: 1.78rem 0px 1.424rem;">
+                        <br/>
+                        </h2>
+                    </header>
+                    <section class="s_text_block pt32 pb32">
+                        <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 offset-lg-1 pt32 pb32">
+                            <header style="box-sizing: inherit; padding-left: 0px; color: rgba(0, 0, 0, 0.87); font-size: 15px;">
+                                <h2 style="box-sizing: inherit; font-weight: bold; line-height: 42.24px; font-size: 2.56rem; margin: 1.78rem 0px 1.424rem;">
+                                <span style="color: inherit; font-size: 2.56rem;">Política de Cookies</span>
+                                <br/>
+                                </h2>
+                            </header>
+                            <div style="box-sizing: inherit; color: rgba(0, 0, 0, 0.87); font-size: 15px;">
+                                <div class="ng-binding" style="box-sizing: inherit;">
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <header style="box-sizing: inherit; padding-left: 0px; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;"/>
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p style="box-sizing: inherit;">En esta web se utilizan cookies de terceros y propias para conseguir que tengas una mejor experiencia de navegación, puedas compartir contenido en redes sociales y para que podamos obtener estadísticas de los usuarios.<br style="box-sizing: inherit;"/><br style="box-sizing: inherit;"/>Puedes evitar la descarga de cookies a través de la configuración de tu navegador, evitando que las cookies se almacenen en su dispositivo.<br style="box-sizing: inherit;"/><br style="box-sizing: inherit;"/>Como propietario de este sitio web, te comunico que no utilizamos ninguna información personal procedente de cookies, tan sólo realizamos estadísticas generales de visitas que no suponen ninguna información personal.<br style="box-sizing: inherit;"/><br style="box-sizing: inherit;"/>Es muy importante que leas la presente política de cookies y comprendas que, si continúas navegando, consideraremos que aceptas su uso.<br style="box-sizing: inherit;"/><br style="box-sizing: inherit;"/>Según los términos incluidos en el artículo 22.2 de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico, si continúas navegando, estarás prestando tu consentimiento para el empleo de los referidos mecanismos.</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">Entidad Responsable</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p class="ng-binding" style="box-sizing: inherit;">La entidad responsable de la recogida, procesamiento y utilización de tus datos personales, en el sentido establecido por la Ley de Protección de Datos Personales es la página www.jasabadell.com, propiedad de Joventut Atlètica Sabadell – Cami Can Quadres 179, Sabadell Barcelona (ES) 08203.</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">¿Qué son las cookies?</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p style="box-sizing: inherit;">Las cookies son un conjunto de datos que un servidor deposita en el navegador del usuario para recoger la información de registro estándar de Internet y la información del comportamiento de los visitantes en un sitio web. Es decir, se trata de pequeños archivos de texto que quedan almacenados en el disco duro del ordenador y que sirven para identificar al usuario cuando se conecta nuevamente al sitio web. Su objetivo es registrar la visita del usuario y guardar cierta información. Su uso es común y frecuente en la web ya que permite a las páginas funcionar de manera más eficiente y conseguir una mayor personalización y análisis sobre el comportamiento del usuario.</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">¿Qué tipos de cookies existen?</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p style="box-sizing: inherit;">Las cookies utilizadas en nuestro sitio web, son de sesión y de terceros, y nos permiten almacenar y acceder a información relativa al idioma, el tipo de navegador utilizado, y otras características generales predefinidas por el usuario, así como, seguir y analizar la actividad que lleva a cabo, con el objeto de introducir mejoras y prestar nuestros servicios de una manera más eficiente y personalizada.<br style="box-sizing: inherit;"/><br style="box-sizing: inherit;"/></p>
+                                        <p class="ng-binding" style="box-sizing: inherit;">Las cookies, en función de su permanencia, pueden dividirse en cookies de sesión o permanentes. Las que expiran cuando el usuario cierra el navegador. Las que expiran en función de cuando se cumpla el objetivo para el que sirven (por ejemplo, para que el usuario se mantenga identificado en los servicios de Joventut Atlètica Sabadell) o bien cuando se borran manualmente.</p>
+                                        <p style="box-sizing: inherit;"/>
+                                        <table border="0" width="100%" cellpadding="15" style="box-sizing: inherit; border-spacing: 0px; border: none; width: 1082px;">
+                                        <tbody style="box-sizing: inherit;">
+                                            <tr style="box-sizing: inherit;">
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">Nombre</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">Tipo</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">Caducidad</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">Finalidad</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">Clase</td>
+                                            </tr>
+                                            <tr style="box-sizing: inherit;">
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">__utma</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">De Terceros (Google Analytics)</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">2 años</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">Se usa para distinguir usuarios y sesiones.</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">No Exenta</td>
+                                            </tr>
+                                            <tr style="box-sizing: inherit;">
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">__utmb</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">De Terceros (Google Analytics)</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">30 minutos</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">Se usa para determinar nuevas sesiones o visitas</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">No Exenta</td>
+                                            </tr>
+                                            <tr style="box-sizing: inherit;">
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">__utmc</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">De Terceros (Google Analytics)</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">Al finalizar la sesión</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">Se configura para su uso con Urchin</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">No Exenta</td>
+                                            </tr>
+                                            <tr style="box-sizing: inherit;">
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">__utmz</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">De Terceros (Google Analytics)</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">6 meses</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">Almacena el origen o la campaña que explica cómo el usuario ha llegado hasta la página web</td>
+                                            <td style="box-sizing: inherit; padding: 15px 5px; border: none; vertical-align: middle; border-radius: 2px;">No Exenta</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <p class="ng-binding" style="box-sizing: inherit;">Adicionalmente, en función de su objetivo, las cookies pueden clasificarse de la siguiente forma:</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">Cookies de rendimiento</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p style="box-sizing: inherit;">Este tipo de Cookie recuerda sus preferencias para las herramientas que se encuentran en los servicios, por lo que no tiene que volver a configurar el servicio cada vez que usted visita. A modo de ejemplo, en esta tipología se incluyen: Ajustes de volumen de reproductores de vídeo o sonido. Las velocidades de transmisión de vídeo que sean compatibles con su navegador. Los objetos guardados en el “carrito de la compra” en los servicios de e-commerce tales como tiendas.</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">Cookies de geo-localización</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p style="box-sizing: inherit;">Estas cookies son utilizadas para averiguar en qué país se encuentra cuando se solicita un servicio. Esta cookie es totalmente anónima, y sólo se utiliza para ayudar a orientar el contenido a su ubicación.</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">Cookies de registro</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p style="box-sizing: inherit;">Las cookies de registro se generan una vez que el usuario se ha registrado o posteriormente ha abierto su sesión, y se utilizan para identificarle en los servicios con los siguientes objetivos:</p>
+                                        <p style="box-sizing: inherit;">Mantener al usuario identificado de forma que, si cierra un servicio, el navegador o el ordenador y en otro momento u otro día vuelve a entrar en dicho servicio, seguirá identificado, facilitando así su navegación sin tener que volver a identificarse. Esta funcionalidad se puede suprimir si el usuario pulsa la funcionalidad [cerrar sesión], de forma que esta cookie se elimina y la próxima vez que entre en el servicio el usuario tendrá que iniciar sesión para estar identificado.</p>
+                                        <p style="box-sizing: inherit;">Comprobar si el usuario está autorizado para acceder a ciertos servicios, por ejemplo, para participar en un concurso.</p>
+                                        <p style="box-sizing: inherit;">Adicionalmente, algunos servicios pueden utilizar conectores con redes sociales tales como Facebook o Twitter. Cuando el usuario se registra en un servicio con credenciales de una red social, autoriza a la red social a guardar una Cookie persistente que recuerda su identidad y le garantiza acceso a los servicios hasta que expira. El usuario puede borrar esta Cookie y revocar el acceso a los servicios mediante redes sociales actualizando sus preferencias en la red social que específica.</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">Cookies de analíticas</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p class="ng-binding" style="box-sizing: inherit;">Cada vez que un usuario visita un servicio, una herramienta de un proveedor externo genera una cookie analítica en el ordenador del usuario. Esta cookie que sólo se genera en la visita, servirá en próximas visitas a los servicios de Joventut Atlètica Sabadell para identificar de forma anónima al visitante. Los objetivos principales que se persiguen son:</p>
+                                        <p style="box-sizing: inherit;">Permitir la identificación anónima de los usuarios navegantes a través de la cookie (identifica navegadores y dispositivos, no personas) y por lo tanto la contabilización aproximada del número de visitantes y su tendencia en el tiempo.<br style="box-sizing: inherit;"/>Identificar de forma anónima los contenidos más visitados y por lo tanto más atractivos para los usuarios Saber si el usuario que está accediendo es nuevo o repite visita.</p>
+                                        <p class="ng-binding" style="box-sizing: inherit;">Importante: Salvo que el usuario decida registrarse en un servicio de Joventut Atlètica Sabadell, la cookie nunca irá asociada a ningún dato de carácter personal que pueda identificarle. Dichas cookies sólo serán utilizadas con propósitos estadísticos que ayuden a la optimización de la experiencia de los usuarios en el sitio.</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">Cookies de publicidad</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p class="ng-binding" style="box-sizing: inherit;">Este tipo de cookies permiten ampliar la información de los anuncios mostrados a cada usuario anónimo en los servicios de Joventut Atlètica Sabadell. Entre otros, se almacena la duración o frecuencia de visualización de posiciones publicitarias, la interacción con las mismas, o los patrones de navegación y/o comportamientos del usuario ya que ayudan a conformar un perfil de interés publicitario. De este modo, permiten ofrecer publicidad afín a los intereses del usuario.</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">Cookies publicitarias de terceros</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p class="ng-binding" style="box-sizing: inherit;">Además de la publicidad gestionada por las webs de Joventut Atlètica Sabadell en sus servicios, las webs de Joventut Atlètica Sabadell ofrecen a sus anunciantes la opción de servir anuncios a través de terceros (“Ad-Servers”). De este modo, estos terceros pueden almacenar cookies enviadas desde los servicios de Joventut Atlètica Sabadell procedentes de los navegadores de los usuarios, así como acceder a los datos que en ellas se guardan.</p>
+                                        <p class="ng-binding" style="box-sizing: inherit;">Las empresas que generan estas cookies tienen sus propias políticas de privacidad. En la actualidad, las webs de Joventut Atlètica Sabadell utilizan la plataforma Doubleclick (Google) para gestionar estos servicios. Para más información, acuda a</p>
+                                        <p style="box-sizing: inherit;"><a href="http://www.google.es/policies/privacy/ads/#toc-doubleclick" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">http://www.google.es/policies/privacy/ads/#toc-doubleclick</a>&amp;nbsp;y a&amp;nbsp;<a href="http://www.google.es/policies/privacy/ads/" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">http://www.google.es/policies/privacy/ads/</a>.</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">¿Cómo puedo deshabilitar las cookies en mi navegador?</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p style="box-sizing: inherit;">Se pueden configurar los diferentes navegadores para avisar al usuario de la recepción de cookies y, si se desea, impedir su instalación en el equipo. Asimismo, el usuario puede revisar en su navegador qué cookies tiene instaladas y cuál es el plazo de caducidad de las mismas, pudiendo eliminarlas.</p>
+                                        <p style="box-sizing: inherit;">Para ampliar esta información consulte las instrucciones y manuales de su navegador:</p>
+                                        <p style="box-sizing: inherit;">Para más información sobre la administración de las cookies en Google Chrome:&amp;nbsp;<a href="https://support.google.com/chrome/answer/95647?hl=es" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">https://support.google.com/chrome/answer/95647?hl=es</a></p>
+                                        <p style="box-sizing: inherit;">Para más información sobre la administración de las cookies en Internet Explorer:&amp;nbsp;<a href="http://windows.microsoft.com/es-es/windows-vista/cookies-frequently-asked-question" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;"/><a href="http://windows.microsoft.com/es-es/windows-vista/cookies-frequently-asked-questions" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">http://windows.microsoft.com/es-es/windows-vista/cookies-frequently-asked-questions</a></p>
+                                        <p style="box-sizing: inherit;"><a href="http://windows.microsoft.com/es-es/windows-vista/cookies-frequently-asked-question" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;"/>Para más información sobre la administración de las cookies en Mozilla Firefox:&amp;nbsp;<a href="http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we%20" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we</a></p>
+                                        <p style="box-sizing: inherit;">Para más información sobre la administración de las cookies en Safari:&amp;nbsp;<a href="http://www.apple.com/es/privacy/use-of-cookies/%20" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">http://www.apple.com/es/privacy/use-of-cookies/</a></p>
+                                        <p style="box-sizing: inherit;">Para más información sobre la administración de las cookies en Opera:&amp;nbsp;<a href="http://help.opera.com/Windows/11.50/es-ES/cookies.html" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">http://help.opera.com/Windows/11.50/es-ES/cookies.html</a></p>
+                                        <p style="box-sizing: inherit;">Si desea dejar de ser seguido por Google Analytics visite:&amp;nbsp;<a href="http://tools.google.com/dlpage/gaoptout" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">http://tools.google.com/dlpage/gaoptout</a></p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">Para saber más sobre las cookies</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p style="box-sizing: inherit;">Puede obtener más información sobre la publicidad online basada en el comportamiento y la privacidad online en el siguiente enlace:&amp;nbsp;<a href="http://www.youronlinechoices.com/es/" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">http://www.youronlinechoices.com/es/</a></p>
+                                        <p style="box-sizing: inherit;">Protección de datos de Google Analytics:&amp;nbsp;<a href="http://www.google.com/analytics/learn/privacy.html" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">http://www.google.com/analytics/learn/privacy.html</a></p>
+                                        <p style="box-sizing: inherit;">Cómo usa Google Analytics las cookies:&amp;nbsp;<a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es#analyticsjs" style="box-sizing: inherit; color: rgb(3, 155, 229); -webkit-tap-highlight-color: transparent;">https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es#analyticsjs</a></p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">Actualizaciones y cambios en la política de privacidad/cookies</h3>
+                                <h3 style="box-sizing: inherit; font-weight: bold; line-height: 26.4px; font-size: 1.6rem; margin: 1.46rem 0px 1.168rem;">
+                                    <div style="box-sizing: inherit; font-family: Roboto, sans-serif; font-size: 15px; font-weight: 400;">
+                                    <div style="box-sizing: inherit;">
+                                        <p class="ng-binding" style="box-sizing: inherit;">Las webs de Joventut Atlètica Sabadell pueden modificar esta Política de Cookies en función de exigencias legislativas, reglamentarias, o con la finalidad de adaptar dicha política a las instrucciones dictadas por la Agencia Española de Protección de Datos, por ello se aconseja a los usuarios que la visiten periódicamente.</p>
+                                        <p style="box-sizing: inherit;">Cuando se produzcan cambios significativos en esta Política de Cookies, estos se comunicarán a los usuarios bien mediante la web o a través de correo electrónico a los usuarios registrados.</p>
+                                    </div>
+                                    </div>
+                                </h3>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                </div>
+            </t>
+        </template>
+
+    </data>
+</odoo>

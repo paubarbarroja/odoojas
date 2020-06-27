@@ -56,3 +56,9 @@ class berp_website_aviso_legal(http.Controller):
     @http.route('/aviso_legal', auth='public', website=True)
     def index(self, **kw):
         return http.request.render("berp_website.berp_20200527_2212_website",{})
+
+
+class berp_website_cookies(http.Controller):
+    @http.route('/politica_cookies', auth='public', website=True)
+    def index(self, **kw):
+        return http.request.render("berp_website.berp_20200527_2230_website",{})
