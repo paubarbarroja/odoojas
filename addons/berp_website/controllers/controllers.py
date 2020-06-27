@@ -1,12 +1,6 @@
 from odoo import http
 
 
-class berp_website_inici(http.Controller):
-
-    @http.route('/inicio', auth='public', website=True)
-    def index(self, **kw):
-        return http.request.render("berp_website.berp_20200627_2046_website",{})
-        
 
 class berp_website_formulari_soci(http.Controller):
 
