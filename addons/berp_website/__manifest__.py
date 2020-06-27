@@ -10,6 +10,8 @@
     'data': [
         'views/template.xml',
         'views/informacio_soci.xml',
+        'views/privacidad.xml',
+        'views/aviso_legal.xml',
         'views/products.xml',
         'views/formulari_soci.xml',
         'views/escola_atletisme.xml',
