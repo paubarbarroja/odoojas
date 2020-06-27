@@ -19,9 +19,6 @@
         'crm_lead/crm_lead.xml',
         'crm_lead/menus.xml'
     ],
-    'css': [
-        'static/css/productos.css'
-    ],
     'demo': [],
     'application': True,
 }

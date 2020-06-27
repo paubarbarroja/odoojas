@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+
+        <template inherit_id="website_sale.assets_frontend" id="inherit_product_plane">
+            <xpath expr="link[last()]" position="after">
+                <link rel="stylesheet" type="text/css" href="/berp_website/static/css/products.css" />
+            </xpath>
+        </template>
+        
+    </data>
+</odoo>
