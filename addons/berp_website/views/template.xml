@@ -11,7 +11,7 @@
 
         -->
 
-        <template inherit_id="website.homepage" id="Inici">
+        <template inherit_id="website.homepage" id="berp_20200627_2046_website" name="Inici">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div class="oe_structure">
                     <section class="s_banner parallax s_parallax_is_fixed pt0 pb208" data-scroll-background-ratio="1" style="background-image: none;">

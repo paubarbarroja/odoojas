@@ -1,6 +1,13 @@
 from odoo import http
 
 
+class berp_website_inici(http.Controller):
+
+    @http.route('/', auth='user', website=True)
+    def index(self, **kw):
+        return http.request.render("berp_website.berp_20200627_2046_website",{})
+        
+
 class berp_website_formulari_soci(http.Controller):
 
     @http.route('/formulari_soci', auth='user', website=True)
