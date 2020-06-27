@@ -27,185 +27,133 @@
                             <div class="card-header">
                             <ul class="nav nav-tabs card-header-tabs" role="tablist">
                                 <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590237872021_16" data-toggle="tab" href="#nav_tabs_content_1590237872021_16" role="tab" aria-controls="nav_tabs_content_1590237872021_16" aria-selected="false" data-original-title="" title="">Biografies</a>
+                                    <a class="nav-link" id="nav_tabs_link_1590237872021_16" data-toggle="tab" href="#nav_tabs_content_1590237872021_16" role="tab" aria-controls="nav_tabs_content_1590237872021_16" aria-selected="false" data-original-title="" title="">Biografies</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590237872021_17" data-toggle="tab" href="#nav_tabs_content_1590237872021_17" role="tab" aria-controls="nav_tabs_content_1590237872021_17" aria-selected="false" data-original-title="" title="">Èxits Esportius</a>
+                                    <a class="nav-link" id="nav_tabs_link_1590237872021_17" data-toggle="tab" href="#nav_tabs_content_1590237872021_17" role="tab" aria-controls="nav_tabs_content_1590237872021_17" aria-selected="false" data-original-title="" title="">Èxits Esportius</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590237872021_18" data-toggle="tab" href="#nav_tabs_content_1590237872021_18" role="tab" aria-controls="nav_tabs_content_1590237872021_18" aria-selected="false" data-original-title="" title="">Distincions Esportives</a>
+                                    <a class="nav-link" id="nav_tabs_link_1590237872021_18" data-toggle="tab" href="#nav_tabs_content_1590237872021_18" role="tab" aria-controls="nav_tabs_content_1590237872021_18" aria-selected="false" data-original-title="" title="">Distincions Esportives</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590237872021_19" data-toggle="tab" href="#nav_tabs_content_1590237872021_19" role="tab" aria-controls="nav_tabs_content_1590237872021_19" aria-selected="false" data-original-title="" title="">Atletes Destacats</a>
+                                    <a class="nav-link" id="nav_tabs_link_1590237872021_19" data-toggle="tab" href="#nav_tabs_content_1590237872021_19" role="tab" aria-controls="nav_tabs_content_1590237872021_19" aria-selected="false" data-original-title="" title="">Atletes Destacats</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" id="nav_tabs_link_1590237872021_20" data-toggle="tab" href="#nav_tabs_content_1590237872021_20" role="tab" aria-controls="nav_tabs_content_1590237872021_20" aria-selected="false" data-original-title="" title="">Cros de Sant Sebastià</a>
+                                    <a class="nav-link" id="nav_tabs_link_1590237872021_20" data-toggle="tab" href="#nav_tabs_content_1590237872021_20" role="tab" aria-controls="nav_tabs_content_1590237872021_20" aria-selected="false" data-original-title="" title="">Cros de Sant Sebastià</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link active show" id="nav_tabs_link_1590237872021_21" data-toggle="tab" href="#nav_tabs_content_1590237872021_21" role="tab" aria-controls="nav_tabs_content_1590237872021_21" aria-selected="true" data-original-title="" title="">Altres dades d'interès</a>
+                                    <a class="nav-link active show" id="nav_tabs_link_1590237872021_21" data-toggle="tab" href="#nav_tabs_content_1590237872021_21" role="tab" aria-controls="nav_tabs_content_1590237872021_21" aria-selected="true" data-original-title="" title="">Altres dades d'interès</a>
                                 </li>
                             </ul>
                             </div>
                             <div class="card-body tab-content">
                             <div class="tab-pane fade" id="nav_tabs_content_1590237872021_16" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_16">
-                                <p>
-                                En el següent enllaç disposeu de les següents biografies.
-                                </p>
+                                <p>En el següent enllaç disposeu de les següents biografies.</p>
                                 <ul>
-                                <li>
-                                    <p>
-                                    <b>Biografies de Presidents
-                                    </b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Biografies Premis JAS-MARCA
-                                    </b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Biografies Olímpics</b>
-                                    </p>
-                                </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/BIOGRAFIES+PRESIDENTS.pdf" target="_blank"><p><b>Biografies de Presidents</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/PREMIS+JAS-MARCA.pdf" target="_blank"><p><b>Biografies Premis JAS-MARCA</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/ATLETES+OLIMPICS+SABADELLENCS.pdf" target="_blank"><p><b>Biografies Olímpics</b></p></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590237872021_17" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_17">
-                                <p>
-                                En el següent enllaç disposeu dels èxits esportius obtinguts.
+                                <p>En el següent enllaç disposeu dels èxits esportius obtinguts.</p>
                                 <br/>
                                 <br/>
-                                </p>
                                 <ul>
-                                <li>
-                                    <p>
-                                    <b>Èxits a nivell d'equip</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Èxits a nivell organitzatiu</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Èxits a nivell individual</b>
-                                    </p>
-                                </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/EXITS+A+NIVELL+EQUIP.pdf" target="_blank"><p><b>Èxits a nivell d'equip</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/EXITS+A+NIVELL+ORGANITZATIU.pdf" target="_blank"><p><b>Èxits a nivell organitzatiu</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/EXITS+A+NIVELL+INDIVIDUAL.pdf" target="_blank"><p><b>Èxits a nivell individual</b></p></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590237872021_18" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_18">
-                                <p>
-                                En el següent enllaç disposeu de les distincions esportives.
+                                <p>En el següent enllaç disposeu de les distincions esportives.</p>
                                 <br/>
                                 <br/>
-                                </p>
                                 <ul>
-                                <li>
-                                    <p>
-                                    <b>Distincions rebudes</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Distincions atorgades</b>
-                                    </p>
-                                </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/DISTINCIONS+REBUDES.pdf" target="_blank"><p><b>Distincions rebudes</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/DISTINCIONS+ATORGADES.pdf" target="_blank"><p><b>Distincions atorgades</b></p></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590237872021_19" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_19">
                                 <blockquote>
-                                <p>
-                                    En el següent enllaç disposeu dels atletes més detacats.
-                                    <br/>
-                                    <br/>
-                                </p>
+                                <p>En el següent enllaç disposeu dels atletes més detacats.</p>
+                                <br/>
+                                <br/>
                                 </blockquote>
                                 <ul>
-                                <li>
-                                    <p>
-                                    <b>Relació de Campions d'Espanya</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Relació de Campions d'Espanya Màster</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Relació de Campions de Catalunya Absolut</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Atletes que han estat Internacionals</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Atletes que han estat medallistes estatals Absoluts</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Atletes que han estat medallistes internacionals</b>
-                                    </p>
-                                </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/RELACION+CAMPIONS+ESPA%C3%91A.pdf" target="_blank"><p><b>Relació de Campions d'Espanya</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/RELACIO+CAMPIONS+ESPA%C3%91A+MASTER.pdf" target="_blank"><p><b>Relació de Campions d'Espanya Màster</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/RELACIO+CAMPIONS+CATALUNYA+ABSOLUT.pdf" target="_blank"><p><b>Relació de Campions de Catalunya Absolut</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/ATLETES+DE+LA+J.A.S.+QUE+HAN+ESTAT+INTERNACIONALS.pdf" target="_blank"><p><b>Atletes que han estat Internacionals</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/ATLETES+DE+LA+JAS+QUE+HAN+ESTAT++MEDALLISTES+ESTATALS+ABSOLUTS.pdf" target="_blank"><p><b>Atletes que han estat medallistes estatals Absoluts</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/ATLETES+DE+LA+JAS+QUE+HAN+ESTAT++MEDALLISTES+INTERNACIONALS.pdf" target="_blank"><p><b>Atletes que han estat medallistes internacionals</b></p></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590237872021_20" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_20">
                                 <blockquote>
-                                <p>
-                                    En el següent enllaç disposeu d'informació sobre el Cros de Sant Sebastià.
-                                    <br/>
-                                    <br/>
-                                </p>
+                                <p>En el següent enllaç disposeu d'informació sobre el Cros de Sant Sebastià.</p>
+                                <br/>
+                                <br/>
                                 </blockquote>
                                 <ul>
-                                <li>
-                                    <p>Historial Cros Sant Sebastià</p>
-                                </li>
-                                <li>
-                                    <p>Historial Campions de Sabadell de Cros</p>
-                                </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/HISTORIAL+GRAN+PREMI+SANT+SEBASTIA+DE+CROS.pdf" target="_blank"><p><b>Historial Cros Sant Sebastià</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/HISTORIAL+CAMPIONS+DE+SABADELL+DE+CROS.pdf" target="_blank"><p><b>Historial Campions de Sabadell de Cros</b></p></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="tab-pane fade active show" id="nav_tabs_content_1590237872021_21" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_21">
                                 <blockquote>
-                                <p>
-                                    En el següent enllaç disposeu d'informació d'interès històric de la JA Sabadell.
-                                    <br/>
-                                    <br/>
-                                </p>
+                                <p>En el següent enllaç disposeu d'informació d'interès històric de la JA Sabadell.</p>
+                                <br/>
+                                <br/>
                                 </blockquote>
                                 <ul>
-                                <li>
-                                    <p>
-                                    <b>Resum Cronològic</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Els Noms de l'entitat</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Els Presidents al llarg de la història</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Grans esdeveniments amb presencia d'atletes de la JA Sabadell</b>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                    <b>Els pioners de l'atletisme Sabadellenc</b>
-                                    </p>
-                                </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/RESUM+CRONOLOGIC.pdf" target="_blank"><p><b>Resum Cronològic</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/ELS+NOMS+DE+L'ENTITAT.pdf" target="_blank"><p><b>Els Noms de l'entitat</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/ELS+PRESIDENTS+AL+LLARG+DE+LA+HISTORIA.pdf" target="_blank"><p><b>Els Presidents al llarg de la història</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/GRANS+ESDEVENIMENTS.pdf" target="_blank"><p><b>Grans esdeveniments amb presencia d'atletes de la JA Sabadell</b></p></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/ELS+PIONERS+DE+ATLETISME+SABADELLENC.pdf" target="_blank"><p><b>Els pioners de l'atletisme Sabadellenc</b></p></a>
+                                    </li>
                                 </ul>
                             </div>
                             </div>
