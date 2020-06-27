@@ -4,25 +4,13 @@
         <template id="berp_20200524_1626_website" name="Història">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
-                <section class="s_cover parallax pt256 pb256" data-scroll-background-ratio="0" style="background-image: none;">
-                    <span class="s_parallax_bg oe_img_bg oe_custom_bg o_bg_img_opt_custom" style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/historia/joventut+atl%C3%A8tica_p001.png);background-size:auto;background-position:70% 78%"/>
+                <section class="s_cover parallax pb152 pt192" data-scroll-background-ratio="0" style="background-image: none;">
+                    <span class="s_parallax_bg oe_img_bg oe_custom_bg o_bg_img_opt_custom" style="background-image: url(&quot;https://berp-bucket.s3.eu-west-2.amazonaws.com/img/historia/joventut+atl%C3%A8tica_p001.png&quot;); background-size: 18% 100%; background-position: 50% 0%;"/>
                 </section>
-                <section class="s_text_block pt32 pb32">
+                <section class="s_text_block pb32 pt0">
                     <div class="container">
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1 pt32 pb32">
-                        <h3 class="lead" style="text-align: center; ">
-                            <b>
-                            <font style="font-size: 24px;">JA SABADELL</font>
-                            </b>
-                        </h3>
-                        <h3 class="lead" style="text-align: center; ">
-                            <b>
-                            <font style="font-size: 24px;">
-                                <br/>
-                            </font>
-                            </b>
-                        </h3>
                         <p style="margin: 0.5em 0px; color: rgb(32, 33, 34); font-family: sans-serif;">La&amp;nbsp;<b>Joventut Atlètica Sabadell</b>&amp;nbsp;(JAS) és un club d'atletisme de Sabadell (Barcelona) , afiliat a la <a href="http://fcatletisme.cat/" target="_blank">Federació Catalana d'Atletisme (FCA)</a>. Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la&amp;nbsp;<a href="https://www.rfea.es/" target="_blank">Real Federación Española de Atletismo</a>&amp;nbsp;(RFEA). Els atletes representen a l'entitat en totes les diferents categories existents de competició atlètica des dels benjamins fins als veterans.</p>
                         <p style="margin: 0.5em 0px; color: rgb(32, 33, 34); font-family: sans-serif;">Al mateix temps, es tracta d'una entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà. Com a tal, l'entitat té un conveni amb l'Ajuntament de Sabadell per col·laborar en totes les activitats d'atletisme que s'adrecen a la ciutadania i per participar activament en l'organització de l'escola municipal d'atletisme.</p>
                         <p style="margin: 0.5em 0px; color: rgb(32, 33, 34); font-family: sans-serif;">Fundat en 1921 i registrat en 1924 com entitat excursionista, en 1927 crea la secció atlètica i des de 1946 existeix únicament com a club atlètic. És a partir de 1950, quan l'entitat adopta el nom actual i en la denominació en què és coneguda des de llavors: Joventut Atlètica Sabadell (JAS).</p>
