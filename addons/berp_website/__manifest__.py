@@ -21,7 +21,7 @@
     ],
     'css': [
         'static/css/productos.css'
-    ]
+    ],
     'demo': [],
     'application': True,
 }
