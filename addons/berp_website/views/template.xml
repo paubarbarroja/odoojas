@@ -83,7 +83,7 @@
                                     </ul>
                                     <p>
                                         <a href="https://www.google.com/maps/place/Joventut+Atl%C3%A8tica+Sabadell/@41.5390129,2.1240545,17z/data=!4m5!3m4!1s0x12a495789c3fbb85:0x2a14a076affaf167!8m2!3d41.5390129!4d2.1262432" target="_blank">
-                                            <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/RRSS/alfiler.png" class="img img-fluid mx-auto" alt="Ubicació JAS"/>
+                                            <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/RRSS/alfiler.png" class="img img-fluid mx-auto" alt="Ubicació JAS" width="20" height="auto"/>
                                         </a>
                                         <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-facebook-square"/></a>
                                         <a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-twitter"/></a>
