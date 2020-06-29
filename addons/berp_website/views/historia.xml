@@ -63,8 +63,6 @@
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590237872021_17" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_17">
                                 <p>En el següent enllaç disposeu dels èxits esportius obtinguts.</p>
-                                <br/>
-                                <br/>
                                 <ul>
                                     <li>
                                         <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/EXITS+A+NIVELL+EQUIP.pdf" target="_blank"><p><b>Èxits a nivell d'equip</b></p></a>
@@ -79,8 +77,6 @@
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590237872021_18" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_18">
                                 <p>En el següent enllaç disposeu de les distincions esportives.</p>
-                                <br/>
-                                <br/>
                                 <ul>
                                     <li>
                                         <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/DISTINCIONS+REBUDES.pdf" target="_blank"><p><b>Distincions rebudes</b></p></a>
@@ -91,11 +87,7 @@
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590237872021_19" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_19">
-                                <blockquote>
                                 <p>En el següent enllaç disposeu dels atletes més detacats.</p>
-                                <br/>
-                                <br/>
-                                </blockquote>
                                 <ul>
                                     <li>
                                         <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/RELACION+CAMPIONS+ESPA%C3%91A.pdf" target="_blank"><p><b>Relació de Campions d'Espanya</b></p></a>
@@ -118,11 +110,7 @@
                                 </ul>
                             </div>
                             <div class="tab-pane fade" id="nav_tabs_content_1590237872021_20" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_20">
-                                <blockquote>
                                 <p>En el següent enllaç disposeu d'informació sobre el Cros de Sant Sebastià.</p>
-                                <br/>
-                                <br/>
-                                </blockquote>
                                 <ul>
                                     <li>
                                         <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/HISTORIAL+GRAN+PREMI+SANT+SEBASTIA+DE+CROS.pdf" target="_blank"><p><b>Historial Cros Sant Sebastià</b></p></a>
@@ -133,11 +121,7 @@
                                 </ul>
                             </div>
                             <div class="tab-pane fade active show" id="nav_tabs_content_1590237872021_21" role="tabpanel" aria-labelledby="nav_tabs_link_1590237872021_21">
-                                <blockquote>
                                 <p>En el següent enllaç disposeu d'informació d'interès històric de la JA Sabadell.</p>
-                                <br/>
-                                <br/>
-                                </blockquote>
                                 <ul>
                                     <li>
                                         <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/HISTORIA/RESUM+CRONOLOGIC.pdf" target="_blank"><p><b>Resum Cronològic</b></p></a>
