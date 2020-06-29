@@ -93,18 +93,28 @@
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <span class="terms_of_use" style="color:white">-
-                                        <a href="/legal/terms-of-use" style="color:white">Términos de Uso</a>
-                                    </span>
-                                    <span class="terms_of_use" style="color:white">-
-                                        <a href="/politica_cookies" style="color:white">Política de cookies</a>
-                                    </span>
-                                    <span class="privacy_policy" style="color:white">-
-                                        <a href="/politica_privacidad" style="color:white">Política de Privacidad</a>
-                                    </span>
-                                    <span class="legal_advice" style="color:white">-
-                                        <a href="/aviso_legal" style="color:white">Aviso Legal</a>
-                                    </span>
+                                    <ul style="list-style-type: circle;">
+                                        <li>
+                                            <span class="terms_of_use" style="color:white">
+                                                <a href="/legal/terms-of-use" style="color:white">Términos de Uso</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="terms_of_use" style="color:white">
+                                                <a href="/politica_cookies" style="color:white">Política de cookies</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="privacy_policy" style="color:white">
+                                                <a href="/politica_privacidad" style="color:white">Política de Privacidad</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="legal_advice" style="color:white">
+                                                <a href="/aviso_legal" style="color:white">Aviso Legal</a>
+                                            </span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
