@@ -82,7 +82,6 @@
                                         <li><i class="fa fa-envelope"/>  <span style="color:white" t-field="res_company.email"/></li>
                                     </ul>
                                     <p>
-                                        <a t-if="res_company.social_facebook" t-att-href="res_company.social_facebook" class="btn btn-sm btn-link"><i class="fa fa-2x fa-facebook-square"/></a>
                                         <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link"><i class="fa fa-2x fa-facebook-square"/></a>
                                         <a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link"><i class="fa fa-2x fa-twitter"/></a>
                                         <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link"><i class="fa fa-2x fa-linkedin"/></a>
