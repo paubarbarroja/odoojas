@@ -69,6 +69,27 @@
             </xpath>
         </template>
 
+
+                            
+        <template id="view_last_news">
+            <t t-foreach="posts" t-as="p">
+                <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+                <div class="col-6 col-md-3 my-2 loading_container s_latest_posts_post">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="properties"/>
+                        <t t-set="additionnal_classes" t-value="'thumb'"/>
+                    </t>
+                </div>
+                <div>
+                    <h2 t-field="p.name"/>
+                    <p t-field="p.subtitle"/>
+                    <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
+                </div>
+            </t>
+        </template>
+
+
+
         <template inherit_id="website.layout" id="inicio_berp_footer">
             <xpath expr="//footer" position="replace">
                 <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer" style="background-color: rgb(36, 88, 128)">
@@ -82,9 +103,7 @@
                                         <li><i class="fa fa-envelope"/>  <span style="color:white" t-field="res_company.email"/></li>
                                     </ul>
                                     <p>
-                                        <a href="https://www.google.com/maps/place/Joventut+Atl%C3%A8tica+Sabadell/@41.5390129,2.1240545,17z/data=!4m5!3m4!1s0x12a495789c3fbb85:0x2a14a076affaf167!8m2!3d41.5390129!4d2.1262432" target="_blank">
-                                            <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/RRSS/alfiler.png" class="img img-fluid mx-auto" alt="Ubicació JAS" width="20" height="auto"/>
-                                        </a>
+                                        <!-- https://www.google.com/maps/place/Joventut+Atl%C3%A8tica+Sabadell/@41.5390129,2.1240545,17z/data=!4m5!3m4!1s0x12a495789c3fbb85:0x2a14a076affaf167!8m2!3d41.5390129!4d2.1262432 -->
                                         <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-facebook-square"/></a>
                                         <a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-twitter"/></a>
                                         <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-linkedin"/></a>
@@ -206,23 +225,6 @@
                     </t>
                 </t>
             </xpath>
-        </template>
-                            
-        <template id="view_last_news">
-            <t t-foreach="posts" t-as="p">
-                <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
-                <div class="loading_container s_latest_posts_post">
-                    <t t-call="website_blog.blog_cover">
-                        <t t-set="cover_properties" t-value="properties"/>
-                        <t t-set="additionnal_classes" t-value="'thumb'"/>
-                    </t>
-                    <div>
-                        <h2 t-field="p.name"/>
-                        <p t-field="p.subtitle"/>
-                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
-                    </div>
-                </div>
-            </t>
         </template>
 
     </data>
