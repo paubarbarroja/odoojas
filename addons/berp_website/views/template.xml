@@ -246,7 +246,7 @@
                             <t t-call="website_sale.product_price" />
                             <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not exist.</p>
                             <t t-if="not product.categ_id.id == 4">
-                                <a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">Add to Cart</a>
+                                <a role="button" id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">Añadir al Carrito</a>
                             </t>
                         </div>
                     </form>
