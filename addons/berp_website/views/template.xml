@@ -41,10 +41,10 @@
                             </div>
                         </div>
                     </section>
-                    <section class="s_latest_posts_big_picture s_three_columns pt32 pb32 oe_custom_bg" style="background-color: rgb(107, 173, 222);">
+                    <section class="s_latest_posts pt32 pb32" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
                             <h1 class="s_title_default" style="text-align: left; color: rgb(255, 255, 255); "> Últimes Notícies <hr/></h1>
-                            <div class="row s_col_no_bgcolor js_get_posts active" data-loading="true" data-template="berp_website.view_last_news_inherit" data-filter-by-blog-id="1" data-posts-limit="4"/>
+                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true" data-template="berp_website.view_last_news_inherit" data-filter-by-blog-id="1" data-posts-limit="4"/>
                         </div>
                     </section>
                     <section class="s_text_block pt32 pb32">
@@ -73,31 +73,66 @@
         </template>
 
                             
+        <!-- <template id="view_last_news">
+            <t t-foreach="posts" t-as="p">
+                <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+                <div class="col-12 col-md-6 my-3 loading_container s_latest_posts_post">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="properties"/>
+                        <t t-set="additionnal_classes" t-value="'thumb'"/>
+                    </t>
+                    <div>
+                        <h2 t-field="p.name"/>
+                        <p t-field="p.subtitle"/>
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
+                    </div>
+                </div>
+            </t>
+        </template> -->
+
         <template id="view_last_news">
             <t t-foreach="posts" t-as="p">
                 <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
-                <div class="col-6 col-md-3 my-2 loading_container s_latest_posts_post">
+                <div class="col-12 media mt-3 col-lg-3 s_latest_posts_post">
                     <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
                         <t t-call="website_blog.blog_cover">
                             <t t-set="cover_properties" t-value="properties"/>
-                            <t t-set="additionnal_classes" t-value="'thumb'"/>
+                            <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
                         </t>
                     </a>
-                </div>
-                <div>
-                    <h2 t-field="p.name"/>
-                    <p t-field="p.subtitle"/>
-                    <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
+                    <div class="media-body ml-3 pb-2">
+                        <h4 t-field="p.name"/>
+                        <p t-field="p.subtitle"/>
+                        <a class="btn btn-sm btn-secondary" t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Llegir més</a>
+                    </div>
                 </div>
             </t>
         </template>
-
 
         <template id="view_last_news_inherit" inherit_id="berp_website.view_last_news">
             <xpath expr="//t[@t-set='cover_properties']" position="attributes">
                 <attribute name="t-value">dict(properties, **{"background-image": "url(%s)" % p.get_website_meta()["opengraph_meta"]["og:image"]})</attribute>
             </xpath>
         </template>
+
+        
+
+<!-- 
+        <template id="view_last_news_inherit" inherit_id="website_blog.s_latest_posts_big_picture_template">
+            <xpath expr="//div[@class='loading_container']" position="replace">
+                <div class="col-12 col-md-6 my-3 loading_container s_latest_posts_post">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="properties"/>
+                        <t t-set="additionnal_classes" t-value="'thumb'"/>
+                    </t>
+                    <div>
+                        <h2 t-field="p.name"/>
+                        <p t-field="p.subtitle"/>
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
+                    </div>
+                </div>
+            </xpath>
+        </template> -->
 
 
 
