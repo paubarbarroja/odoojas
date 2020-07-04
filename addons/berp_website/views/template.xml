@@ -41,10 +41,10 @@
                             </div>
                         </div>
                     </section>
-                    <section class="s_latest_posts_big_picture s_three_columns pt32 pb32 oe_custom_bg" style="background-color: rgb(107, 173, 222);">
+                    <section class="s_latest_posts pt32 pb32" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
                             <h1 class="s_title_default" style="text-align: left; color: rgb(255, 255, 255); "> Últimes Notícies <hr/></h1>
-                            <div class="row s_col_no_bgcolor js_get_posts active" data-loading="true" data-template="berp_website.view_last_news" data-filter-by-blog-id="1" data-posts-limit="4"/>
+                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true" data-template="berp_website.view_last_news_inherit" data-filter-by-blog-id="1" data-posts-limit="4"/>
                         </div>
                     </section>
                     <section class="s_text_block pt32 pb32">
@@ -54,9 +54,12 @@
                                     <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> QUI SOM ?
                                         <hr/>
                                     </h1>
-                                    <p class="lead o_default_snippet_text" style="font-family: sans-serif, serif, Helvetica;">La Joventut Atlètica Sabadell (JAS) és un club d'atletisme de Sabadell (Barcelona), afiliat a la Federació Catalana d'Atletisme (FCA).
-                                        <br/>Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la Real Federación Española de Atletismo (RFEA). Fundat al 1921,
-                                        l'entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà...
+                                    <p class="lead o_default_snippet_text" style="font-family: sans-serif, serif, Helvetica;">
+                                        <font style="font-size: 14px;">La Joventut Atlètica Sabadell (JAS) és un club d'atletisme de Sabadell (Barcelona), afiliat a la Federació Catalana d'Atletisme (FCA).
+                                                            &amp;nbsp;</font>
+                                        <font style="font-size: 14px;">Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la Real Federación Española de Atletismo (RFEA). Fundat al 1921,
+                                                                l'entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà...
+                                                        &amp;nbsp;</font>
                                     </p>
                                     <div class="s_btn col-lg-12 text-right pt0 pb0">
                                         <a href="/historia" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Més <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109"/> </a>
@@ -68,6 +71,71 @@
                 </div>
             </xpath>
         </template>
+
+                            
+        <!-- <template id="view_last_news">
+            <t t-foreach="posts" t-as="p">
+                <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+                <div class="col-12 col-md-6 my-3 loading_container s_latest_posts_post">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="properties"/>
+                        <t t-set="additionnal_classes" t-value="'thumb'"/>
+                    </t>
+                    <div>
+                        <h2 t-field="p.name"/>
+                        <p t-field="p.subtitle"/>
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
+                    </div>
+                </div>
+            </t>
+        </template> -->
+
+        <template id="view_last_news">
+            <t t-foreach="posts" t-as="p">
+                <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+                <div class="col-12 media mt-3 col-lg-3 s_latest_posts_post">
+                    <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                        <t t-call="website_blog.blog_cover">
+                            <t t-set="cover_properties" t-value="properties"/>
+                            <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+                        </t>
+                    </a>
+                    <div class="media-body ml-3 pb-2">
+                        <h4 t-field="p.name"/>
+                        <p t-field="p.subtitle"/>
+                        <a class="btn btn-sm btn-secondary" t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Llegir més</a>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <template id="view_last_news_inherit" inherit_id="berp_website.view_last_news">
+            <xpath expr="//t[@t-set='cover_properties']" position="attributes">
+                <attribute name="t-value">dict(properties, **{"background-image": "url(%s)" % p.get_website_meta()["opengraph_meta"]["og:image"]})</attribute>
+            </xpath>
+        </template>
+
+        
+
+<!-- 
+        <template id="view_last_news_inherit" inherit_id="website_blog.s_latest_posts_big_picture_template">
+            <xpath expr="//div[@class='loading_container']" position="replace">
+                <div class="col-12 col-md-6 my-3 loading_container s_latest_posts_post">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="properties"/>
+                        <t t-set="additionnal_classes" t-value="'thumb'"/>
+                    </t>
+                    <div>
+                        <h2 t-field="p.name"/>
+                        <p t-field="p.subtitle"/>
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
+                    </div>
+                </div>
+            </xpath>
+        </template> -->
+
+
+
 
         <template inherit_id="website.layout" id="inicio_berp_footer">
             <xpath expr="//footer" position="replace">
@@ -82,9 +150,7 @@
                                         <li><i class="fa fa-envelope"/>  <span style="color:white" t-field="res_company.email"/></li>
                                     </ul>
                                     <p>
-                                        <a href="https://www.google.com/maps/place/Joventut+Atl%C3%A8tica+Sabadell/@41.5390129,2.1240545,17z/data=!4m5!3m4!1s0x12a495789c3fbb85:0x2a14a076affaf167!8m2!3d41.5390129!4d2.1262432" target="_blank">
-                                            <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/RRSS/alfiler.png" class="img img-fluid mx-auto" alt="Ubicació JAS" width="20" height="auto"/>
-                                        </a>
+                                        <!-- https://www.google.com/maps/place/Joventut+Atl%C3%A8tica+Sabadell/@41.5390129,2.1240545,17z/data=!4m5!3m4!1s0x12a495789c3fbb85:0x2a14a076affaf167!8m2!3d41.5390129!4d2.1262432 -->
                                         <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-facebook-square"/></a>
                                         <a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-twitter"/></a>
                                         <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-linkedin"/></a>
@@ -206,23 +272,6 @@
                     </t>
                 </t>
             </xpath>
-        </template>
-                            
-        <template id="view_last_news">
-            <t t-foreach="posts" t-as="p">
-                <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
-                <div class="loading_container s_latest_posts_post">
-                    <t t-call="website_blog.blog_cover">
-                        <t t-set="cover_properties" t-value="properties"/>
-                        <t t-set="additionnal_classes" t-value="'thumb'"/>
-                    </t>
-                    <div>
-                        <h2 t-field="p.name"/>
-                        <p t-field="p.subtitle"/>
-                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">Read More</a>
-                    </div>
-                </div>
-            </t>
         </template>
 
     </data>
