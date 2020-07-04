@@ -23,8 +23,8 @@
                     <div class="container">
                     <div class="row">
                         <div class="col-lg-10 offset-lg-1 pt0 pb0">
-                            <p><b><font style="font-size: 24px;">VOLS INFORMACIÓ SOBRE ELS GRUPS D'ENTRENAMENT?? OMPLE EL FORMULARI I ENS POSEM EN CONTACTE AMB TÚ</font></b></p>
-                            <br/>
+                            <!-- <p><b><font style="font-size: 24px;">VOLS INFORMACIÓ SOBRE ELS GRUPS D'ENTRENAMENT?? OMPLE EL FORMULARI I ENS POSEM EN CONTACTE AMB TÚ</font></b></p>
+                            <br/> -->
                             <p>Actualment la JA Sabadell disposa de més de 150 atletes federats en categories superior ( Sub-18 fins a Màster). Molts d'ells entrenen i disfruten de l'atletisme a les nostres instal·lacions, amb els nostres entrenadors.</p>
                             <p>Tots ells i elles s'esforcen día rere día per tal d'assolir els seus objectius individuals, i ajudar a complir els objectius de club.</p>
                             <p>Seguidament fem un repàs de cada un d'ells.</p>
@@ -49,9 +49,9 @@
                             </div>
                             <div class="col-lg-8">
                                 <h4  style="color: rgb(255, 255, 255);">Josep Molins</h4>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">President de la JAS, entrenador nacional i atleta olímpic a Roma 60.</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Fons. </p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">President de la JAS, entrenador nacional i atleta olímpic a Roma 60.</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Fons. </p> -->
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
                                 <ul style="list-style-type: circle;">
                                     <li>
                                         <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns a Divendres: 19:00 - 21:00</p>
@@ -59,7 +59,7 @@
                                     <li>
                                         <p style="color: rgb(255, 255, 255); font-size: 15px;">Dissabte i Diumenge: 11:00 - 13:00</p>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                         </div>
@@ -70,14 +70,14 @@
                             </div>
                             <div class="col-lg-8">
                                 <h4 style="color: rgb(255, 255, 255);">Llorenç Esteve </h4>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Atleta internacional</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Fons.</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Atleta internacional</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Fons.</p> -->
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
                                 <ul style="list-style-type: circle;">
                                     <li>
                                         <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                         </div>
@@ -88,14 +88,35 @@
                             </div>
                             <div class="col-lg-8">
                                 <h4 style="color: rgb(255, 255, 255);">Juan Pedro Martinez</h4>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador nacional&amp;nbsp;</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Velocitat / tanques.</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador nacional&amp;nbsp;</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Velocitat / tanques.</p> -->
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
                                 <ul style="list-style-type: circle;">
                                     <li>
                                         <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                     </li>
-                                </ul>
+                                </ul> -->
+                            </div>
+                        </div>
+                        </div>
+
+
+                        <!--################################### TODO QUITAR TONI Y RAUL ################################################### -->
+                        <div class="col-lg-6 pt16 pb16">
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <div class="col-lg-4">
+                                <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
+                            </div>
+                            <div class="col-lg-8">
+                                <h4 style="color: rgb(255, 255, 255);">Raul Julian</h4>
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador nacional&amp;nbsp;</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de salts.</p> -->
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                                <ul style="list-style-type: circle;">
+                                    <li>
+                                        <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
+                                    </li>
+                                </ul> -->
                             </div>
                         </div>
                         </div>
@@ -105,15 +126,34 @@
                                 <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
                             </div>
                             <div class="col-lg-8">
-                                <h4 style="color: rgb(255, 255, 255);">Estefania Llorente</h4>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenadora nacional i atleta de la JA Sabadell</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Llançaments.</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                                <h4 style="color: rgb(255, 255, 255);">Antonio Redondo</h4>
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador nacional&amp;nbsp;</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Velocitat / tanques.</p> -->
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
                                 <ul style="list-style-type: circle;">
                                     <li>
                                         <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                     </li>
-                                </ul>
+                                </ul> -->
+                            </div>
+                        </div>
+                        </div>
+                        <!-- ####################################################################################################################### -->
+                        <div class="col-lg-6 pt16 pb16">
+                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                            <div class="col-lg-4">
+                                <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
+                            </div>
+                            <div class="col-lg-8">
+                                <h4 style="color: rgb(255, 255, 255);">Estefania Llorente</h4>
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenadora nacional i atleta de la JA Sabadell</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Llançaments.</p> -->
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                                <ul style="list-style-type: circle;">
+                                    <li>
+                                        <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
+                                    </li>
+                                </ul> -->
                             </div>
                         </div>
                         </div>
@@ -124,14 +164,14 @@
                             </div>
                             <div class="col-lg-8">
                                 <h4 style="color: rgb(255, 255, 255);">Manuel Martinez</h4>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador i exatleta</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Perxa.</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador i exatleta</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Perxa.</p> -->
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
                                 <ul style="list-style-type: circle;">
                                     <li>
                                         <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                         </div>
@@ -142,14 +182,14 @@
                             </div>
                             <div class="col-lg-8">
                                 <h4 style="color: rgb(255, 255, 255);">David Rua</h4>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrandor nacional</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Fons / Salts.</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrandor nacional</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Fons / Salts.</p> -->
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
                                 <ul style="list-style-type: circle;">
                                     <li>
                                         <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                         </div>
@@ -160,14 +200,14 @@
                             </div>
                             <div class="col-lg-8">
                                 <h4 style="color: rgb(255, 255, 255);">Jose Manuel Gomez</h4>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador i atleta internacional</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Marxa atlètica.</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador i atleta internacional</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Marxa atlètica.</p> -->
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
                                 <ul style="list-style-type: circle;">
                                     <li>
                                         <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                         </div>
@@ -178,14 +218,14 @@
                             </div>
                             <div class="col-lg-8">
                                 <h4 style="color: rgb(255, 255, 255);">Consol Gay</h4>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenadora nacional</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Màsters</p>
-                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenadora nacional</p>
+                                <p style="color: rgb(255, 255, 255); font-size: 15px;">Entrenador del grup de Màsters</p> -->
+                                <!-- <p style="color: rgb(255, 255, 255); font-size: 15px;">Horari d'entrenament:&amp;nbsp;</p>
                                 <ul style="list-style-type: circle;">
                                     <li>
                                         <p style="color: rgb(255, 255, 255); font-size: 15px;">-</p>
                                     </li>
-                                </ul>
+                                </ul> -->
                                 <p>
                                     <br/>
                                 </p>
