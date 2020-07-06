@@ -4,8 +4,8 @@
         <template id="berp_20200524_1625_website" name="Rècords y Rànquings">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
-                <section class="s_cover parallax pt256 pb256" data-scroll-background-ratio="0" style="background-image: none;">
-                    <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url(&quot;https://berp-bucket.s3.eu-west-2.amazonaws.com/img/historia/historia2.jpg&quot;); background-position: 50.39% 32.75%;"/>
+                <section class="" data-scroll-background-ratio="0" style="background-image: none;text-align:center;">
+                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/historia/historia2-recortada.jpg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip908016" style=" width: 100%; height:auto; max-width: 1920px"/>
                 </section>
                 <section class="pt32 pb32">
                     <div class="container">

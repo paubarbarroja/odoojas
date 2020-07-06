@@ -4,8 +4,8 @@
         <template id="berp_20200524_1414_website" name="Escola d'Atletisme">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
-                    <section class="s_cover parallax pt256 pb256" data-scroll-background-ratio="0" style="background-image: none;">
-                        <span class="s_parallax_bg oe_img_bg oe_custom_bg o_bg_img_opt_custom" style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/escola19_20.png);background-size:auto;background-position:70% 78%"/>
+                    <section class="" data-scroll-background-ratio="0" style="background-image: none;text-align:center;">
+                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/escola/escola19_20-recortada.png" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip908016" style=" width: 100%; height:auto; max-width: 1960px"/>
                     </section>
                     <section class="pt32 pb0">
                         <div class="container">
