@@ -5,7 +5,7 @@
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
                 <section class="" data-scroll-background-ratio="0" style="background-image: none;text-align:center;">
-                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/historia/joventut+atl%C3%A8tica_p001.png" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip908016" style=" width: 100%; height:auto; max-width: 450px"/>
+                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/historia/joventut+atl%C3%A8tica_p001.png" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip908016" style=" width: 100%; height:auto; max-width: 350px"/>
                 </section>
                 <section class="s_text_block pb32 pt0">
                     <div class="container">
