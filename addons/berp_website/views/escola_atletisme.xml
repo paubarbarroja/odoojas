@@ -53,9 +53,6 @@
                                     <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 8</h2>
                                     <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-8 pertanyen els atletes nascuts l'any 2013 i 2014. Per aquesta categoria tenim un grup d'entrenament.</p>
                                     <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
-                                    <p>
-                                        <br/>
-                                    </p>
                                 </div>
                                 <div class="pt0 pb0 col-lg-4">
                                     <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub8.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip475659" data-pagespeed-url-hash="2490261932" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
@@ -86,7 +83,6 @@
                                     <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-12 pertanyen els atletes nascuts l'any 2009 i 2010. Per aquesta categoria tenim dos grups d'entrenament.</p>
                                     <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
                                     <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
-                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">&amp;nbsp;</p>
                                 </div>
                                 <div class="pt0 pb0 col-lg-4">
                                     <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub12.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip312020" data-pagespeed-url-hash="46108210" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
