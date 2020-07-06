@@ -17,13 +17,13 @@ class berp_website_informacio_soci(http.Controller):
 
 
 class berp_website_escola_atletisme(http.Controller):
-    @http.route('/escola_atletisme', auth='user', website=True)
+    @http.route('/escola_atletisme', auth='public', website=True)
     def index(self, **kw):
         return http.request.render("berp_website.berp_20200524_1414_website",{})
 
 
 class berp_website_grups_entrenament(http.Controller):
-    @http.route('/grups_entrenament', auth='user', website=True)
+    @http.route('/grups_entrenament', auth='public', website=True)
     def index(self, **kw):
         return http.request.render("berp_website.berp_20200524_1623_website",{})
 
