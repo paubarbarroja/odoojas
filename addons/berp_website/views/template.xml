@@ -14,8 +14,10 @@
         <template inherit_id="website.homepage" id="berp_20200627_2046_website" name="Inici">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div class="oe_structure">
-                    <section class="s_banner parallax s_parallax_is_fixed pt0 pb208" data-scroll-background-ratio="1" style="background-image: none;">
-                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/pista1.jpg);background-position:47.06% 100%"/>
+                    <section class="s_banner parallax s_parallax_is_fixed pt0 pb208" data-scroll-background-ratio="1"
+                        style="background-image: none;">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg"
+                            style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/pista1.jpg);background-position:47.06% 100%" />
                         <div class="row s_nb_column_fixed">
                             <div class="jumbotron rounded bg-black-75 pt48 pb48 col-lg-6" data-name="Box" style="">
                                 <div class="row">
@@ -33,9 +35,14 @@
                             <div class="row">
                                 <div class="pt0 col-lg-12 pb0">
                                     <h1 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES-TE SOCI !</h1>
-                                    <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES ATLETISME AMB NOSALTRES<hr/></h2>
+                                    <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES ATLETISME AMB
+                                        NOSALTRES
+                                        <hr />
+                                    </h2>
                                     <div class="s_btn col-lg-12 text-center pt0 pb0">
-                                        <a href="/informacio_soci" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Entra Aqui <span class="fa fa-1x fa-fw ml-1 fa-user-plus" style=""/></a>
+                                        <a href="/informacio_soci" class="rounded-circle btn btn-outline-info btn-lg"
+                                            data-original-title="" title="" aria-describedby="tooltip717931"> Entra Aqui <span
+                                                class="fa fa-1x fa-fw ml-1 fa-user-plus" style="" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -43,8 +50,11 @@
                     </section>
                     <section class="s_latest_posts pt32 pb32" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
-                            <h1 class="s_title_default" style="text-align: left; color: rgb(255, 255, 255); "> Últimes Notícies <hr/></h1>
-                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true" data-template="berp_website.view_last_news_inherit" data-filter-by-blog-id="1" data-posts-limit="4"/>
+                            <h1 class="s_title_default" style="text-align: left; color: rgb(255, 255, 255); "> Últimes Notícies
+                                <hr />
+                            </h1>
+                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true"
+                                data-template="berp_website.view_last_news_inherit" data-filter-by-blog-id="1" data-posts-limit="4" />
                         </div>
                     </section>
                     <section class="s_text_block pt32 pb32">
@@ -52,17 +62,24 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);"> QUI SOM ?
-                                        <hr/>
+                                        <hr />
                                     </h1>
                                     <p class="lead o_default_snippet_text" style="font-family: sans-serif, serif, Helvetica;">
-                                        <font style="font-size: 14px;">La Joventut Atlètica Sabadell (JAS) és un club d'atletisme de Sabadell (Barcelona), afiliat a la Federació Catalana d'Atletisme (FCA).
-                                                            &amp;nbsp;</font>
-                                        <font style="font-size: 14px;">Tant els seus atletes com els seus equips participen en competicions d'àmbit estatal sota el reglament de la Real Federación Española de Atletismo (RFEA). Fundat al 1921,
-                                                                l'entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de Sabadell amb una llarga trajectòria i arrelament ciutadà...
-                                                        &amp;nbsp;</font>
+                                        <font style="font-size: 14px;">La Joventut Atlètica Sabadell (JAS) és un club d'atletisme de
+                                            Sabadell (Barcelona), afiliat a la Federació Catalana d'Atletisme (FCA).
+                                            &amp;nbsp;</font>
+                                        <font style="font-size: 14px;">Tant els seus atletes com els seus equips participen en
+                                            competicions d'àmbit estatal sota el reglament de la Real Federación Española de Atletismo
+                                            (RFEA). Fundat al 1921,
+                                            l'entitat sense ànim de lucre dedicada a la promoció de l'atletisme dins la ciutat de
+                                            Sabadell amb una llarga trajectòria i arrelament ciutadà...
+                                            &amp;nbsp;</font>
                                     </p>
                                     <div class="s_btn col-lg-12 text-right pt0 pb0">
-                                        <a href="/historia" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Més <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109"/> </a>
+                                        <a href="/historia" class="rounded-circle btn btn-outline-info btn-lg" data-original-title=""
+                                            title="" aria-describedby="tooltip717931"> Més <i
+                                                class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title=""
+                                                aria-describedby="tooltip389109" /> </a>
                                     </div>
                                 </div>
                             </div>
