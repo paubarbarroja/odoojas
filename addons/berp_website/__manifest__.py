@@ -2,7 +2,7 @@
     'name': "Website",
     'summary': """Berp - Website""",
     'version': '1.0',
-    'depends': ['berp','website','crm','website_blog_excerpt_img','website_sale'],
+    'depends': ['berp','website','crm','website_blog_excerpt_img','website_sale','berp_solicitudes'],
     'author': "Pau Barbarroja",
     'category': 'berp',
     'description': """
@@ -11,6 +11,7 @@
         'views/template.xml',
         'views/informacio_soci.xml',
         'views/privacidad.xml',
+        'views/cookies.xml',
         'views/aviso_legal.xml',
         'views/products.xml',
         'views/formulari_soci.xml',

@@ -40,7 +40,7 @@
                                                 </div>
                                                 <div class="form-group form-field  form-field-selection-radio" data-model-field="false" data-optional="true">
                                                     <label class="control-label" for="Campo Selección única personalizado">
-                                                        <span>Genere</span>
+                                                        <span>Gènere</span>
                                                     </label>
                                                     <div class="radio">
                                                         <label class="control-label">
@@ -51,7 +51,7 @@
                                                     <div class="radio">
                                                         <label class="control-label">
                                                         <input name="Genere" type="radio" class="o_website_form_input" value="Femeni"/>
-                                                        <span>Femeni</span>
+                                                        <span>Femení</span>
                                                         </label>
                                                     </div> 
                                                 </div>

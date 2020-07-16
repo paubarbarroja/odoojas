@@ -4,8 +4,12 @@
         <template id="berp_20200524_1414_website" name="Escola d'Atletisme">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
-                    <section class="" data-scroll-background-ratio="0" style="background-image: none;text-align:center;">
-                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/escola/escola19_20-recortada.png" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip908016" style=" width: 100%; height:auto; max-width: 1960px"/>
+                    <section data-scroll-background-ratio="0" style="background-image: none;text-align:center;">
+                        <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/escola/escola19_20-recortada.png"
+                            class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title=""
+                            aria-describedby="tooltip908016" style=" width: 100%; height:auto; max-width: 1960px"
+                            data-pagespeed-url-hash="3043668512"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
                     </section>
                     <section class="pt32 pb0">
                         <div class="container">
@@ -13,7 +17,7 @@
                                 <div class="col-lg-12 s_title pb0 pt0" style="text-align: center;">
                                     <h1 class="s_title_default">
                                         <font style="font-size: 62px;">Escola d'Atletisme</font>
-                                        <hr/>
+                                        <hr />
                                     </h1>
                                 </div>
                             </div>
@@ -23,13 +27,23 @@
                         <div class="container">
                             <div class="row">
                                 <div class="pt32 pb32 col-lg-12">
-                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">L'Escola d'Atletisme de la JA Sabadell té com a objectiu principal proporcionar els valors de l'esforç, l'amistat i el companyerisme mitjançant el nostre esport.</p>
-                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">Actualment tenim més de 250 atletes a la nostre escola, des de la categoria sub-8 fins la categoria sub-16.</p>
-                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">L'activitat esportiva d'entrenaments es realitzarà a les Pistes Municipals "Josep Molins" de Sabadell durant els mesos de Setembre - Novembre i Març - Juny i durant els mesos de Desembre - Febrer s'entrenarà a la Pista Coberta. </p>
                                     <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">
-                                        <i>Enguany, degut al Covid-19 la pista coberta està inhabilitada i no la podrem fer servir.</i>
+                                        L'Escola d'Atletisme de la JA Sabadell té com a objectiu principal proporcionar els
+                                        valors de l'esforç, l'amistat i el companyerisme mitjançant el nostre esport.</p>
+                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">
+                                        Actualment tenim més de 250 atletes a la nostre escola, des de la categoria sub-8 fins
+                                        la categoria sub-16.</p>
+                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">
+                                        L'activitat esportiva d'entrenaments es realitzarà a les Pistes Municipals "Josep
+                                        Molins" de Sabadell durant els mesos de Setembre - Novembre i Març - Juny i durant els
+                                        mesos de Desembre - Febrer s'entrenarà a la Pista Coberta. </p>
+                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;">
+                                        <i>Enguany, degut al Covid-19 la pista coberta està inhabilitada i no la podrem fer
+                                            servir.</i>
                                     </p>
-                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;"> A continuació trobareu tota la informació sobre la nostra escola: grups d'entrenament, entrenadors, quotes...&amp;nbsp;</p>
+                                    <p class="lead" style="text-align: justify; color: rgb(33, 37, 41); font-size: 15px;"> A
+                                        continuació trobareu tota la informació sobre la nostra escola: grups d'entrenament,
+                                        entrenadors, quotes...&amp;nbsp;</p>
                                 </div>
                             </div>
                         </div>
@@ -37,10 +51,10 @@
                     <section class="oe_custom_bg pb0 pt32" style="">
                         <div class="container">
                             <div class="row s_nb_column_fixed">
-                                <div class="col-lg-12" >
+                                <div class="col-lg-12">
                                     <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
                                         <font style="font-size: 35px;">Grups d'entrenament</font>
-                                        <hr/>
+                                        <hr />
                                     </h1>
                                 </div>
                             </div>
@@ -51,11 +65,16 @@
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 pt16 pb16">
                                     <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 8</h2>
-                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-8 pertanyen els atletes nascuts l'any 2013 i 2014. Per aquesta categoria tenim un grup d'entrenament.</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-8 pertanyen els
+                                        atletes nascuts l'any 2014 i 2015. Per aquesta categoria tenim un grup d'entrenament.
+                                    </p>
                                     <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
                                 </div>
                                 <div class="pt0 pb0 col-lg-4">
-                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub8.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip475659" data-pagespeed-url-hash="2490261932" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub8.jpeg"
+                                        class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title=""
+                                        title="" aria-describedby="tooltip475659" data-pagespeed-url-hash="2490261932"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
                                 </div>
                             </div>
                         </div>
@@ -65,12 +84,17 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6 pt16 pb16">
                                     <h2 style="text-align: left; color: rgb(33, 37, 41); font-size: 30px; ">Sub 10</h2>
-                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">A la categoria Sub-10 pertanyen els atletes nascuts l'any 2011 i 2012. Per aquesta categoria tenim dos grups d'entrenament.</p>
+                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">A la categoria Sub-10 pertanyen els
+                                        atletes nascuts l'any 2012 i 2013. Per aquesta categoria tenim dos grups d'entrenament.
+                                    </p>
                                     <p style="color: rgb(33, 37, 41); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
                                     <p style="color: rgb(33, 37, 41); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
                                 </div>
                                 <div class="pt0 pb0 col-lg-4">
-                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub10.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip802578"/>
+                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub10.jpeg"
+                                        class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title=""
+                                        title="" aria-describedby="tooltip802578" data-pagespeed-url-hash="3882614238"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
                                 </div>
                             </div>
                         </div>
@@ -80,12 +104,18 @@
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 pt16 pb16">
                                     <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 12</h2>
-                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-12 pertanyen els atletes nascuts l'any 2009 i 2010. Per aquesta categoria tenim dos grups d'entrenament.</p>
-                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-12 pertanyen els
+                                        atletes nascuts l'any 2010 i 2011. Per aquesta categoria tenim dos grups d'entrenament.
+                                    </p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30
+                                    </p>
                                     <p style="color: rgb(255, 255, 255); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
                                 </div>
                                 <div class="pt0 pb0 col-lg-4">
-                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub12.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip312020" data-pagespeed-url-hash="46108210" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub12.jpeg"
+                                        class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title=""
+                                        title="" aria-describedby="tooltip312020" data-pagespeed-url-hash="46108210"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
                                 </div>
                             </div>
                         </div>
@@ -95,15 +125,21 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6 pt16 pb16">
                                     <h2 style="text-align: left; color: rgb(33, 37, 41); font-size: 30px; ">Sub 14</h2>
-                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">A la categoria Sub-14 pertanyen els atletes nascuts l'any 2007 i 2008. Per aquesta categoria tenim dos grups d'entrenament.</p>
+                                    <p style="color: rgb(33, 37, 41); font-size: 15px;">A la categoria Sub-14 pertanyen els
+                                        atletes nascuts l'any 2008 i 2009. Per aquesta categoria tenim dos grups d'entrenament.
+                                    </p>
                                     <p style="color: rgb(33, 37, 41); font-size: 15px;">Dilluns i Dimecres de 18:00 a 19:30</p>
                                     <p style="color: rgb(33, 37, 41); font-size: 15px;">Dimarts i Dijous de 18:00 a 19:30</p>
                                     <p style="color: rgb(33, 37, 41); font-size: 15px;">
-                                        <span style="text-align: left;">En especials ocasions, degudament informat pels seus entrenadors/es, hi haurà entrenament els divendres de 18:00 a 19:30</span>
+                                        <span style="text-align: left;">En especials ocasions, degudament informat pels seus
+                                            entrenadors/es, hi haurà entrenament els divendres de 18:00 a 19:30</span>
                                     </p>
                                 </div>
                                 <div class="pb0 pt0 col-lg-4">
-                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub14.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip908016"/>
+                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub14.jpeg"
+                                        class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title=""
+                                        title="" aria-describedby="tooltip908016" data-pagespeed-url-hash="3581750186"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
                                 </div>
                             </div>
                         </div>
@@ -112,205 +148,261 @@
                         <div class="container">
                             <div class="row align-items-stretch">
                                 <div class="col-lg-6 pt16 pb16">
-                                    <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 16</h2>
-                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-16 pertanyen els atletes nascuts l'any 2005 i 2006. Per aquesta categoria tenim dos grups d'entrenament.</p>
-                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns, Dimecres i Divendres de 18:30 a 20:30</p>
+                                    <h2 style="text-align: left; color: rgb(255, 255, 255); font-size: 30px; ">Sub 16 i Sub 18
+                                    </h2>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-16 pertanyen els
+                                        atletes nascuts l'any 2006 i 2007.</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">A la categoria Sub-18 pertanyen els
+                                        atletes nascuts l'any 2004 i 2005.</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">Per aquesta categoria tenim dos grups
+                                        d'entrenament.</p>
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">Dilluns, Dimecres i Divendres de
+                                        18:00 a 19:30</p>
                                 </div>
                                 <div class="pt0 pb0 col-lg-4">
-                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub16.jpeg" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip470834" data-pagespeed-url-hash="1671273745" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+                                    <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/sub16.jpeg"
+                                        class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title=""
+                                        title="" aria-describedby="tooltip470834" data-pagespeed-url-hash="1671273745"
+                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section class="oe_custom_bg pb50 pt64" >
+                    <section class="oe_custom_bg pb50 pt64">
                         <div class="container">
-                        <div class="row s_nb_column_fixed">
-                            <div class="col-lg-12" >
-                                <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
-                                    <font style="font-size: 35px;">Entrenadors/es de l'Escola d'Atletisme de la JA SABADELL</font>
-                                    <hr/>
-                                </h1>
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12">
+                                    <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
+                                        <font style="font-size: 35px;">Entrenadors/es de l'Escola d'Atletisme de la JA SABADELL
+                                        </font>
+                                        <hr />
+                                    </h1>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </section>
                     <section class="s_company_team pb32 pt0">
                         <div class="container">
-                        <div class="row s_nb_column_fixed">
-                            <div class="col-lg-6 pt16 pb16">
-                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                <div class="col-lg-4">
-                                    <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>Carla Boada </h4>
-                                    <p class="text-muted"> Entrenadora del grup Sub - 16</p>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-lg-6 pt16 pb16">
-                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                <div class="col-lg-4">
-                                    <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>Diego Cabrera</h4>
-                                    <p class="text-muted"> Entrenador del grup Sub - 16</p>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-lg-6 pt16 pb16">
-                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                <div class="col-lg-4 ">
-                                    <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>David Herrero&amp;nbsp;</h4>
-                                    <p class="text-muted">Entrenador del grup Sub - 14<br/></p>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-lg-6 pt16 pb16">
-                                <div class="row s_col_no_resize s_col_no_bgcolor">
-                                    <div class="col-lg-4">
-                                        <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                                        <!-- <img class="img-fluid o_we_custom_image" style="border-radius: 50%;" src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/marti.png"/> -->
-                                    </div>
-                                    <div class="col-lg-8"> <!--pt48-->
-                                        <h4>Martí Manyosa</h4>
-                                        <p class="text-muted">Entrenador del grup Sub - 16<br/></p>
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""
+                                                data-original-title="" title="" aria-describedby="tooltip945004" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>Carla Boada </h4>
+                                            <p class="text-muted"> Entrenadora del grup Sub - 16 i Sub - 18</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 pt16 pb16">
-                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                <div class="col-lg-4">
-                                    <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style="" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>David Herrero</h4>
+                                            <p class="text-muted"> Entrenador del grup Sub - 16 i Sub - 18</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-lg-8">
-                                    <h4>Mar Codó</h4>
-                                    <p class="text-muted">Entrenadora del grup Sub - 12<br/></p>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""
+                                                data-original-title="" title="" aria-describedby="tooltip945004" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>Abdeljalil Smaq</h4>
+                                            <p class="text-muted"> Entrenadora del grup Sub - 16 i Sub - 18</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style="" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>?¿?¿</h4>
+                                            <p class="text-muted"> Entrenador del grup Sub - 16 i Sub - 18</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4 ">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style="" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>Daniel Balateu&amp;nbsp;</h4>
+                                            <p class="text-muted">Entrenador del grup Sub - 14<br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style="" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>Martí Manyosa</h4>
+                                            <p class="text-muted">Entrenador del grup Sub - 16<br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style="" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>Ana Herrero</h4>
+                                            <p class="text-muted">Entrenadora del grup Sub - 12<br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style="" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>Roger Sirera</h4>
+                                            <p class="text-muted">Entrenador del grup Sub - 12<br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style="" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4 style="color: rgb(33, 37, 41);">Arian José Ramos</h4>
+                                            <p class="text-muted">Entrenadora del grup Sub - 10<br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style="" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>Noah Martínez</h4>
+                                            <p class="text-muted">Entrenadora del grup Sub - 10<br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style="" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>Josep Torres</h4>
+                                            <p class="text-muted">Entrenadora del grup Sub - 8<br /></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pt16 pb16">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <div class="col-lg-4">
+                                            <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style="" />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <h4>Juanpe Martínez</h4>
+                                            <p class="text-muted">Director Esportiu de l'escola<br /></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                            <div class="col-lg-6 pt16 pb16">
-                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                <div class="col-lg-4">
-                                    <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>Arian José Ramos</h4>
-                                    <p class="text-muted">Entrenador del grup Sub - 12<br/></p>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-lg-6 pt16 pb16">
-                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                <div class="col-lg-4">
-                                    <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>Ana Herrero</h4>
-                                    <p class="text-muted">Entrenadora del grup Sub - 10<br/></p>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-lg-6 pt16 pb16">
-                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                <div class="col-lg-4">
-                                    <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>Noah Martínez</h4>
-                                    <p class="text-muted">Entrenadora del grup Sub - 10<br/></p>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-lg-6 pt16 pb16">
-                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                <div class="col-lg-4">
-                                    <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>Esther Dobon</h4>
-                                    <p class="text-muted">Entrenadora del grup Sub - 8<br/></p>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-lg-6 pt16 pb16">
-                            <div class="row s_col_no_resize s_col_no_bgcolor">
-                                <div class="col-lg-4">
-                                    <span class="img-fluid rounded-circle d-block mx-auto shadow fa fa-user" style=""/>
-                                </div>
-                                <div class="col-lg-8">
-                                    <h4>Juanpe Martínez</h4>
-                                    <p class="text-muted">Director Esportiu de l'escola<br/></p>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
                         </div>
                     </section>
                     <section class="oe_custom_bg pb4 pt32" style="">
                         <div class="container">
-                        <div class="row s_nb_column_fixed">
-                            <div class="col-lg-12" >
-                                <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
-                                    <font style="font-size: 35px;">Inscripcions temporada 2019 - 2020</font>
-                                    <hr/>
-                                </h1>
+                            <div class="row s_nb_column_fixed">
+                                <div class="col-lg-12">
+                                    <h1 class="s_title_default" style="text-align: left; color: rgb(33, 37, 41);">
+                                        <font style="font-size: 35px;">Inscripcions temporada 2020 - 2021</font>
+                                        <hr />
+                                    </h1>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </section>
                     <section class="s_text_block pt32 pb4" style="background-color: rgb(107, 173, 222);">
                         <div class="container">
                             <div class="row">
-                                <div class="pb0 col-lg-12 pt0">
-                                    <p style="color: rgb(255, 255, 255); font-size: 15px;">La inscripció a l'Escola d'Atletisme de la JA Sabadell es farà via telemàtica, segons s'indicarà en aquest apartat.</p>
-                                    <h4 class="lead"  style="color: rgb(255, 255, 255);">
+                                <div class="col-lg-12 pt0 pb4">
+                                    <p style="color: rgb(255, 255, 255); font-size: 15px;"><b>La inscripció a l'Escola
+                                            d'Atletisme de la JA Sabadell es farà via telemàtica, segons s'indicarà en aquest
+                                            apartat en els propers dies</b>.</p>
+                                    <h4 class="lead" style="color: rgb(255, 255, 255);">
                                         <font style="font-size: 18px;">
-                                        <b>
-                                            <u>Preus</u>
-                                        </b>
+                                            <b>
+                                                <u>Preus</u>
+                                            </b>
                                         </font>
                                     </h4>
                                     <table class="table table-bordered">
                                         <tbody>
-                                        <tr>
-                                            <td>
-                                            <b  style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 8 (2013 - 2014)</b>
-                                            </td>
-                                            <td  style="color: rgb(255, 255, 255); font-size: 15px;">Total: 280€ (Setembre '19)<br/>Fraccionat: 175€&amp;nbsp;(Setembre '19)&amp;nbsp;+ 115€ (Febrer '20)<br/></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <b  style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 10 (2011 - 2012)</b>
-                                            </td>
-                                            <td  style="color: rgb(255, 255, 255); font-size: 15px;">Total: 300€ (Setembre '19)<br/>Fraccionat: 185€&amp;nbsp;(Setembre '19)&amp;nbsp;+ 125€ (Febrer '20)<br/></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 12 (2009 - 2010)</b>
-                                            </td>
-                                            <td style="color: rgb(255, 255, 255); font-size: 15px;">Total: 300€ (Setembre '19)<br/>Fraccionat: 185€&amp;nbsp;(Setembre '19)&amp;nbsp;+ 125€ (Febrer '20)<br/></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 14 (2007 - 2008)</b>
-                                            </td>
-                                            <td style="color: rgb(255, 255, 255); font-size: 15px;">Total: 320€ (Setembre '19)&amp;nbsp;<br/>Fraccionat: 195€&amp;nbsp;(Setembre '19)&amp;nbsp;+ 135€&amp;nbsp;(Febrer '20)&amp;nbsp;<br/></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 16 (2005 - 2006)</b>
-                                            </td>
-                                            <td style="color: rgb(255, 255, 255); font-size: 15px;">Total: 340€ (Setembre '19)<br/>Fraccionat: 205€&amp;nbsp;(Setembre '19)&amp;nbsp;+ 145€ (Febrer '20)<br/></td>
-                                        </tr>
+                                            <tr>
+                                                <td>
+                                                    <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 8 (2014 -
+                                                        2015)</b>
+                                                </td>
+                                                <td style="color: rgb(255, 255, 255); font-size: 15px;">Total:
+                                                    290€&amp;nbsp;<br />"Atletes 19-20": 240€&amp;nbsp;&amp;nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 10 (2012 -
+                                                        2013)</b>
+                                                </td>
+                                                <td style="color: rgb(255, 255, 255); font-size: 15px;">Total:
+                                                    310€&amp;nbsp;<br />"Atletes 19-20": 260€&amp;nbsp;&amp;nbsp;<br /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 12 (2010 -
+                                                        2011)</b>
+                                                </td>
+                                                <td style="color: rgb(255, 255, 255); font-size: 15px;">Total:
+                                                    310€&amp;nbsp;<br />"Atletes 19-20": 260€&amp;nbsp;&amp;nbsp;<br /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 14 (2008 -
+                                                        2009)</b>
+                                                </td>
+                                                <td style="color: rgb(255, 255, 255); font-size: 15px;">Total:
+                                                    330€&amp;nbsp;<br />"Atletes 19-20": 280€&amp;nbsp;&amp;nbsp;<br /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <b style="color: rgb(255, 255, 255); font-size: 15px;">Sub - 16 (2006 -
+                                                        2007)</b>
+                                                </td>
+                                                <td style="color: rgb(255, 255, 255); font-size: 15px;">Total:
+                                                    350€&amp;nbsp;<br />"Atletes 19-20": 320€&amp;nbsp;&amp;nbsp;<br /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span
+                                                        style="font-weight: bolder; color: rgb(255, 255, 255); font-size: 15px;">Sub
+                                                        - 18 (2004 - 2005)</span>
+                                                    <br />
+                                                </td>
+                                                <td style="color: rgb(255, 255, 255); font-size: 15px;">Total:
+                                                    350€&amp;nbsp;<br />"Atletes 19-20": 320€&amp;nbsp;<br /></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                     <p class="lead" style="color: rgb(255, 255, 255); font-size: 15px;">
-                                        <i>&amp;nbsp;<b>Descomptes</b>:&amp;nbsp;S'aplicarà un 10% de descompte a la quota a families nombroses.</i>
+                                        <i>&amp;nbsp;<b><br /></b></i>
                                     </p>
                                 </div>
                             </div>
@@ -321,33 +413,69 @@
                             <div class="row">
                                 <div class="pb32 col-lg-12 pt24">
                                     <p class="lead">
-                                        <u>REVISIONS MÈDIQUES</u>
+                                        <u>INCLÒS AL PREU</u>
                                     </p>
-                                    <p class="lead">Tot atleta de l'escola d'atletisme de la JA Sabadell realitzarà una prova d'esforç amb electrocardiograma gracies als nostres amics d'ARS SALUT.</p>
-                                    <p class="lead">Durant la revisió, l'atleta ha de ser acompanyat per un tutor legal major d'edat (pare, mare, avis..).</p>
-                                    <p class="lead">
-                                        <br/>
+                                    <ul>
+                                        <li>
+                                            <p class="lead">Entrenaments en horari escollit dirigit per monitors i entrenadors
+                                                d'atletisme titulats</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead">Acompanyament tècnic a les competicions</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead">Ús i renovació del material d'entrenament</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead">Llicència Federativa o llicència Consell Esportiu Sabadell amb
+                                                assegurança</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead">Samarreta d'escalfament i dessuadora tècnica</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead">Revisió mèdica*</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead">Inscripcions als controls organitzats per la JA Sabadell, Campionats
+                                                de Clubs, Campionats de Catalunya i Espanya individuals i proves del Consell
+                                                Esportiu Sabadell</p>
+                                        </li>
+                                        <li>
+                                            <p class="lead">&amp;nbsp;Subvenció per despeses de desplaçament a Campionats
+                                                d'Espanya Individuals, en cas d'aconseguir les marques mínimes a les categories
+                                                Sub - 16 i Sub - 18.</p>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <br />
                                     </p>
-                                    <p class="lead">Qualsevol dubte ens ho podeu fer arribar al correu electrònic de l'escola d'atletisme -- <b><u>escola.atletisme.jas@gmail.com</u></b></p>
+                                    <p>* La revisió mèdica pels atletes de la temporada 19-20 no està inclosa i estem treballant
+                                        en establir un preu especial per qui vulgui fer-la.</p>
+                                    <p>
+                                        <br />
+                                    </p>
+                                    <p class="lead">Qualsevol dubte ens ho podeu fer arribar al correu electrònic de l'escola
+                                        d'atletisme -- <b><u>escola.atletisme.jas@gmail.com</u></b></p>
                                     <p class="lead">
                                         <b>
-                                        <u>
-                                            <br/>
-                                        </u>
+                                            <u>
+                                                <br />
+                                            </u>
                                         </b>
                                     </p>
                                     <p class="lead">
                                         <b>
-                                        <u>EQUIPACIONS</u>
+                                            <u>EQUIPACIONS</u>
                                         </b>
                                     </p>
-                                    <p class="lead">És <b>obligatori</b> disposar de <u>samarreta/top de competició, pantaló/malla de competició i samarreta d'escalfament</u></p>
-                                    <p class="lead">A la pestanya de "<a href="/shop" ><b>Botiga</b></a>" trobareu tots els articles d'equipament que disposem a la JA Sabadell.</p>
+                                    <p class="lead">És <b>obligatori</b> disposar de <u>samarreta/top de competició,
+                                            pantaló/malla de competició i samarreta d'escalfament</u></p>
+                                    <p class="lead">A la pestanya de "<a href="/shop"><b>Botiga</b></a>" trobareu tots els
+                                        articles d'equipament que disposem a la JA Sabadell.</p>
                                     <p class="lead">
-                                        <br/>
-                                    </p>
-                                    <p class="lead">
-                                        <br/>
+                                        <br />
+                                        <br />
                                     </p>
                                 </div>
                             </div>
