@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+	<!-- ##################### Tree Tareas ##################### -->
+	<record model="ir.ui.view" id="berp_20200218_1444_tree">
+        <field name="name">tareas</field>
+        <field name="model">berp.tarea</field>
+        <field name="arch" type="xml">
+            <tree string="Tareas">
+	            <field name="descripcion"/>
+                <field name="comentario"/>
+                <field name="fecha_demanda"/>
+                <field name="solicitado_por"/>
+                <field name="tiempo_imputado"/>
+                <field name="publicado"/>
+            </tree>
+        </field>
+    </record>
+
+
+	<!-- ##################### Formulario Tarea ##################### -->
+    <record id="berp_20200218_1445_form" model="ir.ui.view">
+        <field name="name">tarea</field>
+        <field name="model">berp.tarea</field>
+        <field name="arch" type="xml">
+            <form string="Tarea">
+                <header>
+                    <button name="cerrar_tarea" type="object" string="Cerrar" class="btn btn-primary" attrs="{'invisible':[('estado', '!=', 'acabada')]}"/>
+                    <button name="acabar_tarea" type="object" string="Acabar" class="btn btn-primary" attrs="{'invisible':[('estado', '!=', 'pendiente')]}"/>
+                    <button name="reabrir_tarea" type="object" string="Reabrir" class="btn btn-primary" attrs="{'invisible':[('estado', '!=', 'acabada')]}"/>
+                    <field name="estado" widget="statusbar" class="oe_right"/>
+                </header>
+                <sheet>
+	                <table style="width:60%">
+		                <tr>
+			                <td><group><field name="descripcion" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
+		                </tr>
+		                <tr>
+			                <td><group><field name="comentario" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
+		                </tr>
+		                <tr>
+			                <td><group><field name="fecha_demanda" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
+		                </tr>
+		                <tr>
+			                <td><group><field name="solicitado_por" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
+		                </tr>
+		                <tr>
+			                <td><group><field name="tiempo_imputado" attrs="{'readonly':[('estado', '!=', 'pendiente')]}" widget="float_time"/></group></td>
+		                </tr>
+		                <tr>
+			                <td><group><field name="publicado" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
+		                </tr>
+	                </table>
+                    <br/>
+                    <notebook>
+                        <page string="Horas Imputadas">
+                            <button name="imputar_horas" string="Imputar Horas" type="object" class="btn btn-primary"/>
+                            <field name="tarea_tiempo_id">
+                                <tree string="Tarea Tiempo">
+                                    <field name="comentario"/>
+                                    <field name="fecha"/>
+                                    <field name="imputado_por"/>
+                                    <field name="tiempo_trabajado" widget="float_time"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                    
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ##################### Action Tarea ##################### -->
+	<record id="berp_18022020_1500_action" model="ir.actions.act_window">
+        <field name="name">Tareas</field>
+        <field name="res_model">berp.tarea</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('estado','in',['pendiente','acabada'])]</field>
+    </record>
+
+    <record id="berp_18022021_1901_action" model="ir.actions.act_window">
+        <field name="name">Tareas Cerradas</field>
+        <field name="res_model">berp.tarea</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('estado','=','cerrada')]</field>
+    </record>
+
+
+
+
+    <!-- ##################### Formulario Tarea Tiempo ##################### -->
+    <record id="berp_20200221_1233_form" model="ir.ui.view">
+        <field name="name">tarea_tiempo</field>
+        <field name="model">berp.tarea_tiempo</field>
+        <field name="arch" type="xml">
+            <form string="Tarea Tiempo">
+                <sheet>
+                    <table style="width:60%">
+                        <tr>
+                            <td><group><field name="tarea_id" invisible="1"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="descripcion"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="comentario"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="fecha"/></group></td>
+                        </tr>
+                        <tr>
+                            <td><group><field name="imputado_por" readonly="1"/></group></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td><group><field name="hora_ini" widget="float_time"/></group></td>
+                            <td><group><field name="hora_fin" widget="float_time"/></group></td>
+                            <td><group><field name="tiempo_trabajado" widget="float_time" readonly="1"/></group></td>
+                        </tr>
+                    </table>
+                </sheet>
+                <footer> 
+                    <button name="write" type="object" string="Save" class="btn btn-primary"/>
+                    <button name="cancel" string="Cancel" special="cancel" class="btn btn-default"/> 
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

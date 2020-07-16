@@ -1,0 +1,186 @@
+<odoo>
+    <data>
+
+        <template id="berp_20200716_1254_website" name="Formulari Inscripció Escola">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section class="container o_website_form_builder">
+                        <form accept-charset="UTF-8" action="/website_form/" class="s_website_form col-md-12 mt32" data-model_name="berp.solicitud_escuela" data-force_action="" data-success_page="" enctype="multipart/form-data" method="post">
+                            <div class="o_website_form_fields">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group form-field  form-field-binary" data-model-field="true" data-optional="true">
+                                                <label class="control-label" for="imagen">
+                                                    <span> Imatge </span>
+                                                </label>
+                                                <input name="imagen" type="file" class="o_website_form_input" accept="image/*"/>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="o_not_editable d-none o_default_snippet_text"> This placeholder prevents its parent from disappearing when emptied </div>
+                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                <label class="control-label" for="nombre">
+                                                    <lt-highlighter style="display: none;">
+                                                        <lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 0px !important; height: 0px !important; transform: none !important; transform-origin: 0px 0px !important; zoom: 1 !important; margin-top: 3px !important;">
+                                                            <lt-div class="lt-highlighter__scrollElement" style="top: 0px !important; left: 0px !important;"/>
+                                                        </lt-div>
+                                                    </lt-highlighter>
+                                                    <span spellcheck="false" data-gramm="false"> Nom</span>
+                                                </label>
+                                                <input name="nombre" class="form-control o_website_form_input" type="text"/>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                <label class="control-label" for="apellido1">
+                                                    <lt-highlighter style="display: none;">
+                                                        <lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 0px !important; height: 0px !important; transform: none !important; transform-origin: 0px 0px !important; zoom: 1 !important; margin-top: 3px !important;">
+                                                            <lt-div class="lt-highlighter__scrollElement" style="top: 0px !important; left: 0px !important;"/>
+                                                        </lt-div>
+                                                    </lt-highlighter>
+                                                    <span spellcheck="false" data-gramm="false"> Primer Cognom</span>
+                                                </label>
+                                                <input name="apellido1" class="form-control o_website_form_input" type="text"/>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                                <label class="control-label" for="apellido2">
+                                                    <lt-highlighter style="display: none;">
+                                                        <lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 0px !important; height: 0px !important; transform: none !important; transform-origin: 0px 0px !important; zoom: 1 !important; margin-top: 3px !important;">
+                                                            <lt-div class="lt-highlighter__scrollElement" style="top: 0px !important; left: 0px !important;"/>
+                                                        </lt-div>
+                                                    </lt-highlighter>
+                                                    <span spellcheck="false" data-gramm="false"> Segon Cognom</span>
+                                                </label>
+                                                <input name="apellido2" class="form-control o_website_form_input" type="text"/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="form-group form-field  form-field-date" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="fecha_nacimiento">
+                                        <span> Fecha de Nacimiento </span>
+                                    </label>
+                                    <input name="fecha_nacimiento" class="form-control o_website_form_input o_website_form_date" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="dni">
+                                        <span> DNI </span>
+                                    </label>
+                                    <input name="dni" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="direccion">
+                                        <span> Adreça </span>
+                                    </label>
+                                    <input name="direccion" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="poblacion">
+                                        <span> Població </span>
+                                    </label>
+                                    <input name="poblacion" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="cp">
+                                        <span> Codi Postal </span>
+                                    </label>
+                                    <input name="cp" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="nombre_1">
+                                        <span> Nom i Cognoms </span>
+                                    </label>
+                                    <input name="nombre_1" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="dni_1">
+                                        <span> DNI </span>
+                                    </label>
+                                    <input name="dni_1" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="mail_1">
+                                        <span> Correu electronic </span>
+                                    </label>
+                                    <input name="mail_1" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="telefono_1">
+                                        <span> Nº Teléfon / Movil </span>
+                                    </label>
+                                    <input name="telefono_1" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="nombre_2">
+                                        <span> Nom i Cognoms </span>
+                                    </label>
+                                    <input name="nombre_2" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="dni_2">
+                                        <span> DNI </span>
+                                    </label>
+                                    <input name="dni_2" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="mail_2">
+                                        <span> Correu electronic </span>
+                                    </label>
+                                    <input name="mail_2" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="telefono_2">
+                                        <span> Nº Teléfon / Movil </span>
+                                    </label>
+                                    <input name="telefono_2" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="telefono_alternativo">
+                                        <span> Nº Teléfon / Movil Alternatiu </span>
+                                    </label>
+                                    <input name="telefono_alternativo" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="cat_salut_atleta">
+                                        <span> Número CatSalut </span>
+                                    </label>
+                                    <input name="cat_salut_atleta" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-text" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="salut">
+                                        <span> Salut </span>
+                                    </label>
+                                    <textarea name="salut" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="row form-group form-field o_website_form_custom o_fake_not_editable o_website_form_required_custom">
+                                    <div class="col-lg-3 col-md-4">
+                                        <label class="col-form-label o_fake_editable" for="Custom Casilla de verificación">
+                                            Custom Casilla de verificación
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-7 col-md-8">
+                                        <input type="checkbox" value="Yes" class="o_website_form_input" name="Custom Casilla de verificación" required=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-lg o_website_form_send o_default_snippet_text">
+                                Enviar
+                                </button>
+                                <span id="o_website_form_result"/>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </t>
+        </template>
+
+
+    </data>
+</odoo>
+

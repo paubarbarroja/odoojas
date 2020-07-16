@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+	<!-- ##################### Tree solicitud escuela ##################### -->
+	<record model="ir.ui.view" id="berp_20200716_1119_tree">
+        <field name="name">solicitud_escuela</field>
+        <field name="model">berp.solicitud_escuela</field>
+        <field name="arch" type="xml">
+            <tree string="Solicituts de l'escola">
+	            <field name="nombre"/>
+                <field name="apellido1"/>
+                <field name="apellido2"/>
+                <field name="fecha_nacimiento"/>
+                <field name="dni"/>
+                <field name="nombre_1"/>
+                <field name="dni_1"/>
+            </tree>
+        </field>
+    </record>
+
+
+	<!-- ##################### Form solicitud escuela ##################### -->
+    <record id="berp_20200716_1119_form" model="ir.ui.view">
+        <field name="name">solcitud_escuela</field>
+        <field name="model">berp.solicitud_escuela</field>
+        <field name="arch" type="xml">
+            <form string="Solicitut de l'escola">
+                <!-- <header>
+                    <button name="cerrar_tarea" type="object" string="Cerrar" class="btn btn-primary" attrs="{'invisible':[('estado', '!=', 'acabada')]}"/>
+                </header> -->
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+
+                    </div>
+                    <field name="imagen" widget="image" class="oe_avatar" nolabel="1"/>
+                    <div class="oe_title">
+                        <label for="Nombre" class="oe_edit_only" string="Nombre"/>
+                        <h3>
+                            <group col="3">
+                                <field name="nombre" nolabel="1"/>
+                                <field name="apellido1" nolabel="1"/>
+                                <field name="apellido2" nolabel="1"/>
+                            </group>
+                        </h3>
+                    </div>
+                    <br/>
+                    <group>
+                        <group>
+                            <label for="street" string="Dirección"/>
+                            <div class="o_address_format">
+                                <field name="direccion" placeholder="Calle..." class="o_address_street"/>
+                                <field name="poblacion" placeholder="Ciudad" class="o_address_city"/>
+                                <field name="cp" placeholder="Código postal" class="o_address_zip"/>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="fecha_nacimiento"/>
+                            <field name="dni"/>
+                        </group>
+                    </group>
+                    <br/>
+                    <h2>Datos Familiares</h2><hr/>
+                    <group>
+                        <group>
+                            <h3>Familiar 1</h3>
+                            <field name="nombre_1"/>
+                            <field name="dni_1"/>
+                            <field name="mail_1"/>
+                            <field name="telefono_1"/>
+                        </group>
+                        <group>
+                            <h3>Familiar 2</h3>
+                            <field name="nombre_2"/>
+                            <field name="dni_2"/>
+                            <field name="mail_2"/>
+                            <field name="telefono_2"/>
+                        </group>
+                    </group>
+                    <br/>
+                    <h2>Otros Datos</h2><hr/>
+                    <group col="2">
+                        <group>
+                            <field name="telefono_alternativo"/>
+                        </group>
+                        <group>
+                            <field name="cat_salut_atleta"/>
+                        </group>
+                        <field name="salut" placeholder="Advertencia sobre qualsevol condicionant de salut que pugui ser rellevant (alergies , limitacions,...) o pel qual hem de tenir una cura especial (TEA, TDAH,...)"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ##################### Action Tarea ##################### -->
+	<record id="berp_20200716_1119_action" model="ir.actions.act_window">
+        <field name="name">Solicituts de l'escola</field>
+        <field name="res_model">berp.solicitud_escuela</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+
+</odoo>

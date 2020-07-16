@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Habilitar formularios para crear solicitudes -->
+    <record id="berp_solicitudes.model_berp_solicitud_escuela" model="ir.model">
+        <field name="website_form_access" eval="True"/>
+        <field name="website_form_label">Solicitud escuela</field>
+    </record>
+    <function model="ir.model.fields" name="formbuilder_whitelist">
+        <value>berp.solicitud_escuela</value>
+        <value eval="[
+            'image','nombre','apellido1','apellido2','fecha_nacimiento','dni','direccion','poblacion','cp','nombre_1','mail_1','telefono_1','dni_1',
+            'nombre_2','mail_2','telefono_2','dni_2','telefono_alternativo','cat_salut_atleta','salut','otros',
+        ]"/>
+    </function>
+
+    <!-- Enable forms to create currencies -->
+    <record id="berp_solicitudes.model_berp_solicitud_socio" model="ir.model">
+        <field name="website_form_access" eval="True"/>
+        <field name="website_form_label">Solicitud socio</field>
+    </record>
+    <function model="ir.model.fields" name="formbuilder_whitelist">
+        <value>berp.solicitud_socio</value>
+        <value eval="[
+            'image','name','apellido1','apellido2','fecha_nac','dni','cuenta_bancaria','banco','titular_cuenta_bancaria','genero','street','city','cp',
+            'country_id','phone','phone_alt','email','fecha_formulario','otros',
+        ]"/>
+    </function>
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <menuitem id="berp_20200716_1132_menuitem"
+              name="Solicitudes"
+              parent="berp.administracion_menuitem"
+              sequence="4"/>
+      
+
+                <menuitem id="berp_20200716_1119_menuitem"
+                        name="Solicitudes Socios"
+                        parent="berp_20200716_1132_menuitem"
+                        sequence="1"
+                        action="berp_20200716_1119_action"/>
+
+</odoo>
