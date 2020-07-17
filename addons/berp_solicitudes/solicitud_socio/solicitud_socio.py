@@ -6,7 +6,7 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-class berp_solicitud_socio(models.TransientModel):
+class berp_solicitud_socio(models.Model):
     _name = 'berp.solicitud_socio'
     _description = 'berp_solicitud_socio'
 
