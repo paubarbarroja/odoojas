@@ -4,16 +4,21 @@
         <template id="berp_20200716_1254_website" name="Formulari Inscripció Escola">
             <t t-call="website.layout">
                 <div id="wrap" class="oe_structure oe_empty">
-                    <section class="container o_website_form_builder">
+                    <section class="container readable o_website_form_builder">
                         <br/>
                         <br/>
-                        <b><h1>FORMULARI INSCRIPCIÓ ESCOLA</h1></b>
+                        <b><h1 style="text-align:center">FORMULARI INSCRIPCIÓ ESCOLA</h1></b>
                         <br/>
                         <form accept-charset="UTF-8" action="/website_form/" class="s_website_form col-md-12 mt32" data-model_name="berp.solicitud_escuela" data-force_action="" data-success_page="" enctype="multipart/form-data" method="post">
                             <div class="o_website_form_fields">
                                 <table style="width:100%">
                                     <tr>
                                         <td>
+                                            <u><b><h3>Dades de l'atleta</h3></b></u>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:33%">
                                             <div class="o_not_editable d-none o_default_snippet_text"> This placeholder prevents its parent from disappearing when emptied </div>
                                             <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="nombre">
@@ -27,7 +32,7 @@
                                                 <input name="nombre" class="form-control o_website_form_input" type="text"/>
                                             </div>
                                         </td>
-                                        <td>
+                                        <td style="width:33%">
                                             <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="apellido1">
                                                     <lt-highlighter style="display: none;">
@@ -40,7 +45,7 @@
                                                 <input name="apellido1" class="form-control o_website_form_input" type="text"/>
                                             </div>
                                         </td>
-                                        <td>
+                                        <td style="width:33%">
                                             <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="apellido2">
                                                     <lt-highlighter style="display: none;">
@@ -77,7 +82,7 @@
                                                 <input name="fecha_nacimiento" class="form-control o_website_form_input o_website_form_date" type="text"/>
                                             </div>
                                         </td>
-                                        <td>
+                                        <td colspan="2">
                                             <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="dni">
                                                     <span> DNI </span>
@@ -87,7 +92,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
+                                        <td style="width:50%">
                                             <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="direccion">
                                                     <span> Adreça </span>
@@ -95,7 +100,7 @@
                                                 <input name="direccion" class="form-control o_website_form_input" type="text"/>
                                             </div>
                                         </td>
-                                        <td>
+                                        <td style="width:35%">
                                             <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="poblacion">
                                                     <span> Població </span>
@@ -103,7 +108,7 @@
                                                 <input name="poblacion" class="form-control o_website_form_input" type="text"/>
                                             </div>
                                         </td>
-                                        <td>
+                                        <td style="width:15%">
                                             <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="cp">
                                                     <span> Codi Postal </span>
@@ -112,6 +117,8 @@
                                             </div>
                                         </td>
                                     </tr>
+                                </table>
+                                <table style="width:100%">
                                     <tr><td><p style="color:white;">.</p></td></tr>
                                     <tr><td><p style="color:white;">.</p></td></tr>
                                     <tr>
@@ -227,7 +234,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
+                                        <td colspan="2">
                                             <div class="form-group form-field  form-field-text" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="salut">
                                                     <span> Salut </span>
