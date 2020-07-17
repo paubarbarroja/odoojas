@@ -22,6 +22,7 @@
         'views/ranquing_records.xml',
         'views/historia.xml',
         'crm_lead/crm_lead.xml',
+        'crm_lead/menus.xml'
     ],
     'demo': [],
     'application': True,
