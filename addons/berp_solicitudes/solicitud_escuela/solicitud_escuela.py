@@ -13,7 +13,7 @@ class berp_solicitud_escuela(models.Model):
     _description = 'berp_solicitud_escuela'
 
     @api.model
-    def _get_default_image(self,aa,bb,cc):
+    def _get_default_image(self):
         image = False
         img_path = get_module_resource('berp_usuarios', 'static/src/img', 'avatar.png')
         if img_path:
@@ -24,7 +24,7 @@ class berp_solicitud_escuela(models.Model):
         return tools.image_resize_image_big(base64.b64encode(image))
 
     # Datos atleta escuela
-    imagen                  = fields.Binary("Imagen", attachment=True, default=lambda self:self._get_default_image('a','b','c'))
+    imagen                  = fields.Binary("Imagen", attachment=True, default=lambda self:self._get_default_image())
     nombre                  = fields.Char(string='Nombre')
     apellido1               = fields.Char(string='Primer Apellido')
     apellido2               = fields.Char(string='Segon Apellido')
@@ -47,6 +47,16 @@ class berp_solicitud_escuela(models.Model):
     dni_2                   = fields.Char(string='DNI')
 
     #Otros datos
+    grupo_entreno = fields.Selection(string='Grup entrenament', selection=[ ('1', 'Pre-Benjamins Sub8 (anys 2014-2015) dimarts i dijous 18:00h-19:30h'),
+                                                                            ('2', 'Benjamins Sub10 (anys 2012-2013) dilluns i dimecres 18:00h-19:30h'),
+                                                                            ('3', 'Benjamins Sub10 (anys 2012-2013) dimarts i dijous 18:00h-19:30h'),
+                                                                            ('4', 'Alevins Sub12 (anys 2010-2011) dilluns i dimecres 18:00h-19:30h'),
+                                                                            ('5', 'Alevins Sub12 (anys 2010-2011) dimarts i dijous 18:00h-19:30h'),
+                                                                            ('6', 'Infantils Sub14 (anys 2008-2009) dilluns, dimecres i divendres 18:00h-19:30h'),
+                                                                            ('7', 'Infantils Sub14 (anys 2008-2009) dimarts, dijous i divendres 18:00h-19:30h'),
+                                                                            ('8', 'Cadets Sub16 (anys 2006-2007) dilluns, dimecres i divendres 18:00h-19:30h'),
+                                                                            ('9', 'Juvenils Sub18 (anys 2004-2005) dilluns, dimecres i divendres 18:00h-19:30h'),])
+    
     telefono_alternativo    = fields.Char(string='Nº Teléfono /Movil Alternativo')
     cat_salut_atleta        = fields.Char(string='Numero CatSalut')
     salut                   = fields.Text(string='Salut')
