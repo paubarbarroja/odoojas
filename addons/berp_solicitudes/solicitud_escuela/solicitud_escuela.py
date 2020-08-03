@@ -62,4 +62,5 @@ class berp_solicitud_escuela(models.Model):
     salut                   = fields.Text(string='Salut')
     otros                   = fields.Text(string='Otros')
     cuenta_bancaria         = fields.Char(string='Cuenta bancaria')
+    fecha_ingreso           = fields.Date(string="Fecha inscripción", default=fields.Date.context_today)
     

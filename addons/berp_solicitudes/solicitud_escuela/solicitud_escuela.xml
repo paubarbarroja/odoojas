@@ -8,6 +8,7 @@
         <field name="model">berp.solicitud_escuela</field>
         <field name="arch" type="xml">
             <tree string="Solicituts de l'escola">
+                <field name="fecha_ingreso"/>
 	            <field name="nombre"/>
                 <field name="apellido1"/>
                 <field name="apellido2"/>
@@ -86,6 +87,7 @@
                         </group>
                         <group>
                             <field name="cat_salut_atleta"/>
+                            <field name="fecha_ingreso"/>
                         </group>
 
                         <field name="grupo_entreno"/>
