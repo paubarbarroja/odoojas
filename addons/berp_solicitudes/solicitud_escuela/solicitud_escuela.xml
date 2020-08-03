@@ -82,10 +82,12 @@
                     <group col="2">
                         <group>
                             <field name="telefono_alternativo"/>
+                            <field name="cuenta_bancaria"/>
                         </group>
                         <group>
                             <field name="cat_salut_atleta"/>
                         </group>
+
                         <field name="grupo_entreno"/>
                         <field name="salut" placeholder="Advertencia sobre qualsevol condicionant de salut que pugui ser rellevant (alergies , limitacions,...) o pel qual hem de tenir una cura especial (TEA, TDAH,...)"/>
                     </group>

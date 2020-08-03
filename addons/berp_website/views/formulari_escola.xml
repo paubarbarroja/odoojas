@@ -20,7 +20,7 @@
                                     <tr>
                                         <td style="width:33%">
                                             <div class="o_not_editable d-none o_default_snippet_text"> This placeholder prevents its parent from disappearing when emptied </div>
-                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="nombre">
                                                     <lt-highlighter style="display: none;">
                                                         <lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 0px !important; height: 0px !important; transform: none !important; transform-origin: 0px 0px !important; zoom: 1 !important; margin-top: 3px !important;">
@@ -29,20 +29,20 @@
                                                     </lt-highlighter>
                                                     <span spellcheck="false" data-gramm="false"> Nom</span>
                                                 </label>
-                                                <input name="nombre" class="form-control o_website_form_input" type="text"/>
+                                                <input name="nombre" class="form-control o_website_form_input" type="text" required=""/>
                                             </div>
                                         </td>
                                         <td style="width:33%">
-                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="apellido1">
                                                     <lt-highlighter style="display: none;">
                                                         <lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 0px !important; height: 0px !important; transform: none !important; transform-origin: 0px 0px !important; zoom: 1 !important; margin-top: 3px !important;">
                                                             <lt-div class="lt-highlighter__scrollElement" style="top: 0px !important; left: 0px !important;"/>
                                                         </lt-div>
                                                     </lt-highlighter>
-                                                    <span spellcheck="false" data-gramm="false"> Primer Cognom</span>
+                                                    <span spellcheck="false" data-gramm="false"> Primer cognom</span>
                                                 </label>
-                                                <input name="apellido1" class="form-control o_website_form_input" type="text"/>
+                                                <input name="apellido1" class="form-control o_website_form_input" type="text" required=""/>
                                             </div>
                                         </td>
                                         <td style="width:33%">
@@ -53,7 +53,7 @@
                                                             <lt-div class="lt-highlighter__scrollElement" style="top: 0px !important; left: 0px !important;"/>
                                                         </lt-div>
                                                     </lt-highlighter>
-                                                    <span spellcheck="false" data-gramm="false"> Segon Cognom</span>
+                                                    <span spellcheck="false" data-gramm="false"> Segon cognom</span>
                                                 </label>
                                                 <input name="apellido2" class="form-control o_website_form_input" type="text"/>
                                             </div>
@@ -75,11 +75,11 @@
                                 <table style="width:100%">
                                     <tr>
                                         <td>
-                                            <div class="form-group form-field  form-field-date" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-date o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="fecha_nacimiento">
-                                                    <span> Fecha de Nacimiento </span>
+                                                    <span> Fecha de nacimiento </span>
                                                 </label>
-                                                <input name="fecha_nacimiento" class="form-control o_website_form_input o_website_form_date" type="text" placeholder="dd/mm/aaaa"/>
+                                                <input name="fecha_nacimiento" class="form-control o_website_form_input o_website_form_date" type="text" placeholder="dd/mm/aaaa" required=""/>
                                             </div>
                                         </td>
                                         <td colspan="2">
@@ -93,27 +93,27 @@
                                     </tr>
                                     <tr>
                                         <td style="width:50%">
-                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="direccion">
                                                     <span> Adreça </span>
                                                 </label>
-                                                <input name="direccion" class="form-control o_website_form_input" type="text"/>
+                                                <input name="direccion" class="form-control o_website_form_input" type="text" required=""/>
                                             </div>
                                         </td>
                                         <td style="width:35%">
-                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="poblacion">
                                                     <span> Població </span>
                                                 </label>
-                                                <input name="poblacion" class="form-control o_website_form_input" type="text"/>
+                                                <input name="poblacion" class="form-control o_website_form_input" type="text" required=""/>
                                             </div>
                                         </td>
                                         <td style="width:15%">
-                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="cp">
-                                                    <span> Codi Postal </span>
+                                                    <span>C. postal</span>
                                                 </label>
-                                                <input name="cp" class="form-control o_website_form_input" type="text"/>
+                                                <input name="cp" class="form-control o_website_form_input" type="text" required=""/>
                                             </div>
                                         </td>
                                     </tr>
@@ -133,37 +133,37 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="nombre_1">
-                                                    <span> Nom i Cognoms </span>
+                                                    <span> Nom i cognoms </span>
                                                 </label>
-                                                <input name="nombre_1" class="form-control o_website_form_input" type="text"/>
+                                                <input name="nombre_1" class="form-control o_website_form_input" type="text" required=""/>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="dni_1">
                                                     <span> DNI </span>
                                                 </label>
-                                                <input name="dni_1" class="form-control o_website_form_input" type="text"/>
+                                                <input name="dni_1" class="form-control o_website_form_input" type="text" required=""/>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="mail_1">
                                                     <span> Correu electronic </span>
                                                 </label>
-                                                <input name="mail_1" class="form-control o_website_form_input" type="text"/>
+                                                <input name="mail_1" class="form-control o_website_form_input" type="text" required=""/>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="telefono_1">
                                                     <span> Nº Teléfon / Movil </span>
                                                 </label>
-                                                <input name="telefono_1" class="form-control o_website_form_input" type="text"/>
+                                                <input name="telefono_1" class="form-control o_website_form_input" type="text" required=""/>
                                             </div>
                                         </td>
                                     </tr>
@@ -176,7 +176,7 @@
                                         <td>
                                             <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="nombre_2">
-                                                    <span> Nom i Cognoms </span>
+                                                    <span> Nom i cognoms </span>
                                                 </label>
                                                 <input name="nombre_2" class="form-control o_website_form_input" type="text"/>
                                             </div>
@@ -219,23 +219,33 @@
                                         <td>
                                             <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="telefono_alternativo">
-                                                    <span> Nº Teléfon / Movil Alternatiu </span>
+                                                    <span> Nº Teléfon / Movil alternatiu </span>
                                                 </label>
                                                 <input name="telefono_alternativo" class="form-control o_website_form_input" type="text"/>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="cat_salut_atleta">
                                                     <span> Número CatSalut </span>
                                                 </label>
-                                                <input name="cat_salut_atleta" class="form-control o_website_form_input" type="text"/>
+                                                <input name="cat_salut_atleta" class="form-control o_website_form_input" type="text" required=""/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group form-field  form-field-char o_required" data-model-field="true" data-optional="true">
+                                                <label class="control-label" for="cuenta_bancaria">
+                                                    <span> Compte bancari </span>
+                                                </label>
+                                                <input name="cuenta_bancaria" class="form-control o_website_form_input" type="text" placeholder="ES00 0000 0000 0000"  required=""/>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">
-                                            <div class="form-group form-field  form-field-selection" data-model-field="true" data-optional="true">
+                                            <div class="form-group form-field  form-field-selection o_required" data-model-field="true" data-optional="true">
                                                 <label class="control-label" for="grupo_entreno">
                                                     <span>
                                                         Grup d'entrenament
@@ -287,14 +297,23 @@
                                 <br/>
                                 <br/>
                                 <div class="row form-group form-field o_website_form_custom o_fake_not_editable o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4">
-                                        <label class="col-form-label o_fake_editable" for="Custom Casilla de verificación">
-                                            Custom Casilla de verificación
-                                        </label>
-                                    </div>
-                                    <div class="col-lg-7 col-md-8">
+                                    <div class="col-md-8 col-lg-1 pt4">
                                         <input type="checkbox" value="Yes" class="o_website_form_input" name="Custom Casilla de verificación" required=""/>
                                     </div>
+                                    <div class="col-lg-11 col-md-4">
+                                        <label class="col-form-label" for="Custom Casilla de verificación">
+                                            Marca la casella per acceptar els terminis de l'inscripció.
+                                        </label>
+                                    </div>
+                                    <p style="font-size: x-small;">
+                                        Mitjançant la signatura d'aquesta ordre de domiciliació, el deutor autoritza el creditor a enviar instruccions a l'entitat bancària del deutor per efectuar els càrrecs al seu compte. Com a part dels seus drets, el deutor està legitimat al reemborsament per la seva entitat en els termes i condicions del contracte subscrit amb la mateixa. La sol·licitud de reemborsament s'ha d'efectuar dins de les vuit setmanes que segueixen a la data de càrrec en compte. Poden obtenir informació addicional sobre els seus drets en la seva entitat financera.
+                                        <br/>
+                                        <br/>INFORMACIÓ DE PROTECCIÓ DE DADES PER A SOCIS
+                                        <br/>
+                                        D'acord amb el que estableix el REGLAMENT (UE) 2016/679 de protecció de dades de caràcter personal, l'informem que les dades que vostè ens faciliti seran incorporades a sistema de tractament titularitat de JOVENTUT ATLÈTICA SABADELL amb CIF: G58354176 i domicili social situat a CAMÍ  CAN QUADRES S/N amb la finalitat de: gestió de socis, comptable, fiscal i administrativa.
+                                        Les seves dades seran conservades durant el termini estrictament necessari. Seran esborrats quan hagi transcorregut un temps sense fer ús d'aquests. Vostè es compromet a notificar-nos qualsevol variació en les dades.
+                                        Podrà exercir els drets d'accés, rectificació, supressió i oposició al tractament de les seves dades de caràcter personal dirigint la seva petició al correu electrònic administracio@jasabadell.com 
+                                    </p>
                                 </div>
                             </div>
                             <div class="form-group">

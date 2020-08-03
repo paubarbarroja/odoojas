@@ -61,4 +61,5 @@ class berp_solicitud_escuela(models.Model):
     cat_salut_atleta        = fields.Char(string='Numero CatSalut')
     salut                   = fields.Text(string='Salut')
     otros                   = fields.Text(string='Otros')
+    cuenta_bancaria         = fields.Char(string='Cuenta bancaria')
     

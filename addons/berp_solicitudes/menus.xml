@@ -8,7 +8,7 @@
       
 
                 <menuitem id="berp_20200716_1119_menuitem"
-                        name="Solicitudes Socios"
+                        name="Solicitudes Escuela"
                         parent="berp_20200716_1132_menuitem"
                         sequence="1"
                         action="berp_20200716_1119_action"/>
