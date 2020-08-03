@@ -1,5 +1,6 @@
 from odoo import http
 
+
 class berp_website_formulari_escola(http.Controller):
     @http.route('/formulari_escola', auth='public', website=True)
     def index(self, **kw):
