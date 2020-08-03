@@ -277,6 +277,9 @@
         </template>
 
         <template inherit_id="website_sale.products" id="products_list_view_notsale">
+            <xpath expr="//div[@id='products_grid']" position="attributes">
+                <attribute name="class">col-lg-9 col-md-8</attribute>
+            </xpath>
             <xpath expr="//div[@id='products_grid']//table" position="replace">
                 <t t-foreach="products" t-as="product">
                     <t t-if="not product.categ_id.id == 4">
@@ -287,6 +290,21 @@
                         </div>
                     </t>
                 </t>
+            </xpath>
+            <xpath expr="//div[@id='products_grid_before']" position="attributes">
+                <attribute name="class">col-lg-3 col-md-4 col-12</attribute>
+            </xpath>
+            <xpath expr="//div[@id='products_grid_before']" position="replace">
+                <ul class="nav nav-pills flex-column mt16">
+                    <li class="nav-item">
+                        <a t-att-href="keep('/shop',category=0)" t-attf-class="nav-link#{'' if category else ' active'} o_not_editable">All Products</a>
+                    </li>
+                    <t t-foreach="categories" t-as="c">
+                        <t t-if="c.id != 14 || c.id != 15">
+                            <t t-call="website_sale.categories_recursive"/>
+                        </t>
+                    </t>
+                </ul>
             </xpath>
         </template>
 
