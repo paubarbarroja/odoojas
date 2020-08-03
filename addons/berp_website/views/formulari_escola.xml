@@ -9,7 +9,7 @@
                         <br/>
                         <b><h1 style="text-align:center">FORMULARI INSCRIPCIÓ ESCOLA</h1></b>
                         <br/>
-                        <form accept-charset="UTF-8" action="/website_form/" class="s_website_form col-md-12 mt32" data-model_name="berp.solicitud_escuela" data-force_action="" data-success_page="" enctype="multipart/form-data" method="post">
+                        <form accept-charset="UTF-8" action="/website_form/" class="s_website_form col-md-12 mt32" data-model_name="berp.solicitud_escuela" data-force_action="" data-success_page="https://www.jasabadell.com/shop?fw=2" enctype="multipart/form-data" method="post">
                             <div class="o_website_form_fields">
                                 <table style="width:100%">
                                     <tr>
