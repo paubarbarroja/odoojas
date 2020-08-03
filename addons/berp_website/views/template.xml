@@ -300,7 +300,7 @@
                         <a t-att-href="keep('/shop',category=0)" t-attf-class="nav-link#{'' if category else ' active'} o_not_editable">All Products</a>
                     </li>
                     <t t-foreach="categories" t-as="c">
-                        <t t-if="c.id != 14">
+                        <t t-if="c.id != 14 or c.id != 15">
                             <t t-call="website_sale.categories_recursive"/>
                         </t>
                     </t>
