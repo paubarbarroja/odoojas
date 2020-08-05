@@ -2,7 +2,7 @@
     'name': "Solicitudes",
     'summary': """Berp - Solicitudes""",
     'version': '1.0',
-    'depends': ['berp','website_form_builder'],
+    'depends': ['berp','berp_escuela','website_form_builder'],
     'author': "Pau Barbarroja",
     'category': 'berp',
     'description': """
