@@ -12,6 +12,12 @@
               web_icon="berp,static/description/icon.png"
             />
 
+    <menuitem id="escola_menuitem"
+              name="Escola"
+              groups="berp.berp_admin,berp.berp_escuela"
+              web_icon="berp,static/description/icon.png"
+            />
+
 
     <!--menuitem id="gestion_menuitem"
                name="Gestión del Club"

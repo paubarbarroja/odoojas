@@ -3,7 +3,7 @@
 
         <menuitem id="berp_20200716_1132_menuitem"
                 name="Solicitudes"
-                parent="berp.administracion_menuitem"
+                parent="berp.escola_menuitem"
                 groups="berp.berp_escuela"
                 sequence="4"/>
       
