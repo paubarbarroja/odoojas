@@ -60,7 +60,7 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <!-- <table style="width:100%">
+                                <table style="width:100%">
                                     <tr>
                                         <td>
                                             <div class="form-group form-field  form-field-binary" data-model-field="true" data-optional="true">
@@ -71,7 +71,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                </table> -->
+                                </table>
                                 <table style="width:100%">
                                     <tr>
                                         <td>
