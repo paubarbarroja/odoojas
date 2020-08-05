@@ -108,26 +108,51 @@
         </template> -->
 
         <template id="view_last_news">
+            <t t-set="i" t-value="1"/>
             <t t-foreach="posts" t-as="p">
-                <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
-                <div class="col-12 media mt-3 col-lg-3 s_latest_posts_post">
-                    <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
-                        <t t-call="website_blog.blog_cover">
-                            <t t-set="cover_properties" t-value="properties"/>
-                            <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
-                        </t>
-                    </a>
-                    <div class="media-body ml-3 pb-2">
-                        <h4 style="color: rgb(255, 255, 255);" t-field="p.name"/>
-                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" class="rounded-circle btn-sm" data-original-title="" title="" aria-describedby="tooltip717931" spellcheck="false" data-gramm="false"> <font style="color: rgb(36, 88, 128);">Llegir més</font> <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109" style="color: rgb(36, 88, 128);"/> </a>
+                <t t-if="i==1">
+                    <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+                    <div class="col-12 media mt-3 col-lg-12 s_latest_posts_post">
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" style="width:400px !important; height:250px !important;">
+                            <t t-call="website_blog.blog_cover">
+                                <t t-set="cover_properties" t-value="properties"/>
+                                <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+                            </t>
+                        </a>
+                        <div class="media-body ml-5 pb-2 mt-4">
+                            <h2 style="color: rgb(255, 255, 255);text-align:center;" t-field="p.name"/>
+                            <br/>
+                            <div style="color: rgb(255, 255, 255);" t-field="p.teaser" class="mb12 mt12  o_blog_post_teaser"/>
+                            <br/><br/>
+                            <div class=" text-right">
+                                <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" class="rounded-circle" data-original-title="" title="" aria-describedby="tooltip717931" spellcheck="false" data-gramm="false"> <font style="color: rgb(36, 88, 128);">Llegir més</font> <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109" style="color: rgb(36, 88, 128);"/> </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </t>
+                <t t-else="">
+                    <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
+                    <div class="col-12 media mt-3 col-lg-4 s_latest_posts_post">
+                        <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}">
+                            <t t-call="website_blog.blog_cover">
+                                <t t-set="cover_properties" t-value="properties"/>
+                                <t t-set="additionnal_classes" t-value="'loading_container thumb'"/>
+                            </t>
+                        </a>
+                        <div class="media-body ml-3 pb-2">
+                            <h4 style="color: rgb(255, 255, 255);" t-field="p.name"/>
+                            <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" class="rounded-circle btn-sm" data-original-title="" title="" aria-describedby="tooltip717931" spellcheck="false" data-gramm="false"> <font style="color: rgb(36, 88, 128);">Llegir més</font> <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109" style="color: rgb(36, 88, 128);"/> </a>
+                        </div>
+                    </div>
+                </t>
+            <t t-set="i" t-value="i+1"/>
             </t>
         </template>
 
         <template id="view_last_news_inherit" inherit_id="berp_website.view_last_news">
             <xpath expr="//t[@t-set='cover_properties']" position="attributes">
                 <attribute name="t-value">dict(properties, **{"background-image": "url(%s)" % p.get_website_meta()["opengraph_meta"]["og:image"]})</attribute>
+                <!-- <attribute name="t-value">properties["width"]="100px"</attribute> -->
             </xpath>
         </template>
 
