@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-        <menuitem id="berp_20200716_1132_menuitem"
+        <!-- <menuitem id="berp_20200716_1132_menuitem"
                 name="Solicitudes"
                 parent="berp.administracion_menuitem"
                 groups="berp.berp_escuela"
@@ -13,6 +13,6 @@
                         parent="berp_20200716_1132_menuitem"
                         sequence="1"
                         groups="berp.berp_escuela"
-                        action="berp_20200716_1119_action"/>
+                        action="berp_20200716_1119_action"/> -->
 
 </odoo>

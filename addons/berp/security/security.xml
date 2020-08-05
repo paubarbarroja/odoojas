@@ -29,4 +29,9 @@
             <field name="name">Berp / Administración</field>
             <field name="category_id" ref="berp_rol_category"/>
         </record>
+
+        <record id="berp_escuela" model="res.groups">
+            <field name="name">Berp / Escuela</field>
+            <field name="category_id" ref="berp_rol_category"/>
+        </record>
 </odoo>

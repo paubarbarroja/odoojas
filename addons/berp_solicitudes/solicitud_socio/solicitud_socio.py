@@ -32,3 +32,4 @@ class berp_solicitud_socio(models.Model):
 
     fecha_formulario        = fields.Date(string='Data solicitud')
     otros                   = fields.Text(string='Otros')
+    fecha_ingreso           = fields.Date(string="Fecha inscripción", default=fields.Date.context_today)

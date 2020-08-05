@@ -1,5 +1,5 @@
 {
-    'name': "berp",
+    'name': "Berp",
     'summary': """Berp""",
     'version': '1.0',
     'depends': ['base'],

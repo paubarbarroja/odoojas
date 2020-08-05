@@ -9,7 +9,7 @@
         <value>berp.solicitud_escuela</value>
         <value eval="[
             'image','nombre','apellido1','apellido2','fecha_nacimiento','dni','direccion','poblacion','cp','nombre_1','mail_1','telefono_1','dni_1',
-            'nombre_2','mail_2','telefono_2','dni_2','telefono_alternativo','cat_salut_atleta','salut','otros',
+            'nombre_2','mail_2','telefono_2','dni_2','telefono_alternativo','cat_salut_atleta','salut','otros','cuenta_bancaria',
         ]"/>
     </function>
 
