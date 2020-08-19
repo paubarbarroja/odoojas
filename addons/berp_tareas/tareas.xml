@@ -2,14 +2,30 @@
 <odoo>
 
 
+    <!-- model.name search view -->
+    <record id="berp_20200807_1344_search" model="ir.ui.view">
+        <field name="name">berp.tareas.search</field>
+        <field name="model">berp.tarea</field>
+        <field name="arch" type="xml">
+            <search string="Tareas search">
+                <filter string="Pendientes" name="tareas_pendientes" domain="[('estado','=','pendiente')]"/>
+                <filter string="Acabadas" name="tareas_acabadas" domain="[('estado','=','acabada')]"/>
+                <filter string="Cerradas" name="tareas_cerradas" domain="[('estado','=','cerrada')]"/>
+                <!-- <filter string="" name="tareas_" domain="[('estado','=','')]"/> -->
+            </search>
+        </field>
+    </record>
+
+
 	<!-- ##################### Tree Tareas ##################### -->
 	<record model="ir.ui.view" id="berp_20200218_1444_tree">
         <field name="name">tareas</field>
         <field name="model">berp.tarea</field>
         <field name="arch" type="xml">
             <tree string="Tareas">
+                <field name="uid_ok"/>
+                <field name="nombre"/>
 	            <field name="descripcion"/>
-                <field name="comentario"/>
                 <field name="fecha_demanda"/>
                 <field name="solicitado_por"/>
                 <field name="tiempo_imputado"/>
@@ -32,21 +48,22 @@
                     <field name="estado" widget="statusbar" class="oe_right"/>
                 </header>
                 <sheet>
+                    <field name="uid_ok"/>
 	                <table style="width:60%">
+		                <tr>
+			                <td><group><field name="nombre" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
+		                </tr>
 		                <tr>
 			                <td><group><field name="descripcion" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
 		                </tr>
 		                <tr>
-			                <td><group><field name="comentario" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
+			                <td><group><field name="fecha_demanda" readonly="1"/></group></td>
 		                </tr>
 		                <tr>
-			                <td><group><field name="fecha_demanda" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
+			                <td><group><field name="solicitado_por" readonly="1"/></group></td>
 		                </tr>
 		                <tr>
-			                <td><group><field name="solicitado_por" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
-		                </tr>
-		                <tr>
-			                <td><group><field name="tiempo_imputado" attrs="{'readonly':[('estado', '!=', 'pendiente')]}" widget="float_time"/></group></td>
+			                <td><group><field name="tiempo_imputado" readonly="1" widget="float_time"/></group></td>
 		                </tr>
 		                <tr>
 			                <td><group><field name="publicado" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
@@ -78,7 +95,16 @@
         <field name="res_model">berp.tarea</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('estado','in',['pendiente','acabada'])]</field>
+        <field name="context">{"search_default_tareas_pendientes":1}</field>
+    </record>
+
+	<record id="berp_07082020_1351_action" model="ir.actions.act_window">
+        <field name="name">Mis Solicitudes</field>
+        <field name="res_model">berp.tarea</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('uid_ok','=',True)]</field>
+        <field name="context">{"search_default_tareas_pendientes":1}</field>
     </record>
 
     <record id="berp_18022021_1901_action" model="ir.actions.act_window">
@@ -86,7 +112,7 @@
         <field name="res_model">berp.tarea</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
-        <field name="domain">[('estado','=','cerrada')]</field>
+        <field name="context">{"search_default_tareas_cerradas":1}</field>
     </record>
 
 

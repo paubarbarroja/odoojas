@@ -47,14 +47,33 @@ class berp_tarea(models.Model):
                 'context'  : context,
                 'flags': {'form': {'action_buttons': True},}
             }
+    
+    @api.depends('solicitado_por')
+    def _uid_ok(self):
+        uid = self.env.user.id
+        for record in self:
+            _logger.error('##########  id solicitado --> %r',record.solicitado_por.id)
+            _logger.error('##########  uid --> %r',uid)
+            if record.solicitado_por.id == uid:
+                record.uid_ok = True
+            else:
+                record.uid_ok = False
+
+    def _search_uid_ok(self, operator, value):
+        if operator == 'like':
+            operator = 'ilike'
+        return [('uid_ok', operator, value)]
 
 
 
-    descripcion         = fields.Char('Descripción')
-    comentario          = fields.Text('Comentario')
-    fecha_demanda       = fields.Date('Fecha de demanda')
-    solicitado_por      = fields.Many2one('res.users','Solicitado por')
+
+    nombre              = fields.Char('Titulo / Nombre')
+    descripcion         = fields.Text('Descripción')
+    fecha_demanda       = fields.Date('Fecha de demanda',default=fields.Date.context_today)
+    solicitado_por      = fields.Many2one('res.users','Solicitado por',default=lambda self: self.env.user)
     tiempo_imputado     = fields.Float(string='Tiempo imputado')
     publicado           = fields.Boolean('Publicado')
     estado              = fields.Selection([('pendiente','Pendiente'),('acabada','Acabada'),('cerrada','Cerrada')], default="pendiente", string="Estado")
     tarea_tiempo_id     = fields.One2many('berp.tarea_tiempo','tarea_id','Tarea Tiempo')
+    uid_ok              = fields.Boolean(compute='_uid_ok',string='uid Ok',search='_search_uid_ok',store=False)
+    

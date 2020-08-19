@@ -89,9 +89,11 @@
                             <field name="cat_salut_atleta"/>
                             <field name="fecha_ingreso"/>
                         </group>
-
-                        <field name="grupo_entreno"/>
-                        <field name="salut" placeholder="Advertencia sobre qualsevol condicionant de salut que pugui ser rellevant (alergies , limitacions,...) o pel qual hem de tenir una cura especial (TEA, TDAH,...)"/>
+                        <group colspan="2">
+                            <field name="grupo_entreno"/>
+                            <field name="salut" placeholder="Advertencia sobre qualsevol condicionant de salut que pugui ser rellevant (alergies , limitacions,...) o pel qual hem de tenir una cura especial (TEA, TDAH,...)"/>
+                            <field name="comentario"/>
+                        </group>
                     </group>
                 </sheet>
             </form>

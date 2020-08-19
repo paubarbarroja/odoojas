@@ -10,21 +10,21 @@
                       name="Socios"
                       parent="berp.administracion_menuitem"
                       sequence="1"
-                      groups="berp.berp_administracion"
+                      groups="berp.berp_administracion,berp.berp_admin"
                       action="berp_28082019_1258_action"/>
 
             <menuitem id="berp_20190829_1850_menuitem"
                       name="Atletas"
                       parent="berp.administracion_menuitem"
                       sequence="2"
-                      groups="berp.berp_administracion"
+                      groups="berp.berp_administracion,berp.berp_admin"
                       action="berp_29082019_1841_action"/>
 
             <menuitem id="berp_20190830_1548_menuitem"
                       name="No Socios"
                       parent="berp.administracion_menuitem"
                       sequence="3"
-                      groups="berp.berp_administracion"
+                      groups="berp.berp_administracion,berp.berp_admin"
                       action="berp_14022020_0042_action"/>
 
 

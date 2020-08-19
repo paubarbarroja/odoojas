@@ -4,13 +4,24 @@
         <menuitem id="berp_20200218_1502_menuitem"
                   name="Tareas Pendientes"
                   parent="berp.tareas_menuitem"
-                  sequence="2"
+                  groups="berp.berp_admin"
+                  sequence="1"
                   action="berp_18022020_1500_action"/>
+                  
 
         <menuitem id="berp_20200221_1921_menuitem"
                   name="Tareas Cerradas"
                   parent="berp.tareas_menuitem"
-                  sequence="3"
+                  groups="berp.berp_admin"
+                  sequence="2"
                   action="berp_18022021_1901_action"/>
+
+        <menuitem id="berp_20200807_1302_menuitem"
+                  name="Solicitudes Pendientes"
+                  parent="berp.tareas_menuitem"
+                  groups="berp.berp_escuela"
+                  sequence="3"
+                  action="berp_07082020_1351_action"/>
+
 
 </odoo>
