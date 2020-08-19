@@ -60,9 +60,10 @@ class berp_tarea(models.Model):
                 record.uid_ok = False
 
     def _search_uid_ok(self, operator, value):
+        _logger.error('##########  value --> %r',value)
         if operator == 'like':
             operator = 'ilike'
-        return [('uid_ok', operator, value)]
+        return [('uid_ok', '==', value)]
 
 
 

@@ -8,6 +8,7 @@
         <field name="model">berp.solicitud_escuela</field>
         <field name="arch" type="xml">
             <tree string="Solicituts de l'escola">
+                <field name="contact_google"/>
                 <field name="fecha_ingreso"/>
 	            <field name="nombre"/>
                 <field name="apellido1"/>
@@ -32,7 +33,14 @@
                 </header> -->
                 <sheet>
                     <div class="oe_button_box" name="button_box">
-
+                        <table>
+                            <tr>
+                                <td>
+                                    <field name="contact_google"/>
+                                </td>
+                                <td style="width:5%">Contacto Google</td>
+                            </tr>
+                        </table>
                     </div>
                     <field name="imagen" widget="image" class="oe_avatar" nolabel="1"/>
                     <div class="oe_title">
