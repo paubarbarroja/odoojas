@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="berp_20200819_1906_tree" model="ir.ui.view">
+        <field name="name">sale.order.tree.berp</field>
+        <field name="model">sale.order</field>
+        <field name="priority">2</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <field name="state" position="after">
+                <field name="producto_tree"/>
+            </field>
+        </field>
+    </record>
+
+
+</odoo>

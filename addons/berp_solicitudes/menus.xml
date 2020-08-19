@@ -5,7 +5,7 @@
                 name="Solicitudes"
                 parent="berp.escola_menuitem"
                 groups="berp.berp_escuela,berp.berp_admin"
-                sequence="4"/>
+                sequence="1"/>
       
 
                 <menuitem id="berp_20200716_1119_menuitem"
@@ -14,5 +14,12 @@
                         sequence="1"
                         groups="berp.berp_escuela,berp.berp_admin"
                         action="berp_20200716_1119_action"/>
+        
 
+        <menuitem id="berp_20200819_1923_menuitem" 
+                name="Pedidos"
+                parent="berp.escola_menuitem" 
+                sequence="2"
+                groups="berp.berp_escuela,berp.berp_admin"
+                action="website_sale.action_orders_ecommerce"/>
 </odoo>
