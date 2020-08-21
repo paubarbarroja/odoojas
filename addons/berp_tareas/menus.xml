@@ -19,9 +19,17 @@
         <menuitem id="berp_20200807_1302_menuitem"
                   name="Solicitudes Pendientes"
                   parent="berp.tareas_menuitem"
-                  groups="berp.berp_escuela"
+                  groups="berp.berp_admin"
                   sequence="3"
                   action="berp_07082020_1351_action"/>
+
+        
+        <menuitem id="berp_20200821_2159_menuitem" 
+                name="Incidencias/Tareas"
+                parent="berp.escola_menuitem" 
+                sequence="3"
+                groups="berp.berp_escuela"
+                action="berp_07082020_1351_action"/>
 
 
 </odoo>

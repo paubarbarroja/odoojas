@@ -23,7 +23,7 @@
         <field name="model">berp.tarea</field>
         <field name="arch" type="xml">
             <tree string="Tareas">
-                <field name="uid_ok"/>
+                <field name="uid_ok" invisible="1"/>
                 <field name="nombre"/>
 	            <field name="descripcion"/>
                 <field name="fecha_demanda"/>
@@ -48,7 +48,7 @@
                     <field name="estado" widget="statusbar" class="oe_right"/>
                 </header>
                 <sheet>
-                    <field name="uid_ok"/>
+                    <field name="uid_ok" invisible="1"/>
 	                <table style="width:60%">
 		                <tr>
 			                <td><group><field name="nombre" attrs="{'readonly':[('estado', '!=', 'pendiente')]}"/></group></td>
@@ -71,7 +71,7 @@
 	                </table>
                     <br/>
                     <notebook>
-                        <page string="Horas Imputadas">
+                        <page string="Horas Imputadas" groups="berp.berp_admin">
                             <button name="imputar_horas" string="Imputar Horas" type="object" class="btn btn-primary"/>
                             <field name="tarea_tiempo_id">
                                 <tree string="Tarea Tiempo">

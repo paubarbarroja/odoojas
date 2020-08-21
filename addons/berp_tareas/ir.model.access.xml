@@ -2,6 +2,7 @@
 <odoo>
 
     <!-- ## TAREA ## -->
+    <!-- ## TAREA ROL ADMIN ## -->
     <record id="admin_berp_tarea" model="ir.model.access">
         <field name="name">admin_berp_tarea</field>
         <field name="model_id" ref="model_berp_tarea"/>
@@ -11,12 +12,33 @@
         <field name="perm_create" eval="1"/>
         <field name="perm_unlink" eval="1" />
     </record>
+    <!-- ## TAREA ROL ESCUELA ## -->
+    <record id="escuela_berp_tarea" model="ir.model.access">
+        <field name="name">escuela_berp_tarea</field>
+        <field name="model_id" ref="model_berp_tarea"/>
+        <field name="group_id" ref="berp.berp_escuela"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="0" />
+    </record>
 
     <!-- ## TAREA TIEMPO ## -->
+    <!-- ## TAREA TIEMPO ROL ADMIN ## -->
     <record id="admin_berp_tarea_tiempo" model="ir.model.access">
         <field name="name">admin_berp_tarea_tiempo</field>
         <field name="model_id" ref="model_berp_tarea_tiempo"/>
         <field name="group_id" ref="berp.berp_admin"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1" />
+    </record>
+    <!-- ## TAREA TIEMPO ROL ESCUELA ## -->
+    <record id="admin_berp_tarea_tiempo" model="ir.model.access">
+        <field name="name">escuela_berp_tarea_tiempo</field>
+        <field name="model_id" ref="model_berp_tarea_tiempo"/>
+        <field name="group_id" ref="berp.berp_escuela"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="1"/>
         <field name="perm_create" eval="1"/>

@@ -52,18 +52,19 @@ class berp_tarea(models.Model):
     def _uid_ok(self):
         uid = self.env.user.id
         for record in self:
-            _logger.error('##########  id solicitado --> %r',record.solicitado_por.id)
-            _logger.error('##########  uid --> %r',uid)
             if record.solicitado_por.id == uid:
                 record.uid_ok = True
             else:
                 record.uid_ok = False
 
     def _search_uid_ok(self, operator, value):
-        _logger.error('##########  value --> %r',value)
-        if operator == 'like':
-            operator = 'ilike'
-        return [('uid_ok', '==', value)]
+        uid = self.env.user.id
+        self = self.search([])
+        ids = []
+        for record in self:
+            if record.solicitado_por.id == uid:
+                ids.append(record.id)
+        return [('id', 'in', ids)]
 
 
 
