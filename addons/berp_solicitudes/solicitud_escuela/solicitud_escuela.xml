@@ -29,7 +29,7 @@
         <field name="arch" type="xml">
             <form string="Solicitut de l'escola">
                 <header>
-                    <field name="inscrito" invisible="0"/>
+                    <field name="inscrito" invisible="1"/>
                     <button name="create_usuario_escuela" string="Acceptar inscripció" type="object" attrs="{'invisible':[('inscrito', '!=', False)]}" class="oe_highlight"/>
                 </header>
                 <sheet>
