@@ -111,7 +111,7 @@
 
     <!-- ##################### Action Tarea ##################### -->
 	<record id="berp_20200716_1119_action" model="ir.actions.act_window">
-        <field name="name">Solicituts de l'escola</field>
+        <field name="name">Solicitudes de la escuela</field>
         <field name="res_model">berp.solicitud_escuela</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
