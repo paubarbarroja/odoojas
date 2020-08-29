@@ -24,7 +24,7 @@
     </record>
 
     <!-- ## SOLICITUD ESCUELA ROL ESCUELA ## -->
-    <record id="admin_berp_solicitud_escuela" model="ir.model.access">
+    <record id="escuela_berp_solicitud_escuela" model="ir.model.access">
         <field name="name">escuela_berp_solicitud_escuela</field>
         <field name="model_id" ref="model_berp_solicitud_escuela"/>
         <field name="group_id" ref="berp.berp_escuela"/>

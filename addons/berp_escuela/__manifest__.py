@@ -2,13 +2,13 @@
     'name': "Escuela",
     'summary': """Berp - Escuela""",
     'version': '1.0',
-    'depends': ['berp'],
+    'depends': ['berp','sale'],
     'author': "Pau Barbarroja",
     'category': 'berp',
     'description': """
     """,
     'data': [
-        # 'solicitud_escuela/solicitud_escuela.xml',
+        'usuario_escuela.xml',
         'ir.model.access.xml',
         'menus.xml',
     ],

@@ -10,6 +10,7 @@
     'data': [
         'solicitud_escuela/solicitud_escuela.xml',
         'ventas/sale_order.xml',
+        'usuario_escuela/usuario_escuela.xml',
         'settings.xml',
         'ir.model.access.xml',
         'menus.xml',

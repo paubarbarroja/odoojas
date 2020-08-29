@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+	<!-- ##################### Form usuario escuela inherit ##################### -->
+    <record id="berp_20200829_0000_form" model="ir.ui.view">
+        <field name="name">usuario_escuela</field>
+        <field name="model">berp.usuario_escuela</field>
+        <field name="inherit_id" ref="berp_escuela.berp_20200829_2207_form"/>
+        <field name="arch" type="xml">
+            <field name="fecha_aceptar_ingreso" position="after">
+                <field name="solicitud"/>
+            </field>
+        </field>
+    </record>
+
+
+</odoo>

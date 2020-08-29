@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-        <!-- <menuitem id="berp_20200716_1132_menuitem"
-                name="Solicitudes"
-                parent="berp.administracion_menuitem"
-                groups="berp.berp_escuela"
+        <menuitem id="berp_20200829_2207_menuitem"
+                name="Usuarios"
+                parent="berp.escola_menuitem"
+                groups="berp.berp_escuela,berp.berp_admin"
+                action="berp_20200829_2207_action"
                 sequence="4"/>
-      
-
-                <menuitem id="berp_20200716_1119_menuitem"
-                        name="Solicitudes Escuela"
-                        parent="berp_20200716_1132_menuitem"
-                        sequence="1"
-                        groups="berp.berp_escuela"
-                        action="berp_20200716_1119_action"/> -->
 
 </odoo>

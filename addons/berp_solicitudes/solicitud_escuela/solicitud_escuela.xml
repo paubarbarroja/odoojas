@@ -28,9 +28,10 @@
         <field name="model">berp.solicitud_escuela</field>
         <field name="arch" type="xml">
             <form string="Solicitut de l'escola">
-                <!-- <header>
-                    <button name="cerrar_tarea" type="object" string="Cerrar" class="btn btn-primary" attrs="{'invisible':[('estado', '!=', 'acabada')]}"/>
-                </header> -->
+                <header>
+                    <field name="inscrito" invisible="0"/>
+                    <button name="create_usuario_escuela" string="Acceptar inscripció" type="object" attrs="{'invisible':[('inscrito', '!=', False)]}" class="oe_highlight"/>
+                </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
                         <table>
@@ -114,6 +115,7 @@
         <field name="res_model">berp.solicitud_escuela</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
+        <field name="domain">[('inscrito','=',False)]</field>
     </record>
 
 

@@ -28,7 +28,7 @@
                 name="Incidencias/Tareas"
                 parent="berp.escola_menuitem" 
                 sequence="3"
-                groups="berp.berp_escuela"
+                groups="berp.berp_escuela,berp.berp_admin"
                 action="berp_07082020_1351_action"/>
 
 

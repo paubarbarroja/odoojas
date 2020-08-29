@@ -13,7 +13,7 @@
             />
 
     <menuitem id="escola_menuitem"
-              name="Escola"
+              name="Escuela"
               groups="berp.berp_admin,berp.berp_escuela"
               web_icon="berp,static/description/icon.png"
             />

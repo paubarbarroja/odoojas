@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+	<!-- ##################### Tree usuario escuela ##################### -->
+	<record model="ir.ui.view" id="berp_20200829_2207_tree">
+        <field name="name">usuario_escuela</field>
+        <field name="model">berp.usuario_escuela</field>
+        <field name="arch" type="xml">
+            <tree string="Usuaris de l'escola">
+                <field name="fecha_ingreso"/>
+	            <field name="nombre"/>
+                <field name="apellido1"/>
+                <field name="apellido2"/>
+                <field name="fecha_nacimiento"/>
+                <field name="dni"/>
+                <field name="nombre_1"/>
+                <field name="dni_1"/>
+            </tree>
+        </field>
+    </record>
+
+
+	<!-- ##################### Form usuario escuela ##################### -->
+    <record id="berp_20200829_2207_form" model="ir.ui.view">
+        <field name="name">usuario_escuela</field>
+        <field name="model">berp.usuario_escuela</field>
+        <field name="arch" type="xml">
+            <form string="Usuari de l'escola">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <table>
+                            <tr>
+                                <td>
+                                    <field name="contact_google"/>
+                                </td>
+                                <td style="width:5%">Contacto Google</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <field name="imagen" widget="image" class="oe_avatar" nolabel="1"/>
+                    <div class="oe_title">
+                        <label for="Nombre" class="oe_edit_only" string="Nombre"/>
+                        <h3>
+                            <group col="3">
+                                <field name="nombre" nolabel="1"/>
+                                <field name="apellido1" nolabel="1"/>
+                                <field name="apellido2" nolabel="1"/>
+                            </group>
+                        </h3>
+                    </div>
+                    <br/>
+                    <group col="2">
+                        <group>
+                            <label for="street" string="Dirección"/>
+                            <div class="o_address_format">
+                                <field name="direccion" placeholder="Calle..." class="o_address_street"/>
+                                <field name="poblacion" placeholder="Ciudad" class="o_address_city"/>
+                                <field name="cp" placeholder="Código postal" class="o_address_zip"/>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="fecha_nacimiento"/>
+                            <field name="dni"/>
+                        </group>
+                        <group colspan="2">
+                            <field name="grupo_entreno"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Datos Familiares">
+                            <group>
+                                <group>
+                                    <h3>Familiar 1</h3>
+                                    <field name="nombre_1"/>
+                                    <field name="dni_1"/>
+                                    <field name="mail_1"/>
+                                    <field name="telefono_1"/>
+                                </group>
+                                <group>
+                                    <h3>Familiar 2</h3>
+                                    <field name="nombre_2"/>
+                                    <field name="dni_2"/>
+                                    <field name="mail_2"/>
+                                    <field name="telefono_2"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Otros datos">
+                            <group col="2">
+                                <group>
+                                    <field name="telefono_alternativo"/>
+                                    <field name="cuenta_bancaria"/>
+                                    <field name="presupuesto_ingreso"/>
+                                </group>
+                                <group>
+                                    <field name="cat_salut_atleta"/>
+                                    <field name="fecha_aceptar_ingreso"/>
+                                </group>
+                                <group colspan="2">
+                                    <field name="salut" placeholder="Advertencia sobre qualsevol condicionant de salut que pugui ser rellevant (alergies , limitacions,...) o pel qual hem de tenir una cura especial (TEA, TDAH,...)"/>
+                                    <field name="comentario"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ##################### Action usuario escuela ##################### -->
+	<record id="berp_20200829_2207_action" model="ir.actions.act_window">
+        <field name="name">Usuarios de la escuela</field>
+        <field name="res_model">berp.usuario_escuela</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+
+</odoo>

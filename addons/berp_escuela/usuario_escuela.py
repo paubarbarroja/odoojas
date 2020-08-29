@@ -8,47 +8,17 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-class berp_solicitud_escuela(models.Model):
-    _name = 'berp.solicitud_escuela'
-    _description = 'berp_solicitud_escuela'
-    _rec_name = "titulo"
+class berp_usuario_escuela(models.Model):
+    _name = 'berp.usuario_escuela'
+    _description = 'berp_usuario_escuela'
 
     @api.multi
-    def create_usuario_escuela(self):
+    def press_contacto_google(self):
         for item in self:
-            values = {
-                'imagen'                : item.imagen,
-                'nombre'                : item.nombre,
-                'apellido1'             : item.apellido1,
-                'apellido2'             : item.apellido2,
-                'fecha_nacimiento'      : item.fecha_nacimiento,
-                'dni'                   : item.dni,
-                'direccion'             : item.direccion,
-                'poblacion'             : item.poblacion,
-                'cp'                    : item.cp,
-                'nombre_1'              : item.nombre_1,
-                'mail_1'                : item.mail_1,
-                'telefono_1'            : item.telefono_1,
-                'dni_1'                 : item.dni_1,
-                'nombre_2'              : item.nombre_2,
-                'mail_2'                : item.mail_2,
-                'telefono_2'            : item.telefono_2,
-                'dni_2'                 : item.dni_2,
-                'grupo_entreno'         : item.grupo_entreno,
-                'telefono_alternativo'  : item.telefono_alternativo,
-                'cat_salut_atleta'      : item.cat_salut_atleta,
-                'salut'                 : item.salut,
-                'otros'                 : item.otros,
-                'cuenta_bancaria'       : item.cuenta_bancaria,
-                'fecha_ingreso'         : item.fecha_ingreso,
-                'comentario'            : item.comentario,
-                'contact_google'        : item.contact_google,
-                'fecha_aceptar_ingreso' : date.today(),
-                'solicitud'             : item.id
-            }
-            self.env['berp.usuario_escuela'].create(values)
-            item.inscrito = True
-            
+            if item.contact_google == True:
+                item.contact_google = False
+            else:
+                item.contact_google = True
 
 
     @api.model
@@ -62,17 +32,11 @@ class berp_solicitud_escuela(models.Model):
             image = tools.image_colorize(image)
         return tools.image_resize_image_big(base64.b64encode(image))
 
-    @api.multi
-    def get_titulo(self):
-        for item in self:
-            item.titulo = "SIE - "+item.nombre+" "+item.apellido1+" "+item.apellido2
-
     # Datos atleta escuela
-    titulo                  = fields.Char(compute='get_titulo',string='Titulo',store=True)
     imagen                  = fields.Binary("Imagen", attachment=True, default=lambda self:self._get_default_image())
     nombre                  = fields.Char(string='Nombre')
     apellido1               = fields.Char(string='Primer Apellido')
-    apellido2               = fields.Char(string='Segon Apellido')
+    apellido2               = fields.Char(string='Segundo Apellido')
     fecha_nacimiento        = fields.Date(string='Fecha de Nacimiento')
     dni                     = fields.Char(string='DNI')
     direccion               = fields.Char(string='Dirección')
@@ -81,18 +45,18 @@ class berp_solicitud_escuela(models.Model):
 
     # Datos familiar1
     nombre_1                = fields.Char(string='Nombre y Apellidos')
-    mail_1                  = fields.Char(string='Correo electronico')
-    telefono_1              = fields.Char(string='Nº Teléfono /Movil')
+    mail_1                  = fields.Char(string='Correo electrónico')
+    telefono_1              = fields.Char(string='Nº Teléfono /Móvil')
     dni_1                   = fields.Char(string='DNI')
 
     # Datos familiar2
     nombre_2                = fields.Char(string='Nombre y Apellidos')
-    mail_2                  = fields.Char(string='Correo electronico')
-    telefono_2              = fields.Char(string='Nº Teléfono /Movil')
+    mail_2                  = fields.Char(string='Correo electrónico')
+    telefono_2              = fields.Char(string='Nº Teléfono /Móvil')
     dni_2                   = fields.Char(string='DNI')
 
     #Otros datos
-    grupo_entreno = fields.Selection(string='Grup entrenament', selection=[ ('1', 'Pre-Benjamins Sub8 (anys 2014-2015) dimarts i dijous 18:00h-19:30h'),
+    grupo_entreno = fields.Selection(string='Grupo de entreno', selection=[ ('1', 'Pre-Benjamins Sub8 (anys 2014-2015) dimarts i dijous 18:00h-19:30h'),
                                                                             ('2', 'Benjamins Sub10 (anys 2012-2013) dilluns i dimecres 18:00h-19:30h'),
                                                                             ('3', 'Benjamins Sub10 (anys 2012-2013) dimarts i dijous 18:00h-19:30h'),
                                                                             ('4', 'Alevins Sub12 (anys 2010-2011) dilluns i dimecres 18:00h-19:30h'),
@@ -102,14 +66,18 @@ class berp_solicitud_escuela(models.Model):
                                                                             ('8', 'Cadets Sub16 (anys 2006-2007) dilluns, dimecres i divendres 18:00h-19:30h'),
                                                                             ('9', 'Juvenils Sub18 (anys 2004-2005) dilluns, dimecres i divendres 18:00h-19:30h'),])
     
-    telefono_alternativo    = fields.Char(string='Nº Teléfono /Movil Alternativo')
-    cat_salut_atleta        = fields.Char(string='Numero CatSalut')
-    salut                   = fields.Text(string='Salut')
+    telefono_alternativo    = fields.Char(string='Nº Teléfono /Móvil Alternativo')
+    cat_salut_atleta        = fields.Char(string='Número CatSalut')
+    salut                   = fields.Text(string='Salud')
     otros                   = fields.Text(string='Otros')
     cuenta_bancaria         = fields.Char(string='Cuenta bancaria')
-    fecha_ingreso           = fields.Date(string="Fecha inscripción", default=fields.Date.context_today)
+    fecha_ingreso           = fields.Date(string="Fecha solicitud", default=fields.Date.context_today)
     comentario              = fields.Text(string='Comentario')
     contact_google          = fields.Boolean(string='Contacto Google')
-    inscrito                = fields.Boolean(string='Inscrito')
+    
+    # Datos Usuario escuela
+    fecha_aceptar_ingreso   = fields.Date(string='Fecha inscripción aceptada')
+    presupuesto_ingreso     = fields.Many2one('sale.order','Presupuesto/Factura')
+    
     
     
