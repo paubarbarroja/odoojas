@@ -48,8 +48,6 @@ class berp_solicitud_escuela(models.Model):
             }
             self.env['berp.usuario_escuela'].create(values)
             item.inscrito = True
-            
-
 
     @api.model
     def _get_default_image(self):
@@ -65,7 +63,12 @@ class berp_solicitud_escuela(models.Model):
     @api.multi
     def get_titulo(self):
         for item in self:
-            item.titulo = "SIE - "+item.nombre+" "+item.apellido1+" "+item.apellido2
+            if item.nombre != False:
+                item.titulo = "SIE - "+item.nombre
+            if item.apellido1 != False:
+                item.titulo = item.titulo+" "+item.apellido1
+            if item.apellido2 != False:
+                item.titulo = item.titulo+" "+item.apellido2
 
     # Datos atleta escuela
     titulo                  = fields.Char(compute='get_titulo',string='Titulo',store=True)
