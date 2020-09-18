@@ -95,9 +95,9 @@ class berp_solicitud_escuela(models.Model):
     dni_2                   = fields.Char(string='DNI')
 
     #Otros datos
-    grupo_entreno = fields.Selection(string='Grup entrenament', selection=[ ('1', 'Pre-Benjamins Sub8 (anys 2014-2015) dimarts i dijous 18:00h-19:30h'),
+    grupo_entreno = fields.Selection(string='Grup entrenament', selection=[ ('1', 'INSCRIPCIONS TANCADES  ---  Pre-Benjamins Sub8 (anys 2014-2015)'),
                                                                             ('2', 'Benjamins Sub10 (anys 2012-2013) dilluns i dimecres 18:00h-19:30h'),
-                                                                            ('3', 'Benjamins Sub10 (anys 2012-2013) dimarts i dijous 18:00h-19:30h'),
+                                                                            ('3', 'INSCRIPCIONS TANCADES  ---  Benjamins Sub10 (anys 2012-2013)'),
                                                                             ('4', 'Alevins Sub12 (anys 2010-2011) dilluns i dimecres 18:00h-19:30h'),
                                                                             ('5', 'Alevins Sub12 (anys 2010-2011) dimarts i dijous 18:00h-19:30h'),
                                                                             ('6', 'Infantils Sub14 (anys 2008-2009) dilluns, dimecres i divendres 18:00h-19:30h'),
