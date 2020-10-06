@@ -17,6 +17,45 @@
                     </div>
                     </div>
                 </section>
+                <section class="s_text_image pt32 pb32" style="background-color: rgb(107, 173, 222);">
+                    <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16">
+                        <h2 style="color: rgb(255, 255, 255);">Butlletí Digital - Nº 16</h2>
+                        <p  style="color: rgb(255, 255, 255); font-size: 15px;">En aquest butlletí trobareu els següents articles:</p>
+                        <ul style="list-style-type: circle;">
+                            <li>
+                            <p  style="color: rgb(255, 255, 255); font-size: 15px;">En les noces d’or del cros català</p>
+                            </li>
+                            <li>
+                            <p  style="color: rgb(255, 255, 255); font-size: 15px;">Medallistes JAS en campionats internacionals</p>
+                            </li>
+                            <li>
+                            <p  style="color: rgb(255, 255, 255); font-size: 15px;">Pista coberta de Catalunya (Sabadell):</p>
+                            </li>
+                            <li>
+                            <p  style="color: rgb(255, 255, 255); font-size: 15px;">De pista de 1.000 rècords a Hospital</p>
+                            </li>
+                            <li>
+                            <p  style="color: rgb(255, 255, 255); font-size: 15px;">Rècords d’Espanya batuts per atletes de la JAS</p>
+                            </li>
+                            <li>
+                            <p  style="color: rgb(255, 255, 255); font-size: 15px;">Ara fa 10 anys:</p>
+                            </li>
+                            <li>
+                            <p  style="color: rgb(255, 255, 255); font-size: 15px;">Inauguració de la pista coberta Catalunya</p>
+                            </li>
+                        </ul>
+                        <p  style="color: rgb(255, 255, 255); font-size: 15px;">Data de Publicació: Octubre 2020<br/></p>
+                        </div>
+                        <div class="pt0 pb0 col-lg-3">
+                            <a href="https://berp-bucket.s3.eu-west-2.amazonaws.com/pdfs/butlletins/Butlleti+16+2020.pdf" target="_blank">
+                                <img src="https://berp-bucket.s3.eu-west-2.amazonaws.com/img/butlletins/PORTADA+BULLETI+N%C2%BA16.png" class="img img-fluid mx-auto" alt="Odoo • Texto e imagen" data-original-title="" title="" aria-describedby="tooltip631701"/>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </section>
                 <section class="s_text_image pt32 pb32 oe_custom_bg">
                     <div class="container">
                     <div class="row align-items-center">
