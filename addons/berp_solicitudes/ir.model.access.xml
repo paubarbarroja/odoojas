@@ -55,7 +55,7 @@
     <record id="escuela_berp_solicitud_renovacion_ficha" model="ir.model.access">
         <field name="name">escuela_berp_solicitud_renovacion_ficha</field>
         <field name="model_id" ref="model_berp_solicitud_renovacion_ficha"/>
-        <field name="group_id" ref="berp.berp_escuela"/>
+        <field name="group_id" ref="berp.berp_administracion"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="1"/>
         <field name="perm_create" eval="0"/>
