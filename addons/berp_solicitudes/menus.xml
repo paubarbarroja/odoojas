@@ -14,4 +14,12 @@
                 sequence="2"
                 groups="berp.berp_escuela,berp.berp_admin"
                 action="website_sale.action_orders_ecommerce"/>
+
+
+        <menuitem id="berp_20201121_1715_menuitem"
+                name="Solicitudes ficha"
+                parent="berp.administracion_menuitem"
+                sequence="3"
+                groups="berp.berp_administracion,berp.berp_admin"
+                action="berp_20201121_1715_action"/>
 </odoo>

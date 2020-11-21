@@ -16,6 +16,7 @@
         'views/products.xml',
         'views/formulari_soci.xml',
         'views/formulari_escola.xml',
+        'views/formulari_renovacio_ficha.xml',
         'views/escola_atletisme.xml',
         'views/grups_entrenament.xml',
         'views/butlleti.xml',

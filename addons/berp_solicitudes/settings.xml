@@ -25,4 +25,16 @@
             'country_id','phone','phone_alt','email','fecha_formulario','otros',
         ]"/>
     </function>
+
+    <!-- Enable forms to create currencies -->
+    <record id="berp_solicitudes.model_berp_solicitud_renovacion_ficha" model="ir.model">
+        <field name="website_form_access" eval="True"/>
+        <field name="website_form_label">Solicitud renovacion ficha</field>
+    </record>
+    <function model="ir.model.fields" name="formbuilder_whitelist">
+        <value>berp.solicitud_renovacion_ficha</value>
+        <value eval="[
+            'name','apellido1','apellido2','phone','email',
+        ]"/>
+    </function>
 </odoo>

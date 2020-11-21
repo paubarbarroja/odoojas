@@ -19,11 +19,11 @@
                         <span class="s_parallax_bg oe_img_bg oe_custom_bg"
                             style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/pista1.jpg);background-position:47.06% 100%" />
                         <div class="row s_nb_column_fixed">
-                            <div class="jumbotron rounded bg-black-75 pt48 pb48 col-lg-6" data-name="Box" style="">
+                            <div class="jumbotron rounded pt48 pb48 col-lg-6" data-name="Box" style="">
                                 <div class="row">
                                     <div class="s_title s_col_no_bgcolor offset-lg-1 col-lg-11" data-name="Title">
                                         <h1 class="s_title_thin">
-                                            <span style="font-size: 62px;">Joventut Atlètica Sabadell</span>
+                                            <span style="font-size: 62px;"></span>
                                         </h1>
                                     </div>
                                 </div>

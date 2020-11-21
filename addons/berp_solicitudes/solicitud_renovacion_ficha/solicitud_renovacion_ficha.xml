@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+	<!-- ##################### Tree solicitud escuela ##################### -->
+	<record model="ir.ui.view" id="berp_20201121_1715_tree">
+        <field name="name">solicitud_renovacion_ficha</field>
+        <field name="model">berp.solicitud_renovacion_ficha</field>
+        <field name="arch" type="xml">
+            <tree string="Solicituts de l'escola">
+	            <field name="titulo"/>
+                <field name="phone"/>
+                <field name="email"/>
+            </tree>
+        </field>
+    </record>
+
+
+	<!-- ##################### Form solicitud escuela ##################### -->
+    <record id="berp_20201121_1715_form" model="ir.ui.view">
+        <field name="name">solicitud_renovacion_ficha</field>
+        <field name="model">berp.solicitud_renovacion_ficha</field>
+        <field name="arch" type="xml">
+            <form string="Solicitut de l'escola">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="nombre"/>
+                            <field name="apellido1"/>
+                            <field name="apellido2"/>
+                            <field name="phone"/>
+                            <field name="email"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ##################### Action Tarea ##################### -->
+	<record id="berp_20201121_1715_action" model="ir.actions.act_window">
+        <field name="name">Solicitudes de renovación para la ficha</field>
+        <field name="res_model">berp.solicitud_renovacion_ficha</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+
+</odoo>

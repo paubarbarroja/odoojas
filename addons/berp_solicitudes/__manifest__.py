@@ -9,6 +9,7 @@
     """,
     'data': [
         'solicitud_escuela/solicitud_escuela.xml',
+        'solicitud_renovacion_ficha/solicitud_renovacion_ficha.xml',
         'ventas/sale_order.xml',
         'usuario_escuela/usuario_escuela.xml',
         'settings.xml',

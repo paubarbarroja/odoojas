@@ -1,6 +1,12 @@
 from odoo import http
 
 
+class berp_website_formulari_fitxa(http.Controller):
+    @http.route('/formulari_renficha', auth='public', website=True)
+    def index(self, **kw):
+        return http.request.render("berp_website.berp_20201121_2107_website",{})
+
+
 class berp_website_formulari_escola(http.Controller):
     @http.route('/formulari_escola', auth='public', website=True)
     def index(self, **kw):

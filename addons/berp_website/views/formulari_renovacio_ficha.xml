@@ -1,0 +1,79 @@
+<odoo>
+    <data>
+
+        <template id="berp_20201121_2107_website" name="Formulari Renovació Fitxa">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section class="container readable o_website_form_builder">
+                        <br/>
+                        <br/>
+                        <b><h1 style="text-align:center">FORMULARI RENOVACIÓ FITXA</h1></b>
+                        <br/>
+                        <form accept-charset="UTF-8" action="/website_form/" class="s_website_form col-md-12 mt32" data-model_name="berp.solicitud_renovacion_ficha" data-force_action="" data-success_page="https://www.jasabadell.com/shop/product/renovacio-fitxa-72?category=22" enctype="multipart/form-data" method="post">
+                            <div class="o_website_form_fields">
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="nombre">
+                                        <span> Nombre </span>
+                                    </label>
+                                    <input name="nombre" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="apellido1">
+                                        <span> Primer Apellido </span>
+                                    </label>
+                                    <input name="apellido1" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="apellido2">
+                                        <span> Segon Apellido </span>
+                                    </label>
+                                    <input name="apellido2" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="email">
+                                        <span> Correu electronic </span>
+                                    </label>
+                                    <input name="email" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="form-group form-field  form-field-char" data-model-field="true" data-optional="true">
+                                    <label class="control-label" for="phone">
+                                        <span> Nº telèfon/mòvil </span>
+                                    </label>
+                                    <input name="phone" class="form-control o_website_form_input" type="text"/>
+                                </div>
+                                <div class="row form-group form-field o_website_form_custom o_fake_not_editable o_website_form_required_custom">
+                                    <div class="col-md-8 col-lg-1 pt4">
+                                        <input type="checkbox" value="Yes" class="o_website_form_input" name="Custom Casilla de verificación" required=""/>
+                                    </div>
+                                    <div class="col-lg-11 col-md-4">
+                                        <label class="col-form-label" for="Custom Casilla de verificación">
+                                            Marca la casella per acceptar els terminis de l'inscripció.
+                                        </label>
+                                    </div>
+                                    <p style="font-size: x-small;">
+                                        Mitjançant la signatura d'aquesta ordre de domiciliació, el deutor autoritza el creditor a enviar instruccions a l'entitat bancària del deutor per efectuar els càrrecs al seu compte. Com a part dels seus drets, el deutor està legitimat al reemborsament per la seva entitat en els termes i condicions del contracte subscrit amb la mateixa. La sol·licitud de reemborsament s'ha d'efectuar dins de les vuit setmanes que segueixen a la data de càrrec en compte. Poden obtenir informació addicional sobre els seus drets en la seva entitat financera.
+                                        <br/>
+                                        <br/>INFORMACIÓ DE PROTECCIÓ DE DADES PER A SOCIS
+                                        <br/>
+                                        D'acord amb el que estableix el REGLAMENT (UE) 2016/679 de protecció de dades de caràcter personal, l'informem que les dades que vostè ens faciliti seran incorporades a sistema de tractament titularitat de JOVENTUT ATLÈTICA SABADELL amb CIF: G58354176 i domicili social situat a CAMÍ  CAN QUADRES S/N amb la finalitat de: gestió de socis, comptable, fiscal i administrativa.
+                                        Les seves dades seran conservades durant el termini estrictament necessari. Seran esborrats quan hagi transcorregut un temps sense fer ús d'aquests. Vostè es compromet a notificar-nos qualsevol variació en les dades.
+                                        Podrà exercir els drets d'accés, rectificació, supressió i oposició al tractament de les seves dades de caràcter personal dirigint la seva petició al correu electrònic administracio@jasabadell.com 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary btn-lg o_website_form_send o_default_snippet_text">
+                                Enviar
+                                </button>
+                                <span id="o_website_form_result"/>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </t>
+        </template>
+
+
+    </data>
+</odoo>
+
