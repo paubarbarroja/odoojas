@@ -16,6 +16,7 @@ class berp_solicitud_renovacion_ficha(models.Model):
     @api.multi
     def get_titulo(self):
         for item in self:
+            item.titulo = ''
             if item.nombre != False:
                 item.titulo = item.nombre
             if item.apellido1 != False:
