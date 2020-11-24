@@ -30,6 +30,7 @@
                             <field name="apellido2"/>
                             <field name="phone"/>
                             <field name="email"/>
+                            <field name="ficha"/>
                         </group>
                     </group>
                 </sheet>

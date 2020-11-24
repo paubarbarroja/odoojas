@@ -34,7 +34,7 @@
     <function model="ir.model.fields" name="formbuilder_whitelist">
         <value>berp.solicitud_renovacion_ficha</value>
         <value eval="[
-            'name','apellido1','apellido2','phone','email',
+            'name','apellido1','apellido2','phone','email','ficha'
         ]"/>
     </function>
 </odoo>

@@ -31,5 +31,6 @@ class berp_solicitud_renovacion_ficha(models.Model):
     apellido2               = fields.Char(string='Segon Apellido')
     phone                   = fields.Char(string='Nº telèfon/mòvil')
     email                   = fields.Char(string='Correu electronic')
+    ficha                   = fields.Selection([('territorial','Territorial'),('nacional','Nacional')],string='Tipo de ficha')
     
     
