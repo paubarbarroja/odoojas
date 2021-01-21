@@ -14,35 +14,39 @@
         <template inherit_id="website.homepage" id="berp_20200627_2046_website" name="Inici">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div class="oe_structure">
-                    <section class="s_banner parallax s_parallax_is_fixed pt0 pb208" data-scroll-background-ratio="1"
-                        style="background-image: none;">
-                        <span class="s_parallax_bg oe_img_bg oe_custom_bg"
-                            style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/pista1.jpg);background-position:47.06% 100%" />
-                        <div class="row s_nb_column_fixed">
-                            <div class="jumbotron rounded pt48 pb48 col-lg-6" data-name="Box" style="">
-                                <div class="row">
-                                    <div class="s_title s_col_no_bgcolor offset-lg-1 col-lg-11" data-name="Title">
-                                        <h1 class="s_title_thin">
-                                            <span style="font-size: 62px;"></span>
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <section class="s_banner parallax pb256 pt144" data-scroll-background-ratio="0" style="background-image: none;">
+                        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image:url(https://berp-bucket.s3.eu-west-2.amazonaws.com/img/portada_jas.jpg);background-position:50.11% 40.58%" />
                     </section>
-                    <section class="s_text_block pt32 pb32">
+                    <section class="s_text_block pb56 pt48">
                         <div class="container">
                             <div class="row">
-                                <div class="pt0 col-lg-12 pb0">
+                                <div class="pt0  pb0 col-lg-6">
                                     <h1 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES-TE SOCI !</h1>
                                     <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">FES ATLETISME AMB
                                         NOSALTRES
-                                        <hr />
+                                        <hr/>
                                     </h2>
                                     <div class="s_btn col-lg-12 text-center pt0 pb0">
-                                        <a href="/informacio_soci" class="rounded-circle btn btn-outline-info btn-lg"
-                                            data-original-title="" title="" aria-describedby="tooltip717931"> Entra Aqui <span
-                                                class="fa fa-1x fa-fw ml-1 fa-user-plus" style="" /></a>
+                                        <lt-highlighter style="display: none;">
+                                            <lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 147.422px !important; height: 38.7812px !important; transform: none !important; transform-origin: 74.7109px 20.3906px !important; zoom: 1 !important; margin-top: 1px !important; margin-left: 181.296px !important;">
+                                                <lt-div class="lt-highlighter__scrollElement" style="top: 0px !important; left: 0px !important; width: 147.422px !important; height: 38.7812px !important;"/>
+                                            </lt-div>
+                                        </lt-highlighter>
+                                        <a href="/informacio_soci" class="btn btn-lg btn-outline-info rounded-circle" data-original-title="" title="" aria-describedby="tooltip717931" spellcheck="false" data-gramm="false"> Entra Aquí&amp;nbsp;<span class="fa fa-1x fa-fw fa-user-plus ml-1" style=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pt0  pb0 col-lg-6">
+                                    <h1 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">EL TEU FILL/A VOL FER ATLETISME?</h1>
+                                    <h2 class="s_title_default" style="text-align: center; color: rgb(33, 37, 41);">&amp;nbsp;INSCRIU-LO A LA JAS !<hr/>
+                                    </h2>
+                                    <div class="s_btn col-lg-12 text-center pt0 pb0">
+                                        <lt-highlighter style="display: none;">
+                                            <lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 157.594px !important; height: 38.7812px !important; transform: none !important; transform-origin: 79.7969px 20.3906px !important; zoom: 1 !important; margin-top: 1px !important; margin-left: 176.203px !important;">
+                                                <lt-div class="lt-highlighter__scrollElement" style="top: 0px !important; left: 0px !important; width: 157.594px !important; height: 38.7812px !important;"/>
+                                            </lt-div>
+                                        </lt-highlighter>
+                                        <a href="/escola_atletisme" class="rounded-circle rounded-circle btn btn-outline-info rounded-circle btn-lg" data-original-title="" title="" aria-describedby="tooltip717931" spellcheck="false" data-gramm="false">Més Informació</a>
                                     </div>
                                 </div>
                             </div>
@@ -53,8 +57,7 @@
                             <h1 class="s_title_default" style="text-align: left; color: rgb(255, 255, 255); "> Últimes Notícies
                                 <hr />
                             </h1>
-                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true"
-                                data-template="berp_website.view_last_news_inherit" data-filter-by-blog-id="1" data-posts-limit="4" />
+                            <div class="row s_col_no_bgcolor js_get_posts" data-loading="true" data-template="berp_website.view_last_news_inherit" data-filter-by-blog-id="1" data-posts-limit="4" />
                         </div>
                     </section>
                     <section class="s_text_block pt32 pb32">
@@ -76,10 +79,8 @@
                                             &amp;nbsp;</font>
                                     </p>
                                     <div class="s_btn col-lg-12 text-right pt0 pb0">
-                                        <a href="/historia" class="rounded-circle btn btn-outline-info btn-lg" data-original-title=""
-                                            title="" aria-describedby="tooltip717931"> Més <i
-                                                class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title=""
-                                                aria-describedby="tooltip389109" /> </a>
+                                        <a href="/historia" class="rounded-circle btn btn-outline-info btn-lg" data-original-title="" title="" aria-describedby="tooltip717931"> Més <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +90,7 @@
             </xpath>
         </template>
 
-                            
+
         <!-- <template id="view_last_news">
             <t t-foreach="posts" t-as="p">
                 <t t-set="properties" t-value="json.loads(p.cover_properties)"/>
@@ -123,9 +124,13 @@
                             <h2 style="color: rgb(255, 255, 255);text-align:center;" t-field="p.name"/>
                             <br/>
                             <div style="color: rgb(255, 255, 255);" t-field="p.teaser" class="mb12 mt12  o_blog_post_teaser"/>
-                            <br/><br/>
+                            <br/>
+                            <br/>
                             <div class=" text-right">
-                                <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" class="rounded-circle" data-original-title="" title="" aria-describedby="tooltip717931" spellcheck="false" data-gramm="false"> <font style="color: rgb(36, 88, 128);">Llegir més</font> <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109" style="color: rgb(36, 88, 128);"/> </a>
+                                <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" class="rounded-circle" data-original-title="" title="" aria-describedby="tooltip717931" spellcheck="false" data-gramm="false">
+                                    <font style="color: rgb(36, 88, 128);">Llegir més</font>
+                                    <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109" style="color: rgb(36, 88, 128);"/>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -141,11 +146,14 @@
                         </a>
                         <div class="media-body ml-3 pb-2">
                             <h4 style="color: rgb(255, 255, 255);" t-field="p.name"/>
-                            <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" class="rounded-circle btn-sm" data-original-title="" title="" aria-describedby="tooltip717931" spellcheck="false" data-gramm="false"> <font style="color: rgb(36, 88, 128);">Llegir més</font> <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109" style="color: rgb(36, 88, 128);"/> </a>
+                            <a t-attf-href="/blog/#{p.blog_id.id}/post/#{p.id}" class="rounded-circle btn-sm" data-original-title="" title="" aria-describedby="tooltip717931" spellcheck="false" data-gramm="false">
+                                <font style="color: rgb(36, 88, 128);">Llegir més</font>
+                                <i class="fa fa-1x fa-fw fa-arrow-circle-right ml-1" data-original-title="" title="" aria-describedby="tooltip389109" style="color: rgb(36, 88, 128);"/>
+                            </a>
                         </div>
                     </div>
                 </t>
-            <t t-set="i" t-value="i+1"/>
+                <t t-set="i" t-value="i+1"/>
             </t>
         </template>
 
@@ -158,9 +166,9 @@
             </xpath>
         </template>
 
-        
 
-<!-- 
+
+        <!-- 
         <template id="view_last_news_inherit" inherit_id="website_blog.s_latest_posts_big_picture_template">
             <xpath expr="//div[@class='loading_container']" position="replace">
                 <div class="col-12 col-md-6 my-3 loading_container s_latest_posts_post">
@@ -189,18 +197,38 @@
                                 <div class="col-lg-6" id="connect">
                                     <h5 style="color:white">Contacta'ns</h5>
                                     <ul class="list-unstyled">
-                                        <li><i class="fa fa-phone"/> <span style="color:white" t-field="res_company.phone"/></li>
-                                        <li><i class="fa fa-envelope"/>  <span style="color:white" t-field="res_company.email"/></li>
+                                        <li>
+                                            <i class="fa fa-phone"/>
+                                            <span style="color:white" t-field="res_company.phone"/>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-envelope"/>
+                                            <span style="color:white" t-field="res_company.email"/>
+                                        </li>
                                     </ul>
                                     <p>
                                         <!-- https://www.google.com/maps/place/Joventut+Atl%C3%A8tica+Sabadell/@41.5390129,2.1240545,17z/data=!4m5!3m4!1s0x12a495789c3fbb85:0x2a14a076affaf167!8m2!3d41.5390129!4d2.1262432 -->
-                                        <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-facebook-square"/></a>
-                                        <a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-twitter"/></a>
-                                        <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-linkedin"/></a>
-                                        <a t-if="website.social_youtube" t-att-href="website.social_youtube" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-youtube-play"/></a>
-                                        <a t-if="website.social_googleplus" t-att-href="website.social_googleplus" class="btn btn-sm btn-link" rel="publisher" target="_blank"><i class="fa fa-2x fa-google-plus-square"/></a>
-                                        <a t-if="website.social_github" t-att-href="website.social_github" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-github"/></a>
-                                        <a t-if="website.social_instagram" t-att-href="website.social_instagram" class="btn btn-sm btn-link" target="_blank"><i class="fa fa-2x fa-instagram"/></a>
+                                        <a t-if="website.social_facebook" t-att-href="website.social_facebook" class="btn btn-sm btn-link" target="_blank">
+                                            <i class="fa fa-2x fa-facebook-square"/>
+                                        </a>
+                                        <a t-if="website.social_twitter" t-att-href="website.social_twitter" class="btn btn-sm btn-link" target="_blank">
+                                            <i class="fa fa-2x fa-twitter"/>
+                                        </a>
+                                        <a t-if="website.social_linkedin" t-att-href="website.social_linkedin" class="btn btn-sm btn-link" target="_blank">
+                                            <i class="fa fa-2x fa-linkedin"/>
+                                        </a>
+                                        <a t-if="website.social_youtube" t-att-href="website.social_youtube" class="btn btn-sm btn-link" target="_blank">
+                                            <i class="fa fa-2x fa-youtube-play"/>
+                                        </a>
+                                        <a t-if="website.social_googleplus" t-att-href="website.social_googleplus" class="btn btn-sm btn-link" rel="publisher" target="_blank">
+                                            <i class="fa fa-2x fa-google-plus-square"/>
+                                        </a>
+                                        <a t-if="website.social_github" t-att-href="website.social_github" class="btn btn-sm btn-link" target="_blank">
+                                            <i class="fa fa-2x fa-github"/>
+                                        </a>
+                                        <a t-if="website.social_instagram" t-att-href="website.social_instagram" class="btn btn-sm btn-link" target="_blank">
+                                            <i class="fa fa-2x fa-instagram"/>
+                                        </a>
                                     </p>
                                 </div>
                                 <div class="col-lg-6">
@@ -235,7 +263,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6 text-muted text-center text-md-left">
-                                <span style="color:white">Copyright &amp;copy;</span> <span t-field="res_company.name" itemprop="name" style="color:white">Joventut Atlètica Sabadell</span>
+                                <span style="color:white">Copyright &amp;copy;</span>
+                                <span t-field="res_company.name" itemprop="name" style="color:white">Joventut Atlètica Sabadell</span>
                                 <ul class="js_language_selector mb0 list-inline" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
                                     <li class="list-inline-item">
                                         <div class="dropup">
@@ -329,7 +358,7 @@
                         </li>
                         <t t-foreach="categories" t-as="c">
                             <!-- <t t-if="not c.id == 14 and not c.id == 15"> -->
-                                <t t-call="website_sale.categories_recursive"/>
+                            <t t-call="website_sale.categories_recursive"/>
                             <!-- </t> -->
                         </t>
                     </ul>
